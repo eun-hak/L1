@@ -3,7 +3,7 @@
 questions.csv 기반 블로그 답변 생성.
 
 - template: 로컬 템플릿 (~1500~3000자), API 불필요
-- llm: GEMINI_API_KEY 또는 OPENAI_API_KEY 필요 (미구현 시 template fallback)
+- llm: GROQ_API_KEY 필요 (Groq API, scripts/groq_client.py)
 
 Usage:
   python3 scripts/generate_answers.py --limit 20
@@ -27,6 +27,7 @@ INDEX_PATH = DATA / "answers" / "answers_index.csv"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from answer_templates import build_template_answer  # noqa: E402
+from groq_client import generate_blog_body  # noqa: E402
 
 MIN_CHARS = 1500
 MAX_CHARS = 3000
@@ -57,8 +58,12 @@ def generate_body(row: dict[str, str], l1_info: dict[str, tuple[str, str]], mode
     seed = seed_for(row)
 
     if mode == "llm":
-        # API 연동 전까지 template 사용
-        pass
+        return generate_blog_body(
+            question_text=row["question_text"],
+            focus_keyword=row["focus_keyword"],
+            min_chars=MIN_CHARS,
+            max_chars=MAX_CHARS,
+        )
 
     return build_template_answer(
         question_text=row["question_text"],
@@ -79,7 +84,7 @@ def main() -> None:
         "--mode",
         choices=("template", "llm"),
         default="template",
-        help="template=로컬, llm=API(현재 template fallback)",
+        help="template=로컬, llm=Groq API",
     )
     parser.add_argument("--dry-run", action="store_true", help="파일 쓰지 않고 통계만")
     args = parser.parse_args()

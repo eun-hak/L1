@@ -1,0 +1,16 @@
+paragraph_max_sentences: 2
+image_placeholder_count: 6
+required_elements:
+  - first_person_opinion
+  - reader_question_cta
+  - empathy_button_cta
+  - hashtags_min: 3
+title:
+  max_length: 55
+  patterns:
+    - quote_shock
+    - bracket_solo
+    - question_why
+body:
+  min_chars: 1500
+  max_chars: 3500

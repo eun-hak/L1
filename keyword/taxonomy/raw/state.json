@@ -1,0 +1,366 @@
+{
+  "l1_rows": [
+    {
+      "l1_code": "01",
+      "l1_slug": "tv이슈",
+      "name_ko": "TV이슈",
+      "theme": "TV 예능 드라마 이슈 정리와 관련된 내용",
+      "description": "TV 프로그램 이슈를 정리하고 관찰하는 글, 예능 프로그램이 제공하는 정보와 감상평",
+      "sort_order": "1"
+    },
+    {
+      "l1_code": "02",
+      "l1_slug": "도전하고싶다",
+      "name_ko": "도전하고싶다",
+      "theme": "일상생활에서 궁금증을 해결하고 새로운 경험을 하기 위한 글",
+      "description": "일상생활에서 궁금한 질문에 대한 답변과 직접 도전해본 후기, 새로운 활동을 도전하는 글",
+      "sort_order": "2"
+    }
+  ],
+  "l2_rows": [
+    {
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "l2_slug": "tv이슈",
+      "name_ko": "TV이슈",
+      "description": "TV 프로그램 이슈 정리와 관찰하는 글, 감상평 작성",
+      "sort_order": "1"
+    },
+    {
+      "l2_id": "01-tv속-이야기",
+      "l1_code": "01",
+      "l2_slug": "tv속-이야기",
+      "name_ko": "TV속 이야기",
+      "description": "TV에서 본 이야기와 감상평을 공유하고 분석합니다",
+      "sort_order": "2"
+    },
+    {
+      "l2_id": "01-예능의-모든것",
+      "l1_code": "01",
+      "l2_slug": "예능의-모든것",
+      "name_ko": "예능의 모든것",
+      "description": "TV 예능 프로그램의 이슈와 팁, 감상평을 작성합니다",
+      "sort_order": "3"
+    },
+    {
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "l2_slug": "tv이슈분석",
+      "name_ko": "TV이슈분석",
+      "description": "최신 TV 프로그램 분석과 논란 정리",
+      "sort_order": "1"
+    },
+    {
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "l2_slug": "tv속-이야기속으로",
+      "name_ko": "TV속 이야기속으로",
+      "description": "TV 드라마와 예능의 숨겨진 이야기",
+      "sort_order": "2"
+    }
+  ],
+  "l3_rows": [
+    {
+      "l3_id": "01-tv이슈-tv-예능-프로듀서의-비밀-01",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "l3_slug": "tv-예능-프로듀서의-비밀",
+      "focus_keyword": "TV 예능 프로듀서의 비밀",
+      "seo_title": "TV 예능 제작비가 궁금한 사람!",
+      "search_intent": "info",
+      "topic_angle": "issue",
+      "sort_order": "1"
+    },
+    {
+      "l3_id": "01-tv이슈-tv-프로그램-메이킹-비하인드-02",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "l3_slug": "tv-프로그램-메이킹-비하인드",
+      "focus_keyword": "TV 프로그램 메이킹 비하인드",
+      "seo_title": "TV 예능 메이킹 비하인드에 대한 모든 것!",
+      "search_intent": "info",
+      "topic_angle": "issue",
+      "sort_order": "2"
+    },
+    {
+      "l3_id": "01-tv이슈-tv-예능-우정-이펙트-03",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "l3_slug": "tv-예능-우정-이펙트",
+      "focus_keyword": "TV 예능 우정 이펙트",
+      "seo_title": "TV 예능 우정 이펙트는 실제일까?",
+      "search_intent": "info",
+      "topic_angle": "issue",
+      "sort_order": "3"
+    },
+    {
+      "l3_id": "01-tv이슈-tv-예능-리얼리티-쇼-04",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "l3_slug": "tv-예능-리얼리티-쇼",
+      "focus_keyword": "TV 예능 리얼리티 쇼",
+      "seo_title": "TV 예능 리얼리티 쇼는 무엇인가?",
+      "search_intent": "info",
+      "topic_angle": "start",
+      "sort_order": "4"
+    },
+    {
+      "l3_id": "01-tv이슈-tv-예능-제작비-vs-예산-05",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "l3_slug": "tv-예능-제작비-vs-예산",
+      "focus_keyword": "TV 예능 제작비 vs 예산",
+      "seo_title": "TV 예능 제작비와 예산, 궁금한 사람!",
+      "search_intent": "compare",
+      "topic_angle": "issue",
+      "sort_order": "5"
+    },
+    {
+      "l3_id": "02-tv이슈분석-tv-예능-제작비-절약-방법-01",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "l3_slug": "tv-예능-제작비-절약-방법",
+      "focus_keyword": "TV 예능 제작비 절약 방법",
+      "seo_title": "TV 예능 제작비 절약 방법 총정리!",
+      "search_intent": "howto",
+      "topic_angle": "tip",
+      "sort_order": "1"
+    },
+    {
+      "l3_id": "02-tv이슈분석-tv-예능-우정-이펙트-분석-02",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "l3_slug": "tv-예능-우정-이펙트-분석",
+      "focus_keyword": "TV 예능 우정 이펙트 분석",
+      "seo_title": "TV 예능 우정 이펙트가 뭘까? 분석!",
+      "search_intent": "info",
+      "topic_angle": "issue",
+      "sort_order": "2"
+    },
+    {
+      "l3_id": "02-tv이슈분석-tv-프로그램-메이킹-비하인드-스토리-03",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "l3_slug": "tv-프로그램-메이킹-비하인드-스토리",
+      "focus_keyword": "TV 프로그램 메이킹 비하인드 스토리",
+      "seo_title": "TV 프로그램 메이킹 비하인드 스토리 총정리!",
+      "search_intent": "news",
+      "topic_angle": "start",
+      "sort_order": "3"
+    },
+    {
+      "l3_id": "02-tv이슈분석-tv-예능-프로듀서의-비밀-04",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "l3_slug": "tv-예능-프로듀서의-비밀",
+      "focus_keyword": "TV 예능 프로듀서의 비밀",
+      "seo_title": "TV 예능 프로듀서의 비밀은 뭘까?",
+      "search_intent": "info",
+      "topic_angle": "review",
+      "sort_order": "4"
+    },
+    {
+      "l3_id": "02-tv이슈분석-tv-리얼리티-쇼-vs-예능-프로그램-05",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "l3_slug": "tv-리얼리티-쇼-vs-예능-프로그램",
+      "focus_keyword": "TV 리얼리티 쇼 VS 예능 프로그램",
+      "seo_title": "TV 리얼리티 쇼 VS 예능 프로그램!?",
+      "search_intent": "compare",
+      "topic_angle": "issue",
+      "sort_order": "5"
+    },
+    {
+      "l3_id": "02-tv속-이야기속으로-tv-예능-우정-이펙트-분석-팁-01",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "l3_slug": "tv-예능-우정-이펙트-분석-팁",
+      "focus_keyword": "TV 예능 우정 이펙트 분석 팁",
+      "seo_title": "TV 예능의 친구 효과 분석하는 방법",
+      "search_intent": "howto",
+      "topic_angle": "tip",
+      "sort_order": "1"
+    },
+    {
+      "l3_id": "02-tv속-이야기속으로-tv-리얼리티-쇼-vs-예능-프로그램-특징-02",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "l3_slug": "tv-리얼리티-쇼-vs-예능-프로그램-특징",
+      "focus_keyword": "TV 리얼리티 쇼 VS 예능 프로그램 특징",
+      "seo_title": "TV 리얼리티 쇼와 예능 프로그램의 차이점",
+      "search_intent": "compare",
+      "topic_angle": "compare",
+      "sort_order": "2"
+    },
+    {
+      "l3_id": "02-tv속-이야기속으로-tv-프로그램-메이킹-비하인드-스토리-정리-03",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "l3_slug": "tv-프로그램-메이킹-비하인드-스토리-정리",
+      "focus_keyword": "TV 프로그램 메이킹 비하인드 스토리 정리",
+      "seo_title": "TV 프로그램 메이킹 비하인드 스토리 총정리",
+      "search_intent": "info",
+      "topic_angle": "issue",
+      "sort_order": "3"
+    },
+    {
+      "l3_id": "02-tv속-이야기속으로-tv-예능-제작비-절약-방법-04",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "l3_slug": "tv-예능-제작비-절약-방법",
+      "focus_keyword": "TV 예능 제작비 절약 방법",
+      "seo_title": "TV 예능 제작비 절약하는 방법",
+      "search_intent": "howto",
+      "topic_angle": "tip",
+      "sort_order": "4"
+    },
+    {
+      "l3_id": "02-tv속-이야기속으로-tv-예능-프로듀서의-비밀-요약-05",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "l3_slug": "tv-예능-프로듀서의-비밀-요약",
+      "focus_keyword": "TV 예능 프로듀서의 비밀 요약",
+      "seo_title": "TV 예능의 프로듀서들의 비밀",
+      "search_intent": "info",
+      "topic_angle": "start",
+      "sort_order": "5"
+    }
+  ],
+  "question_rows": [
+    {
+      "question_id": "01-tv이슈-tv-예능-프로듀서의-비밀-01",
+      "l3_id": "01-tv이슈-tv-예능-프로듀서의-비밀-01",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "search_intent": "info",
+      "focus_keyword": "TV 예능 프로듀서의 비밀",
+      "question_text": "TV 예능 제작비가 궁금한 사람!"
+    },
+    {
+      "question_id": "01-tv이슈-tv-프로그램-메이킹-비하인드-02",
+      "l3_id": "01-tv이슈-tv-프로그램-메이킹-비하인드-02",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "search_intent": "info",
+      "focus_keyword": "TV 프로그램 메이킹 비하인드",
+      "question_text": "TV 예능 메이킹 비하인드에 대한 모든 것!"
+    },
+    {
+      "question_id": "01-tv이슈-tv-예능-우정-이펙트-03",
+      "l3_id": "01-tv이슈-tv-예능-우정-이펙트-03",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "search_intent": "info",
+      "focus_keyword": "TV 예능 우정 이펙트",
+      "question_text": "TV 예능 우정 이펙트는 실제일까?"
+    },
+    {
+      "question_id": "01-tv이슈-tv-예능-리얼리티-쇼-04",
+      "l3_id": "01-tv이슈-tv-예능-리얼리티-쇼-04",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "search_intent": "info",
+      "focus_keyword": "TV 예능 리얼리티 쇼",
+      "question_text": "TV 예능 리얼리티 쇼는 무엇인가?"
+    },
+    {
+      "question_id": "01-tv이슈-tv-예능-제작비-vs-예산-05",
+      "l3_id": "01-tv이슈-tv-예능-제작비-vs-예산-05",
+      "l2_id": "01-tv이슈",
+      "l1_code": "01",
+      "search_intent": "compare",
+      "focus_keyword": "TV 예능 제작비 vs 예산",
+      "question_text": "TV 예능 제작비와 예산, 궁금한 사람!"
+    },
+    {
+      "question_id": "02-tv이슈분석-tv-예능-제작비-절약-방법-01",
+      "l3_id": "02-tv이슈분석-tv-예능-제작비-절약-방법-01",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "search_intent": "howto",
+      "focus_keyword": "TV 예능 제작비 절약 방법",
+      "question_text": "TV 예능 제작비 절약 방법 총정리!"
+    },
+    {
+      "question_id": "02-tv이슈분석-tv-예능-우정-이펙트-분석-02",
+      "l3_id": "02-tv이슈분석-tv-예능-우정-이펙트-분석-02",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "search_intent": "info",
+      "focus_keyword": "TV 예능 우정 이펙트 분석",
+      "question_text": "TV 예능 우정 이펙트가 뭘까? 분석!"
+    },
+    {
+      "question_id": "02-tv이슈분석-tv-프로그램-메이킹-비하인드-스토리-03",
+      "l3_id": "02-tv이슈분석-tv-프로그램-메이킹-비하인드-스토리-03",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "search_intent": "news",
+      "focus_keyword": "TV 프로그램 메이킹 비하인드 스토리",
+      "question_text": "TV 프로그램 메이킹 비하인드 스토리 총정리!"
+    },
+    {
+      "question_id": "02-tv이슈분석-tv-예능-프로듀서의-비밀-04",
+      "l3_id": "02-tv이슈분석-tv-예능-프로듀서의-비밀-04",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "search_intent": "info",
+      "focus_keyword": "TV 예능 프로듀서의 비밀",
+      "question_text": "TV 예능 프로듀서의 비밀은 뭘까?"
+    },
+    {
+      "question_id": "02-tv이슈분석-tv-리얼리티-쇼-vs-예능-프로그램-05",
+      "l3_id": "02-tv이슈분석-tv-리얼리티-쇼-vs-예능-프로그램-05",
+      "l2_id": "02-tv이슈분석",
+      "l1_code": "02",
+      "search_intent": "compare",
+      "focus_keyword": "TV 리얼리티 쇼 VS 예능 프로그램",
+      "question_text": "TV 리얼리티 쇼 VS 예능 프로그램!?"
+    },
+    {
+      "question_id": "02-tv속-이야기속으로-tv-예능-우정-이펙트-분석-팁-01",
+      "l3_id": "02-tv속-이야기속으로-tv-예능-우정-이펙트-분석-팁-01",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "search_intent": "howto",
+      "focus_keyword": "TV 예능 우정 이펙트 분석 팁",
+      "question_text": "TV 예능의 친구 효과 분석하는 방법"
+    },
+    {
+      "question_id": "02-tv속-이야기속으로-tv-리얼리티-쇼-vs-예능-프로그램-특징-02",
+      "l3_id": "02-tv속-이야기속으로-tv-리얼리티-쇼-vs-예능-프로그램-특징-02",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "search_intent": "compare",
+      "focus_keyword": "TV 리얼리티 쇼 VS 예능 프로그램 특징",
+      "question_text": "TV 리얼리티 쇼와 예능 프로그램의 차이점"
+    },
+    {
+      "question_id": "02-tv속-이야기속으로-tv-프로그램-메이킹-비하인드-스토리-정리-03",
+      "l3_id": "02-tv속-이야기속으로-tv-프로그램-메이킹-비하인드-스토리-정리-03",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "search_intent": "info",
+      "focus_keyword": "TV 프로그램 메이킹 비하인드 스토리 정리",
+      "question_text": "TV 프로그램 메이킹 비하인드 스토리 총정리"
+    },
+    {
+      "question_id": "02-tv속-이야기속으로-tv-예능-제작비-절약-방법-04",
+      "l3_id": "02-tv속-이야기속으로-tv-예능-제작비-절약-방법-04",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "search_intent": "howto",
+      "focus_keyword": "TV 예능 제작비 절약 방법",
+      "question_text": "TV 예능 제작비 절약하는 방법"
+    },
+    {
+      "question_id": "02-tv속-이야기속으로-tv-예능-프로듀서의-비밀-요약-05",
+      "l3_id": "02-tv속-이야기속으로-tv-예능-프로듀서의-비밀-요약-05",
+      "l2_id": "02-tv속-이야기속으로",
+      "l1_code": "02",
+      "search_intent": "info",
+      "focus_keyword": "TV 예능 프로듀서의 비밀 요약",
+      "question_text": "TV 예능의 프로듀서들의 비밀"
+    }
+  ]
+}

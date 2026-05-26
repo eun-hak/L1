@@ -1,0 +1,101 @@
+﻿question_id,qid,keyword_ko,keyword_en,popularity,seo_question,search_intent,seo_format,model
+Q10707-seo,Q10707,로버트 무가베,Robert_Mugabe,120.0,로버트 무가베의 역할과 영향 | 짐바브웨 독재의 역사,info,pipe,llama-3.1-8b-instant
+Q22706-seo,Q22706,차량 번호판,Vehicle_registration_plate,87.0,차량 번호판을 쉽게 인식하는 방법 | 초보자용 가이드 생성,howto,pipe,llama-3.1-8b-instant
+Q16424695-seo,Q16424695,감수분열,Meiosis,71.0,유성 생식의 감수분열 방법 | 생식자 만들기 위한 세포 분열 가이드,howto,pipe,llama-3.1-8b-instant
+Q381045-seo,Q381045,선서,Oath,60.0,선서는 많은 사람들 앞에서 공표하는 것 | 공포감 없는 선서 방법을 소개합니다.,howto,pipe,llama-3.1-8b-instant
+Q39330-seo,Q39330,요크셔 테리어,Yorkshire_Terrier,52.0,요크셔 테리어 개 품종 특징 | 초보자 가이드,howto,pipe,llama-3.1-8b-instant
+Q4473-seo,Q4473,제넷 매커디,Jennette_McCurdy,46.0,영문 이름 제넷 매커디 미국 배우 | 미국 배우로서의 대표작과 영향력,info,pipe,llama-3.1-8b-instant
+Q5214275-seo,Q5214275,댄 레이놀즈,Dan_Reynolds,41.0,이매진 드래곤스의 멤버는 кто인가요 | 미국 싱어송라이터 댄 레이놀즈의 소개,info,pipe,llama-3.1-8b-instant
+Q8159-seo,Q8159,폴 보퀴즈,Paul_Bocuse,37.0,폴 보퀴즈와 프랑스 요리의 차이점 | 프랑스 요리사 폴 보퀴즈 소개와 작품 가이드,compare,pipe,llama-3.1-8b-instant
+Q373034-seo,Q373034,사이드 타그마우이,Saïd_Taghmaoui,33.0,사이드 타그마우이 | 실전에서 바로 쓰는 팁,info,pipe,llama-3.1-8b-instant
+Q809114-seo,Q809114,배리 타운 유나이티드 FC,Barry_Town_United_F.C.,30.0,웨일스의 축구 클럽을 찾아보는 방법 | 배리 타운 유나이티드 FC 소개 및 최근 성적,howto,pipe,llama-3.1-8b-instant
+Q687785-seo,Q687785,포 시즌스,The_Four_Seasons_(band),27.0,포 시즌스 미국의 로큰롤 밴드에 관해 공부하는 방법 | 리더와 주요 멤버 소개에 따라 음악 스타일을 비교할 수 있음,howto,pipe,llama-3.1-8b-instant
+Q277021-seo,Q277021,어떤 마술의 금서목록,A_Certain_Magical_Index,24.0,일본 라이트 노벨 시리즈의 금서 목록 정리 | 어떤 마술의 금서 목록 완전 가이드,howto,pipe,llama-3.1-8b-instant
+Q732049-seo,Q732049,울프 호프만,Wolf_Hoffmann,22.0,울프 호프만 기타 레슨 방법 | 초보자를 위한 독일 뮤지션 강습 가이드,howto,pipe,llama-3.1-8b-instant
+Q12344159-seo,Q12344159,윌리엄,William,19.0,윌리엄 이름의 유래와 다양한 의미 | 성경의 사도 윌리엄과 같이 이름이 알려진 역사적 인물의 예시,info,pipe,llama-3.1-8b-instant
+Q16930989-seo,Q16930989,명량,The_Admiral:_Roaring_Currents,17.0,이순신 영화 명량 이해하는 방법 | 첫 번째 작품의 조작과 의의,howto,pipe,llama-3.1-8b-instant
+Q16061428-seo,Q16061428,다미안 하르둥,Damian_Hardung,15.0,다미안 하르둥 배우 이름 올바르게 적는 방법 | 초보자를 위한 이력서 작성 팁,howto,pipe,llama-3.1-8b-instant
+Q11395269-seo,Q11395269,시원찮은 그녀를 위한 육성방법,Saekano,13.0,일본 라이트 노벨 시리즈 '시원찮은 그녀를 위한 육성방법' 읽는 방법 | 시작하기 전에 추천한다는 점과 그 이유,info,pipe,llama-3.1-8b-instant
+Q55614424-seo,Q55614424,동남 아시아 인도화,Indianization_of_Southeast_Asia,12.0,동남 아시아 인도화 현상 이해하기 | 인도 문화 확산 방법과 역사적 영향,howto,pipe,llama-3.1-8b-instant
+Q16201205-seo,Q16201205,이슈와리야 메논,Iswarya_Menon,10.0,인도 여배우의 대표 작품 '이슈와리야 메논' 시청 가이드 | 다양한 연출과 등장인물 분석,howto,pipe,llama-3.1-8b-instant
+Q5214174-seo,Q5214174,댄 패트릭,Dan_Patrick_(politician),9.0,미국 정치인 댄 패트릭의 정치 활동 방법 | 미국 정부 및 정치 시스템 이해하기,howto,pipe,llama-3.1-8b-instant
+Q1077966-seo,Q1077966,인절미,Injeolmi,7.0,인절미 만들기 방법과 전통적인 방법 | 초보자를 위한 전통 떡 요리 가이드,howto,pipe,llama-3.1-8b-instant
+Q1999032-seo,Q1999032,1934년 증권거래법,Securities_Exchange_Act_of_1934,6.0,1934년 증권거래법 | 개념과 차이점 한눈에 보기,info,pipe,llama-3.1-8b-instant
+Q4376364-seo,Q4376364,몽골의 공휴일,Public_holidays_in_Mongolia,5.0,몽골의 공휴일이 무엇일까요 | 초보자를 위한 공휴일 목록과 설명,info,pipe,llama-3.1-8b-instant
+Q184485-seo,Q184485,공연 예술,Performing_arts,78.0,공연 예술에 취미가 있다면 꼭 따라하는 작품 소개 | 인기 공연 가이드와 예술가 인생 이야기,info,pipe,llama-3.1-8b-instant
+Q16128113-seo,Q16128113,사샤 클레멘츠,Sasha_Clements,61.0,사샤 클레멘츠 이모티콘 사용 방법 | 초보자 가이드와 활용 팁,howto,pipe,llama-3.1-8b-instant
+Q649384-seo,Q649384,엘레판타 동굴,Elephanta_Caves,53.0,엘레판타 동굴에 대한 정보는 어떻게 하나요 | 초보자 가이드 작성해드립니다.,howto,pipe,llama-3.1-8b-instant
+Q213248-seo,Q213248,티루넬벨리,Tirunelveli,47.0,티루넬벨리 여행 가이드 | 초보자们必备的攻略和 추천 관광명소,howto,pipe,llama-3.1-8b-instant
+Q222695-seo,Q222695,그랜드티턴 국립공원,Grand_Teton_National_Park,43.0,그랜드티턴 국립공원 여행 가이드 | 초보자를 위한 안전하고 즐거운 여행 루트,howto,pipe,llama-3.1-8b-instant
+Q275662-seo,Q275662,후드산,Mount_Hood,40.0,후드산 제조 방법 | 초보자를 위한 쉽게 따라하는 가이드,howto,pipe,llama-3.1-8b-instant
+Q1130571-seo,Q1130571,도핑,Doping_(semiconductor),37.0,도핑의 위험성 이해와 예방 방법 | 도핑의 심각성과 올바른 생활습관 수립,howto,pipe,llama-3.1-8b-instant
+Q193247-seo,Q193247,"자바 플랫폼, 엔터프라이즈 에디션",Jakarta_EE,35.0,자바 플랫폼 엔터프라이즈 에디션 사용 방법 | 엔터프라이즈급 개발 환경 구축하기,howto,pipe,llama-3.1-8b-instant
+Q13938-seo,Q13938,그레이 딜라일,Grey_DeLisle,33.0,그레이 딜라일 코스프레 아이디어 | 다양한 스타일과 디자이너 팁,howto,pipe,llama-3.1-8b-instant
+Q754649-seo,Q754649,올림픽 베트남 선수단,Vietnam_at_the_Olympics,32.0,올림픽 베트남 선수단에 참가한 선수들의 성적 정보는 어디서 확인할 수 있나요 | 올림픽 베트남 선수단 성적 정보 확인하는 방법,howto,pipe,llama-3.1-8b-instant
+Q233139-seo,Q233139,투 나이츠 디펜스,Two_Knights_Defense,30.0,투 나이츠 디펜스 게임 방법 | 초보자를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q645456-seo,Q645456,특종 기사,The_Front_Page_(1974_film),29.0,특종 기사 쓰는 방법 | 뉴스 기자의 특징과 기획 전략,howto,pipe,llama-3.1-8b-instant
+Q1124857-seo,Q1124857,플리머스,Plymouth_(automobile),27.0,플리머스 키를 만들기 | 초보자를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q1433061-seo,Q1433061,Internet eXchange,Internet_exchange_point,26.0,인터넷 교환 네트워크 설정 방법 | 초보자를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q1575225-seo,Q1575225,할루슈키,Halušky,25.0,할루슈키 이스터 에그 방법 | 초보자를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q1437428-seo,Q1437428,의미론,Semantics_(computer_science),24.0,자연어 처리 의미론 이해 | 자연어 처리에서 의미론의 핵심 기능과 중요성,howto,pipe,llama-3.1-8b-instant
+Q1220379-seo,Q1220379,"고, 디에고, 고!","Go,_Diego,_Go!",23.0,디에고 고!에 대한 모든 것 | 초보자가 쉽게 알아보는 방법,info,pipe,llama-3.1-8b-instant
+Q966758-seo,Q966758,국제 군인 스포츠 위원회,International_Military_Sports_Council,23.0,국제 군인 스포츠 대회에 출전하는 방법 | 국제 군인 스포츠 위원회 승인 절차와 준비 요령,howto,pipe,llama-3.1-8b-instant
+Q645991-seo,Q645991,타이 운하,Thai_Canal,22.0,타이 운하 개통 이유와 장점 | 경제적 효과와 교통의 이익,howto,pipe,llama-3.1-8b-instant
+Q3075458-seo,Q3075458,제이크 우드,Jake_Wood,21.0,제이크 우드 | 원리와 적용 예시,info,pipe,llama-3.1-8b-instant
+Q1652538-seo,Q1652538,이반 야리긴,Ivan_Yarygin,20.0,이반 야리긴 이란 누구인가 | 이반 야리긴의 생애와 업적,info,pipe,llama-3.1-8b-instant
+Q1009512-seo,Q1009512,조지 와수프,George_Wassouf,19.0,조지 와수프 배우기 | 영문 이름 작성법과 올바른 사용 방법,howto,pipe,llama-3.1-8b-instant
+Q3240725-seo,Q3240725,브리튼 (지명),Britain_(place_name),19.0,브리튼 지명의 의미와 역사 | 자연스럽게 알려주는 가이드,info,pipe,llama-3.1-8b-instant
+Q1389520-seo,Q1389520,혁명 기념탑,Monumento_a_la_Revolución,18.0,혁명 기념탑에 관해 알고 싶은 것은 | 초보자를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q571156-seo,Q571156,나틱시스,Natixis,18.0,나틱시스 게임 방법 | 초보자를 위한 실전 팁,howto,pipe,llama-3.1-8b-instant
+Q17014747-seo,Q17014747,언프렌드,Friend_Request,17.0,언프렌드 효과가 있는 방법 | 초보자를 위한 실전 팁,howto,pipe,llama-3.1-8b-instant
+Q670792-seo,Q670792,베렌베르크 은행,Berenberg_Bank,17.0,베렌베르크 은행 계좌 열기 방법 | 초보자를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q1756157-seo,Q1756157,법 영역,Area_of_law,16.0,법 영역에 대한 이해를 위한 강의를 어디서 들을 수 있을까요 | 온라인 강의 플랫폼을 통해 법 관련 전문가들의 강의를 들으세요.,howto,pipe,llama-3.1-8b-instant
+Q619452-seo,Q619452,열물리학,Thermal_physics,16.0,열물리학과의 관계를 이해하는 방법 | 열역학 정리와 응용의 중요성,howto,pipe,llama-3.1-8b-instant
+Q16063497-seo,Q16063497,진화생물학자,Evolutionary_biologist,15.0,진화생물학자란 무엇인가 | 진화생물학자로 승격하는 과정과 방법,howto,pipe,llama-3.1-8b-instant
+Q465450-seo,Q465450,아메리칸 르망 시리즈,American_Le_Mans_Series,15.0,아메리칸 르망 시리즈 가이드 | 초보자가 알아야 할 모든 점,howto,pipe,llama-3.1-8b-instant
+Q1259130-seo,Q1259130,드립 페인팅,Drip_painting,14.0,드립 페인팅 기초부터 마스터하는 방법 | 초보자 친화적인 드롭 페인팅 과정,howto,pipe,llama-3.1-8b-instant
+Q26268098-seo,Q26268098,부활절,Ostern,14.0,부활절에 관한 모든 것 | 쉽게 이해하는 초보자 가이드,howto,pipe,llama-3.1-8b-instant
+Q7729402-seo,Q7729402,데스 큐어,The_Death_Cure,14.0,데스 큐어 사용법 | 초보자에게 적합한 스킬 세트와 전략,howto,pipe,llama-3.1-8b-instant
+Q17028760-seo,Q17028760,리바이벌 (소설),Revival_(novel),13.0,리바이벌 소설을 이해하는 방법 | 리바이벌 소설의 주요 요소와 등장인물 이해하기,howto,pipe,llama-3.1-8b-instant
+Q3503825-seo,Q3503825,선댄스TV,Sundance_TV,13.0,선댄스TV에서 어떻게 보는지 | TV로 스트리밍하기 위한 간단한 방법,howto,pipe,llama-3.1-8b-instant
+Q968605-seo,Q968605,레브 시어리,Rev_Theory,13.0,레브 시어리 가치 판별 방법 | 초보자용 가이드 작성,howto,pipe,llama-3.1-8b-instant
+Q18341045-seo,Q18341045,라 솜브라 델 파사도,La_sombra_del_pasado,12.0,라 솜브라 델 파사도 만들기 | 초코크림 과일파이 양파 파운드 케이크와 함께하는 달콤한 요리,howto,pipe,llama-3.1-8b-instant
+Q3551582-seo,Q3551582,지부티 대학교,University_of_Djibouti,12.0,지부티 대학교 입학 조건 | 외국인 입학에 대한 모든 정보를 알려드립니다.,howto,pipe,llama-3.1-8b-instant
+Q907802-seo,Q907802,돌비 서라운드,Dolby_Surround,12.0,돌비 서라운드 시청 방법 | 어떻게 사용하는지 자세히 알려드립니다.,howto,pipe,llama-3.1-8b-instant
+Q16744071-seo,Q16744071,라 말케리다,La_malquerida,11.0,라 말케리다 위치 | 여행 가이드와 관광 정보,howto,pipe,llama-3.1-8b-instant
+Q289787-seo,Q289787,포괄적 민주주의,Inclusive_Democracy,11.0,민주주의의 포괄적 의미 이해하기 | 초보자를 위한 쉽고 명확한 가이드,howto,pipe,llama-3.1-8b-instant
+Q645992-seo,Q645992,아르헨티나의 음악,Music_of_Argentina,11.0,아르헨티나 음악을 알아보는 방법 | 아르헨티나 음악의 역사와 대표 아티스트,howto,pipe,llama-3.1-8b-instant
+Q1247581-seo,Q1247581,디 에지 오브 나이트,The_Edge_of_Night,10.0,디 에지 오브 나이트 영화 개요 | 스토리와 캐릭터 소개,info,pipe,llama-3.1-8b-instant
+Q2143193-seo,Q2143193,조 멀린,Joe_Mullen,10.0,조 멀린의 실력과 특징을 비교해 보는 방법 | 초보자를 위한 실전 팁,compare,pipe,llama-3.1-8b-instant
+Q3495424-seo,Q3495424,윕테일 메기,Whiptail_catfish,10.0,융털 메기 정체를 파악하는 방법 | 자연주의 양식으로 기르는 법과 사육 방법,howto,pipe,llama-3.1-8b-instant
+Q6940940-seo,Q6940940,기억과 인권 박물관,Museum_of_Memory_and_Human_Rights,10.0,기억과 인권 박물관에 대해 알아보기 | 초보자 가이드,howto,pipe,llama-3.1-8b-instant
+Q1220534-seo,Q1220534,황금 세대,Golden_generation,9.0,황금 세대 연금 혜택 어떻게 받는가 | 초보자를 위한 단계별 가이드,howto,pipe,llama-3.1-8b-instant
+Q20090062-seo,Q20090062,에어로 코드,Aero_Chord,9.0,에어로 코드 사용 방법 | 초보를 위한 완벽한 설정 가이드,howto,pipe,llama-3.1-8b-instant
+Q30932446-seo,Q30932446,몬스터 아가씨의 의사 선생님,Monster_Girl_Doctor,9.0,몬스터 아가씨의 의사 선생님을 만나러 가는 방법 | 여행 팁과 준비 가이드,howto,pipe,llama-3.1-8b-instant
+Q56070927-seo,Q56070927,성직자,Clergy_(film),9.0,성직자 신발 구매 | 실용적인 추천 방법,howto,pipe,llama-3.1-8b-instant
+Q1035293-seo,Q1035293,데이터베이스 보안,Database_security,8.0,데이터베이스 보안 방법 | 데이터 보안을 위한 구현 실무 가이드,howto,pipe,llama-3.1-8b-instant
+Q15916990-seo,Q15916990,Nxt,Nxt,8.0,네이버 블로그 SEO 제목 작성 방법 | SEO 최적화에 대한 구체적인 팁과 가이드,howto,pipe,llama-3.1-8b-instant
+Q2465356-seo,Q2465356,실크웜 (비디오 게임),Silkworm_(video_game),8.0,실크웜 비디오 게임 초보자 가이드 | 기본적인 게임PLAY 방법과 팁,howto,pipe,llama-3.1-8b-instant
+Q3508566-seo,Q3508566,IPEX 증후군,IPEX_syndrome,8.0,IPEX 증후군이란 무엇일까요 | 초보자를 위한 증후군 이해 가이드,howto,pipe,llama-3.1-8b-instant
+Q583259-seo,Q583259,라스베이거스 애비에이터스,Las_Vegas_Aviators,8.0,라스베이거스 애비에이터스 경기 시청하는 방법 | 실시간 결과와 점수 분석,howto,pipe,llama-3.1-8b-instant
+Q943048-seo,Q943048,릭 데커드,Rick_Deckard,8.0,릭 데커드의 영화 역할들에 대해 알고 싶다면 | 다양한 영화와 역할의 목록,howto,pipe,llama-3.1-8b-instant
+Q1400830-seo,Q1400830,딱따기,Clapper_(musical_instrument),7.0,딱따기 습득하기 | 초보자만 아는 빠른 방법,howto,pipe,llama-3.1-8b-instant
+Q2064279-seo,Q2064279,Pranks and Greens,Pranks_and_Greens,7.0,Pranks and Greens에 익숙해지는 방법 | 초보자 가이드,howto,pipe,llama-3.1-8b-instant
+Q2973227-seo,Q2973227,베네수엘라 영화,Cinema_of_Venezuela,7.0,베네수엘라 영화에 대해 이해하기 | 영화 분석과 주제 비교,info,pipe,llama-3.1-8b-instant
+Q4314979-seo,Q4314979,우즈베키스탄 국립은행,National_Bank_of_Uzbekistan,7.0,우즈베키스탄의 국립 은행 시스템 이해 | 은행 거래와 금융 서비스의 차이점,howto,pipe,llama-3.1-8b-instant
+Q628336-seo,Q628336,ARM7,ARM7,7.0,ARM7 마이크로프로세서 이해 방법 | 구체적인 특징과 용도 비교,howto,pipe,llama-3.1-8b-instant
+Q96116-seo,Q96116,악셀 셰플러,Axel_Scheffler,7.0,악셀 셰플러에 대해서 알고 싶은가요 | 악셀 셰플러의 생애와 업적을 알기 위해 필요한 키 포인트,info,pipe,llama-3.1-8b-instant
+Q130447150-seo,Q130447150,아포칼립스 Z: 끝의 시작,Apocalypse_Z:_The_Beginning_of_the_End,6.0,아포칼립스 Z: 끝의 시작 영화 이해하기 | 초보자에게 적합한 설명 가이드,howto,pipe,llama-3.1-8b-instant
+Q1936659-seo,Q1936659,네데르팝,Nederpop,6.0,네데르팝 게임에서 초보자에게 좋은 능력 | 능력 선택 가이드와 팁,howto,pipe,llama-3.1-8b-instant
+Q28008512-seo,Q28008512,플래시 vs. 애로우,Flash_vs._Arrow,6.0,스포츠 카에 애로우 vs 플래시 차이점 | 실전에서 어떤 것 사용해야할까,compare,pipe,llama-3.1-8b-instant
+Q3642253-seo,Q3642253,부! (TV 시리즈),Boo!_(TV_series),6.0,부! (TV 시리즈) 시청 가이드 | 초보자를 위한 에피소드별 분석,howto,pipe,llama-3.1-8b-instant
+Q5205809-seo,Q5205809,DNS 싱크홀,DNS_sinkhole,6.0,DNS 싱크홀 문제 해결 방법 | 초보자를 위한 구체적인 체크리스트,howto,pipe,llama-3.1-8b-instant
+Q7088254-seo,Q7088254,오야다,Ollada,6.0,오야다 스타일의 화려한 뱃지를 만들기 | 디자인 팁과 시크릿,howto,pipe,llama-3.1-8b-instant
+Q104648618-seo,Q104648618,THE FIRST STEP : CHAPTER ONE,The_First_Step:_Chapter_One,5.0,THE FIRST STEP에 들어가는 첫 번째 챕터는 무엇인가 | 초코우유와 딸기우유의 차이점과 맛있는 커피는 어떻게 만들까,info,pipe,llama-3.1-8b-instant
+Q1298422-seo,Q1298422,자기광,Egomania,5.0,자기광이란 무엇일까요 | 초보자를 위한 자기광 사용 가이드,howto,pipe,llama-3.1-8b-instant
+Q1820694-seo,Q1820694,가독성,Legibility,5.0,가독성 개선 방법 | 스타트업 및 블로거를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q2547746-seo,Q2547746,웨이스티드 펭귄즈,Wasted_Penguinz,5.0,웨이스티드 펭귄즈를 만드는 방법 | 펭귄즈로 배우는 자가공예 팁,howto,pipe,llama-3.1-8b-instant
+Q3306437-seo,Q3306437,메레 지반 사티,Mere_Jeevan_Saathi_(2006_film),5.0,메레 지반 사티 방법 배우기 | 초보자를 위한 실전 팁과 전략,howto,pipe,llama-3.1-8b-instant
+Q4470682-seo,Q4470682,우크라이나계 영국인,Ukrainians_in_the_United_Kingdom,5.0,우크라이나계 영국인의 영국 국적 얻기 방법 | 영국 시민권 취득 조건과 절차,howto,pipe,llama-3.1-8b-instant
+Q5613648-seo,Q5613648,광둥 외어외무대학,Guangdong_University_of_Foreign_Studies,5.0,광둥 외어외무대학 소개 및 입학 정보 | 입학 조건과 과정에 대해 자세히 알아보세요.,howto,pipe,llama-3.1-8b-instant
+Q72423832-seo,Q72423832,자폐 멜트다운,Autistic_meltdown,5.0,자폐 멜트다운 어떻게 다는지 | 초보자 가이드 및 실전 팁,howto,pipe,llama-3.1-8b-instant

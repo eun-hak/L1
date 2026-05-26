@@ -2,5 +2,11 @@
 __pycache__/
 *.pyc
 .env
+.env.local
 .venv/
 venv/
+node_modules/
+keyword/es/*.csv
+keyword/es/*.meta.json
+keyword/es/entities/
+keyword/es/categories/
