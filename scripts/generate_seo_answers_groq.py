@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 import time
 from datetime import datetime, timezone
@@ -132,6 +133,7 @@ def main() -> None:
             time.sleep(META_SLEEP)
 
         final = _render_markdown(seo_title, keyword, body, meta_desc, tags, row)
+        final = _ensure_frontmatter_spacing(final)
         out_path.write_text(final, encoding="utf-8")
         n = len(final)
         char_lengths.append(n)
@@ -180,6 +182,12 @@ tags: {tags}
     return header + body_stripped + "\n"
 
 
+def _ensure_frontmatter_spacing(text: str) -> str:
+    if text.startswith("---"):
+        return re.sub(r"---\n(?=#)", "---\n\n", text, count=1)
+    return text
+
+
 def _index_row(
     row: dict,
     body: str,
@@ -208,7 +216,30 @@ def _index_row(
     }
 
 
-def _write_index(rows: list[dict[str, str]]) -> None:
+def _load_existing_index() -> list[dict[str, str]]:
+    if INDEX_JSON.exists():
+        try:
+            return json.loads(INDEX_JSON.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    if not INDEX_CSV.exists():
+        return []
+    with INDEX_CSV.open(encoding="utf-8-sig") as f:
+        return list(csv.DictReader(f))
+
+
+def _merge_index_rows(
+    existing: list[dict[str, str]],
+    new_rows: list[dict[str, str]],
+) -> list[dict[str, str]]:
+    merged = {row["answer_id"]: row for row in existing if row.get("answer_id")}
+    merged.update({row["answer_id"]: row for row in new_rows if row.get("answer_id")})
+    return list(merged.values())
+
+
+def _write_index(rows: list[dict[str, str]], *, merge: bool = True) -> None:
+    if merge:
+        rows = _merge_index_rows(_load_existing_index(), rows)
     fields = [
         "answer_id",
         "question_id",

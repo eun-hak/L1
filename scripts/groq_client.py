@@ -1,16 +1,27 @@
 """
 Groq API 클라이언트 (OpenAI 호환).
 
+핵심 설계 원칙:
+- 무료 티어 토큰/RPM 절약: SEO 제목·메타는 배치 처리
+- AI 티 제거: 다양한 제목 포맷(pipe/comma/dash/natural) 혼용
+- 한국어 모델 한계 보완: 분량은 글자수 대신 구조 단위로 지정
+- 견고성: 파싱 실패 시 fallback, 재시도 백오프
+- TPD 절약: 도입부만 70B로 폴리시
+
 환경변수: GROQ_API_KEY (또는 .env의 GROK_API_KEY)
 """
 
 from __future__ import annotations
 
 import json
+import logging
 import os
+import random
 import re
 import time
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -19,13 +30,47 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 load_dotenv(ROOT / ".env.local")
 
+logger = logging.getLogger(__name__)
+
 GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
-# 용도별 모델
-MODEL_FAST = "llama-3.1-8b-instant"  # 대량 제목/키워드
-MODEL_DRAFT = "qwen/qwen3-32b"  # 본문 초안/요약
-MODEL_QUALITY = "llama-3.3-70b-versatile"  # 고품질 글
-MODEL_LONG = "meta-llama/llama-4-scout-17b-16e-instruct"  # 긴 문서
+# ============================================================
+# 모델 라우팅 — 작업 특성별 선택
+# ============================================================
+MODEL_FAST = "llama-3.1-8b-instant"           # 대량 제목/키워드/메타
+MODEL_DRAFT = "qwen/qwen3-32b"                # 본문 초안
+MODEL_QUALITY = "llama-3.3-70b-versatile"     # 도입부 폴리시 (소량)
+MODEL_LONG = "meta-llama/llama-4-scout-17b-16e-instruct"  # 긴 본문(3000자+)
+
+# ============================================================
+# 본문 톤 가이드 (example.jsonl 기준)
+# ============================================================
+AIQA_BODY_SYSTEM = (
+    "너는 한국어 정보 Q&A 답변 작가다. "
+    "블로그형 SEO 글이지만 딱딱한 템플릿·기계적 목차는 쓰지 않는다. "
+    "친절하고 설명적인 존댓말(~합니다, ~하세요)로, 독자가 궁금해하는 내용을 풀어쓴다. "
+    "추론 과정 없이 최종 답변만 출력한다."
+)
+
+AIQA_BODY_STYLE_RULES = """
+[말투]
+- "~하시는 분들이 많습니다", "결론부터 말씀드리자면", "이 글에서는 ~알아보겠습니다" 같은 자연스러운 도입
+- 과장·clickbait·AI 티 나는 문장 금지 ("완벽한 가이드", "놓치면 후회", "꼭 알아야 할" 등)
+- 인물 언급 시 ~씨, 정보는 단정적·실용적으로
+
+[구조]
+- H1(#) 제목은 쓰지 말 것 (제목은 별도 필드)
+- 도입: 2~3개 일반 문단으로 바로 시작
+- 본문: 소제목은 **굵은 한 줄** 형식 (예: **출연 무산의 배경**)
+- ## 본문1, ## FAQ, ## 체크리스트, ## 마무리 같은 템플릿 제목 절대 금지
+- 필요하면 ### 소제목·번호 목록·불릿 사용
+- 마지막은 **결론** 또는 **결론적으로** 로 자연스럽게 마무리
+- --- 구분선, "본문 1:", "FAQ:" 같은 메타 라벨 금지
+"""
+
+# ============================================================
+# 클라이언트
+# ============================================================
 
 
 def get_api_key() -> str:
@@ -39,89 +84,162 @@ def create_client() -> OpenAI:
     return OpenAI(api_key=get_api_key(), base_url=GROQ_BASE_URL)
 
 
+# ============================================================
+# 호출 래퍼: 재시도 + 지수 백오프
+# ============================================================
+
+
+@dataclass
+class ChatResult:
+    text: str
+    model: str
+    attempts: int
+
+
 def chat(
     prompt: str,
     *,
     system: str = "너는 한국어 SEO 블로그 글을 잘 쓰는 도우미야.",
     model: str = MODEL_FAST,
-    temperature: float = 0.7,
+    temperature: float = 0.6,
     retries: int = 4,
+    max_tokens: int | None = None,
 ) -> str:
+    """기본 chat. 호환성 유지 — 텍스트만 반환."""
+    return chat_full(
+        prompt,
+        system=system,
+        model=model,
+        temperature=temperature,
+        retries=retries,
+        max_tokens=max_tokens,
+    ).text
+
+
+def chat_full(
+    prompt: str,
+    *,
+    system: str,
+    model: str,
+    temperature: float = 0.6,
+    retries: int = 4,
+    max_tokens: int | None = None,
+) -> ChatResult:
     client = create_client()
     last_err: Exception | None = None
+
     for attempt in range(retries):
         try:
-            response = client.chat.completions.create(
-                model=model,
-                messages=[
+            kwargs: dict[str, Any] = {
+                "model": model,
+                "messages": [
                     {"role": "system", "content": system},
                     {"role": "user", "content": prompt},
                 ],
-                temperature=temperature,
-            )
-            return response.choices[0].message.content or ""
+                "temperature": temperature,
+            }
+            if max_tokens is not None:
+                kwargs["max_tokens"] = max_tokens
+
+            response = client.chat.completions.create(**kwargs)
+            text = response.choices[0].message.content or ""
+            return ChatResult(text=text, model=model, attempts=attempt + 1)
+
         except Exception as exc:
             last_err = exc
-            if "429" in str(exc) or "rate_limit" in str(exc).lower():
-                time.sleep(4 * (attempt + 1))
+            msg = str(exc).lower()
+            if "429" in msg or "rate_limit" in msg or "too many requests" in msg:
+                wait = (2 ** attempt) * 3 + random.uniform(0, 1.5)
+                logger.warning("Rate limit hit. Waiting %.1fs (attempt %d)", wait, attempt + 1)
+                time.sleep(wait)
+                continue
+            if "503" in msg or "502" in msg or "timeout" in msg:
+                time.sleep(2 + attempt)
                 continue
             raise
-    raise last_err  # type: ignore[misc]
+
+    assert last_err is not None
+    raise last_err
 
 
-def parse_json_array(text: str) -> list[dict]:
-    """Groq 응답에서 JSON 배열 추출."""
+# ============================================================
+# JSON 파서 (견고성 강화)
+# ============================================================
+
+
+def _strip_code_fence(text: str) -> str:
     text = text.strip()
     if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"^```(?:json|markdown)?\s*", "", text)
         text = re.sub(r"\s*```$", "", text)
+    return text.strip()
 
+
+def parse_json_array(text: str, *, raise_on_fail: bool = True) -> list[dict]:
+    """Groq 응답에서 JSON 배열 추출. 실패 시 빈 리스트 또는 예외."""
+    text = _strip_code_fence(text)
     text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", " ", text)
 
-    for candidate in (text,):
-        try:
-            data = json.loads(candidate)
-            if isinstance(data, list):
-                return [item for item in data if isinstance(item, dict)]
-        except json.JSONDecodeError:
-            pass
+    try:
+        data = json.loads(text)
+        if isinstance(data, list):
+            return [x for x in data if isinstance(x, dict)]
+    except json.JSONDecodeError:
+        pass
 
     match = re.search(r"\[[\s\S]*\]", text)
     if match:
-        chunk = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", " ", match.group())
-        for fixed in (chunk, re.sub(r",\s*]", "]", chunk)):
+        chunk = match.group()
+        chunk = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", " ", chunk)
+        for candidate in (chunk, re.sub(r",\s*]", "]", chunk), re.sub(r",\s*}", "}", chunk)):
             try:
-                data = json.loads(fixed)
+                data = json.loads(candidate)
                 if isinstance(data, list):
-                    return [item for item in data if isinstance(item, dict)]
+                    return [x for x in data if isinstance(x, dict)]
             except json.JSONDecodeError:
-                # 여러 JSON이 붙은 경우 첫 배열만 추출
-                decoder = json.JSONDecoder()
                 try:
-                    data, _ = decoder.raw_decode(fixed)
+                    data, _ = json.JSONDecoder().raw_decode(candidate)
                     if isinstance(data, list):
-                        return [item for item in data if isinstance(item, dict)]
+                        return [x for x in data if isinstance(x, dict)]
                 except json.JSONDecodeError:
-                    pass
+                    continue
 
-    raise ValueError(f"JSON 배열을 파싱하지 못했습니다: {text[:200]}...")
+    if raise_on_fail:
+        raise ValueError(f"JSON 배열 파싱 실패: {text[:200]}...")
+    logger.warning("JSON array parse failed, returning []: %s", text[:120])
+    return []
 
 
-def parse_json_object(text: str) -> dict:
-    text = text.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*", "", text)
-        text = re.sub(r"\s*```$", "", text)
-    data = json.loads(text)
-    if not isinstance(data, dict):
-        raise ValueError("JSON 객체가 아닙니다.")
-    return data
+def parse_json_object(text: str, *, raise_on_fail: bool = True) -> dict:
+    text = _strip_code_fence(text)
+    try:
+        data = json.loads(text)
+        if isinstance(data, dict):
+            return data
+    except json.JSONDecodeError:
+        pass
 
+    match = re.search(r"\{[\s\S]*\}", text)
+    if match:
+        try:
+            data = json.loads(match.group())
+            if isinstance(data, dict):
+                return data
+        except json.JSONDecodeError:
+            pass
+
+    if raise_on_fail:
+        raise ValueError(f"JSON 객체 파싱 실패: {text[:200]}...")
+    return {}
+
+
+# ============================================================
+# 카테고리(택소노미) 생성
+# ============================================================
 
 TAXONOMY_SYSTEM = (
     "너는 한국어 네이버 블로그 SEO 카테고리 기획자야. "
-    "뻔하고 넓은 대분류(일상·재테크·인테리어·자기계발 등)를 피하고, "
-    "검색 수요가 있는 구체적·니치한 카테고리를 설계한다. "
+    "검색 수요가 있는 구체적이고 실용적인 카테고리를 설계한다. "
     "반드시 유효한 JSON만 출력한다."
 )
 
@@ -134,8 +252,7 @@ def generate_l1_categories(
     model: str = MODEL_FAST,
 ) -> list[dict[str, str]]:
     avoid = "\n".join(f"- {n}" for n in (avoid_names or [])) or "- (없음)"
-    prompt = f"""아래 기획 방향에 맞는 블로그 L1(대분류) {count}개를 **처음부터 새로** 설계해줘.
-기존 블로그 카테고리를 복사하지 말고, 기획 방향에 맞는 독창적인 축을 만들어.
+    prompt = f"""아래 기획 방향에 맞는 블로그 L1(대분류) {count}개를 새로 설계해줘.
 
 [기획 방향]
 {brief}
@@ -143,20 +260,23 @@ def generate_l1_categories(
 [이미 사용 중인 L1 이름 — 절대 중복 금지]
 {avoid}
 
-규칙:
-1. name_ko: 2~8자, 블로그 메뉴에 바로 쓸 수 있는 이름
-2. theme: L1을 한 줄로 설명 (10~30자)
-3. description: 어떤 글을 쓸 분류인지 1~2문장
-4. 서로 다른 검색/관심 영역이어야 함
-5. JSON 배열만 출력
+[좋은 L1 기준]
+- 월 검색 1000회 이상 예상되는 구체 영역
+- 서로 다른 검색 의도/타깃을 가짐
+- 블로그 메뉴에 바로 쓸 이름(2~8자)
 
-형식:
+규칙:
+1. name_ko: 2~8자
+2. theme: 한 줄 요약 (10~30자)
+3. description: 어떤 글을 쓸 분류인지 1~2문장
+4. JSON 배열만 출력
+
 [
   {{"name_ko": "...", "theme": "...", "description": "..."}}
 ]
 """
-    raw = chat(prompt, system=TAXONOMY_SYSTEM, model=model, temperature=0.9)
-    items = parse_json_array(raw)
+    raw = chat(prompt, system=TAXONOMY_SYSTEM, model=model, temperature=0.85)
+    items = parse_json_array(raw, raise_on_fail=False)
     out: list[dict[str, str]] = []
     seen: set[str] = set()
     for item in items:
@@ -164,128 +284,12 @@ def generate_l1_categories(
         if not name or name in seen:
             continue
         seen.add(name)
-        out.append(
-            {
-                "name_ko": name,
-                "theme": str(item.get("theme", "")).strip(),
-                "description": str(item.get("description", "")).strip(),
-            }
-        )
+        out.append({
+            "name_ko": name,
+            "theme": str(item.get("theme", "")).strip(),
+            "description": str(item.get("description", "")).strip(),
+        })
     return out[:count]
-
-
-SEO_PIPE_RIGHT_EXAMPLES = [
-    "초보자를 위한 가이드",
-    "퍼스트네임과 라스트네임 올바르게 쓰는 방법",
-    "초보자를 위한 쉬운 표현",
-    "얻는 방법과 순서 정리",
-    "개념과 차이점 한눈에 보기",
-    "실전에서 바로 쓰는 팁",
-    "비교와 선택 기준",
-    "자주 하는 실수와 해결법",
-    "필요한 준비물과 절차",
-    "원리와 적용 예시",
-]
-
-
-def _fallback_pipe_title(keyword: str, desc: str = "") -> str:
-    tail = SEO_PIPE_RIGHT_EXAMPLES[hash(keyword) % len(SEO_PIPE_RIGHT_EXAMPLES)]
-    if desc and 8 <= len(desc) <= 28:
-        return f"{keyword} | {desc}"
-    return f"{keyword} | {tail}"
-
-
-def generate_seo_questions_batch(
-    items: list[dict[str, str]],
-    *,
-    model: str = MODEL_FAST,
-) -> list[dict[str, str]]:
-    """엔티티 키워드 → 네이버 SEO pipe 제목 (키워드 | 총정리 형식)."""
-    out: list[dict[str, str]] = []
-
-    for item in items:
-        desc = (item.get("desc_ko") or "").strip()
-        kw = item["keyword_ko"]
-        prompt = f"""키워드로 네이버 블로그 SEO 제목 1개를 만들어줘.
-
-- qid: {item['qid']}
-- 키워드: {kw}
-- 설명: {desc or '(없음)'}
-
-[형식 — 반드시 pipe 1개]
-"앞: 검색 주제/키워드가 자연스럽게 들어간 제목 | 뒤: 구체적이고 자연스러운 SEO 꼬리"
-
-[좋은 예시 — 이런 톤으로]
-- 스타크래프트 테란 핵 제조 방법 | 초보자를 위한 가이드
-- 영문 이름 작성법 | 퍼스트네임과 라스트네임 올바르게 쓰는 방법
-- 어제 뭐 했는지 영어로 말하기 | 초보자를 위한 쉬운 표현
-- 던파 녹슨 철조각 파밍 | 얻는 방법과 효율적인 루트
-- 음속과 온도의 관계 | 소리 속도가 달라지는 이유
-
-[나쁜 예시 — 금지]
-- "~총정리"만 반복 (매번 총정리 X)
-- "~인가요?", "~할까요?" 질문형
-- 뒷부분이 너무 짧거나 뻔함 (예: "| 핵심 정리", "| 완벽 가이드"만 단독)
-
-[규칙]
-1. seo_question: "|" 1개, 30~55자
-2. 앞부분: 사람이 검색할 주제 문장 (방법/가이드/이유/표현/비교 등)
-3. 뒷부분: **총정리 없이** 구체적 가치 제시 (초보자 가이드, 올바르게 쓰는 방법, 쉬운 표현, 차이점, 실전 팁 등)
-4. "총정리"는 10개 중 1~2개만 써도 됨. 남용 금지.
-5. search_intent: info|howto|compare|checklist|review
-6. seo_format: "pipe"
-7. JSON 객체 1개만
-
-{{"qid":"{item['qid']}","seo_question":"... | ...","search_intent":"howto","seo_format":"pipe"}}
-"""
-        raw = chat(
-            prompt,
-            system=(
-                "너는 네이버 블로그 SEO 제목 작가다. "
-                "'주제 | 자연스러운 SEO 꼬리' 형식. "
-                "총정리 남용 금지. 질문형 금지. JSON만 출력."
-            ),
-            model=model,
-            temperature=0.82,
-        )
-        text = raw.strip()
-        if text.startswith("```"):
-            text = re.sub(r"^```(?:json)?\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
-
-        gen: dict = {}
-        try:
-            gen = json.loads(text)
-        except json.JSONDecodeError:
-            match = re.search(r"\{[\s\S]*\}", text)
-            if match:
-                try:
-                    gen = json.loads(match.group())
-                except json.JSONDecodeError:
-                    pass
-
-        question = str(gen.get("seo_question", "")).strip()
-        if "|" not in question:
-            question = _fallback_pipe_title(kw, desc)
-        # 질문형 톤 제거
-        question = question.rstrip("?").replace("?", "")
-
-        out.append(
-            {
-                "question_id": f"{item['qid']}-seo",
-                "qid": item["qid"],
-                "keyword_ko": kw,
-                "keyword_en": item.get("keyword_en", ""),
-                "popularity": str(item.get("popularity", "")),
-                "seo_question": question,
-                "search_intent": str(gen.get("search_intent", "info")).strip() or "info",
-                "seo_format": "pipe",
-                "model": model,
-            }
-        )
-        time.sleep(1.2)
-
-    return out
 
 
 def generate_l2_categories(
@@ -299,7 +303,7 @@ def generate_l2_categories(
     model: str = MODEL_FAST,
 ) -> list[dict[str, str]]:
     avoid = "\n".join(f"- {n}" for n in (avoid_names or [])) or "- (없음)"
-    prompt = f"""L1 대분류 아래 L2(중분류) {count}개를 **새로** 만들어줘.
+    prompt = f"""L1 대분류 아래 L2(중분류) {count}개를 만들어줘.
 
 [기획 방향]
 {brief}
@@ -308,22 +312,21 @@ def generate_l2_categories(
 - theme: {l1_theme}
 - description: {l1_description}
 
-[중복 금지 L2 이름 — 다른 L1에 이미 있는 이름도 절대 쓰지 말 것]
+[중복 금지 L2 이름 — 다른 L1에 있는 것도 금지]
 {avoid}
 
 규칙:
-1. L1 범위 안에서만, 실제 블로그 카테고리/메뉴처럼
+1. L1 범위 안에서만, 실제 블로그 메뉴처럼
 2. name_ko: 2~12자, 서로 다른 하위 주제
 3. description: 이 L2에서 다룰 글 유형 1문장
 4. JSON 배열만 출력
 
-형식:
 [
   {{"name_ko": "...", "description": "..."}}
 ]
 """
-    raw = chat(prompt, system=TAXONOMY_SYSTEM, model=model, temperature=0.88)
-    items = parse_json_array(raw)
+    raw = chat(prompt, system=TAXONOMY_SYSTEM, model=model, temperature=0.85)
+    items = parse_json_array(raw, raise_on_fail=False)
     out: list[dict[str, str]] = []
     seen: set[str] = set()
     for item in items:
@@ -331,12 +334,10 @@ def generate_l2_categories(
         if not name or name in seen:
             continue
         seen.add(name)
-        out.append(
-            {
-                "name_ko": name,
-                "description": str(item.get("description", "")).strip(),
-            }
-        )
+        out.append({
+            "name_ko": name,
+            "description": str(item.get("description", "")).strip(),
+        })
     return out[:count]
 
 
@@ -351,7 +352,7 @@ def generate_l3_topics(
     model: str = MODEL_FAST,
 ) -> list[dict[str, str]]:
     avoid = "\n".join(f"- {k}" for k in (avoid_keywords or [])[:40]) or "- (없음)"
-    prompt = f"""L2 중분류 아래 L3(실제 글 주제/검색 키워드) {count}개를 **새로** 만들어줘.
+    prompt = f"""L2 중분류 아래 L3(실제 글 주제/검색 키워드) {count}개를 만들어줘.
 
 [기획 방향]
 {brief}
@@ -364,12 +365,11 @@ def generate_l3_topics(
 
 규칙:
 1. focus_keyword: 네이버 검색에 걸릴 2~12단어 한국어 (의도가 서로 달라야 함)
-2. seo_title: 클릭 유도 SEO 제목 (물음표/VS/총정리/방법/후기 등 다양하게)
+2. seo_title: 클릭 유도 SEO 제목
 3. search_intent: info|howto|compare|cost|checklist|review|news 중 하나
 4. topic_angle: start|howto|compare|tip|review|issue|local 중 하나
 5. JSON 배열만 출력
 
-형식:
 [
   {{
     "focus_keyword": "...",
@@ -379,8 +379,8 @@ def generate_l3_topics(
   }}
 ]
 """
-    raw = chat(prompt, system=TAXONOMY_SYSTEM, model=model, temperature=0.9)
-    items = parse_json_array(raw)
+    raw = chat(prompt, system=TAXONOMY_SYSTEM, model=model, temperature=0.88)
+    items = parse_json_array(raw, raise_on_fail=False)
     out: list[dict[str, str]] = []
     seen: set[str] = set()
     for item in items:
@@ -388,15 +388,174 @@ def generate_l3_topics(
         if not focus or focus in seen:
             continue
         seen.add(focus)
-        out.append(
-            {
-                "focus_keyword": focus,
-                "seo_title": str(item.get("seo_title", "")).strip() or focus,
-                "search_intent": str(item.get("search_intent", "info")).strip() or "info",
-                "topic_angle": str(item.get("topic_angle", "tip")).strip() or "tip",
-            }
-        )
+        out.append({
+            "focus_keyword": focus,
+            "seo_title": str(item.get("seo_title", "")).strip() or focus,
+            "search_intent": str(item.get("search_intent", "info")).strip() or "info",
+            "topic_angle": str(item.get("topic_angle", "tip")).strip() or "tip",
+        })
     return out[:count]
+
+
+# ============================================================
+# SEO 제목 — example.jsonl question 스타일 (키워드별 최적 포맷)
+# ============================================================
+
+SEO_FORMATS = ["natural", "comma", "colon", "pipe", "question"]
+
+# keyword/example.jsonl question 필드 기준 few-shot
+SEO_TITLE_EXAMPLES = [
+    "애정의 상처, 친구에게 매몰찼던 순간의 후회와 화해 방법",
+    "뮤지컬배우 김소현 재혼 남편 손준호와 러브스토리",
+    "스타원랜디 징베 조합법 총정리",
+    "구글 결제 제한 30분 해제 방법 및 주의사항 총정리",
+    "천정명 진짜사나이 출연 불발 이유와 후일담",
+    "위디스크 모바일 무료 이용 가능한 다른 플랫폼은?",
+    "밍키넷 대체 사이트: 다양한 영상 콘텐츠 즐기는 방법",
+    "on~ing, by~ing, in~ing 뜻 차이점 비교",
+    "카카오톡 로그아웃 방법: PC 버전 및 모바일 완벽 정리",
+    "파워블로그 애슐리 인더 월드 논란 총정리",
+    "위디스크 중복 쿠폰 및 10만 포인트 쿠폰 발급 정보",
+    "스타크래프트 테란 핵 제조 방법 | 초보자를 위한 가이드",
+]
+
+SEO_TITLE_SYSTEM = (
+    "너는 네이버 블로그 SEO 제목 작가다. "
+    "실제 검색어·키워드를 앞에 두고, 독자가 클릭하고 싶을 정보만 담은 제목을 쓴다. "
+    "구분자(| , : 등)는 키워드에 맞을 때만 쓰고, 억지로 붙이지 않는다. "
+    "반드시 유효한 JSON 배열만 출력한다."
+)
+
+SEO_TITLE_STYLE_RULES = """
+[제목 작성 원칙 — example.jsonl question 톤]
+- 핵심 키워드를 앞쪽에 배치 (검색어 그대로 또는 자연스럽게)
+- 명사형·설명형 제목 ("~방법", "~정보", "~총정리", "~이유와 후일담") — "~알아보세요", "~해보세요" 같은 구어체 금지
+- 키워드 설명(desc)이 있으면 반드시 참고해 주제를 정확히 반영 (키워드 의미를 바꾸지 말 것)
+- 검색 의도(방법·정보·이유·비교·총정리·논란·후기 등)가 제목만 봐도 드러나게
+- 구분자는 키워드에 맞게 선택 (강제하지 않음):
+  · 구분자 없음: "천정명 진짜사나이 출연 불발 이유와 후일담"
+  · 쉼표(,): "애정의 상처, 친구에게 매몰찼던 순간의 후회와 화해 방법"
+  · 콜론(:): "밍키넷 대체 사이트: 다양한 영상 콘텐츠 즐기는 방법"
+  · 파이프(|): "스타크래프트 테란 핵 제조 방법 | 초보자를 위한 가이드" — 방법·가이드류에 적합할 때만
+  · 물음표(?): 원래 질문·확인형 검색일 때만 ("~은?", "~인가요?")
+- '총정리'는 방법·목록·논란·문제해결·정보 모음에 자연스럽게 사용
+- ' 및 ', '와 ', ' 방법', ' 정보', ' 이유', ' 비교' 등으로 부가 가치 표현
+- 25~55자, 한국어
+
+[금지]
+- '완벽 가이드', '놓치면 후회', '꼭 알아야 할', '충격' 같은 clickbait
+- 키워드와 무관한 수식어, 뒷부분이 '핵심 정리'만 덜렁 있는 경우
+- 모든 제목에 | 또는 총정리를 기계적으로 붙이기
+- 키워드와 다른 주제로 제목 작성
+"""
+
+
+def _build_seo_batch_prompt(batch: list[dict[str, str]]) -> str:
+    items_text = "\n".join(
+        f"- qid: {it['qid']} / 키워드: {it['keyword_ko']}"
+        + (f" / 설명: {it.get('desc_ko', '')}" if it.get("desc_ko") else "")
+        for it in batch
+    )
+    examples = "\n".join(f"- {ex}" for ex in SEO_TITLE_EXAMPLES)
+
+    return f"""아래 키워드 {len(batch)}개 각각에 대해 네이버 블로그 SEO 제목(seo_question)을 만들어줘.
+각 키워드마다 가장 자연스럽고 검색에 유리한 형식을 스스로 선택해.
+
+{SEO_TITLE_STYLE_RULES}
+
+[참고 예시 — 이 톤과 밀도로 작성]
+{examples}
+
+[입력 키워드]
+{items_text}
+
+[출력 규칙]
+1. seo_question: 25~55자
+2. search_intent: info|howto|compare|checklist|review 중 하나
+3. JSON 배열만 출력 (다른 텍스트 없이)
+
+[
+  {{"qid": "...", "seo_question": "...", "search_intent": "howto"}}
+]
+"""
+
+
+def _detect_seo_format(title: str) -> str:
+    if "?" in title:
+        return "question"
+    if "|" in title:
+        return "pipe"
+    if ":" in title:
+        return "colon"
+    if "," in title:
+        return "comma"
+    return "natural"
+
+
+def _fallback_title(keyword: str, desc: str = "") -> str:
+    suffix = desc.strip()[:20] if desc else ""
+    pool = [
+        f"{keyword} 총정리",
+        f"{keyword} 방법 및 주의사항",
+        f"{keyword} 이유와 관련 정보",
+        f"{keyword}, {suffix}" if suffix else f"{keyword}, 알아두면 좋은 핵심 정보",
+        f"{keyword} | 실전에서 바로 쓰는 팁",
+        f"{keyword}: 궁금한 점 정리",
+    ]
+    return pool[hash(keyword) % len(pool)]
+
+
+def generate_seo_questions_batch(
+    items: list[dict[str, str]],
+    *,
+    model: str = MODEL_FAST,
+    batch_size: int = 8,
+    sleep_between: float = 0.5,
+) -> list[dict[str, str]]:
+    """엔티티 키워드 → SEO 제목. 키워드별 최적 포맷을 LLM이 선택."""
+    out: list[dict[str, str]] = []
+
+    for i in range(0, len(items), batch_size):
+        batch = items[i : i + batch_size]
+        prompt = _build_seo_batch_prompt(batch)
+
+        try:
+            raw = chat(
+                prompt,
+                system=SEO_TITLE_SYSTEM,
+                model=model,
+                temperature=0.55,
+            )
+            parsed = parse_json_array(raw, raise_on_fail=False)
+        except Exception as exc:
+            logger.warning("SEO batch failed (i=%d): %s", i, exc)
+            parsed = []
+
+        parsed_by_qid = {str(p.get("qid", "")).strip(): p for p in parsed}
+
+        for it in batch:
+            qid = it["qid"]
+            gen = parsed_by_qid.get(qid, {})
+
+            question = str(gen.get("seo_question", "")).strip()
+            if not question or len(question) < 8 or len(question) > 80:
+                question = _fallback_title(it["keyword_ko"], it.get("desc_ko", ""))
+
+            out.append({
+                "question_id": f"{qid}-seo",
+                "qid": qid,
+                "keyword_ko": it["keyword_ko"],
+                "keyword_en": it.get("keyword_en", ""),
+                "popularity": str(it.get("popularity", "")),
+                "seo_question": question,
+                "search_intent": str(gen.get("search_intent", "info")).strip() or "info",
+                "seo_format": _detect_seo_format(question),
+                "model": model,
+            })
+
+        time.sleep(sleep_between)
+
+    return out
 
 
 def generate_l2_keywords(
@@ -408,23 +567,21 @@ def generate_l2_keywords(
     count: int = 10,
     model: str = MODEL_FAST,
 ) -> list[dict[str, str]]:
-    """L1/L2 맥락으로 블로그 focus_keyword + SEO 제목 생성."""
     avoid = "\n".join(f"- {kw}" for kw in existing_keywords[:30]) or "- (없음)"
-    prompt = f"""다음 카테고리에 맞는 네이버 블로그 SEO 키워드를 {count}개 만들어줘.
+    prompt = f"""다음 카테고리에 맞는 네이버 블로그 SEO 키워드 {count}개를 만들어줘.
 
 [L1] {l1_name} ({mega_group})
 [L2] {l2_name}
 
-[중복 금지 — 아래와 비슷한 표현 쓰지 말 것]
+[중복 금지]
 {avoid}
 
 규칙:
-1. focus_keyword: 실제 검색할 2~10단어 한국어 (상황·대상·방법·비교 등 의도가 서로 달라야 함)
-2. seo_title: 클릭 유도 SEO 제목 (물음표/VS/총정리/가이드 등 다양하게)
-3. search_intent: info|howto|compare|cost|checklist|review 중 하나
-4. JSON 배열만 출력 (설명 없이)
+1. focus_keyword: 실제 검색할 2~10단어 (상황·대상·방법·비교 등 의도가 다양해야 함)
+2. seo_title: 클릭 유도 SEO 제목 — 포맷은 pipe/comma/dash/natural 중 자유롭게 섞기
+3. search_intent: info|howto|compare|cost|checklist|review
+4. JSON 배열만 출력
 
-형식:
 [
   {{"focus_keyword": "...", "seo_title": "...", "search_intent": "howto"}}
 ]
@@ -439,39 +596,29 @@ def generate_l2_keywords(
         model=model,
         temperature=0.85,
     )
-    items = parse_json_array(raw)
+    items = parse_json_array(raw, raise_on_fail=False)
     cleaned: list[dict[str, str]] = []
     seen: set[str] = set()
-
     for item in items:
         focus = str(item.get("focus_keyword", "")).strip()
-        title = str(item.get("seo_title", "")).strip()
-        intent = str(item.get("search_intent", "info")).strip() or "info"
         if not focus or focus in seen:
             continue
         seen.add(focus)
-        cleaned.append(
-            {
-                "focus_keyword": focus,
-                "seo_title": title or focus,
-                "search_intent": intent,
-            }
-        )
-
+        cleaned.append({
+            "focus_keyword": focus,
+            "seo_title": str(item.get("seo_title", "")).strip() or focus,
+            "search_intent": str(item.get("search_intent", "info")).strip() or "info",
+        })
     return cleaned[:count]
 
 
-def generate_blog_titles(keyword: str, count: int = 10) -> str:
-    return chat(
-        f"{keyword} 관련 블로그 제목 {count}개 추천해줘. 번호 목록으로만 답해.",
-        system="너는 한국어 블로그 제목과 키워드를 잘 뽑는 도우미야.",
-        model=MODEL_FAST,
-    )
+# ============================================================
+# 본문 생성 — 분량을 구조 단위로 지정
+# ============================================================
 
 
 def strip_model_artifacts(text: str) -> str:
-    """모델 추론 블록·중복 H1 제거."""
-    for tag in ("think", "redacted_thinking"):
+    for tag in ("think", "redacted_thinking", "reasoning"):
         open_tag, close_tag = f"<{tag}>", f"</{tag}>"
         while open_tag in text:
             start = text.find(open_tag)
@@ -479,13 +626,14 @@ def strip_model_artifacts(text: str) -> str:
             if end == -1:
                 text = text[:start]
                 break
-            text = text[:start] + text[end + len(close_tag) :]
+            text = text[:start] + text[end + len(close_tag):]
 
     lines = text.strip().splitlines()
     cleaned: list[str] = []
     seen_h1 = False
     for line in lines:
-        if line.strip().startswith("# ") and not line.strip().startswith("##"):
+        stripped = line.strip()
+        if stripped.startswith("# ") and not stripped.startswith("##"):
             if seen_h1:
                 continue
             seen_h1 = True
@@ -493,34 +641,76 @@ def strip_model_artifacts(text: str) -> str:
     return "\n".join(cleaned).strip()
 
 
+META_SECTION_HEADING_RE = re.compile(
+    r"^#{2,3}\s+(?:\*{0,2})?"
+    r"(?:도입(?:\s*[:：].*)?|핵심\s+한\s+줄|본문\s*\d+|체크리스트|FAQ|마무리|결론\s+요약)"
+    r"(?:\*{0,2})?\s*$",
+    re.MULTILINE | re.IGNORECASE,
+)
+
+
+def normalize_body_structure(body: str) -> str:
+    lines = body.splitlines()
+    cleaned: list[str] = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped in {"---", "***", "___"}:
+            continue
+        if META_SECTION_HEADING_RE.match(stripped):
+            continue
+        if re.match(r"^#{2,6}\s+", stripped):
+            title = re.sub(r"^#{2,6}\s+", "", stripped).strip().strip("*").strip()
+            if title:
+                cleaned.append(f"**{title}**")
+            continue
+        cleaned.append(line)
+
+    text = "\n".join(cleaned)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
 def generate_blog_body(
     question_text: str,
     focus_keyword: str,
     *,
-    min_chars: int = 1500,
-    max_chars: int = 3000,
+    intro_paragraphs: int = 3,
+    body_sections: int = 4,
+    sentences_per_section: int = 4,
     model: str = MODEL_DRAFT,
+    min_chars: int | None = None,
+    max_chars: int | None = None,
 ) -> str:
-    prompt = f"""다음 SEO 블로그 글을 마크다운으로 작성해줘.
+    """본문 생성. 분량은 구조 단위로 지정 (한국어 모델은 글자수 못 셈)."""
+    _ = (min_chars, max_chars)  # 구버전 호출 호환
+    prompt = f"""다음 Q&A 주제에 대한 답변 본문을 작성해줘.
 
-- 제목(H1): {question_text}
+- 제목(별도, 본문에 H1 쓰지 말 것): {question_text}
 - 핵심 키워드: {focus_keyword}
-- 분량: {min_chars}~{max_chars}자 (공백 포함)
-- 구조: 핵심 한 줄 → 도입 → 본문 섹션 2~3개 → 체크리스트 → FAQ 1~2개 → 마무리
-- 톤: 실용적, 입문자 친화, 과장 없이
+
+[분량 — 구조 단위]
+- 도입 일반 문단 {intro_paragraphs}개
+- 본문 소제목 {body_sections}개 (각 소제목당 {sentences_per_section}~{sentences_per_section + 2}문장)
+- 결론 1문단
+
+{AIQA_BODY_STYLE_RULES}
+
+[추가]
+- 독자가 검색해서 들어온 것처럼, 궁금증을 풀어주는 정보글로 작성
+- 사실 관계는 단정적으로, 모르면 일반적 설명·주의사항으로 처리
+- 핵심 키워드는 도입과 본문에 자연스럽게 2~3회 포함
 - 마크다운만 출력 (코드블록·추론 과정 없이)
 """
     raw = chat(
         prompt,
-        system="너는 한국어 SEO 블로그 본문을 작성하는 전문 작가야. 추론 과정은 출력하지 말고 최종 글만 작성해.",
+        system=AIQA_BODY_SYSTEM,
         model=model,
-        temperature=0.6,
+        temperature=0.65,
     )
-    return strip_model_artifacts(raw)
+    return normalize_body_structure(strip_model_artifacts(raw))
 
 
 def _split_intro(body: str) -> tuple[str, str]:
-    """H1·도입부와 나머지 본문 분리."""
     lines = body.strip().splitlines()
     if not lines:
         return "", ""
@@ -529,14 +719,16 @@ def _split_intro(body: str) -> tuple[str, str]:
     seen_content = False
     for i, line in enumerate(lines):
         stripped = line.strip()
-        if stripped.startswith("##"):
+        if stripped.startswith("##") or re.fullmatch(r"\*\*.+\*\*", stripped):
             rest_idx = i
             break
         if stripped and not stripped.startswith("#"):
             seen_content = True
-        elif seen_content and not stripped and i + 1 < len(lines) and lines[i + 1].strip().startswith("##"):
-            rest_idx = i
-            break
+        elif seen_content and not stripped and i + 1 < len(lines):
+            nxt = lines[i + 1].strip()
+            if nxt.startswith("##") or re.fullmatch(r"\*\*.+\*\*", nxt):
+                rest_idx = i
+                break
 
     intro = "\n".join(lines[:rest_idx]).strip()
     rest = "\n".join(lines[rest_idx:]).strip()
@@ -550,36 +742,44 @@ def polish_intro(
     *,
     model: str = MODEL_QUALITY,
 ) -> str:
-    """도입부만 고품질 모델로 다듬어 본문에 반영 (TPD 절약)."""
     intro, rest = _split_intro(body)
     if len(intro) < 80:
         return body
 
-    prompt = f"""아래 블로그 글의 도입부만 더 자연스럽고 읽기 좋게 다듬어줘.
+    prompt = f"""아래 Q&A 답변의 도입부(첫 2~3문단)만 다듬어줘.
 
-- SEO 제목: {seo_title}
+- 제목: {seo_title}
 - 핵심 키워드: {focus_keyword}
-- 규칙: 도입부만 출력, H1(#) 유지, 과장·clickbait 금지, 키워드 자연스럽게 1회 포함
-- 분량: 기존과 비슷하거나 약간 짧게
+
+[규칙]
+- H1(#) 금지, 일반 문단 2~3개만 출력
+- "~하시는 분들이 많습니다", "결론부터 말씀드리자면", "이 글에서는" 같은 자연스러운 도입 OK
+- 과장·clickbait 금지
+- 키워드 1~2회 자연스럽게 포함
+- 분량은 기존과 비슷하거나 약간 짧게
+- 추론 과정 없이 다듬은 결과만 출력
 
 [현재 도입부]
 {intro}
 """
     polished = chat(
         prompt,
-        system="너는 한국어 SEO 블로그 도입부를 다듬는 편집자야.",
+        system=AIQA_BODY_SYSTEM,
         model=model,
-        temperature=0.45,
+        temperature=0.4,
     ).strip()
 
-    if polished.startswith("```"):
-        polished = re.sub(r"^```(?:markdown)?\s*", "", polished)
-        polished = re.sub(r"\s*```$", "", polished).strip()
-
-    polished = strip_model_artifacts(polished)
+    polished = _strip_code_fence(polished)
+    polished = normalize_body_structure(strip_model_artifacts(polished))
     if not polished:
         return body
-    return f"{polished}\n\n{rest}" if rest else polished
+    merged = f"{polished}\n\n{rest}" if rest else polished
+    return normalize_body_structure(merged)
+
+
+# ============================================================
+# 메타 태그 — 배치 처리
+# ============================================================
 
 
 def generate_meta_tags(
@@ -588,35 +788,77 @@ def generate_meta_tags(
     *,
     model: str = MODEL_FAST,
 ) -> dict[str, str]:
-    """메타 설명·태그 (8B 대량 작업)."""
-    prompt = f"""SEO 블로그용 메타 정보를 JSON으로 만들어줘.
-
-- 제목: {seo_title}
-- 키워드: {focus_keyword}
-
-출력 형식 (JSON만):
-{{"meta_description": "120~160자", "tags": ["태그1", "태그2", "태그3", "태그4", "태그5"]}}
-"""
-    raw = chat(
-        prompt,
-        system="너는 한국어 SEO 메타 태그 작성 도우미야. JSON만 출력.",
+    result = generate_meta_tags_batch(
+        [{"seo_title": seo_title, "focus_keyword": focus_keyword}],
         model=model,
-        temperature=0.5,
-    ).strip()
-    if raw.startswith("```"):
-        raw = re.sub(r"^```(?:json)?\s*", "", raw)
-        raw = re.sub(r"\s*```$", "", raw)
-    try:
-        data = json.loads(raw)
-    except json.JSONDecodeError:
-        match = re.search(r"\{[\s\S]*\}", raw)
-        data = json.loads(match.group()) if match else {}
-    tags = data.get("tags", [])
-    if isinstance(tags, list):
-        tags_str = ", ".join(str(t) for t in tags[:5])
-    else:
-        tags_str = str(tags)
-    return {
-        "meta_description": str(data.get("meta_description", "")).strip(),
-        "tags": tags_str,
-    }
+    )
+    return result[0] if result else {"meta_description": "", "tags": ""}
+
+
+def generate_meta_tags_batch(
+    items: list[dict[str, str]],
+    *,
+    model: str = MODEL_FAST,
+    batch_size: int = 5,
+    sleep_between: float = 0.5,
+) -> list[dict[str, str]]:
+    out: list[dict[str, str]] = []
+
+    for i in range(0, len(items), batch_size):
+        batch = items[i : i + batch_size]
+        items_text = "\n".join(
+            f"{idx + 1}. 제목: {it['seo_title']} / 키워드: {it['focus_keyword']}"
+            for idx, it in enumerate(batch)
+        )
+
+        prompt = f"""아래 {len(batch)}개 글의 SEO 메타 정보를 JSON 배열로 만들어줘.
+
+[입력]
+{items_text}
+
+[규칙]
+- meta_description: 120~160자, 자연스럽고 검색 친화적, 과장 금지
+- tags: 5개, 검색 관련 키워드
+- JSON 배열만 출력 (다른 텍스트 없이)
+
+[
+  {{"meta_description": "...", "tags": ["태그1", "태그2", "태그3", "태그4", "태그5"]}}
+]
+"""
+        try:
+            raw = chat(
+                prompt,
+                system="너는 한국어 Q&A 메타 태그 작성 도우미야. JSON만 출력.",
+                model=model,
+                temperature=0.5,
+            )
+            parsed = parse_json_array(raw, raise_on_fail=False)
+        except Exception as exc:
+            logger.warning("Meta batch failed (i=%d): %s", i, exc)
+            parsed = []
+
+        for idx, it in enumerate(batch):
+            meta = parsed[idx] if idx < len(parsed) else {}
+            tags = meta.get("tags", [])
+            if isinstance(tags, list):
+                tags_str = ", ".join(str(t) for t in tags[:5])
+            else:
+                tags_str = str(tags)
+
+            out.append({
+                "meta_description": str(meta.get("meta_description", "")).strip(),
+                "tags": tags_str or f"{it['focus_keyword']}",
+            })
+
+        time.sleep(sleep_between)
+
+    return out
+
+
+def generate_blog_titles(keyword: str, count: int = 10) -> str:
+    return chat(
+        f"{keyword} 관련 블로그 제목 {count}개 추천해줘. 번호 목록으로만 답해.",
+        system="너는 한국어 블로그 제목과 키워드를 잘 뽑는 도우미야.",
+        model=MODEL_FAST,
+        temperature=0.7,
+    )

@@ -1,4 +1,0 @@
-.env
-.env.local
-data/publish/inbox/*
-!data/**/.gitkeep

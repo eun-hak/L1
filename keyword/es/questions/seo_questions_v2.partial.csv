@@ -1,0 +1,6 @@
+﻿question_id,qid,keyword_ko,keyword_en,popularity,seo_question,search_intent,seo_format,model
+Q1244890-seo,Q1244890,유리수,Rational_number,120.0,"유리수는 분모가 0이 아닌 두 수의 비율로 나타낼 수 있는 수, 어떻게 구할까",howto,pipe,llama-3.1-8b-instant
+Q108084642-seo,Q108084642,사냥감,Prey_(2021_film),7.0,"2021년 영화 사냥감 요약과 주요 장르, 감독",info,comma,llama-3.1-8b-instant
+Q969503-seo,Q969503,주니오르 페르난데스,Junior_Fernandes,23.0,주니오르 페르난데스 선수 전적과 통계 - 경기 결과 분석,info,dash,llama-3.1-8b-instant
+Q1837039-seo,Q1837039,나탈리 바싱스화이트,Natalie_Bassingthwaighte,12.0,나탈리 바싱스화이트를 위한 스타일링 아이디어,howto,natural,llama-3.1-8b-instant
+Q1401639-seo,Q1401639,베이스 프로 숍 나이트 레이스,Bass_Pro_Shops_Night_Race,7.0,베이스 프로 숍 나이트 레이스는 어떤 게임이야,info,pipe,llama-3.1-8b-instant

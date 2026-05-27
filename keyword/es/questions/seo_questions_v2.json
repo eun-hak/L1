@@ -1,0 +1,57 @@
+[
+  {
+    "question_id": "Q1244890-seo",
+    "qid": "Q1244890",
+    "keyword_ko": "유리수",
+    "keyword_en": "Rational_number",
+    "popularity": "120.0",
+    "seo_question": "유리수는 분모가 0이 아닌 두 수의 비율로 나타낼 수 있는 수, 어떻게 구할까",
+    "search_intent": "howto",
+    "seo_format": "pipe",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q108084642-seo",
+    "qid": "Q108084642",
+    "keyword_ko": "사냥감",
+    "keyword_en": "Prey_(2021_film)",
+    "popularity": "7.0",
+    "seo_question": "2021년 영화 사냥감 요약과 주요 장르, 감독",
+    "search_intent": "info",
+    "seo_format": "comma",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q969503-seo",
+    "qid": "Q969503",
+    "keyword_ko": "주니오르 페르난데스",
+    "keyword_en": "Junior_Fernandes",
+    "popularity": "23.0",
+    "seo_question": "주니오르 페르난데스 선수 전적과 통계 - 경기 결과 분석",
+    "search_intent": "info",
+    "seo_format": "dash",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q1837039-seo",
+    "qid": "Q1837039",
+    "keyword_ko": "나탈리 바싱스화이트",
+    "keyword_en": "Natalie_Bassingthwaighte",
+    "popularity": "12.0",
+    "seo_question": "나탈리 바싱스화이트를 위한 스타일링 아이디어",
+    "search_intent": "howto",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q1401639-seo",
+    "qid": "Q1401639",
+    "keyword_ko": "베이스 프로 숍 나이트 레이스",
+    "keyword_en": "Bass_Pro_Shops_Night_Race",
+    "popularity": "7.0",
+    "seo_question": "베이스 프로 숍 나이트 레이스는 어떤 게임이야",
+    "search_intent": "info",
+    "seo_format": "pipe",
+    "model": "llama-3.1-8b-instant"
+  }
+]

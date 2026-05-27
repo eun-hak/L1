@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-entities_all.csv에서 N개 키워드를 골라 Groq로 SEO 블로그 질문 생성.
+entities_all.csv에서 N개 키워드를 골라 Groq로 SEO pipe 제목 생성.
 
 Usage:
   python scripts/generate_seo_questions_groq.py
@@ -30,11 +30,16 @@ def load_candidates(
     count: int,
     min_pop: float,
     max_pop: float,
+    exclude_qids: set[str] | None = None,
 ) -> list[dict[str, str]]:
+    exclude_qids = exclude_qids or set()
     rows: list[dict[str, str]] = []
     with path.open(encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
             if row.get("new_is_sensitive", "").lower() == "true":
+                continue
+            qid = (row.get("qid") or "").strip()
+            if qid in exclude_qids:
                 continue
             ko = (row.get("ko_title") or "").strip()
             if not ko or len(ko) < 2:
@@ -75,50 +80,70 @@ def main() -> None:
     parser.add_argument("--min-pop", type=float, default=5.0)
     parser.add_argument("--max-pop", type=float, default=120.0)
     parser.add_argument("--model", default=MODEL_FAST)
+    parser.add_argument(
+        "--exclude-from",
+        type=Path,
+        nargs="*",
+        default=[],
+        help="이미 사용한 qid 제외 (json/csv)",
+    )
+    parser.add_argument(
+        "--out-name",
+        default="seo_questions_100",
+        help="출력 파일명 접두 (예: seo_questions_30 → .csv/.json)",
+    )
     args = parser.parse_args()
+
+    exclude_qids: set[str] = set()
+    for path in args.exclude_from:
+        if not path.exists():
+            continue
+        if path.suffix.lower() == ".json":
+            for row in json.loads(path.read_text(encoding="utf-8")):
+                exclude_qids.add(str(row.get("qid", "")))
+        else:
+            with path.open(encoding="utf-8-sig") as f:
+                for row in csv.DictReader(f):
+                    exclude_qids.add(str(row.get("qid", "")))
 
     candidates = load_candidates(
         args.input,
         count=args.count,
         min_pop=args.min_pop,
         max_pop=args.max_pop,
+        exclude_qids=exclude_qids,
     )
     if not candidates:
         raise SystemExit("조건에 맞는 키워드가 없습니다.")
 
-    print(f"Keywords: {len(candidates)} | model: {args.model}")
+    print(f"Keywords: {len(candidates)} | exclude qids: {len(exclude_qids)} | model: {args.model}")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    results: list[dict[str, str]] = []
-    for start in range(0, len(candidates), args.batch):
-        batch = candidates[start : start + args.batch]
-        items = [
-            {
-                "qid": r["qid"],
-                "keyword_ko": r.get("ko_title", ""),
-                "keyword_en": r.get("en_title", ""),
-                "desc_ko": r.get("desc_ko", ""),
-                "popularity": r.get("popularity", ""),
-            }
-            for r in batch
-        ]
-        print(f"  [{start + 1}-{start + len(items)}/{len(candidates)}] ...", flush=True)
-        generated = generate_seo_questions_batch(items, model=args.model)
-        results.extend(generated)
+    items = [
+        {
+            "qid": r["qid"],
+            "keyword_ko": r.get("ko_title", ""),
+            "keyword_en": r.get("en_title", ""),
+            "desc_ko": r.get("desc_ko", ""),
+            "popularity": r.get("popularity", ""),
+        }
+        for r in candidates
+    ]
+    print(f"  Generating {len(items)} titles (batch API)...", flush=True)
+    results = generate_seo_questions_batch(items, model=args.model)
 
-        # 중간 저장
-        partial = OUT_DIR / "seo_questions_100.partial.csv"
-        fields = [
-            "question_id", "qid", "keyword_ko", "keyword_en", "popularity",
-            "seo_question", "search_intent", "seo_format", "model",
-        ]
-        with partial.open("w", encoding="utf-8-sig", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=fields)
-            w.writeheader()
-            w.writerows(results)
+    partial = OUT_DIR / f"{args.out_name}.partial.csv"
+    fields = [
+        "question_id", "qid", "keyword_ko", "keyword_en", "popularity",
+        "seo_question", "search_intent", "seo_format", "model",
+    ]
+    with partial.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        w.writerows(results)
 
-    csv_path = OUT_DIR / "seo_questions_100.csv"
-    json_path = OUT_DIR / "seo_questions_100.json"
+    csv_path = OUT_DIR / f"{args.out_name}.csv"
+    json_path = OUT_DIR / f"{args.out_name}.json"
 
     fields = [
         "question_id",

@@ -1,0 +1,112 @@
+[
+  {
+    "question_id": "Q10707-seo",
+    "qid": "Q10707",
+    "keyword_ko": "로버트 무가베",
+    "keyword_en": "Robert_Mugabe",
+    "popularity": "120.0",
+    "seo_question": "로버트 무가베 생애와 독재 시절 총정리",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q691189-seo",
+    "qid": "Q691189",
+    "keyword_ko": "시폰",
+    "keyword_en": "Chiffon_(fabric)",
+    "popularity": "27.0",
+    "seo_question": "시폰 재질에 대해 알아보세요",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q1077966-seo",
+    "qid": "Q1077966",
+    "keyword_ko": "인절미",
+    "keyword_en": "Injeolmi",
+    "popularity": "7.0",
+    "seo_question": "인절미 떡 만들기 방법과 재료 정보",
+    "search_intent": "howto",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q19346451-seo",
+    "qid": "Q19346451",
+    "keyword_ko": "아미나타 사바도고",
+    "keyword_en": "Aminata_Savadogo",
+    "popularity": "35.0",
+    "seo_question": "아미나타 사바도고 소개와 작품 비교",
+    "search_intent": "compare",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q966758-seo",
+    "qid": "Q966758",
+    "keyword_ko": "국제 군인 스포츠 위원회",
+    "keyword_en": "International_Military_Sports_Council",
+    "popularity": "23.0",
+    "seo_question": "국제 군인 스포츠 위원회 역할과 활동 정보",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q1756266-seo",
+    "qid": "Q1756266",
+    "keyword_ko": "루프 점프",
+    "keyword_en": "Loop_jump",
+    "popularity": "16.0",
+    "seo_question": "루프 점프 방법과 안전 요령 총정리",
+    "search_intent": "howto",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q18341045-seo",
+    "qid": "Q18341045",
+    "keyword_ko": "라 솜브라 델 파사도",
+    "keyword_en": "La_sombra_del_pasado",
+    "popularity": "12.0",
+    "seo_question": "라 솜브라 델 파사도 소개와 작품 비교",
+    "search_intent": "compare",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q1220534-seo",
+    "qid": "Q1220534",
+    "keyword_ko": "황금 세대",
+    "keyword_en": "Golden_generation",
+    "popularity": "9.0",
+    "seo_question": "황금 세대 특징과 이점 정보 및 방법",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q1400830-seo",
+    "qid": "Q1400830",
+    "keyword_ko": "딱따기",
+    "keyword_en": "Clapper_(musical_instrument)",
+    "popularity": "7.0",
+    "seo_question": "딱따기 대처 방법: 친구와 화해하기 위한 팁",
+    "search_intent": "howto",
+    "seo_format": "colon",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q5205809-seo",
+    "qid": "Q5205809",
+    "keyword_ko": "DNS 싱크홀",
+    "keyword_en": "DNS_sinkhole",
+    "popularity": "6.0",
+    "seo_question": "DNS 싱크홀 원인과 해결 방법: 네트워크 문제 해결하는 방법",
+    "search_intent": "howto",
+    "seo_format": "colon",
+    "model": "llama-3.1-8b-instant"
+  }
+]

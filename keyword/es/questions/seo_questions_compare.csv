@@ -1,0 +1,11 @@
+﻿question_id,qid,keyword_ko,keyword_en,popularity,seo_question,search_intent,seo_format,model
+Q1111-seo,Q1111,전하,Electric_charge,120.0,전하는 물질의 특성과 전기 의학,info,natural,llama-3.1-8b-instant
+Q6950796-seo,Q6950796,발효 식품,Fermentation_in_food_processing,27.0,발효 식품의 종류와 건강 효과 총정리,info,natural,llama-3.1-8b-instant
+Q1078503-seo,Q1078503,오쓰카 지히로,Chihiro_Otsuka,7.0,오쓰카 지히로 생애와 대표곡,info,natural,llama-3.1-8b-instant
+Q19544495-seo,Q19544495,엘르,Elle_(film),35.0,엘르 매거진의 역사와 영향력,info,natural,llama-3.1-8b-instant
+Q967934-seo,Q967934,트레비아노,Trebbiano,23.0,트레비아노 화장품의 종류와 사용 방법,howto,natural,llama-3.1-8b-instant
+Q1757694-seo,Q1757694,데이터 품질,Data_quality,16.0,데이터 품질의 중요성과 측정 방법,howto,natural,llama-3.1-8b-instant
+Q18351863-seo,Q18351863,국제 북극곰의 날,International_Polar_Bear_Day,12.0,국제 북극곰의 날 기념일과 의미,info,natural,llama-3.1-8b-instant
+Q12209731-seo,Q12209731,하야 (이슬람),Haya_(Islam),9.0,이슬람에서 하야의 의미와 예시,info,natural,llama-3.1-8b-instant
+Q140107-seo,Q140107,크로스트레이닝,Cross-training,7.0,"크로스트레이닝 방법과 효과, 시작하는 사람들을 위한 가이드",howto,comma,llama-3.1-8b-instant
+Q5205827-seo,Q5205827,DO-178C,DO-178C,6.0,"DO-178C 규격 이해와 적용 방법, 소프트웨어 개발자들을 위한 정보",info,comma,llama-3.1-8b-instant

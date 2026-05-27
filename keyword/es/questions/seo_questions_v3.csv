@@ -1,0 +1,11 @@
+﻿question_id,qid,keyword_ko,keyword_en,popularity,seo_question,search_intent,seo_format,model
+Q10707-seo,Q10707,로버트 무가베,Robert_Mugabe,120.0,로버트 무가베 생애와 독재 시절 총정리,info,natural,llama-3.1-8b-instant
+Q691189-seo,Q691189,시폰,Chiffon_(fabric),27.0,시폰 재질에 대해 알아보세요,info,natural,llama-3.1-8b-instant
+Q1077966-seo,Q1077966,인절미,Injeolmi,7.0,인절미 떡 만들기 방법과 재료 정보,howto,natural,llama-3.1-8b-instant
+Q19346451-seo,Q19346451,아미나타 사바도고,Aminata_Savadogo,35.0,아미나타 사바도고 소개와 작품 비교,compare,natural,llama-3.1-8b-instant
+Q966758-seo,Q966758,국제 군인 스포츠 위원회,International_Military_Sports_Council,23.0,국제 군인 스포츠 위원회 역할과 활동 정보,info,natural,llama-3.1-8b-instant
+Q1756266-seo,Q1756266,루프 점프,Loop_jump,16.0,루프 점프 방법과 안전 요령 총정리,howto,natural,llama-3.1-8b-instant
+Q18341045-seo,Q18341045,라 솜브라 델 파사도,La_sombra_del_pasado,12.0,라 솜브라 델 파사도 소개와 작품 비교,compare,natural,llama-3.1-8b-instant
+Q1220534-seo,Q1220534,황금 세대,Golden_generation,9.0,황금 세대 특징과 이점 정보 및 방법,info,natural,llama-3.1-8b-instant
+Q1400830-seo,Q1400830,딱따기,Clapper_(musical_instrument),7.0,딱따기 대처 방법: 친구와 화해하기 위한 팁,howto,colon,llama-3.1-8b-instant
+Q5205809-seo,Q5205809,DNS 싱크홀,DNS_sinkhole,6.0,DNS 싱크홀 원인과 해결 방법: 네트워크 문제 해결하는 방법,howto,colon,llama-3.1-8b-instant

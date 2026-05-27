@@ -1,0 +1,112 @@
+[
+  {
+    "question_id": "Q11388-seo",
+    "qid": "Q11388",
+    "keyword_ko": "적외선",
+    "keyword_en": "Infrared",
+    "popularity": "120.0",
+    "seo_question": "전자기파 중에 있는 적외선을 쉽게 알아보세요",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q692096-seo",
+    "qid": "Q692096",
+    "keyword_ko": "청결",
+    "keyword_en": "Cleanliness",
+    "popularity": "27.0",
+    "seo_question": "청결은 맑고 깨끗함을 의미하는 개념입니다.",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q108072231-seo",
+    "qid": "Q108072231",
+    "keyword_ko": "사라진 첫사랑",
+    "keyword_en": "My_Love_Mix-Up!",
+    "popularity": "7.0",
+    "seo_question": "일본 만화 '사라진 첫사랑' 이야기와 실제 경험",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q19479-seo",
+    "qid": "Q19479",
+    "keyword_ko": "브레멘 시청사",
+    "keyword_en": "Bremen_City_Hall",
+    "popularity": "35.0",
+    "seo_question": "브레멘 시청사 이란 무엇이며 독일에서 어떤 의미를 가지고 있나요?",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q968498-seo",
+    "qid": "Q968498",
+    "keyword_ko": "게리 홀트",
+    "keyword_en": "Gary_Holt_(guitarist)",
+    "popularity": "23.0",
+    "seo_question": "게리 홀트, 영화와 최근 활동에 대한 주요 정보는 무엇인가요?",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q1757352-seo",
+    "qid": "Q1757352",
+    "keyword_ko": "두유 요거트",
+    "keyword_en": "Soy_yogurt",
+    "popularity": "16.0",
+    "seo_question": "두유 요거트의 차이점은 무엇인가요?",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q18358230-seo",
+    "qid": "Q18358230",
+    "keyword_ko": "기울기 소멸 문제",
+    "keyword_en": "Vanishing_gradient_problem",
+    "popularity": "12.0",
+    "seo_question": "기울기 소멸 문제 원인과 해결 방법은 무엇인가요?",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q12227586-seo",
+    "qid": "Q12227586",
+    "keyword_ko": "이집트-그리스 관계",
+    "keyword_en": "Egypt–Greece_relations",
+    "popularity": "9.0",
+    "seo_question": "이집트와 그리스 간의 역사적 관계는 어떻게 되었나요?",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q1401274-seo",
+    "qid": "Q1401274",
+    "keyword_ko": "오정보 효과",
+    "keyword_en": "Misinformation_effect",
+    "popularity": "7.0",
+    "seo_question": "오정보 효과는 실제로 무엇인지 알아보는 방법은?",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  },
+  {
+    "question_id": "Q5206146-seo",
+    "qid": "Q5206146",
+    "keyword_ko": "DSK 은행",
+    "keyword_en": "DSK_Bank",
+    "popularity": "6.0",
+    "seo_question": "DSK 은행 연동 및 예금 계좌 조회 방법은?",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "llama-3.1-8b-instant"
+  }
+]

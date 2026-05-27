@@ -1,0 +1,31 @@
+﻿question_id,qid,keyword_ko,keyword_en,popularity,seo_question,search_intent,seo_format,model
+Q1111-seo,Q1111,전하,Electric_charge,120.0,전하의 양과 속성을 파악하는 방법 | 전기 물질의 성질에 관한 설명과 실천 팁,howto,pipe,llama-3.1-8b-instant
+Q495442-seo,Q495442,미녀와 야수,Beauty_and_the_Beast,57.0,미녀와 야수에 관한 프랑스의 동화 정보 | 프랑스에서 유명한 동화의 대표작,info,pipe,llama-3.1-8b-instant
+Q403539-seo,Q403539,와이어샤크,Wireshark,38.0,파이프로 패킷 분석하기 | 오픈 소스 방법과 자유 소프트웨어 특징,howto,pipe,llama-3.1-8b-instant
+Q691189-seo,Q691189,시폰,Chiffon_(fabric),27.0,나일론 옷과 비단 옷의 차이점 | 비단과 나일론의 특징과 구별하는 방법,compare,pipe,llama-3.1-8b-instant
+Q679648-seo,Q679648,퉁구스카,5471_Tunguska,19.0,소행성 퉁구스카란 무엇인가 | 초보자를 위한 오브젝트 설명 가이드,info,pipe,llama-3.1-8b-instant
+Q16012440-seo,Q16012440,알도 구찌,Aldo_Gucci,12.0,알도 구찌 패션 디자이너의 대표 작품 | 이탈리아 패션의 진수를 찾아보세요,info,pipe,llama-3.1-8b-instant
+Q1078503-seo,Q1078503,오쓰카 지히로,Chihiro_Otsuka,7.0,"오쓰카 지히로 소개 | 일본 가수, 배우의 대표작과 이력",info,pipe,llama-3.1-8b-instant
+Q184359-seo,Q184359,르피앙블레,Le_Puy-en-Velay,71.0,르피앙블레에 대한 정보는 어디서 찾을 수 있을까요 | 르피앙블레 정보 찾는 방법,info,pipe,llama-3.1-8b-instant
+Q18529-seo,Q18529,렉섬 FC,Wrexham_A.F.C.,44.0,렉섬 FC 정보 | 팀별 매치 기록과 수상 경력,info,pipe,llama-3.1-8b-instant
+Q19346451-seo,Q19346451,아미나타 사바도고,Aminata_Savadogo,35.0,아미나타 사바도고의 역할과 중요성 | 스타트업과 중소기업에 대한 도전과제,howto,pipe,llama-3.1-8b-instant
+Q790433-seo,Q790433,할라,Challah,30.0,할라 키워드에 맞는 콘텐츠 Nasıl bulunur | 초보자를 위한 가이드,info,pipe,llama-3.1-8b-instant
+Q878957-seo,Q878957,복서 브리프,Boxer_briefs,26.0,복서 브리프 쓰는 방법 | 초보자를 위한 실전 가이드,howto,pipe,llama-3.1-8b-instant
+Q967934-seo,Q967934,트레비아노,Trebbiano,23.0,트레비아노 사용하는 방법 | 초보자를 위한 가이드와 팁,howto,pipe,llama-3.1-8b-instant
+Q2740627-seo,Q2740627,태양물리학,Heliophysics,20.0,태양물리학 이론 이해하기 | 초보자를 위한 설명서,howto,pipe,llama-3.1-8b-instant
+Q2915499-seo,Q2915499,상부 갈릴리,Upper_Galilee,18.0,상부 갈릴리 여행 가이드 | 추천 관광지와 맛집 정보,howto,pipe,llama-3.1-8b-instant
+Q1756266-seo,Q1756266,루프 점프,Loop_jump,16.0,루프 점프 방법 | 초보자를 위한 안전한 스타트와 스태프 교체 가이드,howto,pipe,llama-3.1-8b-instant
+Q684109-seo,Q684109,마르틴 미스테르,Martin_Mystère,15.0,마르틴 미스테르 초보자의 모든 것 | 마르틴 미스테르를 시작하는 팁,howto,pipe,llama-3.1-8b-instant
+Q13406387-seo,Q13406387,타마로드,Tamarod,13.0,타마로드 키워드 최적화는 어떻게 하는가 | SEO 전문가가 알려주는 완벽한 방법,howto,pipe,llama-3.1-8b-instant
+Q18351863-seo,Q18351863,국제 북극곰의 날,International_Polar_Bear_Day,12.0,국제 북극곰의 날 맞기 전 준비는 | 초보자에게 북극곰의 날 이벤트 파악 방법,howto,pipe,llama-3.1-8b-instant
+Q2029514-seo,Q2029514,오리건 (밴드),Oregon_(band),11.0,오리건 밴드 노래를 듣는 방법 | 오리건 밴드 전집 목록과 가사집 추천,howto,pipe,llama-3.1-8b-instant
+Q179237-seo,Q179237,고밀도 비활성 금속 폭약,Dense_inert_metal_explosive,10.0,고밀도 비활성 금속 폭약 제조 방법 | 초보자를 위한 안전한 제작 가이드,howto,pipe,llama-3.1-8b-instant
+Q12209731-seo,Q12209731,하야 (이슬람),Haya_(Islam),9.0,이슬람에서 하야는 무엇일까요 | 이슬람에서 하야를 이해하는 방법과 올바른 예로 알아보는 초보자 가이드,howto,pipe,llama-3.1-8b-instant
+Q6706790-seo,Q6706790,루이스 가마,Luís_Gama,9.0,루이스 가마 작가의 대표 작품 | 초호화 전시회 가이드,howto,pipe,llama-3.1-8b-instant
+Q3088770-seo,Q3088770,동티모르-인도네시아 국경,Indonesia–Timor-Leste_border,8.0,동티모르-인도네시아 국경 지리학 이해 | 국경 지역의 주요 지형적 특징과 중요도,howto,pipe,llama-3.1-8b-instant
+Q140107-seo,Q140107,크로스트레이닝,Cross-training,7.0,크로스트레이닝 방법 | 초보자를 위한 효과적인 트레이닝 루트,howto,pipe,llama-3.1-8b-instant
+Q4919182-seo,Q4919182,비트바 엑스트라센소프,Bitva_extrasensov,7.0,비트바 엑스트라센소프 제조 방법 | 초보자가 쉽게 이해하고 구현하는 방법,howto,pipe,llama-3.1-8b-instant
+Q17014335-seo,Q17014335,진성 리더십,Authentic_leadership,6.0,진성 리더십 발현을 올바르게 하는 방법 | 리더십 스타일과 비즈니스 성과 연결,howto,pipe,llama-3.1-8b-instant
+Q5205827-seo,Q5205827,DO-178C,DO-178C,6.0,DO-178C 인증 방법 | 초보자를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q1514309-seo,Q1514309,더 얼리 노멤버,The_Early_November,5.0,더 얼리 노멤버의 역할 | 초보자를 위한 가이드,howto,pipe,llama-3.1-8b-instant
+Q4000927-seo,Q4000927,애니씽 캔 해픈,Anything_Can_Happen,5.0,애니씽 캔 해픈 방법 | 초보자를 위한 쉽고 빠른 방법,howto,pipe,llama-3.1-8b-instant

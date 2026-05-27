@@ -1,0 +1,11 @@
+﻿question_id,qid,keyword_ko,keyword_en,popularity,seo_question,search_intent,seo_format,model
+Q11388-seo,Q11388,적외선,Infrared,120.0,전자기파 중에 있는 적외선을 쉽게 알아보세요,info,natural,llama-3.1-8b-instant
+Q692096-seo,Q692096,청결,Cleanliness,27.0,청결은 맑고 깨끗함을 의미하는 개념입니다.,info,natural,llama-3.1-8b-instant
+Q108072231-seo,Q108072231,사라진 첫사랑,My_Love_Mix-Up!,7.0,일본 만화 '사라진 첫사랑' 이야기와 실제 경험,info,natural,llama-3.1-8b-instant
+Q19479-seo,Q19479,브레멘 시청사,Bremen_City_Hall,35.0,브레멘 시청사 이란 무엇이며 독일에서 어떤 의미를 가지고 있나요?,info,natural,llama-3.1-8b-instant
+Q968498-seo,Q968498,게리 홀트,Gary_Holt_(guitarist),23.0,"게리 홀트, 영화와 최근 활동에 대한 주요 정보는 무엇인가요?",info,natural,llama-3.1-8b-instant
+Q1757352-seo,Q1757352,두유 요거트,Soy_yogurt,16.0,두유 요거트의 차이점은 무엇인가요?,info,natural,llama-3.1-8b-instant
+Q18358230-seo,Q18358230,기울기 소멸 문제,Vanishing_gradient_problem,12.0,기울기 소멸 문제 원인과 해결 방법은 무엇인가요?,info,natural,llama-3.1-8b-instant
+Q12227586-seo,Q12227586,이집트-그리스 관계,Egypt–Greece_relations,9.0,이집트와 그리스 간의 역사적 관계는 어떻게 되었나요?,info,natural,llama-3.1-8b-instant
+Q1401274-seo,Q1401274,오정보 효과,Misinformation_effect,7.0,오정보 효과는 실제로 무엇인지 알아보는 방법은?,info,natural,llama-3.1-8b-instant
+Q5206146-seo,Q5206146,DSK 은행,DSK_Bank,6.0,DSK 은행 연동 및 예금 계좌 조회 방법은?,info,natural,llama-3.1-8b-instant
