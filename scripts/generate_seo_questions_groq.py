@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from groq_client import MODEL_FAST, generate_seo_questions_batch  # noqa: E402
+from gemini_client import MODEL_FAST, generate_seo_questions_batch  # noqa: E402
 
 DEFAULT_INPUT = ROOT / "keyword" / "es" / "entities" / "entities_all.csv"
 OUT_DIR = ROOT / "keyword" / "es" / "questions"

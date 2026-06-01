@@ -1,0 +1,35 @@
+[
+  {
+    "question_id": "Q10707-seo",
+    "qid": "Q10707",
+    "keyword_ko": "로버트 무가베",
+    "keyword_en": "Robert_Mugabe",
+    "popularity": "120.0",
+    "seo_question": "로버트 무가베 짐바브웨 대통령의 집권 과정과 독재 정치의 역사 총정리",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "gemini-3.1-flash-lite"
+  },
+  {
+    "question_id": "Q790207-seo",
+    "qid": "Q790207",
+    "keyword_ko": "아반티!",
+    "keyword_en": "Avanti!",
+    "popularity": "30.0",
+    "seo_question": "아반티! 영화 줄거리와 제작 배경 및 관람 포인트 정보",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "gemini-3.1-flash-lite"
+  },
+  {
+    "question_id": "Q179237-seo",
+    "qid": "Q179237",
+    "keyword_ko": "고밀도 비활성 금속 폭약",
+    "keyword_en": "Dense_inert_metal_explosive",
+    "popularity": "10.0",
+    "seo_question": "고밀도 비활성 금속 폭약의 정의와 군사적 활용 원리 및 특징",
+    "search_intent": "info",
+    "seo_format": "natural",
+    "model": "gemini-3.1-flash-lite"
+  }
+]

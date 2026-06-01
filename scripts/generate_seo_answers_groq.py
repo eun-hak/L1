@@ -3,9 +3,9 @@
 seo_questions_100.json 기반 4단계 Groq 답변 생성.
 
 파이프라인:
-  1. qwen/qwen3-32b  — 본문 초안 (1,500~3,000자)
-  2. llama-3.3-70b   — popularity 상위 N% 도입부만 다듬기
-  3. llama-3.1-8b    — 메타 설명·태그 (옵션)
+  1. gemini-2.5-flash      — 본문 초안 (1,500~3,000자)
+  2. gemini-2.5-pro        — popularity 상위 N% 도입부만 다듬기
+  3. gemini-3.1-flash-lite — 메타 설명·태그 (옵션)
 
 Usage:
   python scripts/generate_seo_answers_groq.py --limit 5
@@ -26,8 +26,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from groq_client import (  # noqa: E402
+from gemini_client import (  # noqa: E402
     MODEL_DRAFT,
+    MODEL_FAST,
     MODEL_QUALITY,
     generate_blog_body,
     generate_meta_tags,
@@ -80,7 +81,7 @@ def main() -> None:
     polish_count = sum(1 for r in rows if float(r.get("popularity") or 0) >= cutoff)
 
     print(f"Questions: {len(rows)} | polish top {args.polish_pct}% (~{polish_count}) | cutoff pop={cutoff}")
-    print(f"Draft: {MODEL_DRAFT} | Polish: {MODEL_QUALITY} | Meta: {'off' if args.no_meta else '8b'}")
+    print(f"Draft: {MODEL_DRAFT} | Polish: {MODEL_QUALITY} | Meta: {'off' if args.no_meta else MODEL_FAST}")
 
     if not args.dry_run:
         BODY_DIR.mkdir(parents=True, exist_ok=True)

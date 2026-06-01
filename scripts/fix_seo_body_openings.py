@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from groq_client import normalize_body_structure  # noqa: E402
+from gemini_client import normalize_body_structure  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DIR = ROOT / "keyword" / "es" / "answers" / "body"

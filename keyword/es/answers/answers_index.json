@@ -52,16 +52,16 @@
     "question_id": "Q10707-seo",
     "qid": "Q10707",
     "keyword_ko": "로버트 무가베",
-    "seo_question": "로버트 무가베의 역할과 영향 | 짐바브웨 독재의 역사",
+    "seo_question": "로버트 무가베 짐바브웨 대통령의 집권 과정과 독재 정치의 역사 총정리",
     "search_intent": "info",
     "popularity": "120.0",
-    "char_count": "1777",
+    "char_count": "2245",
     "file_path": "body/Q10707-seo.md",
-    "draft_model": "qwen/qwen3-32b",
-    "polished_intro": "skip",
+    "draft_model": "gemini-2.5-flash",
+    "polished_intro": "yes",
     "meta_generated": "yes",
     "status": "draft",
-    "generated_at": "2026-05-26T05:26:58.757520+00:00"
+    "generated_at": "2026-05-28T04:47:06.012731+00:00"
   },
   {
     "answer_id": "Q1077966-seo",
@@ -1908,16 +1908,16 @@
     "question_id": "Q179237-seo",
     "qid": "Q179237",
     "keyword_ko": "고밀도 비활성 금속 폭약",
-    "seo_question": "고밀도 비활성 금속 폭약 제조 방법 | 초보자를 위한 안전한 제작 가이드",
-    "search_intent": "howto",
+    "seo_question": "고밀도 비활성 금속 폭약의 정의와 군사적 활용 원리 및 특징",
+    "search_intent": "info",
     "popularity": "10.0",
-    "char_count": "2095",
+    "char_count": "2397",
     "file_path": "body/Q179237-seo.md",
-    "draft_model": "qwen/qwen3-32b",
-    "polished_intro": "no",
+    "draft_model": "gemini-2.5-flash",
+    "polished_intro": "yes",
     "meta_generated": "yes",
     "status": "draft",
-    "generated_at": "2026-05-27T01:30:40.725295+00:00"
+    "generated_at": "2026-05-28T04:47:06.012731+00:00"
   },
   {
     "answer_id": "Q12209731-seo",
@@ -2286,5 +2286,21 @@
     "meta_generated": "yes",
     "status": "draft",
     "generated_at": "2026-05-27T05:18:56.221706+00:00"
+  },
+  {
+    "answer_id": "Q790207-seo",
+    "question_id": "Q790207-seo",
+    "qid": "Q790207",
+    "keyword_ko": "아반티!",
+    "seo_question": "아반티! 영화 줄거리와 제작 배경 및 관람 포인트 정보",
+    "search_intent": "info",
+    "popularity": "30.0",
+    "char_count": "2310",
+    "file_path": "body/Q790207-seo.md",
+    "draft_model": "gemini-2.5-flash",
+    "polished_intro": "yes",
+    "meta_generated": "yes",
+    "status": "draft",
+    "generated_at": "2026-05-28T04:47:06.012731+00:00"
   }
 ]

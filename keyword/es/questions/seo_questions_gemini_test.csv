@@ -1,0 +1,4 @@
+﻿question_id,qid,keyword_ko,keyword_en,popularity,seo_question,search_intent,seo_format,model
+Q10707-seo,Q10707,로버트 무가베,Robert_Mugabe,120.0,로버트 무가베 짐바브웨 대통령의 집권 과정과 독재 정치의 역사 총정리,info,natural,gemini-3.1-flash-lite
+Q790207-seo,Q790207,아반티!,Avanti!,30.0,아반티! 영화 줄거리와 제작 배경 및 관람 포인트 정보,info,natural,gemini-3.1-flash-lite
+Q179237-seo,Q179237,고밀도 비활성 금속 폭약,Dense_inert_metal_explosive,10.0,고밀도 비활성 금속 폭약의 정의와 군사적 활용 원리 및 특징,info,natural,gemini-3.1-flash-lite

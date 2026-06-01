@@ -1,8 +1,8 @@
 """
-Groq API 클라이언트 (OpenAI-compatible).
+NVIDIA NIM API 클라이언트 (OpenAI-compatible).
 
-모델: meta-llama/llama-4-scout-17b-16e-instruct
-환경변수: GROQ_API_KEY (또는 GROK_API_KEY)
+모델: meta/llama-3.1-8b-instruct
+환경변수: NVIDIA_API_KEY
 """
 
 from __future__ import annotations
@@ -27,26 +27,21 @@ load_dotenv(ROOT / ".env.local")
 
 logger = logging.getLogger(__name__)
 
-BASE_URL = "https://api.groq.com/openai/v1"
-MODEL_FAST = "meta-llama/llama-4-scout-17b-16e-instruct"
+BASE_URL = "https://integrate.api.nvidia.com/v1"
+MODEL_FAST = "meta/llama-3.1-8b-instruct"
 
 TAXONOMY_SYSTEM = (
     "너는 한국어 네이버 블로그 SEO 카테고리 기획자야. "
     "검색 수요가 있는 구체적이고 실용적인 카테고리를 설계한다. "
-    "반드시 유효한 JSON 배열만 출력한다. 설명·주석·마크다운 코드블록 금지."
+    "반드시 유효한 JSON만 출력한다."
 )
 
 
-def _api_key() -> str:
-    for name in ("GROQ_API_KEY", "GROK_API_KEY", "GROK_API_KEY_2"):
-        val = os.environ.get(name, "").strip()
-        if val:
-            return val
-    raise RuntimeError("GROQ_API_KEY (또는 GROK_API_KEY) 가 .env 에 없습니다.")
-
-
 def create_client() -> OpenAI:
-    return OpenAI(base_url=BASE_URL, api_key=_api_key())
+    api_key = os.environ.get("NVIDIA_API_KEY", "").strip()
+    if not api_key:
+        raise RuntimeError("NVIDIA_API_KEY 가 .env 에 없습니다.")
+    return OpenAI(base_url=BASE_URL, api_key=api_key)
 
 
 @dataclass
@@ -175,16 +170,15 @@ def generate_l2_categories(
 - description: 한국어 1문장
 - L1 범위 안에서만, 서로 다른 하위 주제
 - "종합", "기타", "전체", "정보" 같은 포괄명 금지
-- L1과 무관한 주제 금지
 - 중국어·일본어 금지, 한국어만
-- JSON 배열만 출력
+- 출력: JSON 배열만, 설명·주석·마크다운 금지
 
 [
   {{"name_ko": "K-POP", "slug": "k-pop", "description": "아이돌·음원·컴백·차트 관련 글"}},
   {{"name_ko": "드라마", "slug": "drama", "description": "드라마 줄거리·시청·OTT 관련 글"}}
 ]
 """
-    raw = chat(prompt, system=TAXONOMY_SYSTEM, model=model, temperature=0.75)
+    raw = chat(prompt, system=TAXONOMY_SYSTEM, model=model, temperature=0.85)
     items = parse_json_array(raw, raise_on_fail=False)
     out: list[dict[str, str]] = []
     seen: set[str] = set()

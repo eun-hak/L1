@@ -1,0 +1,211 @@
+﻿l2_id,l1_code,l2_slug,name_ko,description,sort_order,model,generated_at
+01-drama,01,drama,드라마,드라마 줄거리·시청·OTT 관련 글,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-variety-show,01,variety-show,예능,예능 프로그램 리뷰·정보,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-celebrity,01,celebrity,연예인,연예인 이슈·인터뷰·프로필,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-music,01,music,음악,가요·음악 트렌드·신곡 정보,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-movie,01,movie,영화,한국 영화 리뷰·정보,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-style,01,style,스타일,연예인 패션·뷰티 트렌드,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-interview,01,interview,인터뷰,연예인 인터뷰·현장 스토리,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-broadcast,01,broadcast,방송,TV 방송 프로그램 리뷰·정보,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-fandom,01,fandom,팬덤,아이돌·연예인 팬덤 문화,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-event,01,event,이벤트,연예계 행사·이벤트 소식,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-photo-essay,01,photo-essay,화보,연예인 화보·사진집,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-award,01,award,수상,연예계 시상식·수상 소식,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-comeback,01,comeback,컴백,아이돌·연예인 컴백 소식,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-stargram,01,stargram,스타그램,연예인 SNS·일상·화제 모음,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+01-ent-news,01,ent-news,연예뉴스,연예인 이슈·화제·인터뷰 모음,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-stock-investment,02,stock-investment,주식 투자,주식 시장 분석 및 투자 전략,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-real-estate-market,02,real-estate-market,부동산 시장,부동산 시장 동향 및 투자 팁,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-interest-rate-info,02,interest-rate-info,금리 정보,금리 변동 및 경제 영향 분석,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-inflation,02,inflation,물가 상승,물가 상승률 및 생활 물가 팁,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-economic-policy,02,economic-policy,경제 정책,정부 경제 정책 및 영향 분석,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-financial-planning-methods,02,financial-planning-methods,재테크 방법,실용적인 재테크 전략,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-investment-products,02,investment-products,투자 상품,다양한 투자 상품 분석,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-asset-management,02,asset-management,자산 관리,자산 관리 전략 및 팁,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-financial-news,02,financial-news,금융 뉴스,최신 금융 뉴스 및 분석,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-economic-indicators,02,economic-indicators,경제 지표,주요 경제 지표 분석,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-global-economy,02,global-economy,글로벌 경제,글로벌 경제 동향 및 영향,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-tax-info,02,tax-info,세금 정보,세금 제도 및 절세 팁,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-financial-planning,02,financial-planning,재무 설계,개인의 재무 설계 전략,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-economic-knowledge,02,economic-knowledge,경제 상식,알면 좋은 경제 상식 모음,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+02-retech-strategy,02,retech-strategy,재테크 전략,실용적인 재테크 방법과 전략 관련 글,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-diet-meal-plan,03,diet-meal-plan,다이어트 식단,건강한 다이어트를 위한 식단 관리 팁,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-exercise-routine,03,exercise-routine,운동 루틴,효과적인 운동 루틴으로 건강한 삶 유지,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-supplement-guide,03,supplement-guide,영양제 정보,다양한 영양제에 대한 상세 정보 제공,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-disease-prevention,03,disease-prevention,질병 예방,건강한 생활을 위한 질병 예방법 공유,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-sleep-health,03,sleep-health,수면 건강,질 좋은 수면을 위한 팁과 정보,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-weight-management,03,weight-management,체중 관리,효과적인 체중 관리를 위한 다양한 방법,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-health-tips,03,health-tips,건강 팁,일상생활에서 실천할 수 있는 건강 팁,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-fitness,03,fitness,피트니스,전문적인 피트니스 트레이닝과 운동법,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-diet-experience,03,diet-experience,다이어트 후기,직접 경험한 다이어트 방법과 후기 공유,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-healthy-diet,03,healthy-diet,건강 식단,건강을 위한 균형 잡힌 식단 아이디어,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-post-workout-recovery,03,post-workout-recovery,운동 후 회복,운동 후 빠른 회복을 위한 팁과 방법,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-obesity-management,03,obesity-management,비만 관리,비만 예방과 관리를 위한 정보와 팁,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-mental-wellness,03,mental-wellness,심신 건강,정신 건강을 위한 스트레스 관리와 팁,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-health-information,03,health-information,건강 정보,다양한 건강 관련 정보와 소식,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+03-lifestyle-habits,03,lifestyle-habits,생활 습관,건강한 생활을 위한 일상 습관 개선 팁,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-womens-fashion,04,womens-fashion,여성의류,여성의류 트렌드 및 쇼핑 정보,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-mens-fashion,04,mens-fashion,남성의류,남성의류 트렌드 및 쇼핑 정보,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-kids-fashion,04,kids-fashion,아동복,아동복 트렌드 및 쇼핑 정보,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-handbags,04,handbags,가방,가방 트렌드 및 쇼핑 정보,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-shoes,04,shoes,신발,신발 트렌드 및 쇼핑 정보,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-accessories,04,accessories,액세서리,액세서리 트렌드 및 쇼핑 정보,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-coordination-tips,04,coordination-tips,코디 팁,패션 코디 팁 및 아이디어,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-fashion-trends,04,fashion-trends,패션 트렌드,최신 패션 트렌드 및 이슈,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-shopping-guide,04,shopping-guide,쇼핑 가이드,패션 쇼핑 가이드 및 추천,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-styling,04,styling,스타일링,패션 스타일링 팁 및 아이디어,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-fashion-items,04,fashion-items,패션 아이템,패션 아이템 리뷰 및 정보,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-brand-reviews,04,brand-reviews,브랜드 리뷰,패션 브랜드 리뷰 및 정보,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-fashion-news,04,fashion-news,패션 뉴스,패션 뉴스 및 이슈,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-minimal-fashion,04,minimal-fashion,미니멀 패션,미니멀 패션 팁 및 아이디어,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+04-sustainable-fashion,04,sustainable-fashion,지속가능 패션,지속가능 패션 팁 및 아이디어,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-sports-news,05,sports-news,스포츠 뉴스,최신 스포츠 뉴스 및 이슈,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-soccer-analysis,05,soccer-analysis,축구 분석,축구 경기 분석 및 전략,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-baseball-info,05,baseball-info,야구 정보,야구 경기 정보 및 선수 소식,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-international-sports,05,international-sports,해외 스포츠,해외 스포츠 경기 및 이슈,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-player-profile,05,player-profile,선수 프로필,스포츠 선수 프로필 및 인터뷰,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-game-highlight,05,game-highlight,경기 하이라이트,스포츠 경기 하이라이트 및 리뷰,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-sports-issue,05,sports-issue,스포츠 이슈,스포츠 관련 이슈 및 논란,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-soccer-player,05,soccer-player,축구 선수,축구 선수 정보 및 소식,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-baseball-game,05,baseball-game,야구 경기,야구 경기 정보 및 결과,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-sports-marketing,05,sports-marketing,스포츠 마케팅,스포츠 마케팅 및 스폰서십,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-game-schedule,05,game-schedule,경기 일정,스포츠 경기 일정 및 결과,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-sports-health,05,sports-health,스포츠 건강,스포츠 관련 건강 및 부상,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-soccer-league,05,soccer-league,축구 리그,축구 리그 정보 및 결과,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-baseball-analysis,05,baseball-analysis,야구 분석,야구 경기 분석 및 전략,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+05-sports-event,05,sports-event,스포츠 이벤트,스포츠 이벤트 및 대회,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-new-car-review,06,new-car-review,신차 리뷰,신차 정보 및 리뷰,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-used-car-buying,06,used-car-buying,중고차 구매,중고차 구매 팁 및 정보,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-ev-guide,06,ev-guide,전기차 가이드,전기차 정보 및 구매 가이드,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-maintenance,06,car-maintenance,자동차 정비,자동차 정비 및 수리 정보,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-insurance,06,car-insurance,자동차 보험,자동차 보험 정보 및 비교,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-vehicle-management,06,vehicle-management,차량 관리,차량 관리 팁 및 정보,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-driving-tips,06,driving-tips,운전 팁,안전 운전 팁 및 정보,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-comparison,06,car-comparison,자동차 비교,자동차 모델 비교 및 리뷰,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-news,06,car-news,자동차 뉴스,최신 자동차 뉴스 및 이슈,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-accessories,06,car-accessories,자동차 용품,자동차 용품 정보 및 리뷰,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-vehicle-safety,06,vehicle-safety,차량 안전,차량 안전 정보 및 팁,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-taxes,06,car-taxes,자동차 세금,자동차 세금 정보 및 절세 팁,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-financing,06,car-financing,자동차 금융,자동차 금융 정보 및 팁,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-travel,06,car-travel,자동차 여행,자동차 여행 정보 및 가이드,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+06-car-inspection,06,car-inspection,자동차 점검,자동차 점검 정보 및 팁,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-smartphone-review,07,smartphone-review,스마트폰 리뷰,스마트폰 성능·카메라·배터리 리뷰,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-ai-trend,07,ai-trend,AI 트렌드,인공지능 기술 동향 및 적용 사례,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-app-review,07,app-review,앱 리뷰,모바일 앱 기능·사용법·리뷰,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-pc-build-guide,07,pc-build-guide,PC 빌드 가이드,컴퓨터 조립·업그레이드 가이드,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-gadget-review,07,gadget-review,가젯 리뷰,스마트워치·이어폰·태블릿 리뷰,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-digital-trend,07,digital-trend,디지털 트렌드,최신 디지털 기술 및 트렌드 분석,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-it-news,07,it-news,IT 뉴스,IT 산업 최신 뉴스 및 이슈,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-iot,07,iot,사물인터넷,IoT 기술 및 적용 사례,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-blockchain,07,blockchain,블록체인,블록체인 기술 및 암호화폐 관련 글,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-game-review,07,game-review,게임 리뷰,PC·콘솔·모바일 게임 리뷰,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-software-review,07,software-review,소프트웨어 리뷰,유용한 소프트웨어 리뷰 및 사용법,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-hardware-review,07,hardware-review,하드웨어 리뷰,컴퓨터 하드웨어 성능·가격 비교,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-network-tips,07,network-tips,네트워크 팁,네트워크 설정·보안 관련 팁,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-security-issue,07,security-issue,보안 이슈,사이버 보안 위협 및 대응 방안,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+07-digital-security,07,digital-security,디지털 보안,디지털 보안 관련 팁 및 이슈,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-skincare-routine,08,skincare-routine,스킨케어 루틴,스킨케어 단계별 방법 및 제품 추천,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-makeup-tutorial,08,makeup-tutorial,메이크업 튜토리얼,메이크업 단계별 방법 및 제품 추천,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-hair-care-tips,08,hair-care-tips,헤어 케어 팁,헤어 건강을 위한 케어 방법 및 제품 추천,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-beauty-product-review,08,beauty-product-review,뷰티 제품 리뷰,뷰티 제품 사용 후기 및 리뷰,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-treatment-review,08,treatment-review,시술 후기,뷰티 시술 후기 및 경험 공유,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-skin-type-care,08,skin-type-care,피부 타입별 케어,피부 타입별 맞춤형 케어 방법,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-cosmetic-ingredient-analysis,08,cosmetic-ingredient-analysis,화장품 성분 분석,화장품 성분 분석 및 추천,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-beauty-trend,08,beauty-trend,뷰티 트렌드,현재 뷰티 트렌드 및 이슈,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-makeup-product-recommendation,08,makeup-product-recommendation,메이크업 제품 추천,메이크업 제품 추천 및 리뷰,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-hair-styling-tips,08,hair-styling-tips,헤어 스타일링 팁,헤어 스타일링 방법 및 팁,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-skincare-product-recommendation,08,skincare-product-recommendation,스킨케어 제품 추천,스킨케어 제품 추천 및 리뷰,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-beauty-tips,08,beauty-tips,뷰티 팁,뷰티 관련 팁 및 노하우,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-treatment-information,08,treatment-information,시술 정보,뷰티 시술 정보 및 후기,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-hair-product-review,08,hair-product-review,헤어 제품 리뷰,헤어 제품 사용 후기 및 리뷰,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+08-makeup-art,08,makeup-art,메이크업 아트,메이크업 아트 및 디자인,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-seoul-food,09,seoul-food,서울 맛집,서울 지역 맛집 추천 및 리뷰,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-cafe-recommend,09,cafe-recommend,카페 추천,인기 카페 소개 및 방문 후기,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-busan-food,09,busan-food,부산 맛집,부산 지역 맛집 추천 및 리뷰,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-date-course,09,date-course,데이트 코스,로맨틱한 데이트 코스 추천,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-gyeonggi-food,09,gyeonggi-food,경기도 맛집,경기도 지역 맛집 추천 및 리뷰,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-solo-food,09,solo-food,혼밥 맛집,혼자서도 즐거운 식사,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-daegu-food,09,daegu-food,대구 맛집,대구 지역 맛집 추천 및 리뷰,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-brunch-cafe,09,brunch-cafe,브런치 카페,아침과 점심 사이의 완벽한 식사,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-daejeon-food,09,daejeon-food,대전 맛집,대전 지역 맛집 추천 및 리뷰,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-night-view-food,09,night-view-food,야경 맛집,야경이 아름다운 맛집 추천,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-incheon-food,09,incheon-food,인천 맛집,인천 지역 맛집 추천 및 리뷰,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-handmade-coffee,09,handmade-coffee,수제 커피,수제 커피 소개 및 카페 추천,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-gwangju-food,09,gwangju-food,광주 맛집,광주 지역 맛집 추천 및 리뷰,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-partyroom-cafe,09,partyroom-cafe,파티룸 카페,단체 모임하기 좋은 카페 추천,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+09-gangwon-food,09,gangwon-food,강원도 맛집,강원도 지역 맛집 추천 및 리뷰,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-korean-recipe,10,korean-recipe,한식 레시피,한국 전통 요리 레시피 및 팁,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-global-cuisine,10,global-cuisine,세계 요리,다양한 국가의 요리법 및 식문화,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-food-styling,10,food-styling,푸드 스타일링,음식 사진 촬영 및 꾸미기 팁,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-healthy-convenience-food,10,healthy-convenience-food,건강 간편식,간편하게 먹는 건강한 식사 아이디어,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-ingredient-info,10,ingredient-info,식재료 정보,요리에 사용되는 다양한 식재료 정보,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-restaurant-review,10,restaurant-review,레스토랑 리뷰,다양한 레스토랑 및 음식점 리뷰,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-cooking-tips,10,cooking-tips,요리 팁,요리 기술을 향상시키는 팁 및 노하우,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-dessert-making,10,dessert-making,디저트 만들기,다양한 디저트 레시피 및 만들기 팁,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-food-trend,10,food-trend,푸드 트렌드,현재의 음식 및 요리 트렌드 분석,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-vegetarian-recipe,10,vegetarian-recipe,채식 레시피,채식 기반의 다양한 레시피 및 아이디어,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-meat-cooking,10,meat-cooking,육식 요리,고기를 사용한 다양한 요리법 및 팁,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-seafood-cooking,10,seafood-cooking,해물 요리,해산물을 사용한 다양한 요리법 및 팁,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-baking-guide,10,baking-guide,베이킹 가이드,빵 및 과자류 베이킹을 위한 가이드 및 팁,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-asian-cuisine,10,asian-cuisine,아시안 요리,아시아 스타일의 다양한 요리법 및 식문화,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+10-home-party-food,10,home-party-food,홈파티 음식,집에서 열리는 파티를 위한 음식 아이디어,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-domestic-travel-destinations,11,domestic-travel-destinations,국내여행지,국내 여행지 정보 및 리뷰,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-overseas-travel-destinations,11,overseas-travel-destinations,해외여행지,해외 여행지 정보 및 리뷰,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-essentials,11,travel-essentials,여행준비물,여행 준비물 리스트 및 팁,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-itinerary,11,travel-itinerary,여행일정,여행 일정 계획 및 관리 팁,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-accommodation-recommendations,11,accommodation-recommendations,숙소추천,숙소 추천 및 리뷰,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-tips,11,travel-tips,여행꿀팁,여행 관련 꿀팁 및 정보,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-diaries,11,travel-diaries,여행기,여행 경험 및 후기,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-information,11,travel-information,여행정보,여행 관련 정보 및 소식,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-domestic-travel,11,domestic-travel,국내여행,국내 여행 정보 및 리뷰,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-overseas-travel,11,overseas-travel,해외여행,해외 여행 정보 및 리뷰,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-photography,11,travel-photography,여행사진,여행 사진 및 촬영 팁,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-videos,11,travel-videos,여행영상,여행 영상 및 제작 팁,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-blogging,11,travel-blogging,여행블로그,여행 블로그 운영 및 작성 팁,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-english,11,travel-english,여행영어,여행 영어 및 언어 팁,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+11-travel-safety,11,travel-safety,여행안전,여행 안전 및 주의사항,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-history-facts,12,history-facts,역사 상식,한국 및 세계 역사에 대한 흥미로운 사실,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-science-knowledge,12,science-knowledge,과학 지식,과학 이론 및 원리에 대한 설명,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-culture-criticism,12,culture-criticism,문화 비평,"영화, 음악, 미술 등 문화에 대한 비평",3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-literature-review,12,literature-review,문학 리뷰,책 리뷰 및 작가 소개,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-world-culture,12,world-culture,세계 문화,전 세계 다양한 문화 소개,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-liberal-arts-lecture,12,liberal-arts-lecture,교양 강의,교양 과목 관련 강의 및 자료,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-knowledge-game,12,knowledge-game,지식 놀이,"퀴즈, 게임 등 지식 기반 놀이",7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-common-knowledge-dictionary,12,common-knowledge-dictionary,상식 사전,일상 생활에 필요한 상식 모음,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-academic-research,12,academic-research,학술 연구,다양한 학술 분야 연구 소개,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-cultural-exploration,12,cultural-exploration,문화 탐구,문화 현상 탐구 및 분석,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-essay-guide,12,essay-guide,논술 가이드,논술 작성법 및 팁,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-liberal-arts-reading,12,liberal-arts-reading,교양 독서,교양 관련 도서 리뷰 및 추천,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-humanities-knowledge,12,humanities-knowledge,인문 지식,인문학 관련 지식 및 정보,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-knowledge-column,12,knowledge-column,지식 칼럼,다양한 주제 지식 칼럼,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+12-education-information,12,education-information,교육 정보,교육 관련 정보 및 자료,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-dog-training,13,dog-training,강아지 훈련,강아지 훈련 방법 및 팁,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-cat-food,13,cat-food,고양이 사료,고양이 사료 추천 및 리뷰,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-insurance,13,pet-insurance,펫 보험,펫 보험 정보 및 추천,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-hospital,13,pet-hospital,반려동물 병원,반려동물 병원 정보 및 리뷰,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-product-review,13,pet-product-review,펫 용품 리뷰,펫 용품 리뷰 및 추천,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-dog-health,13,dog-health,강아지 건강,강아지 건강 정보 및 팁,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-cat-behavior,13,cat-behavior,고양이 행동,고양이 행동 이해 및 팁,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-care-tips,13,pet-care-tips,펫 케어 팁,펫 케어 팁 및 정보,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-grooming,13,pet-grooming,반려동물 미용,반려동물 미용 정보 및 팁,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-communication,13,pet-communication,펫 커뮤니케이션,펫 커뮤니케이션 팁 및 정보,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-dog-play,13,dog-play,강아지 놀이,강아지 놀이 방법 및 팁,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-cat-playground,13,cat-playground,고양이 놀이터,고양이 놀이터 추천 및 리뷰,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-photography,13,pet-photography,펫 사진 촬영,펫 사진 촬영 팁 및 정보,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-etiquette,13,pet-etiquette,반려동물 예절,반려동물 예절 정보 및 팁,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+13-pet-living-tips,13,pet-living-tips,펫 생활 팁,펫 생활 팁 및 정보,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-camping-gear,14,camping-gear,캠핑 장비,캠핑용품 리뷰 및 추천,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-hiking-guide,14,hiking-guide,등산 가이드,등산로 정보 및 등산 팁,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-outdoor-fashion,14,outdoor-fashion,아웃도어 패션,아웃도어 활동 위한 패션 아이템,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-fishing-tips,14,fishing-tips,낚시 팁,낚시 기술 및 낚시터 정보,4,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-car-camping-trip,14,car-camping-trip,차박 여행,차박 여행지 및 차박 팁,5,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-camping-cooking,14,camping-cooking,캠핑 요리,캠핑 요리법 및 식재료 정보,6,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-hiking-health,14,hiking-health,등산 건강,등산 관련 건강 정보 및 안전 팁,7,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-outdoor-safety,14,outdoor-safety,아웃도어 안전,아웃도어 활동 관련 안전 정보,8,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-camping-sites,14,camping-sites,캠핑 장소,캠핑장 정보 및 추천,9,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-hiking-gear,14,hiking-gear,등산 장비,등산용품 리뷰 및 추천,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-fishing-gear,14,fishing-gear,낚시 장비,낚시용품 리뷰 및 추천,11,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-car-camping-essentials,14,car-camping-essentials,차박 준비물,차박 여행 준비물 정보,12,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-outdoor-events,14,outdoor-events,아웃도어 이벤트,아웃도어 관련 이벤트 정보,13,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-camping-tips,14,camping-tips,캠핑 노하우,캠핑 관련 팁 및 노하우,14,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
+14-hiking-community,14,hiking-community,등산 커뮤니티,등산 관련 커뮤니티 정보,15,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
