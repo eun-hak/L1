@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-06-01T13:25:59.446607+00:00",
+  "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "l2_count": 210,
+  "l3_per_l2_target": 50,
+  "l3_total": 547,
+  "l2_processed": 8,
+  "l2_done": 9,
+  "l2_partial": 2,
+  "interrupted": false,
+  "last_error": null,
+  "state_db": "C:\\Users\\이동복\\Desktop\\L1\\data2\\state\\taxonomy.db"
+}
