@@ -1,7 +1,79 @@
 # data2 대량 SEO 키워드 택소노미 — 기획·구현 인수인계
 
-> 작성일: 2026-06-01  
+> 작성일: 2026-06-01 (최종 갱신: 2026-06-02)  
 > 목적: 대화 세션 초기화 전, 지금까지 기획·구현·결정 사항을 다른 환경에서 이어갈 수 있도록 기록
+
+---
+
+## 0. 현재 진행 상황 스냅샷 (2026-06-02)
+
+**L3 생성을 사용자 요청으로 중단함.** 체크포인트는 유지됨.
+
+| 항목 | 값 |
+|------|-----|
+| **L1** | 14개 ✅ |
+| **L2** | 210개 ✅ (Groq Scout 17B) |
+| **L3** | **9,027 / 10,500** (약 **86%**) ⏸ 중단 |
+| **L4** | 미시작 |
+
+### L3 상세
+
+| 구분 | 개수 |
+|------|------|
+| L2당 50개 **완료** | **170** |
+| L2 **partial** (50 미만) | **1** (`12-liberal-arts-lecture` → 48개) |
+| L2 **미시작** | **39** |
+| 남은 L3 (추정) | ~1,473개 |
+
+### 모델 구성 (`topics_l3.csv`)
+
+| 모델 | 행 수 | 비고 |
+|------|------|------|
+| `mistralai/mistral-nemotron` (NVIDIA NIM) | 8,480 | 본생산 메인 |
+| `meta-llama/llama-4-scout-17b-16e-instruct` (Groq) | 547 | 초기 Scout 시절 (L1 `01` 일부) |
+
+### LLM 결정 (L3)
+
+| 모델 | 판정 |
+|------|------|
+| Groq Scout 17B | 품질 최고, **TPD 50만/일 소진**으로 중단 |
+| Llama 3.1 8B (Groq) | 수율·범위 이탈 — **비권장** |
+| **NVIDIA Mistral Nemotron** | **채택** — Scout 대비 ~8배 느리나 수율·품질 acceptable |
+
+### 체크포인트 파일 (중단 후에도 유지)
+
+```
+data2/topics_l3.csv          # 9,027행 (UTF-8 BOM)
+data2/topics_l3.json
+data2/manifest_l3.json
+data2/state/taxonomy.db      # SQLite l3_topics + l2_progress
+data2/logs/l3_nemotron_run.log
+```
+
+### 재개 명령 (다음에 이어할 때)
+
+```bash
+cd /path/to/L1
+source .venv/bin/activate   # 또는 .venv/bin/python
+
+python scripts/generate_taxonomy_l3.py \
+  --provider nvidia \
+  --count 50 \
+  --batch 15 \
+  --resume \
+  --sleep 1.0
+```
+
+- `--resume`: L2당 50개 이상은 스킵, partial·미시작만 처리
+- 예상 남은 시간: **~1~1.5시간** (39 L2 + partial 1개)
+- **절대 `kill -9` 사용 금지** — 마지막 배치만 유실 가능. `kill PID` 또는 Ctrl+C 권장
+
+### 모델 비교 테스트 (참고, `data2/test/`)
+
+| 파일 | 내용 |
+|------|------|
+| `l3_scout_vs_8b.json` | Scout vs Groq 8B |
+| `l3_scout_vs_nemotron.json` | Scout vs Nemotron |
 
 ---
 
@@ -21,7 +93,7 @@
 |------|------|------------|------|
 | **택소노미 v1** | `data/` | L1 72개 → L2 → L3 | ~10,368 L3, 템플릿 본문 대량 생성됨 |
 | **ES 엔티티** | `keyword/es/` | Elasticsearch `simsimi_entities_v1` (~24만 QID) | 100건 질문 + ~144건 본문, Gemini 전환 중 |
-| **택소노미 v2 (메인 작업)** | `data2/` | 사용자 정의 L1 14개 | **L2 210개 완료**, L3~ 미구현 |
+| **택소노미 v2 (메인 작업)** | `data2/` | 사용자 정의 L1 14개 | **L2 210 ✅**, **L3 9,027/10,500 ⏸** |
 
 **이 문서는 `data2/` 트랙 전용 인수인계입니다.**
 
@@ -157,29 +229,47 @@ L4 하나에서 `search_intent × topic_angle` 템플릿으로 5~10개 KW를 **�
 | 도입부 polish | gemini-2.5-pro |
 | 클라이언트 | `scripts/gemini_client.py` |
 
-**원칙**: taxonomy(L2/L3/L4) = Groq(저비용·고속), 본문 = Gemini(고품질)
+**원칙 (갱신)**:
+- L2 = Groq Scout 17B
+- **L3 = NVIDIA Mistral Nemotron** (`mistralai/mistral-nemotron`, Free Endpoint)
+- 본문 = Gemini(고품질)
+
+### NVIDIA Nemotron (L3 채택)
+
+| 항목 | 값 |
+|------|-----|
+| 모델 ID | `mistralai/mistral-nemotron` |
+| API | `https://integrate.api.nvidia.com/v1` + `NVIDIA_API_KEY` |
+| 속도 | Scout 대비 **~8배 느림** (~25초 vs ~3초 / 15개 1회) |
+| 이슈 | 가끔 L2 이탈·영문 섞임, 수율 11~15/15 배치 |
 
 ---
 
-## 8. 현재 완료 상태
+## 8. 구현·완료 상태
 
 ### ✅ 완료
 
 - [x] `data2/seed/topics_l1.csv` — L1 14개
 - [x] `data2/brief.txt` — L2/L3 생성 가이드
-- [x] `data2/topics_l2.csv` / `.json` — **L2 210개**
+- [x] `data2/topics_l2.csv` / `.json` — **L2 210개** (Groq Scout)
 - [x] `data2/manifest_l2.json`
-- [x] `scripts/groq_client.py` — Groq API + `generate_l2_categories()`
-- [x] `scripts/nvidia_client.py` — NVIDIA API + `generate_l2_categories()`
-- [x] `scripts/generate_taxonomy_l2.py` — L2 생성 CLI (`--provider groq|nvidia`)
+- [x] `scripts/groq_client.py` — Groq + `generate_l2/l3_topics()`
+- [x] `scripts/nvidia_client.py` — NVIDIA + `generate_l2/l3_topics()`, `MODEL_NEMOTRON`
+- [x] `scripts/generate_taxonomy_l2.py` — `--provider groq|nvidia`
+- [x] `scripts/generate_taxonomy_l3.py` — `--provider groq|nvidia`, SQLite checkpoint, `--resume`
+- [x] `scripts/taxonomy_state.py` — SQLite export/import
+- [x] `data2/state/taxonomy.db` — L3 checkpoint
+- [x] `data2/topics_l3.csv` — **9,027행 (86%, 중단 시점)**
+
+### ⏸ 진행 중 (중단)
+
+- [ ] L3 나머지 **~1,473개** (39 L2 + partial 1) — `--resume`으로 재개
 
 ### ❌ 미구현
 
-- [ ] `scripts/generate_taxonomy_l3.py`
 - [ ] `scripts/generate_taxonomy_l4.py`
-- [ ] `groq_client.generate_l3_topics()` (또는 공통 taxonomy 모듈)
-- [ ] SQLite checkpoint (`data2/state/taxonomy.db`) — 대량 생성 시 resume용
-- [ ] L3/L4용 `data2/brief.txt` 보강 (L3 기준 추가)
+- [ ] L4 / KW 확장
+- [ ] 본문 생성 파이프라인 (Gemini)
 
 ---
 
@@ -193,16 +283,27 @@ data2/
 ├── topics_l2.csv               # L2 210개 ✅
 ├── topics_l2.json
 ├── manifest_l2.json
-├── topics_l3.csv               # (예정)
+├── topics_l3.csv               # L3 9,027행 ⏸
+├── topics_l3.json
+├── manifest_l3.json
 ├── topics_l4.csv               # (예정)
-└── state/                      # (예정) checkpoint
+├── state/
+│   └── taxonomy.db             # L3 checkpoint ✅
+├── logs/
+│   └── l3_nemotron_run.log
+└── test/
+    ├── l3_scout_vs_8b.json
+    └── l3_scout_vs_nemotron.json
 
 scripts/
-├── groq_client.py              # Groq taxonomy 클라이언트
-├── nvidia_client.py            # NVIDIA taxonomy 클라이언트
-├── generate_taxonomy_l2.py     # L2 생성 CLI
-├── gemini_client.py            # Gemini (본문·SEO·기존 taxonomy 함수)
-└── generate_seo_*.py           # ES 엔티티 트랙 (별도)
+├── groq_client.py              # Groq (Scout, 8B)
+├── nvidia_client.py            # NVIDIA (Nemotron, Llama 3.1 8B)
+├── generate_taxonomy_l2.py     # L2 CLI
+├── generate_taxonomy_l3.py     # L3 CLI + resume
+├── taxonomy_state.py           # SQLite checkpoint
+├── compare_l3_8b_vs_scout.py   # 품질 비교 (테스트)
+├── compare_l3_nemotron_vs_scout.py
+└── gemini_client.py            # Gemini (본문·SEO)
 
 docs/
 └── data2-taxonomy-handoff.md   # 이 문서
@@ -227,7 +328,7 @@ l2_id,l1_code,l2_slug,name_ko,description,sort_order,model,generated_at
 - `l2_id` = `{l1_code}-{l2_slug}` (예: `01-drama`)
 - slug: 영문 kebab-case
 
-### L3 (예정) — `data/topics_l3.csv` v1 참고
+### L3 (`data2/topics_l3.csv`) — 현재
 
 ```csv
 l3_id,l2_id,l1_code,l3_slug,focus_keyword,title_ko,search_intent,topic_angle,description,model,generated_at
@@ -287,47 +388,35 @@ python scripts/generate_taxonomy_l2.py --provider nvidia --count 15
 
 ---
 
-## 12. L3 생성 — 다음 작업 (미구현, 기획 확정)
+## 12. L3 생성 — 실행·재개 (구현 완료)
 
 ### 목표
 
 - L2 **210개** × L2당 **50개** = **10,500 L3**
-- 프로바이더: **Groq Scout 17B** (L2와 동일)
+- 프로바이더: **`--provider nvidia`** (Mistral Nemotron)
 
-### 호출 전략: **15개 × 4배치**
+### 호출 전략
 
 | 항목 | 값 |
 |------|-----|
-| L2당 L3 목표 | 50개 |
-| 배치 크기 | 15개 |
-| L2당 API 호출 | **4회** |
-| **총 API 호출** | 210 × 4 = **840회** |
-| 예상 시간 | **55~70분** (호출당 3~4초 + sleep) |
-| sleep 권장 | L2 간 0.5~1.0초 (rate limit 여유 있음) |
+| 배치 | 15개 × 최대 10 attempts/L2 |
+| L2당 API (50개 기준) | ~4회 |
+| Scout 예상 | ~12초/L2 |
+| Nemotron 예상 | **~100초/L2** |
 
-### `generate_taxonomy_l3.py` 구현 시 참고
+### 실제 사용법
 
 ```bash
-# 예상 사용법 (미구현)
-python scripts/generate_taxonomy_l3.py --provider groq --count 50 --batch 15
-python scripts/generate_taxonomy_l3.py --provider groq --l2 01-drama --resume
+python scripts/generate_taxonomy_l3.py --provider nvidia --count 50 --batch 15 --resume --sleep 1.0
+python scripts/generate_taxonomy_l3.py --provider nvidia --l2 12-liberal-arts-lecture --resume  # 단일 L2
+python scripts/generate_taxonomy_l3.py --provider groq --count 50 --batch 15 --resume   # Groq (TPD 주의)
 ```
 
-구현 포인트:
-1. `topics_l2.csv` 순회 (210행)
-2. L2당 while loop: batch 15 × max 4 attempts = 50개
-3. `--l2` 단일 재생성 + `--resume` (기존 CSV merge, `exclude_l2` 패턴)
-4. avoid list: 전역 `focus_keyword` + 같은 L2 내 중복
-5. L1/L2 컨텍스트를 프롬프트에 포함 (L1 이탈 방지)
-6. `attempts` 상한 L2 스크립트는 3 → L3는 **4**로 (50/15=3.33)
+### Groq TPD 이슈
 
-### L3 프롬프트 규칙 (brief에 추가 권장)
-
-- `focus_keyword`: 실제 검색할 2~12단어, 의도가 서로 달라야 함
-- L2 범위 안에서만
-- clickbait 금지 ("완벽 가이드", "놓치면 후회")
-- 패턴 반복 금지 (전부 "~방법 | ~가이드")
-- `data2/brief.txt`에 L3 섹션 추가 필요
+- Free tier **500,000 TPD** — L3 ~11 L2 처리 시 소진 사례 있음
+- 에러: `Rate limit reached ... tokens per day (TPD)`
+- 해결: **Nemotron으로 전환** 또는 Dev Tier / 다음날 재개
 
 ---
 
@@ -381,32 +470,25 @@ taxonomy 함수 (Gemini용, Groq 클라이언트에서 프롬프트 참고 가�
 
 ## 16. 알려진 이슈·주의사항
 
-1. **NVIDIA 8B**: L2 1차 테스트 — JSON 파싱 실패·L1 범위 이탈·목표 개수 미달. **L3+에는 Groq 권장.**
-2. **gap-fill 시 CSV 덮어쓰기**: `--l1` 단독 실행 시 merge 로직 있으나, 전체 재생성 전 `rm topics_l2.csv` 권장.
-3. **`data2/brief.txt` 헤더**: "NVIDIA Llama 3.1 8B" 문구 남아 있음 → L3 작업 전 Groq/Scout으로 수정 권장.
+1. **NVIDIA 8B**: L2 1차 테스트 — JSON 파싱 실패·L1 범위 이탈. **L3는 Nemotron 사용.**
+2. **Groq Scout TPD**: L3 본생산 중 500K/일 소진 → Nemotron 전환.
+3. **gap-fill 시 CSV 덮어쓰기**: `--l1` 단독 실행 시 merge 로직 있으나, 전체 재생성 전 `rm topics_l2.csv` 권장.
 4. **L2 품질**: Scout 17B 결과 양호하나, L1 간 의미 중복 가능 (예: 여행 L2에 `국내여행` / `국내여행지`). L3 전 dedup 검토 optional.
-5. **`.venv`**: 프로젝트 로컬 venv 사용. `pip install openai google-genai python-dotenv`.
+5. **L3 중단**: `kill PID`(SIGTERM)로 끊으면 체크포인트 유지. `kill -9` 비권장.
+6. **`.venv`**: 프로젝트 로컬 venv 사용. `pip install openai google-genai python-dotenv`.
 
 ---
 
 ## 17. 다음 작업 체크리스트
 
 ```
-[ ] data2/brief.txt — L3 섹션 추가
-[ ] groq_client.py — generate_l3_topics() 추가
-[ ] scripts/generate_taxonomy_l3.py — L2 CSV 입력, 50×4 배치
-[ ] data2/topics_l3.csv 생성 (10,500행)
-[ ] (선택) data2/state/taxonomy.db — 840회+ resume
-[ ] L4 스크립트 + SQLite
-[ ] 본문 생성 파이프라인 연결 (Gemini, L4 → markdown)
+[x] scripts/generate_taxonomy_l3.py + taxonomy.db
+[x] Nemotron L3 본생산 86% (9,027/10,500)
+[ ] L3 재개 — --provider nvidia --resume (~1.5시간)
+[ ] L3 완료 후 partial/dedup 샘플 리뷰 (선택)
+[ ] L4 스크립트
+[ ] 본문 생성 (Gemini)
 ```
-
-### L3 파일럿 권장 순서
-
-1. L2 1개 (`01-drama`) × L3 50개 테스트
-2. 프롬프트·JSON 품질 확인
-3. L2 210개 전체 배치 (840 calls, ~1시간)
-4. 샘플 50개 수동 리뷰
 
 ---
 
@@ -415,14 +497,15 @@ taxonomy 함수 (Gemini용, Groq 클라이언트에서 프롬프트 참고 가�
 | 파일 | 설명 |
 |------|------|
 | `data2/seed/topics_l1.csv` | L1 14개 |
-| `data2/topics_l2.csv` | L2 210개 (현재 산출물) |
-| `data2/manifest_l2.json` | L2 생성 메타 |
-| `data2/brief.txt` | LLM 기획 방향 |
-| `scripts/generate_taxonomy_l2.py` | L2 CLI |
-| `scripts/groq_client.py` | Groq 클라이언트 |
-| `scripts/gemini_client.py` | Gemini + taxonomy 함수 원본 |
+| `data2/topics_l2.csv` | L2 210개 |
+| `data2/topics_l3.csv` | **L3 9,027행 (중단 시점)** |
+| `data2/manifest_l3.json` | L3 메타 |
+| `data2/state/taxonomy.db` | L3 checkpoint |
+| `data2/logs/l3_nemotron_run.log` | Nemotron 실행 로그 |
+| `scripts/generate_taxonomy_l3.py` | L3 CLI (`--provider nvidia`) |
+| `scripts/nvidia_client.py` | Nemotron 클라이언트 |
 | `keyword/es/` | ES 엔티티 SEO 트랙 (별도) |
 
 ---
 
-*이 문서는 Cursor 대화 세션(2026-06-01) 기준 기획·구현 상태를 반영합니다.*
+*최종 갱신: 2026-06-02 — L3 Nemotron 본생산 86%에서 수동 중단, checkpoint 유지.*

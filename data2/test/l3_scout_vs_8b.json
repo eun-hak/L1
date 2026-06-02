@@ -1,0 +1,473 @@
+{
+  "generated_at": "2026-06-02T00:11:22.590792+00:00",
+  "scout_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "test_model": "llama-3.1-8b-instant",
+  "test_l2": [
+    "01-drama",
+    "01-celebrity",
+    "01-movie"
+  ],
+  "test_count_per_l2": 15,
+  "note": "기존 topics_l3.csv / taxonomy.db 에 병합하지 않음",
+  "comparisons": [
+    {
+      "l2_id": "01-drama",
+      "l2_name": "드라마",
+      "scout_total_in_csv": 50,
+      "scout_analysis": {
+        "label": "scout",
+        "count": 15,
+        "intent_dist": {
+          "info": 12,
+          "howto": 3
+        },
+        "angle_dist": {
+          "issue": 6,
+          "review": 2,
+          "local": 3,
+          "howto": 2,
+          "tip": 2
+        },
+        "pipe_titles": 0,
+        "clickbait_hits": 0,
+        "bad_lang": 0,
+        "short_kw": 0,
+        "long_kw": 0,
+        "method_guide_suffix": 0,
+        "channel_or_year_kw": 0,
+        "unique_prefix20": 15,
+        "sample_keywords": [
+          "케이블 드라마 시청률",
+          "케이블 드라마 순위",
+          "쿠팡플레이 드라마 추천",
+          "쿠팡플레이 드라마 목록",
+          "쿠팡플레이 드라마 시청률",
+          "드라마 방영 일정표",
+          "드라마 방영일정표",
+          "드라마 화제성 순위"
+        ],
+        "sample_titles": [
+          "케이블 드라마 최신 시청률",
+          "케이블 드라마 시청률 순위",
+          "쿠팡플레이에서 시청할 수 있는 드라마",
+          "쿠팡플레이 드라마 전체 목록 보기",
+          "쿠팡플레이 드라마 시청률 순위"
+        ]
+      },
+      "llama8b_analysis": {
+        "label": "8b",
+        "count": 7,
+        "intent_dist": {
+          "info": 6,
+          "howto": 1
+        },
+        "angle_dist": {
+          "tip": 3,
+          "issue": 3,
+          "review": 1
+        },
+        "pipe_titles": 0,
+        "clickbait_hits": 0,
+        "bad_lang": 0,
+        "short_kw": 0,
+        "long_kw": 0,
+        "method_guide_suffix": 0,
+        "channel_or_year_kw": 4,
+        "unique_prefix20": 7,
+        "sample_keywords": [
+          "2026 Netflix 한국 드라마 추천",
+          "티빙 드라마 순위",
+          "넷플릭스 드라마 라인업 2026",
+          "티빙 드라마 라인업 2026",
+          "2026 넷플릭스 신작 드라마",
+          "웨이브 드라마 결말",
+          "넷플릭스 드라마 무료 다시보기"
+        ],
+        "sample_titles": [
+          "2026 Netflix 한국 드라마 추천 순위와 예고편",
+          "티빙 드라마 순위와 시청률",
+          "넷플릭스 드라마 라인업 2026년과 기대작",
+          "티빙 드라마 라인업 2026년과 시청 방법",
+          "2026 넷플릭스 신작 드라마 목록과 예고편"
+        ]
+      },
+      "scout_samples": [
+        {
+          "focus_keyword": "케이블 드라마 시청률",
+          "title_ko": "케이블 드라마 최신 시청률"
+        },
+        {
+          "focus_keyword": "케이블 드라마 순위",
+          "title_ko": "케이블 드라마 시청률 순위"
+        },
+        {
+          "focus_keyword": "쿠팡플레이 드라마 추천",
+          "title_ko": "쿠팡플레이에서 시청할 수 있는 드라마"
+        },
+        {
+          "focus_keyword": "쿠팡플레이 드라마 목록",
+          "title_ko": "쿠팡플레이 드라마 전체 목록 보기"
+        },
+        {
+          "focus_keyword": "쿠팡플레이 드라마 시청률",
+          "title_ko": "쿠팡플레이 드라마 시청률 순위"
+        },
+        {
+          "focus_keyword": "드라마 방영 일정표",
+          "title_ko": "드라마 방영 일정표 확인하는 방법"
+        },
+        {
+          "focus_keyword": "드라마 방영일정표",
+          "title_ko": "드라마 방영 일정표 확인하는 법"
+        },
+        {
+          "focus_keyword": "드라마 화제성 순위",
+          "title_ko": "드라마 화제성 순위 확인"
+        },
+        {
+          "focus_keyword": "드라마 출연진 정보",
+          "title_ko": "드라마 출연진과 캐릭터 정보"
+        },
+        {
+          "focus_keyword": "드라마 결말 설명",
+          "title_ko": "인기 드라마 결말 정리"
+        }
+      ],
+      "llama8b_samples": [
+        {
+          "focus_keyword": "2026 Netflix 한국 드라마 추천",
+          "title_ko": "2026 Netflix 한국 드라마 추천 순위와 예고편"
+        },
+        {
+          "focus_keyword": "티빙 드라마 순위",
+          "title_ko": "티빙 드라마 순위와 시청률"
+        },
+        {
+          "focus_keyword": "넷플릭스 드라마 라인업 2026",
+          "title_ko": "넷플릭스 드라마 라인업 2026년과 기대작"
+        },
+        {
+          "focus_keyword": "티빙 드라마 라인업 2026",
+          "title_ko": "티빙 드라마 라인업 2026년과 시청 방법"
+        },
+        {
+          "focus_keyword": "2026 넷플릭스 신작 드라마",
+          "title_ko": "2026 넷플릭스 신작 드라마 목록과 예고편"
+        },
+        {
+          "focus_keyword": "웨이브 드라마 결말",
+          "title_ko": "웨이브 드라마 결말 설명과 리뷰"
+        },
+        {
+          "focus_keyword": "넷플릭스 드라마 무료 다시보기",
+          "title_ko": "넷플릭스 드라마 무료 다시보기 사이트와 방법"
+        }
+      ]
+    },
+    {
+      "l2_id": "01-celebrity",
+      "l2_name": "연예인",
+      "scout_total_in_csv": 52,
+      "scout_analysis": {
+        "label": "scout",
+        "count": 15,
+        "intent_dist": {
+          "info": 9,
+          "review": 1,
+          "howto": 5
+        },
+        "angle_dist": {
+          "review": 4,
+          "issue": 5,
+          "tip": 6
+        },
+        "pipe_titles": 0,
+        "clickbait_hits": 0,
+        "bad_lang": 0,
+        "short_kw": 0,
+        "long_kw": 0,
+        "method_guide_suffix": 0,
+        "channel_or_year_kw": 4,
+        "unique_prefix20": 15,
+        "sample_keywords": [
+          "에스파 음악 스타일",
+          "블랙핑크 콘서트 일정",
+          "BTS 멤버 프로필",
+          "2024 연예인 시상식 일정",
+          "2024 연예인 콘서트 일정",
+          "연예인 기부 활동 소개",
+          "2024 연예인 기부",
+          "2024 연예인 패션 트렌드"
+        ],
+        "sample_titles": [
+          "에스파 음악 스타일과 장르",
+          "블랙핑크 콘서트 일정과 티켓팅",
+          "BTS 멤버 개별 프로필과 정보",
+          "2024 연예인 시상식 일정과 수상자",
+          "2024 연예인 콘서트 일정과 티켓팅 팁"
+        ]
+      },
+      "llama8b_analysis": {
+        "label": "8b",
+        "count": 7,
+        "intent_dist": {
+          "info": 7
+        },
+        "angle_dist": {
+          "issue": 4,
+          "howto": 2,
+          "tip": 1
+        },
+        "pipe_titles": 0,
+        "clickbait_hits": 0,
+        "bad_lang": 0,
+        "short_kw": 0,
+        "long_kw": 0,
+        "method_guide_suffix": 0,
+        "channel_or_year_kw": 7,
+        "unique_prefix20": 7,
+        "sample_keywords": [
+          "2026 Netflix 한국 드라마 신작",
+          "2026 연예인 시상식",
+          "2026 BTS 콘서트 일정",
+          "2026 K-POP 음악 스타일",
+          "2026 연예인 기부 활동",
+          "2026 연예인 패션 트렌드",
+          "2026 연예인 결혼식 일정"
+        ],
+        "sample_titles": [
+          "2026 Netflix 한국 드라마 신작 일정과 기대작",
+          "2026 연예인 시상식 일정과 수상 후보",
+          "2026 BTS 콘서트 일정과 티켓 예매 정보",
+          "2026년 K-POP 음악 스타일 트렌드와 영향",
+          "2026 연예인 기부 활동 사례와 효과"
+        ]
+      },
+      "scout_samples": [
+        {
+          "focus_keyword": "에스파 음악 스타일",
+          "title_ko": "에스파 음악 스타일과 장르"
+        },
+        {
+          "focus_keyword": "블랙핑크 콘서트 일정",
+          "title_ko": "블랙핑크 콘서트 일정과 티켓팅"
+        },
+        {
+          "focus_keyword": "BTS 멤버 프로필",
+          "title_ko": "BTS 멤버 개별 프로필과 정보"
+        },
+        {
+          "focus_keyword": "2024 연예인 시상식 일정",
+          "title_ko": "2024 연예인 시상식 일정과 수상자"
+        },
+        {
+          "focus_keyword": "2024 연예인 콘서트 일정",
+          "title_ko": "2024 연예인 콘서트 일정과 티켓팅 팁"
+        },
+        {
+          "focus_keyword": "연예인 기부 활동 소개",
+          "title_ko": "연예인 기부 활동 소개와 나눔 이야기"
+        },
+        {
+          "focus_keyword": "2024 연예인 기부",
+          "title_ko": "2024 연예인 기부 소식과 금액"
+        },
+        {
+          "focus_keyword": "2024 연예인 패션 트렌드",
+          "title_ko": "2024 연예인 패션 트렌드와 스타일"
+        },
+        {
+          "focus_keyword": "연예인 패션 브랜드 추천",
+          "title_ko": "연예인 패션 브랜드 추천과 가격대"
+        },
+        {
+          "focus_keyword": "연예인 패션 아이템 추천",
+          "title_ko": "연예인 패션 아이템 추천과 구매 팁"
+        }
+      ],
+      "llama8b_samples": [
+        {
+          "focus_keyword": "2026 Netflix 한국 드라마 신작",
+          "title_ko": "2026 Netflix 한국 드라마 신작 일정과 기대작"
+        },
+        {
+          "focus_keyword": "2026 연예인 시상식",
+          "title_ko": "2026 연예인 시상식 일정과 수상 후보"
+        },
+        {
+          "focus_keyword": "2026 BTS 콘서트 일정",
+          "title_ko": "2026 BTS 콘서트 일정과 티켓 예매 정보"
+        },
+        {
+          "focus_keyword": "2026 K-POP 음악 스타일",
+          "title_ko": "2026년 K-POP 음악 스타일 트렌드와 영향"
+        },
+        {
+          "focus_keyword": "2026 연예인 기부 활동",
+          "title_ko": "2026 연예인 기부 활동 사례와 효과"
+        },
+        {
+          "focus_keyword": "2026 연예인 패션 트렌드",
+          "title_ko": "2026 연예인 패션 트렌드와 스타일링 팁"
+        },
+        {
+          "focus_keyword": "2026 연예인 결혼식 일정",
+          "title_ko": "2026 연예인 결혼식 일정과 기대작"
+        }
+      ]
+    },
+    {
+      "l2_id": "01-movie",
+      "l2_name": "영화",
+      "scout_total_in_csv": 42,
+      "scout_analysis": {
+        "label": "scout",
+        "count": 15,
+        "intent_dist": {
+          "review": 2,
+          "info": 11,
+          "howto": 2
+        },
+        "angle_dist": {
+          "issue": 6,
+          "review": 7,
+          "tip": 2
+        },
+        "pipe_titles": 0,
+        "clickbait_hits": 0,
+        "bad_lang": 0,
+        "short_kw": 0,
+        "long_kw": 0,
+        "method_guide_suffix": 0,
+        "channel_or_year_kw": 5,
+        "unique_prefix20": 13,
+        "sample_keywords": [
+          "2023 한국 영화 결산",
+          "2024 한국 영화 개봉작",
+          "2024 한국 영화 결산",
+          "한국 영화 배우 프로필",
+          "한국 영화 배우 출연 작품 모음",
+          "한국 영화 배우 인터뷰",
+          "한국 영화 배우 출연료",
+          "한국 영화 시상식"
+        ],
+        "sample_titles": [
+          "2023 한국 영화 결산 리뷰",
+          "2024년 한국 영화 개봉작 라인업과 리뷰",
+          "2024 한국 영화 결산 리뷰",
+          "한국 영화 배우 프로필과 필모그래피",
+          "한국 영화 배우 출연 작품 모음"
+        ]
+      },
+      "llama8b_analysis": {
+        "label": "8b",
+        "count": 7,
+        "intent_dist": {
+          "info": 5,
+          "review": 2
+        },
+        "angle_dist": {
+          "issue": 3,
+          "review": 3,
+          "tip": 1
+        },
+        "pipe_titles": 0,
+        "clickbait_hits": 0,
+        "bad_lang": 0,
+        "short_kw": 0,
+        "long_kw": 0,
+        "method_guide_suffix": 0,
+        "channel_or_year_kw": 6,
+        "unique_prefix20": 7,
+        "sample_keywords": [
+          "2026 Netflix 한국 드라마 신작",
+          "2026 Netflix 한국 드라마 시청률",
+          "2026 Netflix 한국 드라마 예고편",
+          "네이버tv 한국 드라마",
+          "2026 오스틴 플라워 한국 드라마",
+          "2026 넷플릭스 한국 드라마",
+          "2026 한국 드라마"
+        ],
+        "sample_titles": [
+          "2026 Netflix 한국 드라마 신작 일정과 기대작",
+          "2026년 Netflix 한국 드라마 시청률 순위와 리뷰",
+          "2026년 Netflix 한국 드라마 예고편과 공식 소개",
+          "네이버tv 한국 드라마 시청 방법과 추천 프로그램",
+          "2026 오스틴 플라워 한국 드라마 시청 시기와 예고편"
+        ]
+      },
+      "scout_samples": [
+        {
+          "focus_keyword": "2023 한국 영화 결산",
+          "title_ko": "2023 한국 영화 결산 리뷰"
+        },
+        {
+          "focus_keyword": "2024 한국 영화 개봉작",
+          "title_ko": "2024년 한국 영화 개봉작 라인업과 리뷰"
+        },
+        {
+          "focus_keyword": "2024 한국 영화 결산",
+          "title_ko": "2024 한국 영화 결산 리뷰"
+        },
+        {
+          "focus_keyword": "한국 영화 배우 프로필",
+          "title_ko": "한국 영화 배우 프로필과 필모그래피"
+        },
+        {
+          "focus_keyword": "한국 영화 배우 출연 작품 모음",
+          "title_ko": "한국 영화 배우 출연 작품 모음"
+        },
+        {
+          "focus_keyword": "한국 영화 배우 인터뷰",
+          "title_ko": "한국 영화 배우 인터뷰 모음"
+        },
+        {
+          "focus_keyword": "한국 영화 배우 출연료",
+          "title_ko": "한국 영화 배우 출연료 순위"
+        },
+        {
+          "focus_keyword": "한국 영화 시상식",
+          "title_ko": "한국 영화 시상식 일정"
+        },
+        {
+          "focus_keyword": "한국 영화 블로그",
+          "title_ko": "한국 영화 블로그 - 리뷰와 정보"
+        },
+        {
+          "focus_keyword": "한국 영화 예매 팁",
+          "title_ko": "한국 영화 예매 할인 팁과 주의사항"
+        }
+      ],
+      "llama8b_samples": [
+        {
+          "focus_keyword": "2026 Netflix 한국 드라마 신작",
+          "title_ko": "2026 Netflix 한국 드라마 신작 일정과 기대작"
+        },
+        {
+          "focus_keyword": "2026 Netflix 한국 드라마 시청률",
+          "title_ko": "2026년 Netflix 한국 드라마 시청률 순위와 리뷰"
+        },
+        {
+          "focus_keyword": "2026 Netflix 한국 드라마 예고편",
+          "title_ko": "2026년 Netflix 한국 드라마 예고편과 공식 소개"
+        },
+        {
+          "focus_keyword": "네이버tv 한국 드라마",
+          "title_ko": "네이버tv 한국 드라마 시청 방법과 추천 프로그램"
+        },
+        {
+          "focus_keyword": "2026 오스틴 플라워 한국 드라마",
+          "title_ko": "2026 오스틴 플라워 한국 드라마 시청 시기와 예고편"
+        },
+        {
+          "focus_keyword": "2026 넷플릭스 한국 드라마",
+          "title_ko": "2026 넷플릭스 한국 드라마 기대작과 공개 일정"
+        },
+        {
+          "focus_keyword": "2026 한국 드라마",
+          "title_ko": "2026년 한국 드라마 인기 시청률순위"
+        }
+      ]
+    }
+  ]
+}

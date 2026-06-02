@@ -5,6 +5,7 @@ data2/topics_l2.csv 기반 L3 소분류 생성.
 SQLite checkpoint + CSV export. API 한도 초과·중단 시 --resume 으로 재개.
 
 Usage:
+  python scripts/generate_taxonomy_l3.py --provider nvidia --count 50 --batch 15 --resume
   python scripts/generate_taxonomy_l3.py --provider groq --count 50 --batch 15
   python scripts/generate_taxonomy_l3.py --provider groq --l2 01-drama
   python scripts/generate_taxonomy_l3.py --resume
@@ -27,10 +28,20 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from groq_client import (  # noqa: E402
     MODEL_FAST as GROQ_MODEL,
-    RateLimitExhausted,
+    RateLimitExhausted as GroqRateLimitExhausted,
     _keyword_seen,
-    generate_l3_topics,
+    generate_l3_topics as groq_generate_l3_topics,
 )
+from nvidia_client import (  # noqa: E402
+    MODEL_NEMOTRON,
+    RateLimitExhausted as NvidiaRateLimitExhausted,
+    generate_l3_topics as nvidia_generate_l3_topics,
+)
+
+PROVIDERS = {
+    "groq": (GROQ_MODEL, groq_generate_l3_topics),
+    "nvidia": (MODEL_NEMOTRON, nvidia_generate_l3_topics),
+}
 from taxonomy_state import (  # noqa: E402
     connect,
     count_by_l2,
@@ -156,7 +167,7 @@ def _save_checkpoint(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="data2 L3 소분류 생성 (SQLite checkpoint)")
-    parser.add_argument("--provider", choices=["groq"], default="groq")
+    parser.add_argument("--provider", choices=list(PROVIDERS), default="nvidia")
     parser.add_argument("--input", type=Path, default=L2_CSV)
     parser.add_argument("--state-db", type=Path, default=STATE_DB)
     parser.add_argument("--count", type=int, default=50, help="L2당 L3 개수")
@@ -168,8 +179,7 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    if args.provider != "groq":
-        raise SystemExit("L3 생성은 groq provider만 지원합니다.")
+    model_name, generate_l3_topics = PROVIDERS[args.provider]
 
     state_db: Path = args.state_db
     if args.fresh and state_db.exists():
@@ -178,7 +188,6 @@ def main() -> None:
     else:
         init_db(state_db)
 
-    model_name = GROQ_MODEL
     l1_map = load_l1_map(L1_CSV)
     l2_rows = load_l2(args.input, args.l2)
     if not l2_rows:
@@ -213,7 +222,7 @@ def main() -> None:
 
         print(
             f"L2 {len(to_process)}/{l2_total}개 × L3 {args.count}개 목표 "
-            f"(batch={args.batch}, state={state_db.name})"
+            f"(provider={args.provider}, model={model_name}, batch={args.batch}, state={state_db.name})"
         )
 
         processed = 0
@@ -352,7 +361,7 @@ def main() -> None:
                 )
                 time.sleep(args.sleep)
 
-        except RateLimitExhausted as exc:
+        except (GroqRateLimitExhausted, NvidiaRateLimitExhausted) as exc:
             interrupted = True
             last_error = str(exc)
             print(f"\n[rate-limit] {exc}", flush=True)
@@ -370,7 +379,7 @@ def main() -> None:
             print(
                 f"\ncheckpoint 저장됨 ({len(all_l3)}개 L3). "
                 f"잠시 후 재실행:\n"
-                f"  python scripts/generate_taxonomy_l3.py --resume",
+                f"  python scripts/generate_taxonomy_l3.py --provider {args.provider} --resume",
                 flush=True,
             )
             raise SystemExit(2) from exc
