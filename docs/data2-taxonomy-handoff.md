@@ -50,6 +50,46 @@ data2/state/taxonomy.db      # SQLite l3_topics + l2_progress
 data2/logs/l3_nemotron_run.log
 ```
 
+### L3 후처리 (2026-06-04, LLM API 없음)
+
+```bash
+python scripts/dedup_l3_topics.py
+```
+
+| 출력 | 설명 |
+|------|------|
+| `data2/topics_l3_curated.csv` | `tier=publish\|edit` — 발행·수정 큐 |
+| `data2/topics_l3_hold.csv` | `tier=hold` — 연도·뉴스성 보류 |
+| `data2/topics_l3_dropped.csv` | 제거·병합 탈락 + `drop_reason` |
+| `data2/reports/l3_curate_report.json` | 단계별 통계 |
+
+원본 `topics_l3.csv`는 변경하지 않음.
+
+### 블로그 런치 SEO 우선순위 (2026-06-04)
+
+파일: `data2/seed/blog_launch_priority.csv`
+
+| Phase | L1 (메인 카테고리) | 전략 |
+|-------|-------------------|------|
+| **1** (0~3개월) | 여행·맛집/카페·푸드·뷰티·펫 | 지역·레시피·howto·evergreen, 네이버 검색 상위 |
+| **2** | 아웃도어·자동차 | 시즌+고의도(중고차·캠핑), Phase1과 내부링크 |
+| **3** | IT/테크·패션·건강(제한) | 트래픽 크지만 경쟁/YMYL |
+| **hold** | 연예·스포츠·경제·교양 | 뉴스·구식·리스크 — 창고만 |
+
+Phase1 L2 25개 × 글 10~15편 ≈ **300편** 본문 파일럿 목표. `tier=publish` + `l2_id`가 CSV에 있는 행만.
+
+추출 (완료):
+
+```bash
+python scripts/export_phase1_pilot.py
+```
+
+| 산출물 | 행 수 |
+|--------|------|
+| `data2/pilot/phase1_body_pilot.csv` | **286** (L2 25개, shortfall 0) |
+
+본문 모델: `gemini-2.5-flash` (초안), 메타 `gemini-3.1-flash-lite`, 도입부 선택 `gemini-2.5-pro` — `scripts/gemini_client.py`
+
 ### 재개 명령 (다음에 이어할 때)
 
 ```bash
@@ -283,9 +323,13 @@ data2/
 ├── topics_l2.csv               # L2 210개 ✅
 ├── topics_l2.json
 ├── manifest_l2.json
-├── topics_l3.csv               # L3 9,027행 ⏸
+├── topics_l3.csv               # L3 원본 (~11,099행)
+├── topics_l3_curated.csv       # 후처리: publish+edit 큐
+├── topics_l3_hold.csv          # 후처리: 보류
+├── topics_l3_dropped.csv       # 후처리: 제거·병합 탈락
 ├── topics_l3.json
 ├── manifest_l3.json
+├── reports/l3_curate_report.json
 ├── topics_l4.csv               # (예정)
 ├── state/
 │   └── taxonomy.db             # L3 checkpoint ✅
@@ -300,6 +344,7 @@ scripts/
 ├── nvidia_client.py            # NVIDIA (Nemotron, Llama 3.1 8B)
 ├── generate_taxonomy_l2.py     # L2 CLI
 ├── generate_taxonomy_l3.py     # L3 CLI + resume
+├── dedup_l3_topics.py          # L3 후처리 (중복·tier, API 없음)
 ├── taxonomy_state.py           # SQLite checkpoint
 ├── compare_l3_8b_vs_scout.py   # 품질 비교 (테스트)
 ├── compare_l3_nemotron_vs_scout.py

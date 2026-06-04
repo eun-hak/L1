@@ -1,0 +1,48 @@
+phase,l1_code,l1_slug,name_ko,l2_id,l2_name_ko,priority,seo_rationale,target_posts_m1
+1,11,travel,여행,11-travel-essentials,여행준비물,S,evergreen 실용·검색량 큼,15
+1,11,travel,여행,11-accommodation-recommendations,숙소추천,S,지역+숙소 롱테일,15
+1,11,travel,여행,11-domestic-travel,국내여행,S,국내여행 수요 최상,15
+1,11,travel,여행,11-overseas-travel,해외여행,S,해외여행 준비·정보,15
+1,11,travel,여행,11-travel-tips,여행꿀팁,S,문제해결형,10
+1,09,cafe,맛집/카페,09-seoul-food,서울 맛집,S,지역명+맛집 핵심,15
+1,09,cafe,맛집/카페,09-busan-food,부산 맛집,S,지역 SEO,12
+1,09,cafe,맛집/카페,09-cafe-recommend,카페 추천,S,카페 검색 상위,12
+1,09,cafe,맛집/카페,09-solo-food,혼밥 맛집,S,의도 명확,10
+1,09,cafe,맛집/카페,09-date-course,데이트 코스,A,복합 검색,8
+1,10,food,푸드,10-korean-recipe,한식 레시피,S,evergreen 레시피,15
+1,10,food,푸드,10-cooking-tips,요리 팁,S,howto 수요,12
+1,10,food,푸드,10-baking-guide,베이킹 가이드,S,홈베이킹,10
+1,10,food,푸드,10-dessert-making,디저트 만들기,A,레시피 확장,10
+1,10,food,푸드,10-healthy-convenience-food,건강 간편식,A,실용,8
+1,08,beauty,뷰티,08-skin-type-care,피부 타입별 케어,S,비교·루틴 검색,12
+1,08,beauty,뷰티,08-skincare-routine,스킨케어 루틴,S,제품 연계,12
+1,08,beauty,뷰티,08-hair-care-tips,헤어 케어 팁,S,실용,10
+1,08,beauty,뷰티,08-makeup-tutorial,메이크업 튜토리얼,S,howto,10
+1,08,beauty,뷰티,08-cosmetic-ingredient-analysis,화장품 성분 분석,A,깊이 있는 info,8
+1,13,pet,펫,13-dog-health,강아지 건강,S,반려견 실용,12
+1,13,pet,펫,13-cat-food,고양이 사료,S,상품 비교 검색,12
+1,13,pet,펫,13-dog-training,강아지 훈련,S,howto,10
+1,13,pet,펫,13-pet-care-tips,펫 케어 팁,S,일상 검색,10
+1,13,pet,펫,13-pet-hospital,반려동물 병원,A,지역+병원,8
+2,14,outdoor,아웃도어,14-camping-tips,캠핑 노하우,S,시즌+evergreen,12
+2,14,outdoor,아웃도어,14-camping-sites,캠핑 장소,S,지역 캠핑장,12
+2,14,outdoor,아웃도어,14-car-camping-essentials,차박 준비물,S,차박 급성장,10
+2,14,outdoor,아웃도어,14-hiking-guide,등산 가이드,S,등산 코스,10
+2,14,outdoor,아웃도어,14-car-camping-trip,차박 여행,A,여행 L1과 내부링크,8
+2,06,cars,자동차,06-used-car-buying,중고차 구매,S,고의도 검색,12
+2,06,cars,자동차,06-car-inspection,자동차 점검,S,howto·체크리스트,10
+2,06,cars,자동차,06-car-insurance,자동차 보험,S,비교 검색,10
+2,06,cars,자동차,06-ev-guide,전기차 가이드,A,정책+evergreen,8
+2,06,cars,자동차,06-car-travel,자동차 여행,A,여행·아웃도어 연계,8
+3,07,tech,IT/테크,07-smartphone-review,스마트폰 리뷰,B,경쟁↑·수요 큼,8
+3,07,tech,IT/테크,07-app-review,앱 리뷰,B,롱테일,8
+3,07,tech,IT/테크,07-gadget-review,가젯 리뷰,B,리뷰 의도,8
+3,07,tech,IT/테크,07-pc-build-guide,PC 빌드 가이드,B,howto 니치,6
+3,04,fashion,패션,04-shopping-guide,쇼핑 가이드,B,시즌·비교,8
+3,04,fashion,패션,04-minimal-fashion,미니멀 패션,B,스타일,6
+3,03,health,건강/다이어트,03-exercise-routine,운동 루틴,C,YMYL·면책 필요,6
+3,03,health,건강/다이어트,03-healthy-diet,건강 식단,C,톤 주의,6
+hold,01,entertainment,이슈/연예,,,HOLD,뉴스·구식·중복↑,0
+hold,05,sports,스포츠이슈,,,HOLD,일정·예측 구식,0
+hold,02,economy,경제,,,HOLD,YMYL·정책 갱신,0
+hold,12,knowledge,지식/교양,,,HOLD,교양강의 템플릿 이슈,0

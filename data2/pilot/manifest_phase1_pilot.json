@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-04T06:36:11.239844+00:00",
+  "phase": 1,
+  "total_rows": 286,
+  "target_l2_count": 25,
+  "shortfall_l2": [],
+  "by_l1_code": {
+    "11": 70,
+    "09": 57,
+    "10": 55,
+    "08": 52,
+    "13": 52
+  },
+  "paths": {
+    "csv": "/Users/simsimi/개인프로젝트/L1/data2/pilot/phase1_body_pilot.csv",
+    "json": "/Users/simsimi/개인프로젝트/L1/data2/pilot/phase1_body_pilot.json",
+    "launch_plan": "/Users/simsimi/개인프로젝트/L1/data2/seed/blog_launch_priority.csv"
+  },
+  "body_pipeline_note": {
+    "draft_model": "gemini-2.5-flash",
+    "seo_meta_model": "gemini-3.1-flash-lite",
+    "intro_polish_model": "gemini-2.5-pro (optional)"
+  }
+}
