@@ -1,0 +1,48 @@
+{
+  "plan_file": "data2/pilot/phase1_l3_l4_plan.csv",
+  "phase": 1,
+  "l2_count": 25,
+  "totals": {
+    "l3_cap_sum": 304,
+    "l4_warehouse_kw_est_sum": 11396,
+    "publish_l3_cap_sum": 186,
+    "publish_url_m1_sum": 286
+  },
+  "by_l1": {
+    "11_travel": { "l2": 5, "l3_cap": 69, "l4_kw_est": 3630, "publish_m1": 70 },
+    "09_cafe": { "l2": 5, "l3_cap": 59, "l4_kw_est": 4130, "publish_m1": 57 },
+    "10_food": { "l2": 5, "l3_cap": 64, "l4_kw_est": 1236, "publish_m1": 55 },
+    "08_beauty": { "l2": 5, "l3_cap": 56, "l4_kw_est": 820, "publish_m1": 52 },
+    "13_pet": { "l2": 5, "l3_cap": 56, "l4_kw_est": 1116, "publish_m1": 52 }
+  },
+  "l3_generation": {
+    "method": "slot_2step",
+    "steps": [
+      "Scout: 의도 슬롯 N개 (l3_slot_axes 참고)",
+      "Gemini: stem 중복 제거",
+      "Scout: 슬롯 1개당 L3 1개 (배치 5)",
+      "코드: stem/suffix/허브반복 검증"
+    ],
+    "scout_calls_est_per_l2": "4~8",
+    "gemini_calls_est_per_l2": 1,
+    "phase1_total_scout_est": "100~200",
+    "phase1_total_gemini_est": 25
+  },
+  "l4_engine_mix": {
+    "program": "geo·맛집·병원·사료 — 토큰 0",
+    "llm": "howto·hub·info — 소량",
+    "hybrid": "geo+의도 시드 LLM + 지역/유형 코드"
+  },
+  "scale_path_to_1m": {
+    "phase1_warehouse_kw": 11396,
+    "full_650_l2_extrapolation": "~250k~400k (L4 program 비중↑)",
+    "plus_es_entities": "+200k~400k",
+    "target_1m": "Phase2~3 L2 확장 + L4 program + ES 연계"
+  },
+  "rules": {
+    "forbid_duration_variants": "단기/장기/여름/겨울 L3 1개만",
+    "suffix_cap_추천": "L2당 L3 2개 이하",
+    "hub_repeat_cap": "같은 허브 stem L3 5개 이하",
+    "publish_vs_warehouse": "publish_l3_cap은 발행용, l3_cap은 시드 풀"
+  }
+}

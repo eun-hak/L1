@@ -1,7 +1,9 @@
 # data2 대량 SEO 키워드 택소노미 — 기획·구현 인수인계
 
-> 작성일: 2026-06-01 (최종 갱신: 2026-06-02)  
+> 작성일: 2026-06-01 (최종 갱신: 2026-06-05)  
 > 목적: 대화 세션 초기화 전, 지금까지 기획·구현·결정 사항을 다른 환경에서 이어갈 수 있도록 기록
+
+> **설계·확장·L3/L4·100만 KW 통합 문서**: [`data2-taxonomy-master-plan.md`](./data2-taxonomy-master-plan.md) (2026-06-05)
 
 ---
 
@@ -541,8 +543,10 @@ taxonomy 함수 (Gemini용, Groq 클라이언트에서 프롬프트 참고 가�
 
 | 파일 | 설명 |
 |------|------|
+| **`docs/data2-taxonomy-master-plan.md`** | **L2 603 · L3 슬롯 · L4 · 100만 · Phase1 계획 (통합)** |
 | `data2/seed/topics_l1.csv` | L1 14개 |
-| `data2/topics_l2.csv` | L2 210개 |
+| `data2/topics_l2.csv` | L2 **603**개 (2026-06-05) |
+| `data2/pilot/phase1_l3_l4_plan.csv` | Phase1 L3/L4 cap·축 |
 | `data2/topics_l3.csv` | **L3 9,027행 (중단 시점)** |
 | `data2/manifest_l3.json` | L3 메타 |
 | `data2/state/taxonomy.db` | L3 checkpoint |
