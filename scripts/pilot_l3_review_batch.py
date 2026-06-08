@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-L3 리뷰 파일럿 — slot_2step만 생성, 사람 검증용 CSV export.
+L3 리뷰 파일럿 / 본생산 — slot_2step 생성.
 
 Usage:
   python scripts/pilot_l3_review_batch.py
   python scripts/pilot_l3_review_batch.py --resume
   python scripts/pilot_l3_review_batch.py --l2 11-travel-essentials --count 15
+  python scripts/pilot_l3_review_batch.py --missing-l2 --merge-topics --resume \\
+    --max-scout 1500 --max-gemini 500
 """
 
 from __future__ import annotations
@@ -23,15 +25,29 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import test_l3_diversity as td  # noqa: E402
-from groq_client import MODEL_FAST as SCOUT_MODEL  # noqa: E402
-from gemini_client import MODEL_FAST as GEMINI_MODEL  # noqa: E402
+from groq_client import MODEL_FAST as SCOUT_MODEL, RateLimitExhausted  # noqa: E402
+from gemini_client import MODEL_FAST as GEMINI_MODEL, _is_rate_or_quota_error  # noqa: E402
+from taxonomy_state import (  # noqa: E402
+    L3_FIELDNAMES,
+    connect,
+    export_artifacts,
+    upsert_topics,
+)
 
 OUT_DIR = ROOT / "data2" / "test" / "l3_review_pilot"
 CHECKPOINT = OUT_DIR / "checkpoint.json"
+PROD_CHECKPOINT = ROOT / "data2" / "state" / "l3_slot2step_prod_checkpoint.json"
 REVIEW_CSV = OUT_DIR / "l3_review_pilot.csv"
 REPORT_JSON = OUT_DIR / "l3_review_pilot_report.json"
 PHASE1_PLAN = ROOT / "data2" / "pilot" / "phase1_l3_l4_plan.csv"
 BRIEF = ROOT / "data2" / "brief.txt"
+L2_CSV = ROOT / "data2" / "topics_l2.csv"
+LEGACY_L3 = ROOT / "data2" / "topics_l3.csv"  # Nemotron/Scout 구본 (건드리지 않음)
+SLOT2STEP_CSV = ROOT / "data2" / "topics_l3_slot2step.csv"
+SLOT2STEP_JSON = ROOT / "data2" / "topics_l3_slot2step.json"
+SLOT2STEP_MANIFEST = ROOT / "data2" / "manifest_l3_slot2step.json"
+STATE_DB_SLOT2STEP = ROOT / "data2" / "state" / "taxonomy_slot2step.db"
+SLOT2STEP_MODEL = "slot_2step"
 
 # 타입별 대표 L2 20개 (Phase1 + 신규 geo/howto)
 DEFAULT_L2 = [
@@ -60,6 +76,60 @@ DEFAULT_L2 = [
 DURATION_PATTERN = re.compile(r"(단기|장기|여름|겨울|봄|가을|국내|해외)")
 
 
+class ApiBudget:
+    def __init__(self, *, max_scout: int | None, max_gemini: int | None) -> None:
+        self.scout = 0
+        self.gemini = 0
+        self.max_scout = max_scout
+        self.max_gemini = max_gemini
+        self.stop_reason = ""
+
+    def require_scout(self) -> None:
+        if self.max_scout is not None and self.scout >= self.max_scout:
+            self.stop_reason = f"scout 한도 {self.max_scout} 도달"
+            raise BudgetExhausted(self.stop_reason)
+
+    def require_gemini(self) -> None:
+        if self.max_gemini is not None and self.gemini >= self.max_gemini:
+            self.stop_reason = f"gemini 한도 {self.max_gemini} 도달"
+            raise BudgetExhausted(self.stop_reason)
+
+    def add_scout(self, n: int = 1) -> None:
+        self.scout += n
+        if self.max_scout is not None and self.scout >= self.max_scout:
+            self.stop_reason = f"scout 한도 {self.max_scout} 도달"
+
+    def add_gemini(self, n: int = 1) -> None:
+        self.gemini += n
+        if self.max_gemini is not None and self.gemini >= self.max_gemini:
+            self.stop_reason = f"gemini 한도 {self.max_gemini} 도달"
+
+    @property
+    def exhausted(self) -> bool:
+        scout_hit = self.max_scout is not None and self.scout >= self.max_scout
+        gemini_hit = self.max_gemini is not None and self.gemini >= self.max_gemini
+        return scout_hit and gemini_hit
+
+
+class BudgetExhausted(RuntimeError):
+    pass
+
+
+def _gemini_blocked(exc: Exception) -> bool:
+    msg = str(exc).lower()
+    return "403" in msg or "blocked" in msg or "permission_denied" in msg
+
+
+def gemini_dedup_safe(slots: list[dict[str, str]], l2_name: str) -> tuple[list[dict[str, str]], bool]:
+    try:
+        return td.gemini_dedup_slots(slots, l2_name), True
+    except Exception as exc:
+        if _is_rate_or_quota_error(exc) or _gemini_blocked(exc):
+            print(f"  [warn] Gemini dedup skip: {exc}", flush=True)
+            return slots, False
+        raise
+
+
 def load_phase1_meta() -> dict[str, dict[str, str]]:
     meta: dict[str, dict[str, str]] = {}
     if not PHASE1_PLAN.exists():
@@ -72,6 +142,128 @@ def load_phase1_meta() -> dict[str, dict[str, str]]:
                 "l4_engine": row.get("l4_engine", ""),
             }
     return meta
+
+
+def load_l2_map() -> dict[str, dict[str, str]]:
+    out: dict[str, dict[str, str]] = {}
+    with L2_CSV.open(encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            out[row["l2_id"]] = row
+    return out
+
+
+def load_missing_l2_ids() -> list[str]:
+    """slot_2step 미생성 L2 — 구 topics_l3(Nemotron) 있는 L2는 제외."""
+    l2_map = load_l2_map()
+    has_slot2step: set[str] = set()
+    if SLOT2STEP_CSV.exists():
+        with SLOT2STEP_CSV.open(encoding="utf-8-sig") as f:
+            for row in csv.DictReader(f):
+                has_slot2step.add(row["l2_id"])
+    has_legacy: set[str] = set()
+    if LEGACY_L3.exists():
+        with LEGACY_L3.open(encoding="utf-8-sig") as f:
+            for row in csv.DictReader(f):
+                has_legacy.add(row["l2_id"])
+    missing = [
+        lid for lid in l2_map
+        if lid not in has_slot2step and lid not in has_legacy
+    ]
+    missing.sort(key=lambda x: (l2_map[x].get("l1_code", ""), int(l2_map[x].get("sort_order") or 0)))
+    return missing
+
+
+def _unique_slug(slug: str, seen: set[str]) -> str:
+    if slug not in seen:
+        return slug
+    base = slug
+    n = 2
+    while slug in seen:
+        slug = f"{base}-{n}"
+        n += 1
+    return slug
+
+
+def result_to_l3_rows(result: dict, l2_row: dict[str, str], *, seen_l3_ids: set[str]) -> list[dict[str, str]]:
+    now = datetime.now(timezone.utc).isoformat()
+    l2_id = result["l2_id"]
+    l1_code = l2_row.get("l1_code", "")
+    rows: list[dict[str, str]] = []
+    local_slugs: set[str] = set()
+    for item in result["items"]:
+        slug = (item.get("slug") or td.slugify_en(item["focus_keyword"])).strip() or "topic"
+        slug = _unique_slug(slug, local_slugs)
+        local_slugs.add(slug)
+        l3_id = f"{l2_id}-{slug}"
+        if l3_id in seen_l3_ids:
+            slug = _unique_slug(f"{slug}-2", local_slugs)
+            local_slugs.add(slug)
+            l3_id = f"{l2_id}-{slug}"
+        seen_l3_ids.add(l3_id)
+        rows.append({
+            "l3_id": l3_id,
+            "l2_id": l2_id,
+            "l1_code": l1_code,
+            "l3_slug": slug,
+            "focus_keyword": item["focus_keyword"],
+            "title_ko": item.get("title_ko", ""),
+            "search_intent": item.get("search_intent", "info"),
+            "topic_angle": item.get("topic_angle", "tip"),
+            "description": item.get("description", ""),
+            "model": SLOT2STEP_MODEL,
+            "generated_at": now,
+        })
+    return rows
+
+
+def merge_results_to_slot2step(results: list[dict], l2_map: dict[str, dict[str, str]]) -> int:
+    existing: list[dict[str, str]] = []
+    seen_l3_ids: set[str] = set()
+    if SLOT2STEP_CSV.exists():
+        with SLOT2STEP_CSV.open(encoding="utf-8-sig") as f:
+            for row in csv.DictReader(f):
+                existing.append({k: row.get(k, "") for k in L3_FIELDNAMES})
+                seen_l3_ids.add(row.get("l3_id", ""))
+
+    new_rows: list[dict[str, str]] = []
+    for result in results:
+        l2_row = l2_map.get(result["l2_id"])
+        if not l2_row:
+            continue
+        new_rows.extend(result_to_l3_rows(result, l2_row, seen_l3_ids=seen_l3_ids))
+
+    if not new_rows:
+        return 0
+
+    by_id = {r["l3_id"]: r for r in existing}
+    for row in new_rows:
+        by_id[row["l3_id"]] = row
+    merged = sorted(by_id.values(), key=lambda r: (r["l2_id"], r["l3_id"]))
+
+    SLOT2STEP_CSV.parent.mkdir(parents=True, exist_ok=True)
+    with SLOT2STEP_CSV.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=L3_FIELDNAMES)
+        w.writeheader()
+        w.writerows(merged)
+
+    SLOT2STEP_JSON.write_text(json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    with connect(STATE_DB_SLOT2STEP) as conn:
+        upsert_topics(conn, new_rows)
+        export_artifacts(
+            conn,
+            csv_path=SLOT2STEP_CSV,
+            json_path=SLOT2STEP_JSON,
+            manifest_path=SLOT2STEP_MANIFEST,
+            l2_count=len(l2_map),
+            count_target=15,
+            model=SLOT2STEP_MODEL,
+            l2_processed=len({r["l2_id"] for r in merged}),
+            interrupted=False,
+            state_db=str(STATE_DB_SLOT2STEP.relative_to(ROOT)),
+        )
+
+    return len(new_rows)
 
 
 def auto_flags(keyword: str, stem: str, l2_stems: list[str]) -> str:
@@ -95,6 +287,7 @@ def generate_l2_batch(
     count: int,
     brief: str,
     phase1_meta: dict[str, dict[str, str]],
+    budget: ApiBudget | None = None,
 ) -> dict:
     l2 = td.load_l2(l2_id)
     l1 = td.load_l1(l2["l1_code"])
@@ -109,6 +302,8 @@ def generate_l2_batch(
     gemini_calls = 0
     target = count + 5
 
+    if budget:
+        budget.require_scout()
     slots = td.generate_slots(
         l1_name=l1_name,
         l1_desc=l1_desc,
@@ -118,11 +313,21 @@ def generate_l2_batch(
         brief=brief,
     )
     scout_calls += 1
+    if budget:
+        budget.add_scout()
     time.sleep(1.0)
 
-    slots = td.gemini_dedup_slots(slots[:target], l2_name)
-    gemini_calls += 1
-    time.sleep(1.0)
+    try:
+        if budget:
+            budget.require_gemini()
+        slots, gemini_used = gemini_dedup_safe(slots[:target], l2_name)
+        if gemini_used:
+            gemini_calls += 1
+            if budget:
+                budget.add_gemini()
+            time.sleep(1.0)
+    except (BudgetExhausted, RateLimitExhausted):
+        raise
 
     accepted: list[dict[str, str]] = []
     rejected: list[str] = []
@@ -135,6 +340,8 @@ def generate_l2_batch(
         need = count - len(accepted)
         batch_slots = slots[len(accepted) : len(accepted) + need + 2]
         if not batch_slots:
+            if budget:
+                budget.require_scout()
             extra = td.generate_slots(
                 l1_name=l1_name,
                 l1_desc=l1_desc,
@@ -144,15 +351,27 @@ def generate_l2_batch(
                 brief=brief,
             )
             scout_calls += 1
+            if budget:
+                budget.add_scout()
             time.sleep(1.0)
-            extra = td.gemini_dedup_slots(extra, l2_name)
-            gemini_calls += 1
-            time.sleep(1.0)
+            try:
+                if budget:
+                    budget.require_gemini()
+                extra, gemini_used = gemini_dedup_safe(extra, l2_name)
+                if gemini_used:
+                    gemini_calls += 1
+                    if budget:
+                        budget.add_gemini()
+                    time.sleep(1.0)
+            except (BudgetExhausted, RateLimitExhausted):
+                raise
             slots.extend(extra)
             batch_slots = slots[len(accepted) : len(accepted) + need + 2]
             if not batch_slots:
                 break
 
+        if budget:
+            budget.require_scout()
         raw = td.generate_diverse_l3(
             l1_name=l1_name,
             l1_desc=l1_desc,
@@ -163,6 +382,8 @@ def generate_l2_batch(
             slots=batch_slots,
         )
         scout_calls += 1
+        if budget:
+            budget.add_scout()
         time.sleep(1.0)
 
         for item in raw:
@@ -243,92 +464,40 @@ def build_review_rows(results: list[dict]) -> list[dict]:
     return rows
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="L3 review pilot batch")
-    parser.add_argument("--l2", action="append", default=None)
-    parser.add_argument("--count", type=int, default=15)
-    parser.add_argument("--resume", action="store_true")
-    args = parser.parse_args()
+def _save_checkpoint(path: Path, results: list[dict], *, extra: dict | None = None) -> None:
+    payload: dict = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "scout_model": SCOUT_MODEL,
+        "gemini_model": GEMINI_MODEL,
+        "results": results,
+    }
+    if extra:
+        payload.update(extra)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    l2_ids = args.l2 or DEFAULT_L2
-    brief = BRIEF.read_text(encoding="utf-8").strip() if BRIEF.exists() else ""
-    phase1_meta = load_phase1_meta()
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    done: dict[str, dict] = {}
-    if args.resume and CHECKPOINT.exists():
-        data = json.loads(CHECKPOINT.read_text(encoding="utf-8"))
-        for r in data.get("results", []):
-            done[r["l2_id"]] = r
-        print(f"resume: {len(done)} L2 로드")
-
-    results: list[dict] = []
-    total_scout = 0
-    total_gemini = 0
-
-    print(f"L3 리뷰 파일럿 — L2 {len(l2_ids)}개 × {args.count}개 (slot_2step)\n")
-
-    for i, l2_id in enumerate(l2_ids, 1):
-        if l2_id in done:
-            results.append(done[l2_id])
-            total_scout += done[l2_id].get("scout_calls", 0)
-            total_gemini += done[l2_id].get("gemini_calls", 0)
-            print(f"[{i}/{len(l2_ids)}] {l2_id} — checkpoint 스킵")
-            continue
-
-        print(f"[{i}/{len(l2_ids)}] {l2_id} ...", flush=True)
-        try:
-            result = generate_l2_batch(
-                l2_id, count=args.count, brief=brief, phase1_meta=phase1_meta,
-            )
-        except Exception as exc:
-            print(f"  ERROR: {exc}")
-            partial = {
-                "generated_at": datetime.now(timezone.utc).isoformat(),
-                "results": results,
-                "failed_l2": l2_id,
-                "error": str(exc),
-            }
-            CHECKPOINT.write_text(
-                json.dumps(partial, ensure_ascii=False, indent=2), encoding="utf-8",
-            )
-            raise
-
-        m = result["metrics"]
-        print(
-            f"  수락 {result['accepted_count']}/{args.count} | "
-            f"stem유일 {m.get('stem_unique_pct')}% | 추천 {m.get('ends_with_추천')} | "
-            f"Scout {result['scout_calls']} Gemini {result['gemini_calls']}"
-        )
-        results.append(result)
-        total_scout += result["scout_calls"]
-        total_gemini += result["gemini_calls"]
-
-        checkpoint = {
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "scout_model": SCOUT_MODEL,
-            "gemini_model": GEMINI_MODEL,
-            "results": results,
-        }
-        CHECKPOINT.write_text(
-            json.dumps(checkpoint, ensure_ascii=False, indent=2), encoding="utf-8",
-        )
-        time.sleep(1.5)
-
-    review_rows = build_review_rows(results)
-    write_review_csv(review_rows)
-
-    total_kw = sum(r["accepted_count"] for r in results)
+def _write_report(
+    path: Path,
+    results: list[dict],
+    *,
+    target: int,
+    scout_calls: int,
+    gemini_calls: int,
+    output_csv: str,
+    stop_reason: str = "",
+) -> None:
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "l2_count": len(results),
-        "target_per_l2": args.count,
-        "total_keywords": total_kw,
-        "scout_calls": total_scout,
-        "gemini_calls": total_gemini,
+        "target_per_l2": target,
+        "total_keywords": sum(r["accepted_count"] for r in results),
+        "scout_calls": scout_calls,
+        "gemini_calls": gemini_calls,
         "scout_model": SCOUT_MODEL,
         "gemini_model": GEMINI_MODEL,
-        "output_csv": str(REVIEW_CSV.relative_to(ROOT)),
+        "output_csv": output_csv,
+        "stop_reason": stop_reason,
         "by_l2": [
             {
                 "l2_id": r["l2_id"],
@@ -343,12 +512,176 @@ def main() -> None:
             for r in results
         ],
     }
-    REPORT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"\n완료 — L3 {total_kw}개")
-    print(f"  CSV  → {REVIEW_CSV}")
-    print(f"  JSON → {REPORT_JSON}")
-    print(f"  API  → Scout {total_scout}회, Gemini {total_gemini}회")
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="L3 review pilot / slot_2step production")
+    parser.add_argument("--l2", action="append", default=None)
+    parser.add_argument("--missing-l2", action="store_true", help="topics_l3에 없는 L2 전체")
+    parser.add_argument("--count", type=int, default=15)
+    parser.add_argument("--resume", action="store_true")
+    parser.add_argument("--merge-topics", action="store_true", help="topics_l3_slot2step.csv에 병합")
+    parser.add_argument("--max-scout", type=int, default=None, help="Scout 호출 상한 (429 전 중단)")
+    parser.add_argument("--max-gemini", type=int, default=None, help="Gemini 호출 상한")
+    args = parser.parse_args()
+
+    prod_mode = args.missing_l2 or args.merge_topics
+    if args.missing_l2:
+        l2_ids = load_missing_l2_ids()
+    else:
+        l2_ids = args.l2 or DEFAULT_L2
+
+    checkpoint_path = PROD_CHECKPOINT if prod_mode else CHECKPOINT
+    report_path = ROOT / "data2" / "reports" / "l3_slot2step_prod_report.json" if prod_mode else REPORT_JSON
+
+    brief = BRIEF.read_text(encoding="utf-8").strip() if BRIEF.exists() else ""
+    phase1_meta = load_phase1_meta()
+    l2_map = load_l2_map()
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    budget = ApiBudget(max_scout=args.max_scout, max_gemini=args.max_gemini)
+
+    done: dict[str, dict] = {}
+    session_scout = 0
+    session_gemini = 0
+    if args.resume and checkpoint_path.exists():
+        data = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+        for r in data.get("results", []):
+            done[r["l2_id"]] = r
+        session_scout = int(data.get("session_scout", 0))
+        session_gemini = int(data.get("session_gemini", 0))
+        budget.scout = session_scout
+        budget.gemini = session_gemini
+        print(f"resume: {len(done)} L2 로드 (Scout {session_scout}, Gemini {session_gemini})")
+
+    results: list[dict] = list(done.values())
+    stop_reason = ""
+
+    mode_label = "본생산(missing L2)" if args.missing_l2 else "리뷰 파일럿"
+    print(f"L3 slot_2step {mode_label} - L2 {len(l2_ids)} x {args.count}")
+    if args.max_scout or args.max_gemini:
+        print(f"  한도: Scout ≤{args.max_scout}, Gemini ≤{args.max_gemini}")
+    print()
+
+    for i, l2_id in enumerate(l2_ids, 1):
+        if l2_id in done:
+            print(f"[{i}/{len(l2_ids)}] {l2_id} - checkpoint skip")
+            continue
+
+        scout_blocked = args.max_scout is not None and budget.scout >= args.max_scout
+        gemini_blocked = args.max_gemini is not None and budget.gemini >= args.max_gemini
+        if scout_blocked or gemini_blocked:
+            stop_reason = budget.stop_reason or "API 일일 한도 도달"
+            print(f"\n[stop] {stop_reason}")
+            break
+
+        print(f"[{i}/{len(l2_ids)}] {l2_id} ...", flush=True)
+        try:
+            result = generate_l2_batch(
+                l2_id,
+                count=args.count,
+                brief=brief,
+                phase1_meta=phase1_meta,
+                budget=budget if (args.max_scout or args.max_gemini) else None,
+            )
+        except (RateLimitExhausted, BudgetExhausted) as exc:
+            stop_reason = str(exc)
+            print(f"\n[rate-limit] {stop_reason}")
+            _save_checkpoint(
+                checkpoint_path,
+                results,
+                extra={
+                    "failed_l2": l2_id,
+                    "error": stop_reason,
+                    "session_scout": budget.scout,
+                    "session_gemini": budget.gemini,
+                },
+            )
+            break
+        except Exception as exc:
+            if _is_rate_or_quota_error(exc):
+                stop_reason = str(exc)
+                print(f"\n[rate-limit] {stop_reason}")
+                _save_checkpoint(
+                    checkpoint_path,
+                    results,
+                    extra={
+                        "failed_l2": l2_id,
+                        "error": stop_reason,
+                        "session_scout": budget.scout,
+                        "session_gemini": budget.gemini,
+                    },
+                )
+                break
+            print(f"  ERROR: {exc}")
+            _save_checkpoint(
+                checkpoint_path,
+                results,
+                extra={"failed_l2": l2_id, "error": str(exc)},
+            )
+            raise
+
+        m = result["metrics"]
+        print(
+            f"  수락 {result['accepted_count']}/{args.count} | "
+            f"stem유일 {m.get('stem_unique_pct')}% | 추천 {m.get('ends_with_추천')} | "
+            f"Scout {result['scout_calls']} Gemini {result['gemini_calls']} | "
+            f"누적 Scout {budget.scout} Gemini {budget.gemini}"
+        )
+        results.append(result)
+        done[l2_id] = result
+
+        if args.merge_topics:
+            added = merge_results_to_slot2step([result], l2_map)
+            print(f"  >> topics_l3_slot2step.csv +{added}")
+
+        _save_checkpoint(
+            checkpoint_path,
+            results,
+            extra={
+                "session_scout": budget.scout,
+                "session_gemini": budget.gemini,
+            },
+        )
+
+        if budget.stop_reason and (
+            (args.max_scout and budget.scout >= args.max_scout)
+            or (args.max_gemini and budget.gemini >= args.max_gemini)
+        ):
+            stop_reason = budget.stop_reason
+            print(f"\n[stop] {stop_reason}")
+            break
+
+        time.sleep(1.5)
+
+    if not prod_mode:
+        review_rows = build_review_rows(results)
+        write_review_csv(review_rows)
+
+    if args.merge_topics and results and not any(r.get("_merged") for r in results):
+        pass  # already merged per L2
+
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    _write_report(
+        report_path,
+        results,
+        target=args.count,
+        scout_calls=budget.scout,
+        gemini_calls=budget.gemini,
+        output_csv=str(SLOT2STEP_CSV.relative_to(ROOT)) if args.merge_topics else str(REVIEW_CSV.relative_to(ROOT)),
+        stop_reason=stop_reason,
+    )
+
+    total_kw = sum(r["accepted_count"] for r in results)
+    print(f"\nDONE - L3 {total_kw} | Scout {budget.scout}, Gemini {budget.gemini}")
+    if stop_reason:
+        print(f"  중단 사유: {stop_reason}")
+        print(f"  재개: .venv/Scripts/python scripts/pilot_l3_review_batch.py --missing-l2 --merge-topics --resume ...")
+    if args.merge_topics:
+        print(f"  slot2step: {SLOT2STEP_CSV}")
+    elif not prod_mode:
+        print(f"  CSV: {REVIEW_CSV}")
+    print(f"  report: {report_path}")
 
 
 if __name__ == "__main__":

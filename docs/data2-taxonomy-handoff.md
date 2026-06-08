@@ -1,24 +1,73 @@
 # data2 대량 SEO 키워드 택소노미 — 기획·구현 인수인계
 
-> 작성일: 2026-06-01 (최종 갱신: 2026-06-05)  
+> 작성일: 2026-06-01 (최종 갱신: 2026-06-08)  
 > 목적: 대화 세션 초기화 전, 지금까지 기획·구현·결정 사항을 다른 환경에서 이어갈 수 있도록 기록
 
-> **설계·확장·L3/L4·100만 KW 통합 문서**: [`data2-taxonomy-master-plan.md`](./data2-taxonomy-master-plan.md) (2026-06-05)  
+> **설계·확장·L3/L4·100만 KW 통합 문서**: [`data2-taxonomy-master-plan.md`](./data2-taxonomy-master-plan.md) (2026-06-08)  
 > **L3 slot_2step 실행 런북 (다른 Cursor 재개용)**: [`data2-l3-slot2step-runbook.md`](./data2-l3-slot2step-runbook.md) (2026-06-08)
 
 ---
 
 ## 0. 현재 진행 상황 스냅샷 (2026-06-08)
 
-### L3 slot_2step 파일럿 ✅ (2026-06-08)
+### L3 산출물 2트랙 분리 ✅
+
+| 파일 | 행 수 | L2 | 모델 | 용도 |
+|------|-------|-----|------|------|
+| **`data2/topics_l3_slot2step.csv`** | **1,669** | **84** | `slot_2step` | **메인** — slot_2step 본생산 (앞으로 여기에만 추가) |
+| `data2/topics_l3.csv` | 11,099 | 210 | Nemotron + Scout | **구본 아카이브** (참고용, 본생산에 섞지 않음) |
+| `data2/test/l3_review_pilot/l3_review_pilot.csv` | 277 | 20 | (리뷰용) | 사람 검수 샘플 (발행 DB 아님) |
+
+```
+L2 603
+├── 구본 L3 (topics_l3.csv)     210 L2 · Nemotron ~50/L2
+├── slot_2step (topics_l3_slot2step.csv)  84 L2 · cap 15
+└── 미생성 (본생산 대상)         309 L2  ← 신규 393 중 84 완료
+```
+
+### L3 slot_2step 본생산 ⏳ (2026-06-08~)
 
 | 항목 | 값 |
 |------|-----|
-| 파이프라인 | **slot_2step** (Scout + Gemini dedup) — Nemotron 50/L2 대체 |
-| 파일럿 | L2 20 × L3 277 · Scout 96 · Gemini 33 · ~9.5분 |
+| 파이프라인 | Scout 슬롯 → Gemini dedup → Scout 채우기 → 코드 검증 |
+| 스크립트 | `scripts/pilot_l3_review_batch.py` (`--missing-l2 --merge-topics`) |
+| Scout | Groq `meta-llama/llama-4-scout-17b-16e-instruct` (키 2개 로테이션) |
+| Gemini dedup | `gemini-3.1-flash-lite` |
+| CSV `model` 컬럼 | `slot_2step` (Scout/Gemini 개별명은 행마다 미저장) |
+| 체크포인트 | `data2/state/l3_slot2step_prod_checkpoint.json` |
+| SQLite | `data2/state/taxonomy_slot2step.db` |
+
+**실측 한도 (Free tier)**  
+- Groq **TPD 50만 토큰/키/일** — `--max-scout 1500`(호출 수)과 별개, **TPD가 먼저 막힘**  
+- Groq **RPM 30** — L2당 Scout 3~6회 연속 시 429 재시도 (정상)  
+- Gemini **일 500회** (dedup만 소량 사용)
+
+**품질 구간**  
+- L2 **1~43**: Gemini 403(차단 키) → Scout만 생성  
+- L2 **44~**: Gemini dedup 정상 적용
+
+### 재개 명령
+
+```bash
+# Linux/macOS
+.venv/bin/python scripts/pilot_l3_review_batch.py \
+  --missing-l2 --merge-topics --resume \
+  --max-scout 1500 --max-gemini 500
+
+# Windows
+.venv\Scripts\python.exe scripts/pilot_l3_review_batch.py `
+  --missing-l2 --merge-topics --resume `
+  --max-scout 1500 --max-gemini 500
+```
+
+`--missing-l2` 대상: `topics_l3_slot2step.csv`에 없고 + `topics_l3.csv`(구본)에도 없는 L2 (= **309개**).
+
+### 파일럿 (검수용, 별도)
+
+| 항목 | 값 |
+|------|-----|
+| L2 20 × L3 277 | Scout 96 · Gemini 33 · ~9.5분 |
 | 리뷰 CSV | `data2/test/l3_review_pilot/l3_review_pilot.csv` |
-| 본생산 예상 | L2 603 → L3 **~8,350** · **2일** (Scout 1500+Gemini 500/일) |
-| 실행 문서 | [`data2-l3-slot2step-runbook.md`](./data2-l3-slot2step-runbook.md) |
 
 ```bash
 .venv/bin/python scripts/pilot_l3_review_batch.py
@@ -340,24 +389,27 @@ L4 하나에서 `search_intent × topic_angle` 템플릿으로 5~10개 KW를 **�
 ```
 data2/
 ├── seed/
-│   └── topics_l1.csv          # L1 14개 (고정)
-├── brief.txt                   # LLM 생성 가이드
-├── topics_l2.csv               # L2 210개 ✅
-├── topics_l2.json
-├── manifest_l2.json
-├── topics_l3.csv               # L3 원본 (~11,099행)
-├── topics_l3_curated.csv       # 후처리: publish+edit 큐
-├── topics_l3_hold.csv          # 후처리: 보류
-├── topics_l3_dropped.csv       # 후처리: 제거·병합 탈락
-├── topics_l3.json
-├── manifest_l3.json
+│   └── topics_l1.csv              # L1 14개 (고정)
+├── brief.txt                       # LLM 생성 가이드
+├── topics_l2.csv                   # L2 603개 ✅
+├── topics_l3.csv                   # L3 구본 (Nemotron 11,099) — 아카이브
+├── topics_l3_slot2step.csv         # L3 slot_2step 본생산 ✅ 메인
+├── topics_l3_slot2step.json
+├── manifest_l3_slot2step.json
+├── topics_l3_curated.csv           # 후처리: publish+edit (구본 기준)
+├── topics_l3_hold.csv
+├── topics_l3_dropped.csv
 ├── reports/l3_curate_report.json
-├── topics_l4.csv               # (예정)
+├── topics_l4.csv                   # (예정)
 ├── state/
-│   └── taxonomy.db             # L3 checkpoint ✅
+│   ├── taxonomy.db                 # Nemotron checkpoint (구)
+│   ├── taxonomy_slot2step.db       # slot_2step checkpoint ✅
+│   └── l3_slot2step_prod_checkpoint.json
 ├── logs/
 │   └── l3_nemotron_run.log
 └── test/
+    ├── l3_review_pilot/            # 파일럿 리뷰 CSV
+    ├── l3_diversity/
     ├── l3_scout_vs_8b.json
     └── l3_scout_vs_nemotron.json
 
@@ -549,11 +601,14 @@ taxonomy 함수 (Gemini용, Groq 클라이언트에서 프롬프트 참고 가�
 ## 17. 다음 작업 체크리스트
 
 ```
-[x] scripts/generate_taxonomy_l3.py + taxonomy.db
-[x] Nemotron L3 본생산 86% (9,027/10,500)
-[ ] L3 재개 — --provider nvidia --resume (~1.5시간)
-[ ] L3 완료 후 partial/dedup 샘플 리뷰 (선택)
-[ ] L4 스크립트
+[x] L2 603 확장
+[x] slot_2step 파일럿 (277행, L2 20)
+[x] topics_l3_slot2step.csv 분리 (구본과 분리)
+[x] pilot_l3_review_batch.py 본생산 (--missing-l2 --merge-topics)
+[~] slot_2step 본생산 84/309 L2 (Groq TPD 한도로 일일 분산)
+[ ] 잔여 309 L2 본생산 완료
+[ ] slot_2step curate (dedup) 스크립트
+[ ] L4 fan-out
 [ ] 본문 생성 (Gemini)
 ```
 
@@ -563,18 +618,17 @@ taxonomy 함수 (Gemini용, Groq 클라이언트에서 프롬프트 참고 가�
 
 | 파일 | 설명 |
 |------|------|
-| **`docs/data2-taxonomy-master-plan.md`** | **L2 603 · L3 슬롯 · L4 · 100만 · Phase1 계획 (통합)** |
-| `data2/seed/topics_l1.csv` | L1 14개 |
-| `data2/topics_l2.csv` | L2 **603**개 (2026-06-05) |
-| `data2/pilot/phase1_l3_l4_plan.csv` | Phase1 L3/L4 cap·축 |
-| `data2/topics_l3.csv` | **L3 9,027행 (중단 시점)** |
-| `data2/manifest_l3.json` | L3 메타 |
-| `data2/state/taxonomy.db` | L3 checkpoint |
-| `data2/logs/l3_nemotron_run.log` | Nemotron 실행 로그 |
-| `scripts/generate_taxonomy_l3.py` | L3 CLI (`--provider nvidia`) |
-| `scripts/nvidia_client.py` | Nemotron 클라이언트 |
+| **`docs/data2-taxonomy-master-plan.md`** | L2 603 · L3 슬롯 · L4 · 100만 · Phase1 계획 |
+| **`docs/data2-l3-slot2step-runbook.md`** | slot_2step 본생산 재개 명령·한도 |
+| `data2/topics_l3_slot2step.csv` | **L3 slot_2step 메인 (1,669행, 84 L2)** |
+| `data2/topics_l3.csv` | L3 구본 Nemotron (11,099행, 210 L2) |
+| `data2/topics_l2.csv` | L2 603 |
+| `data2/state/l3_slot2step_prod_checkpoint.json` | 본생산 checkpoint |
+| `data2/test/l3_review_pilot/l3_review_pilot.csv` | 파일럿 검수 277행 |
+| `scripts/pilot_l3_review_batch.py` | slot_2step 파일럿·본생산 CLI |
+| `scripts/generate_taxonomy_l3.py` | L3 구방식 (Nemotron, 사용 안 함) |
 | `keyword/es/` | ES 엔티티 SEO 트랙 (별도) |
 
 ---
 
-*최종 갱신: 2026-06-02 — L3 Nemotron 본생산 86%에서 수동 중단, checkpoint 유지.*
+*최종 갱신: 2026-06-08 — L3 slot_2step 본생산 시작, topics_l3_slot2step.csv 분리.*

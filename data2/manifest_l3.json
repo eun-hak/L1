@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-04T02:38:05.901563+00:00",
-  "model": "mistralai/mistral-nemotron",
-  "l2_count": 210,
-  "l3_per_l2_target": 50,
-  "l3_total": 11099,
-  "l2_processed": 40,
-  "l2_done": 210,
+  "generated_at": "2026-06-08T12:31:14.828748+00:00",
+  "model": "slot_2step",
+  "l2_count": 603,
+  "l3_per_l2_target": 15,
+  "l3_total": 12768,
+  "l2_processed": 294,
+  "l2_done": 294,
   "l2_partial": 0,
   "interrupted": false,
   "last_error": null,
-  "state_db": "/Users/simsimi/개인프로젝트/L1/data2/state/taxonomy.db"
+  "state_db": "data2\\state\\taxonomy.db"
 }

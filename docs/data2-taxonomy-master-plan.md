@@ -1,6 +1,6 @@
 # data2 택소노미 마스터 플랜 — L2 확장 · L3 다양화 · L4 · 100만 KW
 
-> 작성일: 2026-06-05  
+> 작성일: 2026-06-05 (§1 갱신: 2026-06-08)  
 > 목적: L1~L4 택소노미 설계, L2 확장, L3 중복 해결, 100만 KW 창고 전략을 한 문서에 통합  
 > 관련 인수인계: [`data2-taxonomy-handoff.md`](./data2-taxonomy-handoff.md) (구현 세부·재개 명령)  
 > **L3 실행 런북**: [`data2-l3-slot2step-runbook.md`](./data2-l3-slot2step-runbook.md) (다른 Cursor·환경 재개)
@@ -25,23 +25,28 @@
 
 ---
 
-## 1. 현재 상태 스냅샷 (2026-06-05)
+## 1. 현재 상태 스냅샷 (2026-06-08)
 
 | 레벨 | 수량 | 상태 | 비고 |
 |------|------|------|------|
 | **L1** | 14 | ✅ 고정 | `data2/seed/topics_l1.csv` |
 | **L2** | **603** | ✅ 확장 완료 | 기존 210 + Wave1~3 **+393** |
-| **L3** | 11,099행 | ⏸ 구 L2만 | **210개 L2**에만 존재, **393개 신규 L2는 L3 0** |
+| **L3 (구본)** | 11,099행 | 📦 아카이브 | `topics_l3.csv` — Nemotron 210 L2 |
+| **L3 (slot_2step)** | **1,669행** | ⏳ 본생산 중 | `topics_l3_slot2step.csv` — **84 L2** |
 | **L4** | 0 | 미시작 | 100만 KW의 본체 |
 | **본문** | 10건 | 파일럿 | `11-travel-essentials` 샘플 |
 
-### L3 DB 현황
+### L3 DB 현황 (2트랙)
 
 ```
 L2 총 603
-├── L3 있음 (구 210 L2): 각 50개 내외 → 11,099행
-└── L3 없음 (신규 393 L2): 0행
+├── topics_l3.csv (구본)           210 L2 · 11,099행 · Nemotron ~50/L2
+├── topics_l3_slot2step.csv (메인)  84 L2 · 1,669행 · slot_2step cap 15
+└── 미생성 (본생산 대상)            309 L2  ← 신규 393 − 84
 ```
+
+**본생산 스크립트**: `pilot_l3_review_batch.py --missing-l2 --merge-topics --resume`  
+**파일럿 검수**: `test/l3_review_pilot/l3_review_pilot.csv` (277행, L2 20)
 
 ### L2 L1별 분포 (603)
 
@@ -483,9 +488,14 @@ topics_l3.csv (전체)
 |------|------|
 | `data2/topics_l2.csv` | **L2 603** |
 | `data2/topics_l2_expanded.csv` | Wave별 신규 L2만 |
-| `data2/topics_l3.csv` | L3 11,099 (구 210 L2) |
-| `data2/topics_l3_curated.csv` | 후처리 발행 큐 |
-| `data2/state/taxonomy.db` | L3 checkpoint |
+| **`data2/topics_l3_slot2step.csv`** | **L3 slot_2step 메인 (1,669행, 84 L2)** |
+| `data2/topics_l3_slot2step.json` | slot_2step JSON |
+| `data2/manifest_l3_slot2step.json` | slot_2step 메타 |
+| `data2/topics_l3.csv` | L3 구본 Nemotron (11,099, 210 L2) — 아카이브 |
+| `data2/topics_l3_curated.csv` | 구본 후처리 발행 큐 |
+| `data2/state/taxonomy_slot2step.db` | slot_2step SQLite |
+| `data2/state/l3_slot2step_prod_checkpoint.json` | 본생산 resume |
+| `data2/state/taxonomy.db` | Nemotron checkpoint (구) |
 
 ### 리포트·테스트
 
@@ -503,8 +513,8 @@ topics_l3.csv (전체)
 |----------|------|
 | `scripts/expand_taxonomy_l2.py` | L2 Wave 확장 (Scout+Gemini) |
 | `scripts/build_l2_wave23_plan.py` | L2 Wave2~3 계획 행 생성 |
-| `scripts/pilot_l3_review_batch.py` | **L3 slot_2step 파일럿·리뷰 CSV** |
-| `scripts/generate_taxonomy_l3.py` | L3 생성 (구 방식, slot_2step 통합 예정) |
+| `scripts/pilot_l3_review_batch.py` | **L3 slot_2step 파일럿 + 본생산** (`--missing-l2 --merge-topics`) |
+| `scripts/generate_taxonomy_l3.py` | L3 구방식 Nemotron (사용 안 함) |
 | `scripts/test_l3_diversity.py` | L3 다양성 A/B 테스트 |
 | `scripts/dedup_l3_topics.py` | L3 후처리 (LLM 없음) |
 | `scripts/export_phase1_pilot.py` | Phase1 본문 큐 추출 |
@@ -528,13 +538,15 @@ topics_l3.csv (전체)
 - [x] L2 603 확장
 - [x] Phase1 L3/L4 계획 CSV
 - [x] L3 다양성 A/B 테스트
-- [ ] `generate_taxonomy_l3.py` — slot_2step + `--plan-csv` 연동
+- [x] slot_2step 파일럿 (277행, L2 20)
+- [x] `topics_l3_slot2step.csv` 분리 (구본과 분리)
+- [x] `pilot_l3_review_batch.py` 본생산 (`--missing-l2 --merge-topics`)
 - [ ] `fanout_l4_geo.py` (program) 프로토타입
 - [ ] L2 merge (`국내여행`/`해외여행` 중복)
 
 ### Phase 1 — 파일럿 (0~3개월)
 
-- [ ] Phase1 25 L2 L3 생성 (slot_2step, cap 304)
+- [ ] Phase1 25 L2 L3 생성 (slot_2step, cap 304) — 본생산 84/393 진행 중
 - [ ] geo L2 L4 program fan-out (~11k 창고)
 - [ ] `dedup_l3_topics.py` → curated
 - [ ] 본문 286편 파일럿 (L2 분산 샘플링)
@@ -542,8 +554,8 @@ topics_l3.csv (전체)
 
 ### Phase 2 — L3 시드 전면 (2~4주×N)
 
-- [ ] 신규 393 L2 L3 (cap 18 평균, 일 50~100 L2)
-- [ ] 구 210 L2 hub 재생성 (선별)
+- [ ] 신규 393 L2 L3 — **84/393 완료**, 309 잔여 (Groq TPD 일 50만/키)
+- [ ] 구 210 L2 hub 재생성 (선별, `topics_l3.csv` → 추후 slot_2step 재생성 여부 결정)
 
 ### Phase 3 — L4 + 100만 창고
 
@@ -558,8 +570,8 @@ topics_l3.csv (전체)
 # L3 다양성 테스트
 python scripts/test_l3_diversity.py
 
-# L3 Phase1 (구현 후)
-python scripts/generate_taxonomy_l3.py --plan-csv data2/pilot/phase1_l3_l4_plan.csv --resume
+# L3 slot_2step 본생산 (현재)
+python scripts/pilot_l3_review_batch.py --missing-l2 --merge-topics --resume --max-scout 1500 --max-gemini 500
 
 # L3 후처리
 python scripts/dedup_l3_topics.py
@@ -591,4 +603,4 @@ python scripts/generate_data2_articles.py
 
 ---
 
-*문서 끝. 갱신 시 상단 작성일과 §1 스냅샷을 함께 업데이트할 것.*
+*문서 끝. 갱신 시 상단 작성일과 §1 스냅샷을 함께 업데이트할 것. (2026-06-08: topics_l3_slot2step 분리·본생산 84 L2)*

@@ -1,6 +1,6 @@
 # L3 slot_2step 실행 런북 — 다른 Cursor·환경에서 재개용
 
-> 작성일: 2026-06-08  
+> 작성일: 2026-06-08 (갱신: 2026-06-08 본생산·파일 분리)  
 > 목적: L3 생성(slot_2step) 파일럿·본생산을 **다른 Cursor 세션**에서도 동일하게 돌릴 수 있도록 명령·한도·산출물·판단 기준을 한곳에 정리  
 > 관련: [`data2-taxonomy-master-plan.md`](./data2-taxonomy-master-plan.md), [`data2-taxonomy-handoff.md`](./data2-taxonomy-handoff.md)
 
@@ -15,6 +15,7 @@
 | **일 API 한도** | Scout **1,500** (키 2개 합산, 키당 ~500~700) · Gemini lite **500** |
 | **603 L2 전체** | L3 **~8,350개** · Scout **~2,900** · Gemini **~1,000** · **2일** 분산 |
 | **한도 풀 사용 시 실제 실행** | **약 2~2.5시간** (1500 Scout + 500 Gemini 몰아서) |
+| **본생산 산출물** | **`data2/topics_l3_slot2step.csv`** (구 `topics_l3.csv`와 분리) |
 
 ---
 
@@ -58,12 +59,18 @@ python3 -m venv .venv   # 없을 때만
 
 ### 2.5 현재 L3 DB 상태 (2026-06-08)
 
-| 구분 | L2 | L3 |
-|------|-----|-----|
-| 구 Nemotron | 210 | ~11,099 (`data2/topics_l3.csv`) |
-| 신규 확장 | 393 | **0** |
+| 파일 | L2 | L3 행 | model | 용도 |
+|------|-----|-------|-------|------|
+| **`topics_l3_slot2step.csv`** | **84** | **1,669** | `slot_2step` | **메인** — 본생산 계속 여기에 추가 |
+| `topics_l3.csv` | 210 | 11,099 | Nemotron/Scout | 구본 아카이브 (섞지 않음) |
+| `test/l3_review_pilot/l3_review_pilot.csv` | 20 | 277 | — | 사람 검수 샘플 |
 
-본생산 시 **신규 393 L2 우선** 또는 전량 재생성 정책을 먼저 정할 것.
+```
+본생산 잔여: 309 L2  (신규 393 − slot_2step 84)
+              구본 210 L2는 topics_l3.csv에만 존재 (재생성 대상 아님)
+```
+
+**slot_2step L1 분포 (84 L2)**: 01연예 25 · 02경제 31 · 03건강 10 · 04패션 14 · 05스포츠 4
 
 ---
 
@@ -71,13 +78,26 @@ python3 -m venv .venv   # 없을 때만
 
 | 스크립트 | 용도 | 상태 |
 |----------|------|------|
-| `scripts/pilot_l3_review_batch.py` | **파일럿·사람 리뷰용** CSV 생성 | ✅ 사용 |
+| `scripts/pilot_l3_review_batch.py` | **파일럿 + slot_2step 본생산** | ✅ **메인** |
 | `scripts/test_l3_diversity.py` | A/B (Nemotron vs baseline vs slot_2step) | ✅ 사용 |
-| `scripts/generate_taxonomy_l3.py` | 구 방식 본생산 (Nemotron 50/L2) | ⏸ **slot_2step 미통합** |
-| `scripts/dedup_l3_topics.py` | 발행 큐 curate (API 없음) | ✅ 사용 |
+| `scripts/generate_taxonomy_l3.py` | 구 방식 (Nemotron 50/L2) | ⏸ 사용 안 함 |
+| `scripts/dedup_l3_topics.py` | 구본 `topics_l3.csv` curate (API 없음) | ✅ (구본용) |
 
-> **다른 Cursor에서 당장 돌릴 스크립트 = `pilot_l3_review_batch.py`**  
-> 603 L2 본생산은 `generate_taxonomy_l3.py`에 slot_2step을 이식한 뒤 동일 런북 절차로 확장 예정.
+### `pilot_l3_review_batch.py` 주요 옵션
+
+| 옵션 | 설명 |
+|------|------|
+| (기본) | `DEFAULT_L2` 20개 → `l3_review_pilot.csv` |
+| `--missing-l2` | slot2step·구본 모두 없는 L2 전체 (현재 **309**) |
+| `--merge-topics` | 결과를 **`topics_l3_slot2step.csv`**에 병합 |
+| `--resume` | `l3_slot2step_prod_checkpoint.json` 이어하기 |
+| `--max-scout N` | Scout 호출 상한 (호출 수, TPD와 별개) |
+| `--max-gemini N` | Gemini dedup 호출 상한 |
+| `--l2 ID` | 특정 L2만 (반복 가능) |
+| `--count N` | L2당 목표 L3 (기본 15) |
+
+> **본생산 = `pilot_l3_review_batch.py --missing-l2 --merge-topics`**  
+> `generate_taxonomy_l3.py` slot_2step 통합은 추후 (현재 불필요).
 
 ---
 
@@ -189,20 +209,44 @@ cd /path/to/L1
 3. 키 로테이션: `GROK_API_KEY` → `GROK_API_KEY_2` (Groq 429 시 자동 시도)
 4. `--resume`으로 일일 분산
 
-### 6.4 본생산 명령 (slot_2step 통합 후)
-
-`generate_taxonomy_l3.py`에 slot_2step이 들어가면 아래 형태 예상:
+### 6.4 본생산 명령 (현재)
 
 ```bash
-.venv/bin/python scripts/generate_taxonomy_l3.py \
-  --method slot_2step \
-  --count 15 \
-  --resume \
-  --max-scout 1400 \
-  --max-gemini 450
+cd /path/to/L1
+
+# Linux/macOS
+.venv/bin/python scripts/pilot_l3_review_batch.py \
+  --missing-l2 --merge-topics --resume \
+  --max-scout 1500 --max-gemini 500
+
+# Windows PowerShell
+.venv\Scripts\python.exe scripts/pilot_l3_review_batch.py `
+  --missing-l2 --merge-topics --resume `
+  --max-scout 1500 --max-gemini 500
 ```
 
-**현재(2026-06-08)는 미구현.** 통합 전까지는 `pilot_l3_review_batch.py`의 `DEFAULT_L2`를 확장하거나, 동 스크립트에 `--all-l2` 옵션을 추가하는 방식으로 단계 실행.
+**`--merge-topics`는 `topics_l3_slot2step.csv`에만 씀.** 구 `topics_l3.csv`는 변경하지 않음.
+
+### 6.5 본생산 산출물·체크포인트
+
+| 파일 | 설명 |
+|------|------|
+| `data2/topics_l3_slot2step.csv` | slot_2step L3 **메인 DB** |
+| `data2/topics_l3_slot2step.json` | JSON mirror |
+| `data2/manifest_l3_slot2step.json` | 메타 |
+| `data2/state/l3_slot2step_prod_checkpoint.json` | L2별 `--resume` 체크포인트 |
+| `data2/state/taxonomy_slot2step.db` | SQLite (slot_2step 전용) |
+
+### 6.6 실측 한도 (2026-06-08 Free tier)
+
+| 한도 | 값 | 비고 |
+|------|-----|------|
+| Groq **TPD** | **500,000 토큰/키/일** | **실제 병목** — L2 ~40개면 키1 소진 |
+| Groq **RPM** | 30/분 | 45~180초 재시도 후 통과 (정상) |
+| Gemini dedup | ~500/일 | L2당 1~2회 |
+| 키 로테이션 | `GROQ_API_KEY` → `GROK_API_KEY_2` | 키1 TPD 소진 후 키2 (~100만 TPD/일 합산) |
+
+`--max-scout 1500`은 **API 호출 횟수** 상한이며 TPD를 막지 못함.
 
 ---
 
@@ -237,17 +281,22 @@ cd /path/to/L1
 
 | 증상 | 대응 |
 |------|------|
-| `ModuleNotFoundError: dotenv` | `.venv/bin/python` 사용 |
+| `ModuleNotFoundError: dotenv` | `.venv/bin/python` 또는 `.venv\Scripts\python.exe` |
 | `GROQ_API_KEY 가 .env 에 없습니다` | `.env`에 `GROK_API_KEY` 확인 |
-| Groq 429 / Rate limit | 키 2개 설정 · `--resume` · 다음날 재개 |
-| L2당 수락 5/15 등 부족 | hub/geo_local — `--l2 ... --resume` 재실행 |
+| Groq 429 **RPM** (`Limit 30`) | 재시도 후 통과. L2 간 `sleep` 늘리면 완화 |
+| Groq 429 **TPD** (`Limit 500000`) | 키1 소진 → 키2 자동 시도 → 둘 다 소진 시 **내일 `--resume`** |
+| Gemini **403 blocked** | [Google AI Studio](https://aistudio.google.com/apikey)에서 새 키 발급 · `.env` 교체 |
 | Gemini 500 초과 | 당일 중단 · 다음날 `--resume` |
+| L2당 수락 11/15 등 부족 | `--l2 ID --resume` 재실행 |
+| `UnicodeEncodeError` (Windows) | `$env:PYTHONIOENCODING="utf-8"` 설정 |
 
-중단 시 `checkpoint.json` / `taxonomy.db`는 유지됨.
+중단 시 `l3_slot2step_prod_checkpoint.json` / `taxonomy_slot2step.db` / `topics_l3_slot2step.csv`는 유지됨.
 
 ---
 
-## 9. 본생산 후 (API 없음)
+## 9. 후처리 (API 없음)
+
+**구본** (`topics_l3.csv`) curate:
 
 ```bash
 .venv/bin/python scripts/dedup_l3_topics.py
@@ -255,9 +304,11 @@ cd /path/to/L1
 
 | 출력 | 용도 |
 |------|------|
-| `data2/topics_l3_curated.csv` | publish / edit |
+| `data2/topics_l3_curated.csv` | publish / edit (구본) |
 | `data2/topics_l3_hold.csv` | hold |
 | `data2/topics_l3_dropped.csv` | merge·탈락 |
+
+**slot_2step** (`topics_l3_slot2step.csv`) 전용 curate 스크립트는 **미구현** — 추후 `dedup_l3_slot2step.py` 또는 동 스크립트 `--input` 옵션 추가 예정.
 
 ---
 
@@ -268,13 +319,14 @@ cd /path/to/L1
 [ ] .env 에 GROK_API_KEY, GROK_API_KEY_2, GEMINI_API_KEY
 [ ] .venv + pip install -r requirements.txt
 [ ] data2/topics_l2.csv 603행 확인
-[ ] 이 문서 §4 파일럿 또는 §6 본생산 결정
-[ ] 실행 후 l3_review_pilot.csv 또는 topics_l3.csv 확인
+[ ] data2/topics_l3_slot2step.csv 현재 행 수 확인
+[ ] §6 본생산: --missing-l2 --merge-topics --resume
+[ ] 실행 후 topics_l3_slot2step.csv 행 수 증가 확인
 ```
 
 ### AI에게 넘길 한 줄 프롬프트 예시
 
-> `docs/data2-l3-slot2step-runbook.md` 보고 L3 slot_2step 파일럿(또는 393 신규 L2 본생산)을 `--resume`으로 실행해줘. Scout 일 1500, Gemini 일 500 지켜.
+> `docs/data2-l3-slot2step-runbook.md` 보고 L3 slot_2step 본생산을 `--missing-l2 --merge-topics --resume`으로 실행해줘. 산출물은 `topics_l3_slot2step.csv`에만 쌓아.
 
 ---
 
@@ -292,8 +344,11 @@ scripts/groq_client.py
 scripts/gemini_client.py
 scripts/dedup_l3_topics.py
 
-data2/test/l3_review_pilot/            ← 파일럿 산출물
+data2/topics_l3_slot2step.csv          ← slot_2step 메인 DB
+data2/topics_l3.csv                    ← Nemotron 구본 (아카이브)
+data2/state/l3_slot2step_prod_checkpoint.json
+data2/state/taxonomy_slot2step.db
+data2/test/l3_review_pilot/            ← 파일럿 검수 샘플
 data2/pilot/phase1_l3_l4_plan.csv
 data2/topics_l2.csv
-data2/topics_l3.csv
 ```
