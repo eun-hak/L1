@@ -1,0 +1,213 @@
+{
+  "generated_at": "2026-06-08T07:43:33.722288+00:00",
+  "l2_count": 20,
+  "target_per_l2": 15,
+  "total_keywords": 277,
+  "scout_calls": 96,
+  "gemini_calls": 33,
+  "scout_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "gemini_model": "gemini-3.1-flash-lite",
+  "output_csv": "data2/test/l3_review_pilot/l3_review_pilot.csv",
+  "by_l2": [
+    {
+      "l2_id": "11-travel-essentials",
+      "l2_name": "여행준비물",
+      "l2_type": "hub",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 0,
+      "scout_calls": 5,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "11-accommodation-recommendations",
+      "l2_name": "숙소추천",
+      "l2_type": "geo",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 2,
+      "scout_calls": 3,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "11-domestic-travel",
+      "l2_name": "국내여행",
+      "l2_type": "geo",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 2,
+      "scout_calls": 3,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "11-overseas-travel",
+      "l2_name": "해외여행",
+      "l2_type": "geo_intl",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 0,
+      "scout_calls": 3,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "11-travel-tips",
+      "l2_name": "여행꿀팁",
+      "l2_type": "howto",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 1,
+      "scout_calls": 7,
+      "gemini_calls": 3
+    },
+    {
+      "l2_id": "11-family-trip",
+      "l2_name": "가족 여행",
+      "l2_type": "",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 2,
+      "scout_calls": 7,
+      "gemini_calls": 3
+    },
+    {
+      "l2_id": "09-seoul-food",
+      "l2_name": "서울 맛집",
+      "l2_type": "geo_local",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 1,
+      "scout_calls": 6,
+      "gemini_calls": 2
+    },
+    {
+      "l2_id": "09-busan-food",
+      "l2_name": "부산 맛집",
+      "l2_type": "geo",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 2,
+      "scout_calls": 6,
+      "gemini_calls": 2
+    },
+    {
+      "l2_id": "09-gangnam-food",
+      "l2_name": "강남 맛집",
+      "l2_type": "",
+      "accepted": 14,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 2,
+      "scout_calls": 6,
+      "gemini_calls": 2
+    },
+    {
+      "l2_id": "09-cafe-recommend",
+      "l2_name": "카페 추천",
+      "l2_type": "cafe",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 0,
+      "scout_calls": 6,
+      "gemini_calls": 2
+    },
+    {
+      "l2_id": "09-solo-food",
+      "l2_name": "혼밥 맛집",
+      "l2_type": "situation",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 1,
+      "scout_calls": 4,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "09-date-course",
+      "l2_name": "데이트 코스",
+      "l2_type": "composite",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 0,
+      "scout_calls": 3,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "10-korean-recipe",
+      "l2_name": "한식 레시피",
+      "l2_type": "cuisine",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 0,
+      "scout_calls": 7,
+      "gemini_calls": 3
+    },
+    {
+      "l2_id": "10-air-fryer-recipes",
+      "l2_name": "에어프라이어 레시피",
+      "l2_type": "",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 0,
+      "scout_calls": 3,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "10-cooking-tips",
+      "l2_name": "요리 팁",
+      "l2_type": "howto",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 1,
+      "scout_calls": 4,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "08-skincare-routine",
+      "l2_name": "스킨케어 루틴",
+      "l2_type": "hub",
+      "accepted": 5,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 0,
+      "scout_calls": 6,
+      "gemini_calls": 2
+    },
+    {
+      "l2_id": "08-skin-type-care",
+      "l2_name": "피부 타입별 케어",
+      "l2_type": "concern",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 1,
+      "scout_calls": 3,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "13-cat-food",
+      "l2_name": "고양이 사료",
+      "l2_type": "compare",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 1,
+      "scout_calls": 5,
+      "gemini_calls": 2
+    },
+    {
+      "l2_id": "13-dog-health",
+      "l2_name": "강아지 건강",
+      "l2_type": "concern",
+      "accepted": 15,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 1,
+      "scout_calls": 3,
+      "gemini_calls": 1
+    },
+    {
+      "l2_id": "13-pet-hospital",
+      "l2_name": "반려동물 병원",
+      "l2_type": "geo_local",
+      "accepted": 3,
+      "stem_unique_pct": 100.0,
+      "ends_with_추천": 0,
+      "scout_calls": 6,
+      "gemini_calls": 2
+    }
+  ]
+}

@@ -2,7 +2,8 @@
 
 > 작성일: 2026-06-05  
 > 목적: L1~L4 택소노미 설계, L2 확장, L3 중복 해결, 100만 KW 창고 전략을 한 문서에 통합  
-> 관련 인수인계: [`data2-taxonomy-handoff.md`](./data2-taxonomy-handoff.md) (구현 세부·재개 명령)
+> 관련 인수인계: [`data2-taxonomy-handoff.md`](./data2-taxonomy-handoff.md) (구현 세부·재개 명령)  
+> **L3 실행 런북**: [`data2-l3-slot2step-runbook.md`](./data2-l3-slot2step-runbook.md) (다른 Cursor·환경 재개)
 
 ---
 
@@ -493,6 +494,8 @@ topics_l3.csv (전체)
 | `data2/reports/l2_expansion_report.json` | L2 Wave3 API 통계 |
 | `data2/reports/l3_curate_report.json` | L3 dedup 통계 |
 | `data2/test/l3_diversity/l3_diversity_report.json` | L3 A/B 테스트 |
+| `data2/test/l3_review_pilot/l3_review_pilot.csv` | L3 파일럿 리뷰용 (277행) |
+| `data2/test/l3_review_pilot/l3_review_pilot_report.json` | 파일럿 API·수락 집계 |
 
 ### 스크립트
 
@@ -500,7 +503,8 @@ topics_l3.csv (전체)
 |----------|------|
 | `scripts/expand_taxonomy_l2.py` | L2 Wave 확장 (Scout+Gemini) |
 | `scripts/build_l2_wave23_plan.py` | L2 Wave2~3 계획 행 생성 |
-| `scripts/generate_taxonomy_l3.py` | L3 생성 (구 방식, `--resume`) |
+| `scripts/pilot_l3_review_batch.py` | **L3 slot_2step 파일럿·리뷰 CSV** |
+| `scripts/generate_taxonomy_l3.py` | L3 생성 (구 방식, slot_2step 통합 예정) |
 | `scripts/test_l3_diversity.py` | L3 다양성 A/B 테스트 |
 | `scripts/dedup_l3_topics.py` | L3 후처리 (LLM 없음) |
 | `scripts/export_phase1_pilot.py` | Phase1 본문 큐 추출 |
@@ -513,6 +517,7 @@ topics_l3.csv (전체)
 |------|------|
 | `docs/data2-taxonomy-handoff.md` | 구현 인수인계 (2026-06-02) |
 | **`docs/data2-taxonomy-master-plan.md`** | **본 문서** — 설계·확장·L3/L4·100만 |
+| **`docs/data2-l3-slot2step-runbook.md`** | **L3 실행 런북** — 다른 Cursor 재개·명령·한도 |
 
 ---
 

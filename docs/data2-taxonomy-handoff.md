@@ -3,11 +3,31 @@
 > 작성일: 2026-06-01 (최종 갱신: 2026-06-05)  
 > 목적: 대화 세션 초기화 전, 지금까지 기획·구현·결정 사항을 다른 환경에서 이어갈 수 있도록 기록
 
-> **설계·확장·L3/L4·100만 KW 통합 문서**: [`data2-taxonomy-master-plan.md`](./data2-taxonomy-master-plan.md) (2026-06-05)
+> **설계·확장·L3/L4·100만 KW 통합 문서**: [`data2-taxonomy-master-plan.md`](./data2-taxonomy-master-plan.md) (2026-06-05)  
+> **L3 slot_2step 실행 런북 (다른 Cursor 재개용)**: [`data2-l3-slot2step-runbook.md`](./data2-l3-slot2step-runbook.md) (2026-06-08)
 
 ---
 
-## 0. 현재 진행 상황 스냅샷 (2026-06-02)
+## 0. 현재 진행 상황 스냅샷 (2026-06-08)
+
+### L3 slot_2step 파일럿 ✅ (2026-06-08)
+
+| 항목 | 값 |
+|------|-----|
+| 파이프라인 | **slot_2step** (Scout + Gemini dedup) — Nemotron 50/L2 대체 |
+| 파일럿 | L2 20 × L3 277 · Scout 96 · Gemini 33 · ~9.5분 |
+| 리뷰 CSV | `data2/test/l3_review_pilot/l3_review_pilot.csv` |
+| 본생산 예상 | L2 603 → L3 **~8,350** · **2일** (Scout 1500+Gemini 500/일) |
+| 실행 문서 | [`data2-l3-slot2step-runbook.md`](./data2-l3-slot2step-runbook.md) |
+
+```bash
+.venv/bin/python scripts/pilot_l3_review_batch.py
+.venv/bin/python scripts/pilot_l3_review_batch.py --resume
+```
+
+---
+
+## 0-b. 이전 스냅샷 (2026-06-02, Nemotron 본생산 중단 시점)
 
 **L3 생성을 사용자 요청으로 중단함.** 체크포인트는 유지됨.
 
