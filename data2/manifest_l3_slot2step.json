@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-06-08T12:53:18.221301+00:00",
-  "model": "slot_2step",
-  "l3_total": 1669,
-  "l2_count": 84,
-  "source": "split from topics_l3.csv"
+  "generated_at": "2026-06-12T07:52:56.526297+00:00",
+  "model": "mixed",
+  "l2_count": 635,
+  "l3_per_l2_target": 15,
+  "l3_total": 9084,
+  "l2_processed": 611,
+  "l2_done": 556,
+  "l2_partial": 55,
+  "interrupted": false,
+  "last_error": null,
+  "state_db": "data2/state/taxonomy_slot2step.db"
 }

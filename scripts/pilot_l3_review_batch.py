@@ -15,9 +15,11 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import re
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -25,7 +27,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import test_l3_diversity as td  # noqa: E402
-from groq_client import MODEL_FAST as SCOUT_MODEL, RateLimitExhausted  # noqa: E402
+from groq_client import (  # noqa: E402
+    MODEL_FAST as SCOUT_MODEL,
+    RateLimitExhausted,
+    _keyword_seen,
+    get_groq_session_report,
+    parse_rate_limit_error,
+    reset_groq_session_stats,
+)
 from gemini_client import MODEL_FAST as GEMINI_MODEL, _is_rate_or_quota_error  # noqa: E402
 from taxonomy_state import (  # noqa: E402
     L3_FIELDNAMES,
@@ -37,6 +46,7 @@ from taxonomy_state import (  # noqa: E402
 OUT_DIR = ROOT / "data2" / "test" / "l3_review_pilot"
 CHECKPOINT = OUT_DIR / "checkpoint.json"
 PROD_CHECKPOINT = ROOT / "data2" / "state" / "l3_slot2step_prod_checkpoint.json"
+TOPUP_CHECKPOINT = ROOT / "data2" / "state" / "l3_slot2step_topup_checkpoint.json"
 REVIEW_CSV = OUT_DIR / "l3_review_pilot.csv"
 REPORT_JSON = OUT_DIR / "l3_review_pilot_report.json"
 PHASE1_PLAN = ROOT / "data2" / "pilot" / "phase1_l3_l4_plan.csv"
@@ -173,6 +183,43 @@ def load_missing_l2_ids() -> list[str]:
     return missing
 
 
+def load_l2_l3_counts() -> dict[str, int]:
+    counts: dict[str, int] = {}
+    if not SLOT2STEP_CSV.exists():
+        return counts
+    with SLOT2STEP_CSV.open(encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            lid = row.get("l2_id", "")
+            if lid:
+                counts[lid] = counts.get(lid, 0) + 1
+    return counts
+
+
+def load_existing_keywords(l2_id: str) -> list[str]:
+    if not SLOT2STEP_CSV.exists():
+        return []
+    out: list[str] = []
+    with SLOT2STEP_CSV.open(encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            if row.get("l2_id") == l2_id:
+                kw = row.get("focus_keyword", "").strip()
+                if kw:
+                    out.append(kw)
+    return out
+
+
+def load_topup_l2_ids(*, cap: int) -> list[tuple[str, int]]:
+    """L2별 cap 미만 — (l2_id, 부족 개수) 목록."""
+    counts = load_l2_l3_counts()
+    l2_map = load_l2_map()
+    topup: list[tuple[str, int]] = []
+    for l2_id, n in counts.items():
+        if n < cap:
+            topup.append((l2_id, cap - n))
+    topup.sort(key=lambda x: (l2_map.get(x[0], {}).get("l1_code", ""), -x[1], x[0]))
+    return topup
+
+
 def _unique_slug(slug: str, seen: set[str]) -> str:
     if slug not in seen:
         return slug
@@ -225,12 +272,22 @@ def merge_results_to_slot2step(results: list[dict], l2_map: dict[str, dict[str, 
                 existing.append({k: row.get(k, "") for k in L3_FIELDNAMES})
                 seen_l3_ids.add(row.get("l3_id", ""))
 
+    existing_per_l2 = Counter(r["l2_id"] for r in existing)
+    L2_CAP = 15
+
     new_rows: list[dict[str, str]] = []
     for result in results:
         l2_row = l2_map.get(result["l2_id"])
         if not l2_row:
             continue
-        new_rows.extend(result_to_l3_rows(result, l2_row, seen_l3_ids=seen_l3_ids))
+        l2_id = result["l2_id"]
+        room = max(0, L2_CAP - existing_per_l2.get(l2_id, 0))
+        if room == 0:
+            continue
+        trimmed = {**result, "items": result["items"][:room]}
+        batch_rows = result_to_l3_rows(trimmed, l2_row, seen_l3_ids=seen_l3_ids)
+        new_rows.extend(batch_rows)
+        existing_per_l2[l2_id] += len(batch_rows)
 
     if not new_rows:
         return 0
@@ -249,7 +306,7 @@ def merge_results_to_slot2step(results: list[dict], l2_map: dict[str, dict[str, 
     SLOT2STEP_JSON.write_text(json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8")
 
     with connect(STATE_DB_SLOT2STEP) as conn:
-        upsert_topics(conn, new_rows)
+        upsert_topics(conn, merged)
         export_artifacts(
             conn,
             csv_path=SLOT2STEP_CSV,
@@ -288,6 +345,7 @@ def generate_l2_batch(
     brief: str,
     phase1_meta: dict[str, dict[str, str]],
     budget: ApiBudget | None = None,
+    existing_keywords: list[str] | None = None,
 ) -> dict:
     l2 = td.load_l2(l2_id)
     l1 = td.load_l1(l2["l1_code"])
@@ -301,6 +359,10 @@ def generate_l2_batch(
     scout_calls = 0
     gemini_calls = 0
     target = count + 5
+    avoid: list[str] = list(existing_keywords or [])
+    existing_stems = {td.stem_keyword(k) for k in avoid}
+    accepted: list[dict[str, str]] = []
+    rejected: list[str] = []
 
     if budget:
         budget.require_scout()
@@ -311,6 +373,7 @@ def generate_l2_batch(
         l2_desc=l2_desc,
         count=target,
         brief=brief,
+        avoid_keywords=avoid or None,
     )
     scout_calls += 1
     if budget:
@@ -329,9 +392,6 @@ def generate_l2_batch(
     except (BudgetExhausted, RateLimitExhausted):
         raise
 
-    accepted: list[dict[str, str]] = []
-    rejected: list[str] = []
-    avoid: list[str] = []
     max_rounds = 4
 
     for _ in range(max_rounds):
@@ -349,6 +409,7 @@ def generate_l2_batch(
                 l2_desc=l2_desc,
                 count=need + 3,
                 brief=brief,
+                avoid_keywords=avoid or None,
             )
             scout_calls += 1
             if budget:
@@ -380,22 +441,27 @@ def generate_l2_batch(
             count=need + 2,
             brief=brief,
             slots=batch_slots,
+            avoid_keywords=avoid or None,
         )
         scout_calls += 1
         if budget:
             budget.add_scout()
         time.sleep(1.0)
 
-        for item in raw:
-            avoid.append(item["focus_keyword"])
         new_accepted, new_rejected = td.filter_diverse(raw)
         for item in new_accepted:
             if len(accepted) >= count:
                 break
-            stem = td.stem_keyword(item["focus_keyword"])
-            if any(td.stem_keyword(a["focus_keyword"]) == stem for a in accepted):
-                new_rejected.append(f"{item['focus_keyword']} (stem_dup_cross_batch)")
+            kw = item["focus_keyword"]
+            stem = td.stem_keyword(kw)
+            if stem in existing_stems or _keyword_seen(kw, avoid):
+                new_rejected.append(f"{kw} (dup_existing)")
                 continue
+            if any(td.stem_keyword(a["focus_keyword"]) == stem for a in accepted):
+                new_rejected.append(f"{kw} (stem_dup_cross_batch)")
+                continue
+            existing_stems.add(stem)
+            avoid.append(kw)
             accepted.append(item)
         rejected.extend(new_rejected)
 
@@ -464,12 +530,44 @@ def build_review_rows(results: list[dict]) -> list[dict]:
     return rows
 
 
+def _groq_stop_extra(exc: Exception | None = None) -> dict:
+    extra: dict = {"groq_session_report": get_groq_session_report()}
+    if isinstance(exc, RateLimitExhausted):
+        extra["rate_limit_type"] = (
+            exc.rate_limit_info.limit_type if exc.rate_limit_info else "UNKNOWN"
+        )
+        extra["rate_limit_message"] = (
+            exc.rate_limit_info.message if exc.rate_limit_info else str(exc)
+        )
+    elif exc is not None and _is_rate_or_quota_error(exc):
+        info = parse_rate_limit_error(exc)
+        extra["rate_limit_type"] = info.limit_type
+        extra["rate_limit_message"] = info.message
+    return extra
+
+
+def _print_groq_stop(exc: Exception | None, stop_reason: str) -> None:
+    print(f"\n[stop] {stop_reason}")
+    report = get_groq_session_report()
+    print(f"  활성 Groq 키: {', '.join(report.get('active_keys', []))}")
+    for row in report.get("per_key", []):
+        hits = row.get("rate_limit_hits") or {}
+        hit_str = ", ".join(f"{k}×{v}" for k, v in hits.items()) if hits else "-"
+        print(
+            f"  {row['key']}: 성공 {row['success_calls']}회 | 429 [{hit_str}] | "
+            f"{'소진' if row['exhausted'] else 'OK'}"
+        )
+        if row.get("exhausted_reason"):
+            print(f"    → {row['exhausted_reason']}")
+
+
 def _save_checkpoint(path: Path, results: list[dict], *, extra: dict | None = None) -> None:
     payload: dict = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "scout_model": SCOUT_MODEL,
         "gemini_model": GEMINI_MODEL,
         "results": results,
+        "groq_session_report": get_groq_session_report(),
     }
     if extra:
         payload.update(extra)
@@ -498,6 +596,7 @@ def _write_report(
         "gemini_model": GEMINI_MODEL,
         "output_csv": output_csv,
         "stop_reason": stop_reason,
+        "groq_session_report": get_groq_session_report(),
         "by_l2": [
             {
                 "l2_id": r["l2_id"],
@@ -519,20 +618,45 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="L3 review pilot / slot_2step production")
     parser.add_argument("--l2", action="append", default=None)
     parser.add_argument("--missing-l2", action="store_true", help="topics_l3에 없는 L2 전체")
+    parser.add_argument(
+        "--topup-under",
+        type=int,
+        default=None,
+        metavar="N",
+        help="slot2step L2 중 L3가 N개 미만인 것만 부족분 채우기 (429까지)",
+    )
     parser.add_argument("--count", type=int, default=15)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--merge-topics", action="store_true", help="topics_l3_slot2step.csv에 병합")
     parser.add_argument("--max-scout", type=int, default=None, help="Scout 호출 상한 (429 전 중단)")
     parser.add_argument("--max-gemini", type=int, default=None, help="Gemini 호출 상한")
+    parser.add_argument(
+        "--groq-keys",
+        default=None,
+        help="Groq 키 번호만 사용 (예: 3,4 → GROK_API_KEY_3·_4). 기본: GROQ_USE_KEYS env",
+    )
     args = parser.parse_args()
 
-    prod_mode = args.missing_l2 or args.merge_topics
-    if args.missing_l2:
+    if args.groq_keys:
+        os.environ["GROQ_USE_KEYS"] = args.groq_keys
+
+    prod_mode = args.missing_l2 or args.merge_topics or args.topup_under is not None
+    topup_needs: dict[str, int] = {}
+    if args.topup_under is not None:
+        topup_list = load_topup_l2_ids(cap=args.topup_under)
+        topup_needs = {lid: need for lid, need in topup_list}
+        l2_ids = [lid for lid, _ in topup_list]
+    elif args.missing_l2:
         l2_ids = load_missing_l2_ids()
     else:
         l2_ids = args.l2 or DEFAULT_L2
 
-    checkpoint_path = PROD_CHECKPOINT if prod_mode else CHECKPOINT
+    if args.topup_under is not None:
+        checkpoint_path = TOPUP_CHECKPOINT
+    elif prod_mode:
+        checkpoint_path = PROD_CHECKPOINT
+    else:
+        checkpoint_path = CHECKPOINT
     report_path = ROOT / "data2" / "reports" / "l3_slot2step_prod_report.json" if prod_mode else REPORT_JSON
 
     brief = BRIEF.read_text(encoding="utf-8").strip() if BRIEF.exists() else ""
@@ -541,24 +665,38 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     budget = ApiBudget(max_scout=args.max_scout, max_gemini=args.max_gemini)
 
+    if not args.resume:
+        reset_groq_session_stats()
+
     done: dict[str, dict] = {}
-    session_scout = 0
-    session_gemini = 0
     if args.resume and checkpoint_path.exists():
         data = json.loads(checkpoint_path.read_text(encoding="utf-8"))
         for r in data.get("results", []):
+            if args.topup_under is not None and int(r.get("accepted_count") or 0) == 0:
+                continue
             done[r["l2_id"]] = r
-        session_scout = int(data.get("session_scout", 0))
-        session_gemini = int(data.get("session_gemini", 0))
-        budget.scout = session_scout
-        budget.gemini = session_gemini
-        print(f"resume: {len(done)} L2 로드 (Scout {session_scout}, Gemini {session_gemini})")
+        prev_scout = int(data.get("session_scout", 0))
+        prev_gemini = int(data.get("session_gemini", 0))
+        print(
+            f"resume: {len(done)} L2 완료 로드 "
+            f"(이전 세션 Scout {prev_scout}, Gemini {prev_gemini} — 오늘 한도는 0부터)"
+        )
 
     results: list[dict] = list(done.values())
     stop_reason = ""
 
-    mode_label = "본생산(missing L2)" if args.missing_l2 else "리뷰 파일럿"
-    print(f"L3 slot_2step {mode_label} - L2 {len(l2_ids)} x {args.count}")
+    if args.topup_under is not None:
+        mode_label = f"topup (L3<{args.topup_under})"
+        need_sum = sum(topup_needs.values())
+        print(f"L3 slot_2step {mode_label} - L2 {len(l2_ids)}개, 부족 L3 합 {need_sum}")
+    elif args.missing_l2:
+        mode_label = "본생산(missing L2)"
+        print(f"L3 slot_2step {mode_label} - L2 {len(l2_ids)} x {args.count}")
+    else:
+        mode_label = "리뷰 파일럿"
+        print(f"L3 slot_2step {mode_label} - L2 {len(l2_ids)} x {args.count}")
+    groq_report = get_groq_session_report()
+    print(f"  Groq 키: {', '.join(groq_report.get('active_keys', []))}")
     if args.max_scout or args.max_gemini:
         print(f"  한도: Scout ≤{args.max_scout}, Gemini ≤{args.max_gemini}")
     print()
@@ -575,18 +713,21 @@ def main() -> None:
             print(f"\n[stop] {stop_reason}")
             break
 
-        print(f"[{i}/{len(l2_ids)}] {l2_id} ...", flush=True)
+        batch_count = topup_needs.get(l2_id, args.count) if args.topup_under is not None else args.count
+        existing_kw = load_existing_keywords(l2_id) if args.topup_under is not None else None
+        print(f"[{i}/{len(l2_ids)}] {l2_id} (목표 +{batch_count}) ...", flush=True)
         try:
             result = generate_l2_batch(
                 l2_id,
-                count=args.count,
+                count=batch_count,
                 brief=brief,
                 phase1_meta=phase1_meta,
-                budget=budget if (args.max_scout or args.max_gemini) else None,
+                budget=budget,
+                existing_keywords=existing_kw,
             )
         except (RateLimitExhausted, BudgetExhausted) as exc:
             stop_reason = str(exc)
-            print(f"\n[rate-limit] {stop_reason}")
+            _print_groq_stop(exc if isinstance(exc, RateLimitExhausted) else None, stop_reason)
             _save_checkpoint(
                 checkpoint_path,
                 results,
@@ -595,13 +736,14 @@ def main() -> None:
                     "error": stop_reason,
                     "session_scout": budget.scout,
                     "session_gemini": budget.gemini,
+                    **_groq_stop_extra(exc if isinstance(exc, RateLimitExhausted) else None),
                 },
             )
             break
         except Exception as exc:
             if _is_rate_or_quota_error(exc):
                 stop_reason = str(exc)
-                print(f"\n[rate-limit] {stop_reason}")
+                _print_groq_stop(exc, stop_reason)
                 _save_checkpoint(
                     checkpoint_path,
                     results,
@@ -610,6 +752,7 @@ def main() -> None:
                         "error": stop_reason,
                         "session_scout": budget.scout,
                         "session_gemini": budget.gemini,
+                        **_groq_stop_extra(exc),
                     },
                 )
                 break
@@ -623,7 +766,7 @@ def main() -> None:
 
         m = result["metrics"]
         print(
-            f"  수락 {result['accepted_count']}/{args.count} | "
+            f"  수락 {result['accepted_count']}/{batch_count} | "
             f"stem유일 {m.get('stem_unique_pct')}% | 추천 {m.get('ends_with_추천')} | "
             f"Scout {result['scout_calls']} Gemini {result['gemini_calls']} | "
             f"누적 Scout {budget.scout} Gemini {budget.gemini}"

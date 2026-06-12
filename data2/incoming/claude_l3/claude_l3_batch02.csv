@@ -1,0 +1,451 @@
+﻿l3_id,l2_id,l1_code,l3_slug,focus_keyword,title_ko,search_intent,topic_angle,description,model,generated_at
+02-insurance-info-silson-claim-process,02-insurance-info,02,silson-claim-process,실손보험 청구 방법,실손보험 청구 절차와 필요 서류,howto,howto,실손 청구 절차와 서류를 안내합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-policy-terms-reading,02-insurance-info,02,policy-terms-reading,보험 약관 읽는 법,보험 약관에서 꼭 봐야 할 항목,info,tip,약관의 핵심 확인 항목을 짚어줍니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-renewable-vs-nonrenewable,02-insurance-info,02,renewable-vs-nonrenewable,갱신형 비갱신형 차이,갱신형과 비갱신형 보험 차이 비교,compare,compare,두 유형의 보험료 구조를 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-dormant-insurance-money,02-insurance-info,02,dormant-insurance-money,휴면보험금 조회,잠자는 휴면보험금 찾는 방법,howto,tip,미수령 보험금 조회 경로를 안내합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-surrender-value-check,02-insurance-info,02,surrender-value-check,보험 해지 환급금 확인,보험 해지 전 환급금 확인하는 법,info,issue,해지 전 환급금과 손해 여부 확인입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-claim-denial-reasons,02-insurance-info,02,claim-denial-reasons,보험금 지급 거절 사유,보험금 지급이 거절되는 흔한 사유,info,issue,지급 거절이 생기는 사유를 정리합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-no-refund-type-meaning,02-insurance-info,02,no-refund-type-meaning,무해지환급형 보험 뜻,무해지환급형 보험 구조 이해하기,info,start,무해지환급형의 구조와 특징입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-insurance-compare-disclosure,02-insurance-info,02,insurance-compare-disclosure,보험 비교 공시 사이트,보험 상품 비교 공시 사이트 활용,howto,tip,공식 비교 공시 사이트 활용법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-insurance-age-calculation,02-insurance-info,02,insurance-age-calculation,보험 나이 계산 방법,보험 나이는 왜 다르게 계산될까,info,tip,보험 나이 계산 방식을 설명합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-fetus-child-insurance,02-insurance-info,02,fetus-child-insurance,태아보험과 어린이보험,태아보험과 어린이보험 차이 알아보기,info,tip,두 보험의 보장 시점 차이를 설명합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-consultation-preparation,02-insurance-info,02,consultation-preparation,보험 상담 전 준비,보험 상담 전 준비하면 좋은 것,checklist,tip,상담 전 정리해 갈 항목입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-premium-deferral-system,02-insurance-info,02,premium-deferral-system,보험료 납입 유예 제도,보험료 부담될 때 납입유예 제도,info,issue,납입이 어려울 때 쓰는 제도입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-group-vs-individual,02-insurance-info,02,group-vs-individual,단체보험 개인보험 차이,회사 단체보험과 개인보험 차이,compare,tip,단체보험과 개인보험을 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-insurance-fraud-report,02-insurance-info,02,insurance-fraud-report,보험사기 유형과 신고,보험사기 유형과 신고 방법,info,issue,보험사기 유형과 신고 절차입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-insurance-info-claim-deadline,02-insurance-info,02,claim-deadline,보험금 청구 기한,보험금 청구 소멸시효 알아두기,info,tip,청구 가능한 기한을 안내합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-expected-pension-lookup,02-pension-system,02,expected-pension-lookup,국민연금 예상 수령액 조회,내 국민연금 예상 수령액 조회하는 법,howto,tip,예상 연금액 조회 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-pension-age-by-birth,02-pension-system,02,pension-age-by-birth,연금 수령 나이 기준,국민연금 수령 나이 출생연도별 기준,info,tip,출생연도별 수령 개시 나이입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-db-vs-dc-retirement,02-pension-system,02,db-vs-dc-retirement,퇴직연금 DB DC 차이,퇴직연금 DB형 DC형 차이 비교,compare,compare,퇴직연금 두 유형을 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-basic-pension-eligibility,02-pension-system,02,basic-pension-eligibility,기초연금 수급 조건,기초연금 받을 수 있는 조건 정리,info,tip,기초연금 수급 요건을 정리합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-voluntary-enrollment,02-pension-system,02,voluntary-enrollment,국민연금 임의가입,소득 없어도 가입하는 임의가입 제도,info,start,임의가입 제도의 개념과 대상입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-back-payment-system,02-pension-system,02,back-payment-system,연금 추납 제도,국민연금 추후납부 제도 활용,info,tip,추납으로 가입기간 채우는 제도입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-premium-support-program,02-pension-system,02,premium-support-program,연금보험료 지원 제도,보험료 지원받는 두루누리 제도,info,tip,연금보험료 지원 제도를 소개합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-divided-pension,02-pension-system,02,divided-pension,분할연금 제도,이혼 시 분할연금 제도 알아보기,info,issue,분할연금의 요건과 신청을 설명합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-severance-vs-pension,02-pension-system,02,severance-vs-pension,퇴직금과 퇴직연금 차이,퇴직금과 퇴직연금 무엇이 다를까,compare,compare,퇴직금과 퇴직연금을 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-lump-sum-vs-annuity,02-pension-system,02,lump-sum-vs-annuity,연금 수령 방법 선택,일시금과 연금 수령 방식 비교,compare,tip,수령 방식별 차이를 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-payment-history-check,02-pension-system,02,payment-history-check,국민연금 납부 내역 확인,국민연금 납부 내역 확인하는 곳,howto,tip,납부 이력 확인 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-pension-credit-system,02-pension-system,02,pension-credit-system,연금 크레딧 제도,출산 군복무 크레딧 제도 정리,info,tip,가입기간을 더해주는 크레딧 제도입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-housing-pension-terms,02-pension-system,02,housing-pension-terms,주택연금 가입 조건,주택연금 가입 조건과 구조,info,start,주택연금의 조건과 구조입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-overseas-resident-pension,02-pension-system,02,overseas-resident-pension,해외 거주자 국민연금,해외 이주하면 국민연금 어떻게 될까,info,issue,해외 이주 시 연금 처리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+02-pension-system-pension-rule-changes,02-pension-system,02,pension-rule-changes,연금 제도 변경 소식,달라지는 연금 제도 소식 정리,news,issue,연금 제도 변경 사항을 전합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-health-myth-factcheck,03-health-information,03,health-myth-factcheck,건강 속설 팩트체크,흔한 건강 속설 사실일까 팩트체크,info,issue,널리 퍼진 건강 속설을 검증합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-daily-water-intake,03-health-information,03,daily-water-intake,하루 물 섭취량 진실,하루 물 8잔 꼭 마셔야 할까,info,issue,물 섭취 권장량의 근거를 살펴봅니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-body-trivia-quiz,03-health-information,03,body-trivia-quiz,우리 몸 상식 퀴즈,재미로 보는 우리 몸 상식,info,tip,몸에 관한 흥미로운 상식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-medical-terms-easy,03-health-information,03,medical-terms-easy,의학 용어 쉽게 이해,병원에서 듣는 의학 용어 풀이,info,start,진료 시 듣는 용어를 풀이합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-seasonal-health-tips,03-health-information,03,seasonal-health-tips,계절별 건강 상식,계절마다 챙길 건강 상식 모음,info,tip,계절별로 알아둘 건강 상식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-filtering-health-info,03-health-information,03,filtering-health-info,건강 정보 거르는 법,과장된 건강 정보 구별하는 기준,info,issue,과장 건강 정보 판별 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-first-aid-basics,03-health-information,03,first-aid-basics,응급처치 기본 상식,알아두면 좋은 응급처치 기본,checklist,tip,기본 응급처치 상식을 정리합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-blood-type-myths,03-health-information,03,blood-type-myths,혈액형과 건강 속설,혈액형 건강 속설 어디까지 사실일까,review,issue,혈액형 속설의 사실 여부입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-body-temperature-basics,03-health-information,03,body-temperature-basics,기초 체온 상식,평소 체온이 알려주는 것,info,tip,체온 변화의 의미를 설명합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-health-documentaries,03-health-information,03,health-documentaries,건강 다큐 추천,볼만한 건강 다큐멘터리 추천,review,review,건강을 다룬 다큐를 추천합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-longevity-villages,03-health-information,03,longevity-villages,세계의 장수 비결,장수 마을의 생활 비결 들여다보기,review,review,장수 지역의 생활 습관을 봅니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-amazing-body-facts,03-health-information,03,amazing-body-facts,인체 신기한 사실,몰랐던 인체의 신기한 사실들,info,tip,인체에 관한 놀라운 사실입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-which-department-to-visit,03-health-information,03,which-department-to-visit,병원 진료과 선택 기준,증상별 어느 진료과 가야 할까,info,tip,증상별 진료과 선택을 안내합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-health-books-recommend,03-health-information,03,health-books-recommend,건강 책 추천,건강 교양서 추천 리스트,review,review,건강 교양 도서를 추천합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-information-folk-remedy-truth,03-health-information,03,folk-remedy-truth,민간요법 진실 검증,민간요법 어디까지 믿어야 할까,review,issue,민간요법의 근거를 따져봅니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-burnout-warning-signs,03-mental-wellness,03,burnout-warning-signs,직장인 번아웃 신호,번아웃 의심 신호와 대처 시작점,info,issue,번아웃 신호와 첫 대처를 다룹니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-mindfulness-meditation-start,03-mental-wellness,03,mindfulness-meditation-start,마음챙김 명상 입문,초보자를 위한 마음챙김 명상 시작,howto,start,명상을 처음 시작하는 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-stress-relief-hobbies,03-mental-wellness,03,stress-relief-hobbies,스트레스 해소 취미,스트레스 풀리는 취미 활동 추천,review,review,마음이 풀리는 취미를 추천합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-emotion-journaling,03-mental-wellness,03,emotion-journaling,감정 일기 쓰는 법,감정 일기로 마음 정리하는 법,howto,tip,감정 일기 작성 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-low-energy-day-routine,03-mental-wellness,03,low-energy-day-routine,무기력할 때 루틴,무기력한 날 가볍게 시작하는 루틴,info,tip,무기력한 날의 작은 시작입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-counseling-first-visit,03-mental-wellness,03,counseling-first-visit,심리상담 받는 방법,심리상담 처음 받을 때 알아둘 것,info,start,첫 심리상담 준비를 안내합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-digital-detox-practice,03-mental-wellness,03,digital-detox-practice,디지털 디톡스 실천,스마트폰 줄이는 디지털 디톡스,howto,tip,디지털 디톡스 실천 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-meditation-app-compare,03-mental-wellness,03,meditation-app-compare,명상 앱 비교,명상 앱 기능과 가격 비교,compare,compare,명상 앱들을 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-commute-mind-care,03-mental-wellness,03,commute-mind-care,출퇴근길 마음 돌보기,출퇴근 시간 마음 돌보는 습관,info,tip,이동 시간 마음 챙김 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-self-esteem-habits,03-mental-wellness,03,self-esteem-habits,자존감 회복 습관,일상에서 자존감 챙기는 습관,info,tip,자존감을 지키는 일상 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-mental-care-books,03-mental-wellness,03,mental-care-books,마음 건강 책 추천,마음을 돌보는 책 추천,review,review,마음 돌봄 도서를 추천합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-anger-management-breathing,03-mental-wellness,03,anger-management-breathing,화 다스리는 방법,욱하는 화 다스리는 호흡법,howto,tip,화가 날 때의 진정 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-doing-nothing-rest,03-mental-wellness,03,doing-nothing-rest,주말 멍때리기 효과,멍때리기가 주는 휴식 효과,info,tip,아무것도 안 하는 휴식의 효과입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-mental-support-programs,03-mental-wellness,03,mental-support-programs,정신건강 지원 제도,마음 건강 무료 지원 제도 안내,info,tip,공공 마음건강 지원 제도입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mental-wellness-sns-comparison-escape,03-mental-wellness,03,sns-comparison-escape,SNS 비교 심리 벗어나기,SNS 비교 심리에서 벗어나는 법,info,issue,비교 심리를 줄이는 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-evening-sleep-routine,03-sleep-health,03,evening-sleep-routine,저녁 수면 루틴 만들기,꿀잠 부르는 저녁 수면 루틴,info,tip,잠들기 전 루틴을 제안합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-sleepless-night-coping,03-sleep-health,03,sleepless-night-coping,불면 날 대처법,잠 안 오는 밤 해볼 수 있는 것들,howto,tip,잠이 안 올 때의 대처입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-sleep-app-compare,03-sleep-health,03,sleep-app-compare,수면 앱 추천 비교,수면 기록 앱 기능 비교,compare,compare,수면 기록 앱을 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-nap-duration-effects,03-sleep-health,03,nap-duration-effects,낮잠 효과와 시간,낮잠 얼마나 자야 개운할까,info,tip,낮잠의 적정 시간을 다룹니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-bedding-selection,03-sleep-health,03,bedding-selection,침구 선택 가이드,숙면을 돕는 베개 이불 고르기,info,start,숙면용 침구 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-caffeine-sleep-relation,03-sleep-health,03,caffeine-sleep-relation,카페인과 수면 관계,커피 몇 시까지 마셔도 될까,info,issue,카페인이 잠에 미치는 영향입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-shift-worker-sleep,03-sleep-health,03,shift-worker-sleep,교대근무 수면 관리,교대근무자의 수면 관리 요령,info,tip,교대근무자 수면 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-sleep-deprivation-signs,03-sleep-health,03,sleep-deprivation-signs,수면 부족 신호,수면 부족이 보내는 몸의 신호,info,issue,수면 부족의 신호를 짚습니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-snoring-management,03-sleep-health,03,snoring-management,코골이 원인과 관리,코골이가 생기는 이유와 생활 관리,info,issue,코골이 원인과 생활 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-bedroom-environment,03-sleep-health,03,bedroom-environment,수면 환경 만들기,침실 온도 조명 수면 환경 세팅,howto,tip,숙면을 위한 침실 환경입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-weekend-catchup-sleep,03-sleep-health,03,weekend-catchup-sleep,주말 몰아자기 진실,주말에 몰아 자면 피로 풀릴까,info,issue,몰아 자기의 효과를 따져봅니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-sleep-diary-tracking,03-sleep-health,03,sleep-diary-tracking,수면 일기 쓰기,수면 패턴 기록하는 수면 일기,howto,tip,수면 패턴 기록 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-bedtime-stretching,03-sleep-health,03,bedtime-stretching,잠들기 전 스트레칭,자기 전 가벼운 이완 스트레칭,howto,howto,취침 전 이완 동작입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-white-noise-review,03-sleep-health,03,white-noise-review,백색소음 활용 후기,백색소음과 수면 음악 활용 후기,review,review,수면 음향의 활용 경험입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-sleep-health-sleep-stages-explained,03-sleep-health,03,sleep-stages-explained,렘수면 단계 이해,렘수면 깊은잠 수면 단계 이해,info,start,수면 단계의 개념을 설명합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-plateau-breakthrough,03-weight-management,03,plateau-breakthrough,체중 정체기 극복,다이어트 정체기 왜 오고 어떻게 지날까,info,issue,정체기의 원인과 대처입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-yoyo-prevention,03-weight-management,03,yoyo-prevention,요요 없는 감량 원칙,요요를 부르는 습관과 예방 원칙,info,issue,요요를 막는 관리 원칙입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-weight-tracking-habit,03-weight-management,03,weight-tracking-habit,체중 기록 습관,매일 체중 기록 올바르게 하는 법,howto,tip,체중 기록의 올바른 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-inbody-result-reading,03-weight-management,03,inbody-result-reading,인바디 결과 보는 법,인바디 수치 항목별 읽는 법,howto,tip,인바디 항목 읽는 법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-realistic-goal-setting,03-weight-management,03,realistic-goal-setting,감량 목표 설정,현실적인 감량 목표 세우는 기준,info,start,무리 없는 목표 설정 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-smart-scale-review,03-weight-management,03,smart-scale-review,스마트 체중계 비교,스마트 체중계 기능 비교 후기,review,tip,스마트 체중계를 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-diet-app-compare,03-weight-management,03,diet-app-compare,다이어트 앱 비교,식단 기록 다이어트 앱 비교,compare,compare,기록형 다이어트 앱 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-maintenance-period,03-weight-management,03,maintenance-period,감량 후 유지 기간,감량 후 유지어터 기간 보내는 법,info,tip,감량 후 유지 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-daily-weight-fluctuation,03-weight-management,03,daily-weight-fluctuation,체중 변동 이해,체중이 하루에도 오르내리는 이유,info,tip,일중 체중 변동의 이유입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-bmi-limitations,03-weight-management,03,bmi-limitations,비만도 계산 BMI,BMI 비만도 계산과 한계 이해,info,issue,BMI의 계산과 한계입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-busy-week-management,03-weight-management,03,busy-week-management,회식 잦은 주 관리,회식 잦은 직장인 체중 관리 요령,info,tip,약속 많은 시기 관리 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-family-weight-program,03-weight-management,03,family-weight-program,가족과 함께 감량,가족이 함께하는 체중 관리 방법,howto,howto,가족 단위 관리 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-diet-review-literacy,03-weight-management,03,diet-review-literacy,감량 후기 거르는 법,다이어트 후기 볼 때 거를 것,review,issue,과장 후기 판별 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-winter-weight-care,03-weight-management,03,winter-weight-care,겨울철 체중 관리,활동량 줄어드는 겨울 체중 관리,info,tip,겨울철 관리 포인트입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-weight-management-when-to-seek-help,03-weight-management,03,when-to-seek-help,전문가 도움 받을 때,체중 관리 전문가 상담이 필요한 신호,info,tip,전문 상담이 필요한 경우입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-weekly-diet-plan,03-diet-meal-plan,03,weekly-diet-plan,일주일 다이어트 식단표,일주일 다이어트 식단표 짜는 법,howto,howto,일주일 식단 구성 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-convenience-store-picks,03-diet-meal-plan,03,convenience-store-picks,편의점 다이어트 조합,편의점에서 고르는 다이어트 한 끼,info,tip,편의점 식단 조합입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-satiety-foods,03-diet-meal-plan,03,satiety-foods,포만감 높은 식재료,포만감 오래가는 식재료 모음,info,tip,포만감 좋은 식재료입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-eating-out-choices,03-diet-meal-plan,03,eating-out-choices,저칼로리 외식 메뉴,외식할 때 덜 부담되는 메뉴 선택,info,tip,외식 메뉴 선택 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-diet-lunchbox-prep,03-diet-meal-plan,03,diet-lunchbox-prep,다이어트 도시락 싸기,직장인 다이어트 도시락 준비 요령,howto,tip,도시락 준비 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-diet-failure-moments,03-diet-meal-plan,03,diet-failure-moments,식단 조절 실패 원인,식단 조절이 무너지는 순간들,info,issue,식단이 무너지는 순간 분석입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-cheat-day-strategy,03-diet-meal-plan,03,cheat-day-strategy,치팅데이 운영법,치팅데이 어떻게 써야 할까,howto,issue,치팅데이 운영 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-late-night-snack-control,03-diet-meal-plan,03,late-night-snack-control,야식 줄이는 방법,야식 습관 줄이는 현실 방법,info,tip,야식을 줄이는 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-salad-variation-ideas,03-diet-meal-plan,03,salad-variation-ideas,샐러드 안 질리게 먹기,샐러드 질리지 않게 먹는 변화 후기,review,review,샐러드 변주 아이디어입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-reverse-eating-order,03-diet-meal-plan,03,reverse-eating-order,식사 순서 거꾸로 먹기,거꾸로 식사법 효과 있을까,info,issue,식사 순서 조절을 살펴봅니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-diet-friendly-drinks,03-diet-meal-plan,03,diet-friendly-drinks,식단 중 마실 음료,식단 중 마셔도 되는 음료 정리,info,tip,식단 중 음료 선택입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-food-logging-method,03-diet-meal-plan,03,food-logging-method,식단 기록 방법,먹은 것 기록하는 식단 일기 쓰기,howto,tip,식단 기록 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-zero-products-reality,03-diet-meal-plan,03,zero-products-reality,제로 식품 활용과 한계,제로 칼로리 식품 똑똑하게 보기,info,issue,제로 식품의 활용과 한계입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-meal-delivery-compare,03-diet-meal-plan,03,meal-delivery-compare,다이어트 식단 배송 비교,식단 도시락 배송 서비스 비교,compare,compare,식단 배송 서비스를 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-diet-meal-plan-holiday-diet-survival,03-diet-meal-plan,03,holiday-diet-survival,명절 연휴 식단 관리,명절 연휴 식단 무너지지 않기,info,tip,연휴 식단 관리 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-balanced-plate-ratio,03-healthy-diet,03,balanced-plate-ratio,균형 잡힌 한 끼 구성,균형 잡힌 식판 구성 비율 이해,info,start,한 끼 균형 비율을 설명합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-seasonal-ingredients-calendar,03-healthy-diet,03,seasonal-ingredients-calendar,제철 식재료 달력,월별 제철 식재료 캘린더,info,tip,월별 제철 재료 정리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-quick-healthy-breakfast,03-healthy-diet,03,quick-healthy-breakfast,아침 거르지 않는 법,바쁜 아침 간단 건강 한 끼,info,tip,간단한 아침 식사 아이디어입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-vegetable-intake-boost,03-healthy-diet,03,vegetable-intake-boost,채소 더 먹는 요령,하루 채소 섭취 늘리는 요령,howto,tip,채소 섭취를 늘리는 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-hidden-sugar-reduction,03-healthy-diet,03,hidden-sugar-reduction,당 줄이는 식습관,숨은 당 줄이는 식습관 만들기,info,issue,숨은 당을 줄이는 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-whole-grain-switch,03-healthy-diet,03,whole-grain-switch,통곡물 바꿔 먹기,흰쌀 대신 통곡물 시작하기,info,start,통곡물 전환 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-nutrition-label-reading,03-healthy-diet,03,nutrition-label-reading,식품 영양성분표 읽기,영양성분표 제대로 읽는 법,howto,tip,영양성분표 읽는 법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-processed-food-criteria,03-healthy-diet,03,processed-food-criteria,가공식품 고르는 기준,가공식품 살 때 확인할 기준,checklist,tip,가공식품 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-solo-healthy-meals,03-healthy-diet,03,solo-healthy-meals,혼밥 건강하게 먹기,혼밥도 건강하게 차리는 법,info,tip,1인 식사 건강하게 챙기기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-parents-meal-ideas,03-healthy-diet,03,parents-meal-ideas,부모님 밥상 챙기기,부모님 건강 밥상 차림 아이디어,info,tip,부모님 식단 아이디어입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-eating-out-balance,03-healthy-diet,03,eating-out-balance,외식 잦을 때 균형,외식 많은 주간 영양 균형 맞추기,info,tip,외식 잦을 때의 균형 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-superfood-marketing,03-healthy-diet,03,superfood-marketing,슈퍼푸드 과장 구별,슈퍼푸드 마케팅 어디까지 진실일까,info,issue,슈퍼푸드 과장을 가려봅니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-food-documentaries,03-healthy-diet,03,food-documentaries,식단 관련 다큐 추천,음식과 건강 다큐멘터리 추천,review,review,음식 다큐를 추천합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-mediterranean-vs-korean,03-healthy-diet,03,mediterranean-vs-korean,지중해식과 한식 비교,지중해식 식단과 한식 비교해 보기,compare,compare,두 식단의 특징을 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-healthy-diet-healthy-grocery-list,03-healthy-diet,03,healthy-grocery-list,냉장고 건강하게 채우기,장보기 목록으로 건강 식단 시작,checklist,tip,건강 장보기 목록입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-full-body-3days,03-exercise-routine,03,full-body-3days,주 3회 전신 루틴,주 3회 전신 운동 루틴 짜기,howto,howto,주 3회 전신 루틴 구성입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-morning-vs-evening,03-exercise-routine,03,morning-vs-evening,아침 운동 저녁 운동,아침 운동과 저녁 운동 무엇이 좋을까,compare,compare,운동 시간대를 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-split-routine-types,03-exercise-routine,03,split-routine-types,분할 운동 방법 이해,무분할 2분할 3분할 차이,info,tip,분할 방식의 차이를 설명합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-cardio-strength-order,03-exercise-routine,03,cardio-strength-order,근력 유산소 순서,근력과 유산소 순서 어떻게 할까,info,tip,운동 순서의 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-beginner-4week-guide,03-exercise-routine,03,beginner-4week-guide,초보 운동 시작 가이드,운동 처음 시작하는 사람 4주 가이드,info,start,운동 입문 4주 가이드입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-workout-log-apps,03-exercise-routine,03,workout-log-apps,루틴 기록 앱 비교,운동 루틴 기록 앱 비교,compare,tip,운동 기록 앱 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-lunchtime-workout,03-exercise-routine,03,lunchtime-workout,점심시간 짧은 운동,점심시간 20분 운동 아이디어,info,tip,점심시간 운동 아이디어입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-workout-slump,03-exercise-routine,03,workout-slump,운동 슬럼프 극복,운동 가기 싫은 날 극복하는 법,info,issue,운동 슬럼프 극복법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-bodyweight-routine,03-exercise-routine,03,bodyweight-routine,맨몸 운동 루틴 구성,기구 없이 하는 맨몸 운동 구성,info,tip,맨몸 운동 구성 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-intensity-guideline,03-exercise-routine,03,intensity-guideline,운동 강도 조절 기준,운동 강도 어느 정도가 적당할까,info,tip,적정 강도 판단 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-cardio-types-features,03-exercise-routine,03,cardio-types-features,유산소 종류별 특징,유산소 운동 종류별 특징 비교,review,review,유산소 종류별 특징입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-routine-change-signals,03-exercise-routine,03,routine-change-signals,운동 루틴 매너리즘,루틴 바꿔야 할 때 보내는 신호,info,issue,루틴 교체 시점의 신호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-travel-workout-keep,03-exercise-routine,03,travel-workout-keep,여행 중 운동 유지,여행 가서도 루틴 유지하는 법,info,tip,여행지에서의 루틴 유지입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-smart-goal-setting,03-exercise-routine,03,smart-goal-setting,운동 목표 설정법,운동 목표 스마트하게 세우기,howto,tip,운동 목표 설정 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-exercise-routine-workout-youtube-channels,03-exercise-routine,03,workout-youtube-channels,유튜브 운동 채널 추천,따라하기 좋은 운동 채널 추천,review,review,운동 채널을 추천합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-gym-signup-check,03-fitness,03,gym-signup-check,헬스장 등록 전 확인,헬스장 등록 전 확인할 것들,checklist,tip,등록 전 확인 항목입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-machine-basics,03-fitness,03,machine-basics,헬스장 기구 사용법,헬스 초보 기구 사용 기초,info,start,기구 사용 기초 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-gym-etiquette,03-fitness,03,gym-etiquette,헬스장 이용 예절,헬스장에서 지켜야 할 매너,info,tip,헬스장 기본 매너입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-pt-decision-criteria,03-fitness,03,pt-decision-criteria,PT 받을지 고민될 때,PT 등록 전 따져볼 기준,info,tip,PT 등록 판단 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-gym-price-compare,03-fitness,03,gym-price-compare,헬스장 가격 비교 요령,헬스장 가격 합리적으로 비교하기,cost,compare,헬스장 비용 비교 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-gym-bag-essentials,03-fitness,03,gym-bag-essentials,운동 가방 챙기기,헬스장 갈 때 챙길 준비물,checklist,tip,헬스장 준비물 목록입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-dawn-workout-review,03-fitness,03,dawn-workout-review,새벽 운동 한 달 후기,새벽 헬스 한 달 해본 후기,review,review,새벽 운동 경험담입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-machine-vs-freeweight,03-fitness,03,machine-vs-freeweight,머신과 프리웨이트 차이,머신 운동과 프리웨이트 비교,compare,compare,머신과 프리웨이트 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-gym-refund-rules,03-fitness,03,gym-refund-rules,헬스장 환불 규정,헬스장 환불 기준과 분쟁 대처,info,issue,환불 규정과 분쟁 대처입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-women-weight-start,03-fitness,03,women-weight-start,여성 웨이트 입문,여성 웨이트 트레이닝 입문 가이드,info,start,여성 웨이트 입문 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-gym-terms-dictionary,03-fitness,03,gym-terms-dictionary,헬스 용어 정리,헬스장에서 쓰는 용어 사전,info,tip,헬스 용어 풀이입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-mind-muscle-connection,03-fitness,03,mind-muscle-connection,운동 자극 못 느낄 때,운동 자극이 안 느껴질 때 점검,info,issue,자극이 약할 때 점검 포인트입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-public-sports-facilities,03-fitness,03,public-sports-facilities,공공 체육시설 활용,저렴한 공공 체육시설 이용법,info,local,공공 체육시설 이용법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-trainer-selection,03-fitness,03,trainer-selection,헬스 트레이너 고르기,좋은 트레이너 알아보는 기준,info,tip,트레이너 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-fitness-busy-hours-flow,03-fitness,03,busy-hours-flow,붐비는 시간 동선 짜기,붐비는 시간 기구 동선 짜기,howto,tip,혼잡 시간대 동선 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-cooldown-stretching,03-post-workout-recovery,03,cooldown-stretching,운동 후 스트레칭 루틴,운동 마무리 스트레칭 루틴,howto,howto,운동 후 마무리 동작입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-foam-roller-usage,03-post-workout-recovery,03,foam-roller-usage,폼롤러 사용법,폼롤러로 푸는 부위별 사용법,howto,tip,폼롤러 부위별 사용법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-muscle-soreness-range,03-post-workout-recovery,03,muscle-soreness-range,근육통 정상일까,운동 후 근육통 정상 범위 이해,info,issue,근육통의 정상 범위입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-recovery-snacks,03-post-workout-recovery,03,recovery-snacks,운동 직후 회복 간식,운동 직후 회복을 돕는 간식,info,tip,운동 후 간식 아이디어입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-active-rest-day,03-post-workout-recovery,03,active-rest-day,휴식일 보내는 법,운동 쉬는 날 액티브 레스트,howto,tip,쉬는 날 가벼운 활동입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-massage-gun-criteria,03-post-workout-recovery,03,massage-gun-criteria,마사지건 고르기,마사지건 고르는 기준 비교,compare,tip,마사지건 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-cold-vs-heat-therapy,03-post-workout-recovery,03,cold-vs-heat-therapy,냉찜질 온찜질 구분,냉찜질과 온찜질 언제 쓸까,compare,compare,냉온찜질 사용 구분입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-post-workout-shower,03-post-workout-recovery,03,post-workout-shower,운동 후 샤워 타이밍,운동 후 샤워 언제 하는 게 좋을까,info,tip,운동 후 샤워 시점입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-hydration-tips,03-post-workout-recovery,03,hydration-tips,수분 보충 요령,운동 전후 수분 보충 요령,info,tip,운동 전후 수분 보충입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-overtraining-signs,03-post-workout-recovery,03,overtraining-signs,과훈련 신호 알기,오버트레이닝 의심 신호,info,issue,과훈련 의심 신호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-deload-week,03-post-workout-recovery,03,deload-week,회복 주간 운영,강도 낮추는 디로드 주간 이해,info,tip,디로드 주간의 개념입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-post-swelling-care,03-post-workout-recovery,03,post-swelling-care,다리 붓기 푸는 관리,운동 후 붓기 가라앉히는 관리,info,tip,운동 후 붓기 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-sauna-recovery,03-post-workout-recovery,03,sauna-recovery,사우나와 회복 효과,운동 후 사우나 도움이 될까,info,issue,사우나의 회복 효과 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-fast-recovery-habits,03-post-workout-recovery,03,fast-recovery-habits,회복 빠른 사람들 습관,회복 빠른 사람들의 공통 습관,review,review,회복이 빠른 습관 모음입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-post-workout-recovery-pain-stop-signals,03-post-workout-recovery,03,pain-stop-signals,부상 시 운동 중단 기준,통증 있을 때 운동 쉬어야 할 신호,info,issue,운동을 멈춰야 할 신호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-morning-routine-build,03-lifestyle-habits,03,morning-routine-build,아침 루틴 만들기,하루를 바꾸는 아침 루틴 만들기,howto,start,아침 루틴 설계 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-water-drinking-habit,03-lifestyle-habits,03,water-drinking-habit,물 마시기 습관 들이기,물 챙겨 마시는 습관 만드는 법,info,tip,물 마시기 습관 형성입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-screen-time-control,03-lifestyle-habits,03,screen-time-control,스크린타임 관리,하루 스크린타임 관리 습관,info,issue,스크린타임 조절 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-stairs-over-elevator,03-lifestyle-habits,03,stairs-over-elevator,계단 오르기 생활화,엘리베이터 대신 계단 습관,info,tip,계단 이용 생활화입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-procrastination-fix,03-lifestyle-habits,03,procrastination-fix,미루는 습관 고치기,미루기 습관 끊는 5분 법칙,howto,tip,미루기를 끊는 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-habit-tracker-apps,03-lifestyle-habits,03,habit-tracker-apps,습관 기록 앱 비교,습관 트래커 앱 기능 비교,compare,compare,습관 앱을 비교합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-allnighter-recovery,03-lifestyle-habits,03,allnighter-recovery,밤샘 후 회복 요령,밤샘한 다음날 컨디션 회복,info,tip,밤샘 다음날 회복 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-evening-routine-design,03-lifestyle-habits,03,evening-routine-design,퇴근 후 루틴 정리,퇴근 후 저녁 루틴 설계,info,tip,저녁 루틴 설계입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-tiny-habit-strategy,03-lifestyle-habits,03,tiny-habit-strategy,초소형 습관 전략,아주 작게 시작하는 습관 전략,info,tip,작게 시작하는 습관 전략입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-sitting-time-breaks,03-lifestyle-habits,03,sitting-time-breaks,앉아있는 시간 줄이기,오래 앉는 생활 끊어주는 방법,info,issue,좌식 시간 줄이기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-regular-meal-times,03-lifestyle-habits,03,regular-meal-times,식사 시간 규칙 만들기,불규칙한 식사 시간 바로잡기,info,tip,식사 시간 규칙화입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-weekend-reset-routine,03-lifestyle-habits,03,weekend-reset-routine,주말 리셋 루틴,주말에 일주일 리셋하는 루틴,info,tip,주말 리셋 루틴입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-habit-books-recommend,03-lifestyle-habits,03,habit-books-recommend,건강한 습관 책 추천,좋은 습관 만들기 책 추천,review,review,습관 관련 도서 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-new-year-resolutions,03-lifestyle-habits,03,new-year-resolutions,새해 결심 지키는 법,새해 결심 끝까지 지키는 법,howto,tip,새해 결심 유지 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-lifestyle-habits-family-habit-challenge,03-lifestyle-habits,03,family-habit-challenge,가족 함께 습관 만들기,가족이 함께 도전하는 건강 습관,howto,howto,가족 습관 챌린지입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-handwashing-steps,03-disease-prevention,03,handwashing-steps,손씻기 올바른 방법,올바른 손씻기 6단계 다시 보기,howto,tip,올바른 손씻기 단계입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-flu-season-prep,03-disease-prevention,03,flu-season-prep,독감 유행 시기 대비,독감 유행 시기와 예방 준비,info,issue,독감 시즌 대비 정보입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-adult-vaccination,03-disease-prevention,03,adult-vaccination,성인 예방접종 일정,성인이 챙길 예방접종 종류,info,tip,성인 예방접종 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-seasonal-cold-prevention,03-disease-prevention,03,seasonal-cold-prevention,환절기 감기 예방,환절기 감기 안 걸리는 생활 수칙,info,tip,환절기 감기 예방 수칙입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-food-poisoning-rules,03-disease-prevention,03,food-poisoning-rules,식중독 예방 수칙,여름철 식중독 예방 수칙,checklist,tip,식중독 예방 점검 항목입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-mask-proper-use,03-disease-prevention,03,mask-proper-use,마스크 올바른 사용,마스크 제대로 쓰는 법,info,tip,마스크 올바른 착용법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-mosquito-borne-diseases,03-disease-prevention,03,mosquito-borne-diseases,모기 매개 감염병,모기 물림 예방과 감염병 상식,info,issue,모기 매개 질환 예방입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-travel-vaccination,03-disease-prevention,03,travel-vaccination,해외여행 전 예방접종,해외여행 전 챙길 예방접종 정보,checklist,tip,여행 전 접종 확인입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-household-infection-control,03-disease-prevention,03,household-infection-control,가족 간 감염 막기,집안 감염 전파 막는 생활 분리,info,tip,가정 내 감염 차단입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-disinfection-tips,03-disease-prevention,03,disinfection-tips,생활 속 소독 요령,생활용품 소독 올바른 요령,howto,tip,생활용품 소독 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-outbreak-info-sources,03-disease-prevention,03,outbreak-info-sources,유행 질환 정보 확인처,감염병 유행 정보 확인하는 곳,info,tip,감염병 정보 확인처입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-epidemic-news-update,03-disease-prevention,03,epidemic-news-update,올해 유행 감염병 소식,올해 유행하는 감염병 소식 정리,news,issue,유행 감염병 소식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-vaccination-records,03-disease-prevention,03,vaccination-records,예방접종 기록 관리,예방접종 이력 확인하고 관리하기,howto,tip,접종 이력 관리 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-winter-norovirus,03-disease-prevention,03,winter-norovirus,겨울철 노로바이러스,겨울 노로바이러스 예방 포인트,info,issue,노로바이러스 예방입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-disease-prevention-cold-myths-check,03-disease-prevention,03,cold-myths-check,감기 예방 속설 검증,감기 예방 속설 사실 확인,info,issue,감기 속설을 검증합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-label-reading-guide,03-supplement-guide,03,label-reading-guide,영양제 라벨 읽는 법,영양제 라벨 함량 표기 읽는 법,howto,tip,라벨 표기 읽는 법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-certification-marks,03-supplement-guide,03,certification-marks,건강기능식품 인증마크,건강기능식품 인증마크 확인하기,info,tip,인증마크 확인 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-storage-expiration,03-supplement-guide,03,storage-expiration,보관과 유통기한 점검,영양제 올바른 보관과 유통기한 점검,checklist,tip,보관과 유통기한 점검입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-exaggerated-ads,03-supplement-guide,03,exaggerated-ads,과대광고 구별하기,영양제 과대광고 거르는 기준,info,issue,과대광고 판별 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-price-comparison,03-supplement-guide,03,price-comparison,영양제 가격 비교 요령,같은 성분 영양제 가격 비교법,cost,compare,성분 대비 가격 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-overseas-purchase-cautions,03-supplement-guide,03,overseas-purchase-cautions,해외직구 영양제 주의,해외직구 영양제 확인할 점,info,issue,직구 시 확인 사항입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-expired-disposal,03-supplement-guide,03,expired-disposal,안 먹는 영양제 처리,유통기한 지난 영양제 폐기 방법,info,tip,영양제 폐기 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-consultation-places,03-supplement-guide,03,consultation-places,영양제 상담 받을 곳,영양제 복용 전 상담할 수 있는 곳,info,tip,복용 전 상담 창구입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-daily-value-percent,03-supplement-guide,03,daily-value-percent,영양성분 기준치 의미,1일 영양성분 기준치 퍼센트 의미,info,start,기준치 표기의 의미입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-subscription-services,03-supplement-guide,03,subscription-services,구독형 영양제 서비스,맞춤 영양제 구독 서비스 살펴보기,review,review,영양제 구독 서비스 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-adverse-reaction-report,03-supplement-guide,03,adverse-reaction-report,영양제 부작용 신고,이상 반응 시 신고하는 방법,info,issue,이상 반응 신고 절차입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-food-first-approach,03-supplement-guide,03,food-first-approach,식품으로 먹는 영양소,영양제 대신 음식으로 채우기,info,tip,음식으로 채우는 접근입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-market-trends,03-supplement-guide,03,market-trends,올해 영양제 트렌드,올해 영양제 소비 트렌드,news,issue,영양제 소비 흐름입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-fake-review-filter,03-supplement-guide,03,fake-review-filter,가짜 후기 구별,영양제 광고성 후기 구별법,review,issue,광고성 후기 구별입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-supplement-guide-package-terms,03-supplement-guide,03,package-terms,건기식 용어 풀이,영양제 포장 속 용어 쉽게 풀이,info,tip,포장 용어 풀이입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-standing-day-care,03-back-joint-health,03,standing-day-care,오래 서있는 날 허리,서서 일하는 날 허리 부담 줄이기,info,tip,서서 일할 때 허리 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-knee-friendly-exercise,03-back-joint-health,03,knee-friendly-exercise,무릎 부담 적은 운동,무릎에 부담 적은 운동 비교,compare,compare,무릎 친화적 운동 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-back-pain-red-flags,03-back-joint-health,03,back-pain-red-flags,허리 통증 병원 갈 때,허리 통증 진료가 필요한 신호,info,issue,진료가 필요한 허리 신호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-joint-friendly-habits,03-back-joint-health,03,joint-friendly-habits,관절 아끼는 습관,관절 아끼는 생활 속 습관 만들기,howto,tip,관절 보호 생활 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-shoulder-tension-release,03-back-joint-health,03,shoulder-tension-release,어깨 뭉침 푸는 법,뻐근한 어깨 푸는 간단 동작,howto,tip,어깨 뭉침 완화 동작입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-hiking-knee-protection,03-back-joint-health,03,hiking-knee-protection,등산과 무릎 보호,등산할 때 무릎 보호 요령,info,tip,등산 시 무릎 보호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-wrist-protection,03-back-joint-health,03,wrist-protection,손목 보호 습관,컴퓨터 작업 손목 보호하기,info,tip,작업 중 손목 보호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-stairs-knee-pain,03-back-joint-health,03,stairs-knee-pain,계단 내려갈 때 무릎,계단 내려갈 때 무릎이 아픈 이유,info,issue,계단과 무릎 통증입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-safe-lifting-technique,03-back-joint-health,03,safe-lifting-technique,허리 보호 물건 들기,무거운 짐 허리 안 다치게 드는 법,howto,howto,안전하게 드는 자세입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-plantar-morning-pain,03-back-joint-health,03,plantar-morning-pain,발바닥 아침 통증,아침 발바닥 통증 관리 상식,info,issue,아침 발바닥 통증 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-brace-selection-check,03-back-joint-health,03,brace-selection-check,관절 보호대 고르기,손목 무릎 보호대 고르기 전 확인,checklist,tip,보호대 선택 확인 사항입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-morning-back-stretch,03-back-joint-health,03,morning-back-stretch,허리 펴주는 아침 동작,자고 일어나 허리 펴는 동작,howto,tip,아침 허리 이완 동작입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-joint-checkup-types,03-back-joint-health,03,joint-checkup-types,관절 검사 종류,관절 상태 확인하는 검사 종류,info,tip,관절 검사 종류 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-weather-joint-pain,03-back-joint-health,03,weather-joint-pain,날씨와 관절 통증,비 오는 날 관절이 쑤시는 이유,info,issue,날씨와 관절 통증 관계입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-back-joint-health-floor-sitting-effects,03-back-joint-health,03,floor-sitting-effects,좌식 생활과 관절,좌식 생활이 관절에 미치는 영향,info,issue,좌식 문화와 관절 건강입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-eye-fatigue-relief,03-eye-health,03,eye-fatigue-relief,눈 피로 푸는 법,모니터 보다 지친 눈 피로 풀기,howto,tip,눈 피로 완화 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-artificial-tears-guide,03-eye-health,03,artificial-tears-guide,인공눈물 고르기,인공눈물 종류와 고르는 기준,info,tip,인공눈물 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-bluelight-glasses-truth,03-eye-health,03,bluelight-glasses-truth,블루라이트 차단 효과,블루라이트 안경 효과 있을까,info,issue,블루라이트 차단 효과 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-eye-friendly-foods,03-eye-health,03,eye-friendly-foods,눈에 좋다는 음식,눈에 좋다는 음식 따져보기,review,review,눈 관련 음식 정보 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-vision-test-cycle,03-eye-health,03,vision-test-cycle,시력 검사 주기,시력 검사 얼마나 자주 받을까,info,tip,시력 검사 주기 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-dry-eye-environment,03-eye-health,03,dry-eye-environment,안구건조 생활 관리,안구건조 줄이는 생활 환경,info,tip,건조감 줄이는 환경입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-contact-lens-hygiene,03-eye-health,03,contact-lens-hygiene,콘택트렌즈 위생 수칙,렌즈 착용자 위생 수칙,checklist,tip,렌즈 위생 점검 항목입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-eye-exercise-myth,03-eye-health,03,eye-exercise-myth,눈 운동 진실 확인,눈 운동으로 시력 회복될까,info,issue,눈 운동 효과를 검증합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-sunglasses-protection,03-eye-health,03,sunglasses-protection,자외선과 선글라스,눈 보호하는 선글라스 고르기 체크,checklist,tip,보호용 선글라스 선택입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-kids-vision-care,03-eye-health,03,kids-vision-care,어린이 시력 관리 시기,성장기 시력 관리 알아둘 것,info,tip,성장기 시력 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-blinking-habit,03-eye-health,03,blinking-habit,눈 깜빡임과 건조,모니터 작업 중 눈 깜빡임 습관,info,tip,작업 중 깜빡임 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-eye-warning-signs,03-eye-health,03,eye-warning-signs,눈 이상 신호,눈이 보내는 진료 필요 신호,info,issue,진료가 필요한 눈 신호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-lasik-vs-lasek,03-eye-health,03,lasik-vs-lasek,라식 라섹 차이 정보,라식과 라섹 차이 기본 정보,compare,compare,라식과 라섹 기본 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-eye-compress-usage,03-eye-health,03,eye-compress-usage,눈 찜질 활용법,눈 온찜질 냉찜질 활용하기,howto,tip,눈 찜질 활용 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-eye-health-smartphone-distance,03-eye-health,03,smartphone-distance,스마트폰과 눈 거리,스마트폰 볼 때 눈 지키는 거리,info,tip,화면과 눈 거리 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-proper-brushing,03-oral-health,03,proper-brushing,올바른 양치 방법,놓치기 쉬운 올바른 양치 습관,howto,tip,양치 습관 점검입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-floss-interdental-start,03-oral-health,03,floss-interdental-start,치실 치간칫솔 사용,치실과 치간칫솔 시작하기,howto,start,치실 사용 입문입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-scaling-insurance-cycle,03-oral-health,03,scaling-insurance-cycle,스케일링 주기와 보험,스케일링 건강보험 적용 주기,info,tip,스케일링 보험 적용 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-bad-breath-management,03-oral-health,03,bad-breath-management,구취 원인과 관리,입냄새 원인별 생활 관리,info,issue,구취 원인과 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-toothpaste-selection,03-oral-health,03,toothpaste-selection,치약 고르는 기준,치약 성분 보고 고르는 기준,info,tip,치약 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-electric-vs-manual,03-oral-health,03,electric-vs-manual,전동칫솔 일반칫솔,전동칫솔과 일반칫솔 비교,compare,compare,칫솔 유형 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-teeth-damaging-habits,03-oral-health,03,teeth-damaging-habits,치아에 안 좋은 습관,이를 상하게 하는 생활 습관,info,issue,치아 해치는 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-baby-teeth-basics,03-oral-health,03,baby-teeth-basics,유치 관리 기본 상식,아이 유치 관리 기본 상식,info,tip,유치 관리 기초입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-dental-checkup-cycle,03-oral-health,03,dental-checkup-cycle,치과 검진 주기,치과 정기검진 주기와 항목,info,tip,치과 검진 주기 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-sensitive-teeth-care,03-oral-health,03,sensitive-teeth-care,시린 이 관리 상식,이가 시릴 때 생활 관리,info,issue,시린 이 생활 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-mouthwash-timing,03-oral-health,03,mouthwash-timing,구강청결제 사용법,가글 올바른 사용 타이밍,howto,tip,가글 사용 시점입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-teeth-whitening-info,03-oral-health,03,teeth-whitening-info,치아 미백 정보,치아 미백 방법별 차이 비교,compare,tip,미백 방법 기본 정보입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-wisdom-tooth-prep,03-oral-health,03,wisdom-tooth-prep,사랑니 발치 전 정보,사랑니 뽑기 전 알아둘 것,info,tip,사랑니 발치 전 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-gum-bleeding-meaning,03-oral-health,03,gum-bleeding-meaning,잇몸에서 피 날 때,양치 중 잇몸 출혈 의미,info,issue,잇몸 출혈의 의미입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-oral-health-braces-pre-check,03-oral-health,03,braces-pre-check,교정 시작 전 체크,치아 교정 시작 전 확인할 것,checklist,tip,교정 전 확인 사항입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-first-week-survival,03-quit-smoking-drinking,03,first-week-survival,금연 첫 일주일 넘기기,금연 첫 주 금단 시기 넘기는 법,info,issue,금연 초기 고비 넘기기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-health-center-clinic,03-quit-smoking-drinking,03,health-center-clinic,보건소 금연 지원,보건소 금연클리닉 이용 방법,howto,tip,보건소 금연 지원 이용입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-sober-month-changes,03-quit-smoking-drinking,03,sober-month-changes,금주 한 달 변화,술 끊고 한 달 몸의 변화,review,review,금주 후 변화 경험담입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-cessation-aids-info,03-quit-smoking-drinking,03,cessation-aids-info,금연 보조제 종류 정보,금연 보조 수단 종류 알아보기,info,tip,금연 보조 수단 정보입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-refusing-drinks,03-quit-smoking-drinking,03,refusing-drinks,회식 자리 술 거절,회식에서 부담 없이 술 거절하기,howto,tip,술자리 거절 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-quit-apps-tracking,03-quit-smoking-drinking,03,quit-apps-tracking,금연 앱 활용,금연 도전 앱으로 기록하기,howto,tip,금연 앱 활용법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-craving-3min-coping,03-quit-smoking-drinking,03,craving-3min-coping,흡연 욕구 순간 대처,담배 생각 날 때 3분 대처법,info,tip,흡연 욕구 대처법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-moderate-drinking-goal,03-quit-smoking-drinking,03,moderate-drinking-goal,절주 목표 세우기,무리 없는 절주 목표 세우기,info,start,절주 목표 설정입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-restart-after-failure,03-quit-smoking-drinking,03,restart-after-failure,금연 실패 후 재도전,금연 실패해도 다시 시작하는 법,info,issue,재도전 마음가짐입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-alcohol-alternatives,03-quit-smoking-drinking,03,alcohol-alternatives,술 대신 마실 음료,술자리 대체 음료 아이디어,info,tip,대체 음료 아이디어입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-weight-gain-worry,03-quit-smoking-drinking,03,weight-gain-worry,금연과 체중 걱정,금연하면 살찐다는 걱정 살펴보기,info,issue,금연과 체중 변화 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-ecigarette-facts,03-quit-smoking-drinking,03,ecigarette-facts,전자담배 오해와 사실,전자담배 괜찮다는 말의 사실 확인,info,issue,전자담배 관련 사실 확인입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-sober-challenge-groups,03-quit-smoking-drinking,03,sober-challenge-groups,금주 모임과 챌린지,함께하는 금주 챌린지 참여하기,info,tip,금주 챌린지 참여입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-drinking-self-check,03-quit-smoking-drinking,03,drinking-self-check,음주 습관 자가 점검,내 음주 습관 자가 점검표,checklist,tip,음주 습관 점검표입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-quit-smoking-drinking-success-stories,03-quit-smoking-drinking,03,success-stories,금연 성공 사례 읽기,금연 성공한 사람들의 공통점,review,review,금연 성공담 분석입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-national-checkup-target,03-health-checkup,03,national-checkup-target,국가건강검진 대상 확인,올해 국가건강검진 대상 확인법,howto,tip,검진 대상 확인 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-day-before-prep,03-health-checkup,03,day-before-prep,건강검진 전날 준비,검진 전날 금식 등 준비 사항,checklist,tip,검진 전 준비 사항입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-result-sheet-reading,03-health-checkup,03,result-sheet-reading,검진 결과지 읽는 법,건강검진 결과지 항목 읽는 법,info,start,결과지 읽는 기초입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-sedation-endoscopy,03-health-checkup,03,sedation-endoscopy,위내시경 수면 일반,수면내시경과 일반내시경 비교,compare,compare,내시경 방식 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-worker-checkup-duty,03-health-checkup,03,worker-checkup-duty,직장인 검진 의무,직장인 건강검진 의무와 과태료,info,issue,직장인 검진 의무 사항입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-optional-items-choice,03-health-checkup,03,optional-items-choice,검진 항목 추가 선택,추가 검진 항목 고르는 기준,info,tip,추가 항목 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-booking-tips,03-health-checkup,03,booking-tips,검진 예약 빨리 잡기,연말 검진 예약 빨리 잡는 요령,howto,tip,검진 예약 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-cancer-screening-cycle,03-health-checkup,03,cancer-screening-cycle,암검진 주기 정리,국가 암검진 종류와 주기,info,tip,암검진 종류와 주기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-recheck-notification,03-health-checkup,03,recheck-notification,재검 통보 받았을 때,재검 통보 받았을 때 해야 할 일,info,issue,재검 안내 대응입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-pre-checkup-avoid,03-health-checkup,03,pre-checkup-avoid,검진 전 피할 행동,검진 전 피해야 할 행동들,info,tip,검진 전 주의 행동입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-center-selection,03-health-checkup,03,center-selection,검진기관 고르는 기준,검진센터 선택할 때 볼 것,info,tip,검진기관 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-family-history-design,03-health-checkup,03,family-history-design,가족력과 검진 설계,가족력 있을 때 검진 챙기는 법,info,tip,가족력 기반 검진 설계입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-youth-checkup-benefits,03-health-checkup,03,youth-checkup-benefits,청년 검진 혜택,2030 청년 검진 항목 알아보기,info,tip,청년 검진 혜택입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-cost-and-support,03-health-checkup,03,cost-and-support,검진 비용과 환급,검진 비용 부담과 지원 제도,cost,tip,검진 비용과 지원입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-health-checkup-center-reviews,03-health-checkup,03,center-reviews,검진센터 이용 후기,검진센터 이용 후기 살펴보기,review,review,검진센터 경험담입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-low-immunity-signs,03-immunity-care,03,low-immunity-signs,면역력 떨어진 신호,면역 떨어졌을 때 나타나는 신호,info,issue,면역 저하 신호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-sleep-immunity-link,03-immunity-care,03,sleep-immunity-link,면역과 수면의 관계,잠과 면역의 관계 이해하기,info,tip,수면과 면역의 관계입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-gut-immunity-basics,03-immunity-care,03,gut-immunity-basics,장 건강과 면역 상식,장과 면역이 연결되는 이유,info,tip,장과 면역의 연결입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-lifestyle-factors-check,03-immunity-care,03,lifestyle-factors-check,면역에 좋은 생활 요소,면역 챙기는 생활 요소 점검,checklist,tip,면역 생활 요소 점검입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-stress-immune-impact,03-immunity-care,03,stress-immune-impact,스트레스와 면역,스트레스가 면역에 미치는 영향,info,issue,스트레스와 면역 관계입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-immune-foods-review,03-immunity-care,03,immune-foods-review,면역에 좋다는 음식,면역에 좋다는 음식 따져보기,review,review,면역 음식 정보 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-exercise-immune-balance,03-immunity-care,03,exercise-immune-balance,운동과 면역의 균형,과한 운동이 면역에 미치는 영향,info,issue,운동 강도와 면역입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-body-warming-habits,03-immunity-care,03,body-warming-habits,몸 따뜻하게 하는 습관,몸 따뜻하게 유지하는 습관 만들기,howto,tip,체온 유지 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-immunity-myths,03-immunity-care,03,immunity-myths,면역 속설 바로알기,면역력 속설 사실 확인하기,review,issue,면역 속설 검증입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-season-change-condition,03-immunity-care,03,season-change-condition,계절 바뀔 때 컨디션,계절 바뀔 때 컨디션 관리,info,tip,계절 전환기 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-vaccine-immunity-basics,03-immunity-care,03,vaccine-immunity-basics,백신과 면역 기본,백신이 면역을 만드는 원리,info,start,백신 작동 원리 기초입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-condition-diary,03-immunity-care,03,condition-diary,컨디션 기록하기,컨디션 기록으로 패턴 찾기,howto,tip,컨디션 기록 활용입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-immune-test-info,03-immunity-care,03,immune-test-info,면역 검사 정보,면역 상태 확인하는 검사 정보,info,tip,면역 관련 검사 정보입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-alcohol-smoking-immune,03-immunity-care,03,alcohol-smoking-immune,음주 흡연과 면역,술 담배가 면역에 미치는 영향,info,issue,음주 흡연과 면역입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-immunity-care-immunity-books-docs,03-immunity-care,03,immunity-books-docs,면역 책과 다큐,면역을 다룬 책과 다큐 추천,review,review,면역 관련 콘텐츠 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-cycle-tracking-apps,03-womens-health,03,cycle-tracking-apps,생리 주기 기록 앱,생리 주기 기록 앱 비교,compare,compare,주기 기록 앱 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-cramp-self-care,03-womens-health,03,cramp-self-care,생리통 생활 관리,생리통 줄이는 생활 관리법,howto,tip,생리통 완화 생활 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-womens-checkup-items,03-womens-health,03,womens-checkup-items,여성 검진 항목 정리,여성이 챙길 정기 검진 항목,info,tip,여성 검진 항목입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-kegel-basics,03-womens-health,03,kegel-basics,케겔 운동 기본 정보,케겔 운동 기본과 효과 정보,info,start,케겔 운동 기초입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-menopause-understanding,03-womens-health,03,menopause-understanding,갱년기 증상 이해,갱년기 변화 미리 이해하기,info,issue,갱년기 변화 이해입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-iron-importance,03-womens-health,03,iron-importance,철분과 여성 건강,여성에게 철분이 중요한 이유,info,tip,철분의 중요성입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-period-products-compare,03-womens-health,03,period-products-compare,생리대 종류 비교,생리대 탐폰 생리컵 비교,compare,tip,생리용품 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-preconception-check,03-womens-health,03,preconception-check,임신 준비 건강 체크,임신 준비 단계 건강 점검,checklist,tip,임신 전 건강 점검입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-hormone-basics,03-womens-health,03,hormone-basics,여성 호르몬 기초,여성호르몬 변화 기초 상식,info,start,호르몬 변화 기초입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-first-gyno-visit,03-womens-health,03,first-gyno-visit,부인과 첫 진료 안내,산부인과 처음 갈 때 알아둘 것,info,tip,첫 진료 준비 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-cold-hands-feet,03-womens-health,03,cold-hands-feet,냉증 손발 시림 관리,손발 차가운 체질 생활 관리,info,tip,냉증 생활 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-cycle-based-exercise,03-womens-health,03,cycle-based-exercise,주기에 맞춘 운동 강도,생리 주기에 맞춰 운동 조절하기,howto,tip,주기별 운동 조절입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-feminine-hygiene-rules,03-womens-health,03,feminine-hygiene-rules,여성 청결 관리 수칙,여성 청결 관리 기본 수칙,checklist,tip,청결 관리 기본입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-womens-health-vouchers,03-womens-health,03,womens-health-vouchers,여성 건강 지원 정책,여성 건강 바우처 지원 제도,info,tip,여성 건강 지원 제도입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-womens-health-family-menopause-support,03-womens-health,03,family-menopause-support,갱년기 가족의 이해,가족이 알아둘 갱년기 배려,info,issue,가족의 갱년기 이해입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-male-menopause-signs,03-mens-health,03,male-menopause-signs,남성 갱년기 신호,남성 갱년기 증상과 신호,info,issue,남성 갱년기 신호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-prostate-basics,03-mens-health,03,prostate-basics,전립선 건강 상식,전립선 건강 기본 상식,info,tip,전립선 기본 상식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-mens-checkup-items,03-mens-health,03,mens-checkup-items,남성 검진 챙길 항목,남성이 챙길 검진 항목 정리,checklist,tip,남성 검진 항목입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-hair-loss-early-care,03-mens-health,03,hair-loss-early-care,탈모 초기 관리 정보,탈모 초기 신호와 관리 정보,info,issue,탈모 초기 신호와 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-belly-fat-factors,03-mens-health,03,belly-fat-factors,뱃살 관리 생활 요인,중년 뱃살 관리 생활 요인,info,tip,복부 관리 생활 요인입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-liver-drinking-culture,03-mens-health,03,liver-drinking-culture,음주 문화와 간 건강,잦은 술자리와 간 건강 상식,review,issue,음주와 간 건강입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-muscle-loss-prevention,03-mens-health,03,muscle-loss-prevention,근감소 예방 상식,나이들수록 근육이 중요한 이유,info,tip,근감소 예방 상식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-male-fertility-factors,03-mens-health,03,male-fertility-factors,남성 난임 생활 요인,남성 난임 관련 생활 요인,info,issue,난임 관련 생활 요인입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-overtime-health-habits,03-mens-health,03,overtime-health-habits,야근 잦을 때 건강,야근 잦을 때 챙길 건강 습관,info,tip,야근 시기 건강 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-checkup-gift-parents,03-mens-health,03,checkup-gift-parents,부모님 검진 선물,부모님 검진 선물하는 방법,howto,tip,검진 선물 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-male-menopause-selfcheck,03-mens-health,03,male-menopause-selfcheck,남성 갱년기 자가 점검,남성 갱년기 자가 점검표,checklist,tip,갱년기 자가 점검입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-smoking-mens-impact,03-mens-health,03,smoking-mens-impact,흡연과 남성 건강,흡연이 남성 건강에 미치는 영향,review,issue,흡연 영향 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-psa-test-basics,03-mens-health,03,psa-test-basics,PSA 수치 기본 정보,PSA 검사 수치 기본 이해,info,start,PSA 검사 기초입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-male-pelvic-exercise,03-mens-health,03,male-pelvic-exercise,남성 골반 건강 운동,남성 골반 건강 운동 정보,info,tip,남성 골반 운동 정보입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-mens-health-forties-restart-exercise,03-mens-health,03,forties-restart-exercise,40대 운동 다시 시작,40대 남성 운동 다시 시작하기,howto,start,중년 운동 재시작입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-parents-health-checklist,03-senior-health,03,parents-health-checklist,부모님 건강 체크 항목,부모님 건강 살피는 체크 항목,checklist,tip,부모님 건강 점검 항목입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-fall-prevention-home,03-senior-health,03,fall-prevention-home,낙상 예방 집안 환경,어르신 낙상 막는 집안 정리,info,issue,낙상 예방 환경입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-senior-walking-guide,03-senior-health,03,senior-walking-guide,시니어 걷기 운동,어르신 무리 없는 걷기 운동법,howto,tip,어르신 걷기 운동입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-appetite-loss-meals,03-senior-health,03,appetite-loss-meals,입맛 없을 때 식사,입맛 없는 어르신 식사 아이디어,info,tip,어르신 식사 아이디어입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-brain-activity-ideas,03-senior-health,03,brain-activity-ideas,치매 예방 두뇌 활동,두뇌 자극하는 생활 활동들,info,tip,두뇌 자극 활동입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-medication-management,03-senior-health,03,medication-management,어르신 약 복용 관리,여러 약 드실 때 관리 요령,checklist,issue,복약 일정 관리 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-hearing-aid-support,03-senior-health,03,hearing-aid-support,노인 보청기 정보,보청기 종류와 지원 제도,info,tip,보청기 정보와 지원입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-silver-exercise-programs,03-senior-health,03,silver-exercise-programs,실버 운동 교실 찾기,동네 시니어 운동 프로그램 찾기,howto,local,지역 시니어 운동 찾기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-aging-sleep-changes,03-senior-health,03,aging-sleep-changes,노년기 수면 변화,나이 들수록 잠이 달라지는 이유,info,tip,노년기 수면 변화입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-life-transition-checkup,03-senior-health,03,life-transition-checkup,생애전환기 검진,66세 생애전환기 검진 알아보기,info,tip,생애전환기 검진 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-health-apps-for-parents,03-senior-health,03,health-apps-for-parents,부모님 폰 건강 앱,부모님 폰에 깔아드릴 건강 앱,review,review,부모님용 건강 앱 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-elderly-mood-signals,03-senior-health,03,elderly-mood-signals,노인 우울 신호 살피기,어르신 마음 건강 살피는 법,info,issue,어르신 마음 살피기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-summer-heat-safety,03-senior-health,03,summer-heat-safety,어르신 여름 건강,폭염 속 어르신 건강 수칙,info,issue,폭염 시 어르신 수칙입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-longterm-care-insurance,03-senior-health,03,longterm-care-insurance,장기요양보험 기초,장기요양보험 신청 기초 정보,info,start,장기요양보험 기초입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-senior-health-hospital-accompaniment,03-senior-health,03,hospital-accompaniment,부모님 병원 동행,부모님 병원 동행 시 챙길 것,checklist,tip,병원 동행 준비입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-turtle-neck-selfcheck,03-posture-care,03,turtle-neck-selfcheck,거북목 자가 진단,거북목 셀프 체크 방법,checklist,tip,거북목 자가 진단입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-monitor-height-setup,03-posture-care,03,monitor-height-setup,모니터 높이 맞추기,모니터 높이와 거리 바로잡기,howto,tip,모니터 위치 조정입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-rounded-shoulder-habits,03-posture-care,03,rounded-shoulder-habits,라운드숄더 펴는 습관,굽은 어깨 펴는 생활 습관,info,tip,굽은 어깨 개선 습관입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-proper-sitting-basics,03-posture-care,03,proper-sitting-basics,바르게 앉는 자세,의자에 바르게 앉는 자세 기본,info,start,바른 착석 자세입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-pelvic-tilt-signs,03-posture-care,03,pelvic-tilt-signs,골반 틀어짐 신호,골반이 틀어졌다는 생활 신호,info,issue,골반 틀어짐 신호입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-wall-posture-test,03-posture-care,03,wall-posture-test,서있는 자세 점검,벽에 서서 하는 자세 점검,howto,tip,벽 이용 자세 점검입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-bag-carrying-impact,03-posture-care,03,bag-carrying-impact,가방 메는 습관과 자세,한쪽으로 가방 메는 습관 영향,info,issue,가방 습관의 영향입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-sleeping-posture,03-posture-care,03,sleeping-posture,잠자는 자세 바로잡기,척추에 편한 잠자는 자세,info,tip,수면 자세 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-standing-desk-review,03-posture-care,03,standing-desk-review,스탠딩 책상 효과,스탠딩 데스크 효과 따져보기,review,review,스탠딩 데스크 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-posture-band-truth,03-posture-care,03,posture-band-truth,자세 교정 밴드 정보,자세 교정 밴드 효과 있을까,info,issue,교정 밴드 효과 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-phone-neck-protection,03-posture-care,03,phone-neck-protection,스마트폰 목 보호 자세,스마트폰 볼 때 목 지키는 자세,info,tip,스마트폰 사용 자세입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-driving-posture,03-posture-care,03,driving-posture,운전 중 바른 자세,장거리 운전 바른 자세 요령,info,tip,운전 자세 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-student-study-posture,03-posture-care,03,student-study-posture,수험생 공부 자세,오래 앉는 수험생 자세 관리,info,tip,수험생 자세 관리입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-wall-angel-exercise,03-posture-care,03,wall-angel-exercise,교정 스트레칭 동작,어깨 펴주는 월엔젤 동작 따라하기,howto,howto,어깨 교정 동작입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+03-posture-care-posture-change-review,03-posture-care,03,posture-change-review,자세 바꾸고 달라진 점,자세 교정 후 달라진 변화 후기,review,review,자세 교정 경험담입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-year-color-trend,04-fashion-trends,04,year-color-trend,올해 유행 컬러,올해의 유행 컬러와 활용법,info,issue,올해의 컬러와 활용을 다룹니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-trend-item-lifespan,04-fashion-trends,04,trend-item-lifespan,유행 아이템 수명,유행 아이템 얼마나 갈까 판단하기,info,tip,유행템의 수명 판단 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-trend-sns-accounts,04-fashion-trends,04,trend-sns-accounts,트렌드 보는 계정 추천,패션 트렌드 보는 SNS 계정 추천,review,review,트렌드 참고 계정을 추천합니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-runway-to-daily,04-fashion-trends,04,runway-to-daily,런웨이 일상 적용,런웨이 트렌드 일상에 적용하기,howto,tip,런웨이 룩의 일상 응용입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-retro-comeback-cycle,04-fashion-trends,04,retro-comeback-cycle,레트로 유행 흐름,돌아오는 레트로 유행 흐름 읽기,info,issue,복고 유행의 흐름을 읽습니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-trend-basic-balance,04-fashion-trends,04,trend-basic-balance,유행템과 기본템 균형,유행템과 기본템 비율 맞추기,info,tip,유행과 기본의 균형 잡기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-trend-report-reading,04-fashion-trends,04,trend-report-reading,트렌드 리포트 읽는 법,시즌 트렌드 리포트 읽는 법,howto,tip,트렌드 리포트 읽는 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-korea-vs-global-trends,04-fashion-trends,04,korea-vs-global-trends,국내외 유행 차이,국내와 해외 유행 무엇이 다를까,compare,compare,국내외 유행 차이 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-fashion-terms-dictionary,04-fashion-trends,04,fashion-terms-dictionary,요즘 패션 용어 사전,요즘 쓰는 패션 용어 사전,info,start,최신 패션 용어 풀이입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-fabric-trends,04-fashion-trends,04,fabric-trends,유행 소재 알아보기,올해 주목받는 소재 트렌드,info,issue,주목받는 소재 흐름입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-impulse-buying-filter,04-fashion-trends,04,impulse-buying-filter,유행템 충동구매 줄이기,유행템 충동구매 줄이는 기준,info,tip,충동구매 거르는 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-street-snap-reading,04-fashion-trends,04,street-snap-reading,거리 패션으로 읽는 유행,스트리트 스냅으로 보는 유행,info,tip,거리 패션 속 유행 읽기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-online-offline-speed,04-fashion-trends,04,online-offline-speed,온오프 유행 속도 차이,온라인과 매장 유행 속도 비교,compare,issue,유통 채널별 유행 속도입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-sustainable-fashion-trend,04-fashion-trends,04,sustainable-fashion-trend,친환경 패션 트렌드,친환경 패션 트렌드 이해,info,issue,지속가능 패션 흐름입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-trends-yearend-trend-recap,04-fashion-trends,04,yearend-trend-recap,패션 트렌드 결산,올해 패션 트렌드 결산,review,review,한 해 트렌드를 돌아봅니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-jeans-fit-guide,04-fashion-items,04,jeans-fit-guide,청바지 핏 고르기,체형별 청바지 핏 고르는 법,info,tip,체형별 청바지 핏 선택입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-white-shirt-criteria,04-fashion-items,04,white-shirt-criteria,흰 셔츠 고르는 기준,기본 흰 셔츠 고르는 기준,info,tip,기본 셔츠 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-trench-coat-check,04-fashion-items,04,trench-coat-check,트렌치코트 선택 체크,트렌치코트 고를 때 볼 것,checklist,tip,트렌치코트 확인 사항입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-basic-sneakers-picks,04-fashion-items,04,basic-sneakers-picks,스니커즈 베이직 추천,어디에나 어울리는 스니커즈 추천,review,review,활용도 높은 스니커즈 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-knit-material-compare,04-fashion-items,04,knit-material-compare,니트 소재별 차이,울 캐시미어 니트 소재 비교,compare,compare,니트 소재 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-budget-basics-shopping,04-fashion-items,04,budget-basics-shopping,가성비 기본템 쇼핑,기본템 가성비로 장만하는 곳,cost,tip,기본템 가성비 쇼핑처입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-size-measuring,04-fashion-items,04,size-measuring,옷 사이즈 측정법,온라인 쇼핑 사이즈 재는 법,howto,tip,온라인 구매 시 치수 재기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-blazer-versatility,04-fashion-items,04,blazer-versatility,블레이저 활용도,블레이저 하나로 여러 룩 만들기,info,tip,블레이저 다양한 활용입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-denim-washing-types,04-fashion-items,04,denim-washing-types,데님 워싱 종류,데님 워싱별 분위기 차이,info,tip,워싱별 분위기 차이입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-first-suit-guide,04-fashion-items,04,first-suit-guide,첫 정장 장만 가이드,첫 정장 맞출 때 알아둘 것,info,start,첫 정장 구매 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-replacement-timing,04-fashion-items,04,replacement-timing,기본템 교체 주기,기본템 교체 시기 판단 기준,info,tip,교체 시기 판단 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-sale-season-strategy,04-fashion-items,04,sale-season-strategy,아이템별 세일 공략,아이템별 세일 시기 공략법,howto,tip,품목별 세일 시기 공략입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-return-exchange-rules,04-fashion-items,04,return-exchange-rules,옷 환불 교환 규정,온라인 옷 교환 환불 기준,info,issue,교환 환불 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-real-vs-faux-leather,04-fashion-items,04,real-vs-faux-leather,진짜 가죽 인조 가죽,진짜 가죽과 인조 가죽 차이,compare,tip,가죽 소재 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-items-closet-audit,04-fashion-items,04,closet-audit,옷장 점검하기,옷장 정리하며 아이템 점검,info,tip,옷장 속 아이템 점검입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-hat-face-shape,04-accessories,04,hat-face-shape,모자 얼굴형별 선택,얼굴형에 맞는 모자 고르기,info,tip,얼굴형별 모자 선택입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-work-bag-criteria,04-accessories,04,work-bag-criteria,출근 가방 고르기,매일 드는 출근 가방 고르는 기준,info,tip,출근용 가방 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-scarf-styling-ways,04-accessories,04,scarf-styling-ways,스카프 매는 법,스카프 다양하게 매는 법,howto,howto,스카프 연출 방법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-belt-selection,04-accessories,04,belt-selection,벨트 고르는 기준,벨트 길이와 폭 고르는 기준,info,tip,벨트 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-socks-point-styling,04-accessories,04,socks-point-styling,양말로 포인트 주기,양말로 코디 포인트 주는 법,howto,tip,양말 포인트 연출입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-fashion-glasses-frames,04-accessories,04,fashion-glasses-frames,패션 안경테 고르기,패션 안경테 고르는 요령,info,tip,패션 안경테 선택입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-muffler-styling,04-accessories,04,muffler-styling,머플러 코디 활용,겨울 머플러 코디 활용법,info,tip,머플러 코디 활용입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-gloves-materials,04-accessories,04,gloves-materials,장갑 소재별 특징,겨울 장갑 소재별 장단점,info,tip,장갑 소재별 특징입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-hair-accessories-use,04-accessories,04,hair-accessories-use,헤어 액세서리 활용,헤어핀 헤어밴드 스타일링,info,tip,헤어 액세서리 연출입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-phone-strap-trend,04-accessories,04,phone-strap-trend,폰 스트랩 유행,폰 스트랩 꾸미기 유행 보기,news,issue,폰 꾸미기 유행 소식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-tangle-free-storage,04-accessories,04,tangle-free-storage,액세서리 보관 정리,엉키지 않는 액세서리 보관법,howto,tip,액세서리 보관 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-mini-bag-practicality,04-accessories,04,mini-bag-practicality,미니백 실용성 따지기,미니백 예쁘지만 실용적일까,review,review,미니백 실용성 검토입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-mens-accessories-start,04-accessories,04,mens-accessories-start,남자 액세서리 입문,남자 액세서리 부담 없이 시작,info,start,남성 액세서리 입문입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-season-transition-items,04-accessories,04,season-transition-items,계절별 액세서리 전환,계절 바뀔 때 액세서리 교체,info,tip,계절별 액세서리 전환입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-accessories-dupe-vs-luxury,04-accessories,04,dupe-vs-luxury,저렴이 명품 비교,액세서리 저렴이 명품 비교,compare,compare,저렴이와 명품 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-spa-brands-compare,04-brand-reviews,04,spa-brands-compare,SPA 브랜드 비교,대표 SPA 브랜드 특징 비교,compare,compare,SPA 브랜드 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-rising-domestic-brands,04-brand-reviews,04,rising-domestic-brands,국내 신진 브랜드,주목할 국내 신생 브랜드 소개,info,start,국내 신진 브랜드 소개입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-brand-identity-reading,04-brand-reviews,04,brand-identity-reading,브랜드 정체성 읽기,브랜드 무드 파악하고 고르기,info,tip,브랜드 무드 파악법입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-outlet-shopping-tips,04-brand-reviews,04,outlet-shopping-tips,아울렛 득템하는 법,아울렛에서 브랜드 득템하는 법,howto,local,아울렛 쇼핑 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-quality-evaluation,04-brand-reviews,04,quality-evaluation,옷 품질 평가 기준,옷 품질 평가하는 기준 배우기,info,tip,품질 평가 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-select-shop-brands,04-brand-reviews,04,select-shop-brands,편집숍 브랜드 구경,편집숍에서 만나는 브랜드들,info,tip,편집숍 브랜드 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-brand-sale-calendar,04-brand-reviews,04,brand-sale-calendar,브랜드 세일 일정,브랜드별 정기 세일 일정,news,issue,브랜드 세일 일정 소식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-value-brands-picks,04-brand-reviews,04,value-brands-picks,가성비 브랜드 추천,품질 좋은 가성비 브랜드 추천,review,review,가성비 브랜드 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-brand-history-stories,04-brand-reviews,04,brand-history-stories,브랜드 히스토리 읽기,브랜드 역사 알고 입는 재미,review,review,브랜드 역사 이야기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-sustainable-brands,04-brand-reviews,04,sustainable-brands,지속가능 브랜드 소개,지속가능 패션 브랜드 소개,info,issue,친환경 브랜드 소개입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-limited-drop-culture,04-brand-reviews,04,limited-drop-culture,한정판 드롭 문화,브랜드 한정판 드롭 문화 이해,info,tip,한정판 드롭 문화입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-online-only-brands,04-brand-reviews,04,online-only-brands,온라인 전용 브랜드,온라인에서만 파는 브랜드 특징,info,tip,온라인 전용 브랜드 특징입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-repair-as-policy,04-brand-reviews,04,repair-as-policy,브랜드 AS 수선 정책,브랜드별 수선 AS 알아보기,info,tip,브랜드 수선 정책입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-sports-brand-lines,04-brand-reviews,04,sports-brand-lines,스포츠 브랜드 라인 비교,스포츠 브랜드 라인업 비교,compare,tip,스포츠 브랜드 라인 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-brand-reviews-hype-brand-filter,04-brand-reviews,04,hype-brand-filter,거품 브랜드 거르기,마케팅 거품 브랜드 거르는 눈,info,issue,과대 마케팅 판별입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-fashion-week-schedule,04-fashion-news,04,fashion-week-schedule,패션위크 일정 정리,4대 패션위크 일정과 보는 법,info,tip,패션위크 일정 안내입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-collab-launch-news,04-fashion-news,04,collab-launch-news,브랜드 컬래버 소식,화제의 컬래버레이션 소식,news,issue,컬래버 출시 소식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-popup-store-news,04-fashion-news,04,popup-store-news,팝업스토어 오픈 소식,패션 팝업스토어 오픈 소식,news,issue,패션 팝업 오픈 소식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-designer-change-impact,04-fashion-news,04,designer-change-impact,디자이너 교체 영향,디자이너 교체가 브랜드에 미치는 영향,info,issue,디자이너 교체의 의미입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-fashion-awards-news,04-fashion-news,04,fashion-awards-news,올해의 패션 어워드,패션 업계 시상 소식 보기,news,issue,패션 시상 소식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-new-release-calendar,04-fashion-news,04,new-release-calendar,신상 드롭 캘린더,이달의 신상 출시 캘린더,info,tip,월간 신상 캘린더입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-industry-issues-reading,04-fashion-news,04,industry-issues-reading,패션 산업 이슈 읽기,패션 산업 뉴스 쉽게 읽기,info,tip,패션 산업 뉴스 읽기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-flagship-store-visits,04-fashion-news,04,flagship-store-visits,플래그십 매장 소식,새로 생긴 플래그십 매장 둘러보기,info,local,신규 매장 소식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-fashion-magazines-picks,04-fashion-news,04,fashion-magazines-picks,볼만한 패션 매거진,읽을만한 패션 매거진 추천,review,review,패션 매거진 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-fashion-exhibitions,04-fashion-news,04,fashion-exhibitions,패션 전시 행사 정보,패션 전시와 행사 일정 보기,info,tip,패션 전시 행사 정보입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-fashion-newsletters,04-fashion-news,04,fashion-newsletters,패션 뉴스레터 추천,패션 소식 뉴스레터 추천,review,review,패션 뉴스레터 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-news-terms-explained,04-fashion-news,04,news-terms-explained,업계 기사 용어 풀이,패션 기사 용어 쉽게 풀이,info,start,패션 기사 용어 풀이입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-fashion-documentaries,04-fashion-news,04,fashion-documentaries,패션 다큐 추천,패션 업계 다큐멘터리 추천,review,review,패션 다큐 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-design-contest-info,04-fashion-news,04,design-contest-info,신진 디자이너 공모전,신진 디자이너 공모전 정보,info,tip,패션 공모전 정보입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-fashion-news-luxury-price-hikes,04-fashion-news,04,luxury-price-hikes,명품 가격 인상 소식,명품 가격 인상 소식과 배경,news,issue,명품 가격 인상 배경입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-leggings-daily-look,04-athleisure,04,leggings-daily-look,레깅스 데일리 코디,레깅스 일상룩으로 입는 법,info,tip,레깅스 일상 코디입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-athleisure-brand-compare,04-athleisure,04,athleisure-brand-compare,애슬레저 브랜드 비교,애슬레저 브랜드 특징 비교,compare,compare,애슬레저 브랜드 비교입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-yoga-wear-criteria,04-athleisure,04,yoga-wear-criteria,요가복 고르는 기준,요가복 살 때 따질 기준,info,tip,요가복 선택 기준입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-dual-purpose-shoes,04-athleisure,04,dual-purpose-shoes,운동화 일상화 겸용,운동도 일상도 되는 신발 고르기,info,tip,겸용 신발 선택입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-office-dress-line,04-athleisure,04,office-dress-line,애슬레저 출근룩 선,애슬레저 오피스에서 입는 선,info,issue,오피스 착용 기준선입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-functional-fabric-basics,04-athleisure,04,functional-fabric-basics,기능성 소재 이해,흡습속건 기능성 소재 이해,info,start,기능성 소재 기초입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-sportswear-laundry,04-athleisure,04,sportswear-laundry,운동복 세탁 관리,기능성 운동복 세탁 요령,howto,tip,운동복 세탁 요령입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-budget-athleisure-picks,04-athleisure,04,budget-athleisure-picks,가성비 애슬레저 추천,가성비 애슬레저 추천 리스트,cost,review,가성비 애슬레저 추천입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-mens-athleisure-start,04-athleisure,04,mens-athleisure-start,남자 애슬레저 입문,남자 애슬레저 스타일 시작,info,start,남성 애슬레저 입문입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-athleisure-boom-reason,04-athleisure,04,athleisure-boom-reason,애슬레저 유행 배경,애슬레저는 왜 유행이 됐을까,info,issue,애슬레저 유행의 배경입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-fit-selection-guide,04-athleisure,04,fit-selection-guide,운동복 핏 선택,운동복 핏 타이트 루즈 선택,info,tip,운동복 핏 선택입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-training-pants-styling,04-athleisure,04,training-pants-styling,트레이닝팬츠 코디,트레이닝팬츠 꾸안꾸 코디,info,tip,트레이닝팬츠 코디입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-luxury-athleisure-news,04-athleisure,04,luxury-athleisure-news,명품 애슬레저 라인 소식,명품 브랜드 애슬레저 라인 소식,news,issue,명품 애슬레저 소식입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-gym-bag-daily-use,04-athleisure,04,gym-bag-daily-use,운동 가방 데일리 활용,운동 가방 데일리로 쓰는 법,howto,tip,운동 가방 일상 활용입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00
+04-athleisure-one-month-review,04-athleisure,04,one-month-review,애슬레저 한 달 후기,한 달 애슬레저로 살아본 후기,review,review,애슬레저 생활 후기입니다.,claude_direct,2026-06-11T14:19:18.379135+00:00

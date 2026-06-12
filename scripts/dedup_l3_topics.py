@@ -296,8 +296,13 @@ def cap_per_l2(rows: list[dict[str, str]], limit: int) -> tuple[list[dict[str, s
     return keep_all, dropped
 
 
-def run(input_path: Path, per_l2: int, max_intent_combo: int) -> dict:
-    raw = load_rows(input_path)
+def curate_pipeline(
+    raw: list[dict[str, str]],
+    *,
+    per_l2: int,
+    max_intent_combo: int,
+) -> tuple[list[dict[str, str]], list[dict[str, str]], dict]:
+    """중복 제거·cap 적용. (survivors, dropped, stats) 반환."""
     stats: dict = {"input_rows": len(raw), "phases": {}}
 
     # Phase 0: hard drop
@@ -373,16 +378,13 @@ def run(input_path: Path, per_l2: int, max_intent_combo: int) -> dict:
     survivors = capped
     stats["phases"]["per_l2_cap"] = len(d5)
 
-    curated = [r for r in survivors if r["tier"] in ("publish", "edit")]
-    hold = [r for r in survivors if r["tier"] == "hold"]
-
     tier_counts = Counter(r["tier"] for r in survivors)
     l1_tier = Counter((r["l1_code"], r["tier"]) for r in survivors)
     per_l2_counts = Counter(r["l2_id"] for r in survivors)
 
     stats.update({
-        "output_curated": len(curated),
-        "output_hold": len(hold),
+        "output_curated": sum(1 for r in survivors if r["tier"] in ("publish", "edit")),
+        "output_hold": sum(1 for r in survivors if r["tier"] == "hold"),
         "output_dropped": len(all_dropped),
         "survivors_total": len(survivors),
         "tier_counts": dict(tier_counts),
@@ -392,13 +394,31 @@ def run(input_path: Path, per_l2: int, max_intent_combo: int) -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
     })
 
+    report = {
+        **stats,
+        "curated_tier_split": dict(
+            Counter(r["tier"] for r in survivors if r["tier"] in ("publish", "edit"))
+        ),
+    }
+    return survivors, all_dropped, report
+
+
+def run(input_path: Path, per_l2: int, max_intent_combo: int) -> dict:
+    raw = load_rows(input_path)
+    survivors, all_dropped, report = curate_pipeline(
+        raw, per_l2=per_l2, max_intent_combo=max_intent_combo
+    )
+
+    curated = [r for r in survivors if r["tier"] in ("publish", "edit")]
+    hold = [r for r in survivors if r["tier"] == "hold"]
+
     out_fields = SOURCE_FIELDS + EXTRA_FIELDS
     write_csv(OUT_CURATED, curated, out_fields)
     write_csv(OUT_HOLD, hold, out_fields)
     write_csv(OUT_DROPPED, all_dropped, out_fields)
 
     report = {
-        **stats,
+        **report,
         "paths": {
             "curated": str(OUT_CURATED),
             "hold": str(OUT_HOLD),

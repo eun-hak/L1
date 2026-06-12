@@ -35,8 +35,8 @@ python3 -m venv .venv   # 없을 때만
 
 | 변수 | 용도 |
 |------|------|
-| `GROK_API_KEY` 또는 `GROQ_API_KEY` | Groq Scout (키 1) |
-| `GROK_API_KEY_2` | Groq Scout (키 2, 로테이션) |
+| `GROK_API_KEY` / `GROK_API_KEY_2` / `GROK_API_KEY_3` / `GROK_API_KEY_4` | Groq Scout |
+| **`GROQ_USE_KEYS`** | 사용할 키 번호 (예: **`3,4`**) |
 | `GEMINI_API_KEY` | Gemini 3.1 flash-lite (dedup) |
 
 키는 커밋하지 말 것. 다른 머신에서는 `.env`를 직접 복사하거나 동일 변수를 설정.
@@ -206,7 +206,7 @@ cd /path/to/L1
 
 1. **Phase1·geo L2** 먼저 (L4 program 비중 큼)
 2. **hold L2**(연예·경제·교양)는 cap **5~8**로 Scout 절약
-3. 키 로테이션: `GROK_API_KEY` → `GROK_API_KEY_2` (Groq 429 시 자동 시도)
+3. 키 로테이션: `GROQ_USE_KEYS=3,4` (TPD 시 다음 키, 둘 다 소진 시 중단)
 4. `--resume`으로 일일 분산
 
 ### 6.4 본생산 명령 (현재)
@@ -217,12 +217,18 @@ cd /path/to/L1
 # Linux/macOS
 .venv/bin/python scripts/pilot_l3_review_batch.py \
   --missing-l2 --merge-topics --resume \
-  --max-scout 1500 --max-gemini 500
+  --groq-keys 3,4 \
+  --max-scout 190 --max-gemini 450
+```
 
+**429 시 동작:** `GROK_API_KEY_3` TPD/RPD 소진 → `GROK_API_KEY_4` 전환 → 둘 다 소진 시 **즉시 중단** + checkpoint·`groq_session_report`(TPD/RPM/RPD 구분) 저장.
+
+```powershell
 # Windows PowerShell
 .venv\Scripts\python.exe scripts/pilot_l3_review_batch.py `
   --missing-l2 --merge-topics --resume `
-  --max-scout 1500 --max-gemini 500
+  --groq-keys 3,4 `
+  --max-scout 190 --max-gemini 450
 ```
 
 **`--merge-topics`는 `topics_l3_slot2step.csv`에만 씀.** 구 `topics_l3.csv`는 변경하지 않음.

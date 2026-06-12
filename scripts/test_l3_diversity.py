@@ -155,12 +155,20 @@ def generate_slots(
     l2_desc: str,
     count: int,
     brief: str,
+    avoid_keywords: list[str] | None = None,
 ) -> list[dict[str, str]]:
+    avoid_block = ""
+    if avoid_keywords:
+        lines = "\n".join(f"- {k}" for k in avoid_keywords[:60])
+        avoid_block = f"""
+[이미 보유한 주제 — 절대 중복·유사 금지]
+{lines}
+"""
     prompt = f"""L2 "{l2_name}"에서 서로 다른 검색 의도 슬롯 {count}개를 설계해.
 
 [L1] {l1_name} — {l1_desc}
 [L2] {l2_name} — {l2_desc}
-
+{avoid_block}
 [규칙]
 - 각 슬롯은 3~8단어 한국어 명사구 (focus_keyword 줄기 수준)
 - 서로 다른 축: 대상(아기/노인), 상황(기내/캠핑), 목적(의약품/보험), 장소, 방법, 비교, 실수, 법규 등
@@ -201,11 +209,19 @@ def generate_diverse_l3(
     count: int,
     brief: str,
     slots: list[dict[str, str]],
+    avoid_keywords: list[str] | None = None,
 ) -> list[dict[str, str]]:
     slot_lines = "\n".join(
         f"- {s['slot']} (intent={s['search_intent']}, angle={s['topic_angle']})"
         for s in slots
     )
+    avoid_block = ""
+    if avoid_keywords:
+        lines = "\n".join(f"- {k}" for k in avoid_keywords[:60])
+        avoid_block = f"""
+[이미 보유한 focus_keyword — 절대 중복·유사 금지]
+{lines}
+"""
     prompt = f"""아래 검색 의도 슬롯 각각에 대해 L3 키워드 1개씩만 작성해 (총 {len(slots)}개).
 
 [L1] {l1_name}
@@ -213,7 +229,7 @@ def generate_diverse_l3(
 
 [의도 슬롯 — focus_keyword 줄기는 슬롯과 같은 주제, 수식어만 자연스럽게]
 {slot_lines}
-
+{avoid_block}
 [규칙]
 - 슬롯 1개 = JSON 객체 1개 (순서 동일)
 - focus_keyword: 슬롯과 동일 주제, 2~10단어

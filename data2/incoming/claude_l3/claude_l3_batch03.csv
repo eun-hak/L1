@@ -1,0 +1,451 @@
+﻿l3_id,l2_id,l1_code,l3_slug,focus_keyword,title_ko,search_intent,topic_angle,description,model,generated_at
+04-handbags-bag-types-glossary,04-handbags,04,bag-types-glossary,가방 종류별 명칭,토트 호보 크로스 가방 종류 명칭,info,start,가방 종류별 명칭을 정리합니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-first-leather-bag,04-handbags,04,first-leather-bag,첫 가죽 가방 고르기,첫 가죽 가방 살 때 볼 것,checklist,tip,가죽 가방 구매 확인 사항입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-bag-organizing,04-handbags,04,bag-organizing,백인백 수납 정리,가방 속 깔끔하게 정리하는 법,howto,tip,가방 속 정리 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-strap-length-fit,04-handbags,04,strap-length-fit,가방 끈 길이 조절,체형에 맞는 가방 끈 길이,info,tip,끈 길이 조절 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-commuter-backpack-picks,04-handbags,04,commuter-backpack-picks,백팩 직장인 추천,직장인 노트북 백팩 추천,review,review,직장인 백팩 추천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-bag-storage-method,04-handbags,04,bag-storage-method,가방 보관 방법,모양 안 망가지게 가방 보관하기,howto,tip,가방 보관 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-lighten-bag-load,04-handbags,04,lighten-bag-load,무거운 가방 짐 줄이기,매일 드는 가방 가볍게 만들기,info,tip,가방 짐 줄이는 정리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-ecobag-care,04-handbags,04,ecobag-care,에코백 활용과 관리,에코백 오래 쓰는 관리법,info,tip,에코백 관리 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-bag-materials,04-handbags,04,bag-materials,가방 소재별 특징,가죽 나일론 캔버스 소재 차이,info,tip,가방 소재별 특징입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-domestic-bag-brands,04-handbags,04,domestic-bag-brands,국내 가방 브랜드 추천,합리적인 국내 가방 브랜드,review,review,국내 가방 브랜드 추천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-seasonal-bag-switch,04-handbags,04,seasonal-bag-switch,계절별 가방 바꾸기,계절 따라 가방 바꾸는 기준,info,tip,계절별 가방 전환 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-fabric-bag-washing,04-handbags,04,fabric-bag-washing,천 가방 셀프 세탁,천 가방 셀프 세탁 방법,howto,tip,천 가방 세탁 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-crossbag-styling,04-handbags,04,crossbag-styling,크로스백 코디 활용,크로스백 캐주얼 코디 활용,info,tip,크로스백 코디 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-bag-trend-history,04-handbags,04,bag-trend-history,가방 유행 변화 보기,가방 유행은 어떻게 변해왔나,review,review,가방 유행의 흐름입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-handbags-carryon-bag-choice,04-handbags,04,carryon-bag-choice,기내용 가방 고르기,여행 기내용 가방 선택 기준,info,tip,기내용 가방 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-foot-measuring,04-shoes,04,foot-measuring,신발 사이즈 정확히 재기,발 길이 발볼 정확히 재는 법,howto,tip,발 치수 재는 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-breaking-in-shoes,04-shoes,04,breaking-in-shoes,구두 길들이기,새 구두 발 아플 때 길들이기,info,tip,새 구두 길들이기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-sneaker-cleaning,04-shoes,04,sneaker-cleaning,운동화 세탁 방법,흰 운동화 깨끗하게 세탁하기,howto,tip,운동화 세탁 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-odor-removal,04-shoes,04,odor-removal,신발 냄새 제거,신발 냄새 잡는 관리 요령,howto,tip,신발 냄새 관리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-dress-shoe-types,04-shoes,04,dress-shoe-types,로퍼 더비 구두 종류,로퍼 더비 옥스포드 구두 구분,info,start,구두 종류 구분입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-boots-storage,04-shoes,04,boots-storage,부츠 계절 보관,부츠 모양 유지하며 보관하기,howto,tip,부츠 보관 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-heel-repair-timing,04-shoes,04,heel-repair-timing,신발 굽 수선 시기,굽 갈아야 할 때와 수선 비용,cost,tip,굽 수선 시기와 비용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-wide-feet-shoes,04-shoes,04,wide-feet-shoes,발볼 넓은 발 신발,발볼 넓은 사람 신발 고르기,info,tip,발볼 넓은 발 신발 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-shoe-rack-organizing,04-shoes,04,shoe-rack-organizing,신발장 정리 아이디어,신발장 효율적으로 정리하기,info,tip,신발장 정리 아이디어입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-summer-sandals,04-shoes,04,summer-sandals,샌들 여름 신발 선택,여름 샌들 고르는 기준,info,tip,여름 샌들 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-height-insoles,04-shoes,04,height-insoles,키높이 깔창 활용,키높이 깔창 자연스럽게 쓰기,info,tip,키높이 깔창 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-slipon-vs-sneakers,04-shoes,04,slipon-vs-sneakers,슬립온과 스니커즈 비교,슬립온과 스니커즈 활용 비교,compare,compare,두 신발 활용 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-shoe-care-tools,04-shoes,04,shoe-care-tools,구두 관리 용품,구두약 슈트리 관리 용품 입문,info,start,구두 관리 용품 입문입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-shoe-return-rules,04-shoes,04,shoe-return-rules,신발 환불 기준,신어본 신발 교환 환불 될까,info,issue,신발 교환 환불 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shoes-rainboots-season,04-shoes,04,rainboots-season,레인부츠 장마 활용,장마철 레인부츠 활용하기,info,tip,장마철 레인부츠 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-proportion-styling,04-styling,04,proportion-styling,비율 좋아 보이는 코디,다리 길어 보이는 비율 코디 법,info,tip,비율 보정 코디 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-color-combination,04-styling,04,color-combination,색 조합 기본 공식,옷 색 조합 기본 공식 익히기,info,start,색 조합 기본 공식입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-layering-method,04-styling,04,layering-method,레이어드 입는 법,레이어드 어렵지 않게 하는 법,howto,tip,레이어드 연출 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-body-cover-styling,04-styling,04,body-cover-styling,체형 커버 스타일링,체형 고민별 커버 스타일링,info,tip,체형 커버 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-effortless-look,04-styling,04,effortless-look,꾸안꾸 연출 포인트,꾸안꾸 자연스럽게 연출하기,info,tip,꾸안꾸 연출 포인트입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-tone-on-tone,04-styling,04,tone-on-tone,톤온톤 톤인톤 차이,톤온톤과 톤인톤 코디 차이,compare,compare,톤 코디 방식 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-point-color-use,04-styling,04,point-color-use,포인트 컬러 쓰는 법,밋밋한 코디 포인트 컬러 활용,howto,tip,포인트 컬러 활용법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-mirror-check-order,04-styling,04,mirror-check-order,거울샷 코디 점검,외출 전 거울 코디 점검 순서,checklist,tip,외출 전 점검 순서입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-styling-inspiration,04-styling,04,styling-inspiration,스타일링 영감 얻는 곳,코디 영감 얻는 앱과 사이트,info,tip,코디 영감 얻는 곳입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-pattern-mixing,04-styling,04,pattern-mixing,패턴 믹스 요령,패턴끼리 매치하는 요령,info,tip,패턴 매치 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-date-look-points,04-styling,04,date-look-points,데이트 룩 연출,데이트 룩 연출 포인트,info,tip,데이트 룩 포인트입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-monochrome-styling,04-styling,04,monochrome-styling,무채색 코디 활용,무채색만으로 멋내는 법,info,tip,무채색 코디 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-one-mile-wear,04-styling,04,one-mile-wear,원마일웨어 스타일,집 앞 외출 원마일웨어 연출,info,tip,원마일웨어 연출입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-outfit-archive,04-styling,04,outfit-archive,스타일 아카이브 만들기,내 코디 기록 아카이브 만들기,howto,tip,코디 기록 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-styling-rescue-failed-buys,04-styling,04,rescue-failed-buys,안 어울리는 옷 살리기,실패한 옷 살려 입는 방법,howto,tip,실패템 활용 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-first-overseas-order,04-shopping-guide,04,first-overseas-order,해외직구 처음 하기,패션 해외직구 처음 따라하기,howto,start,해외직구 입문 절차입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-customs-duty-basics,04-shopping-guide,04,customs-duty-basics,직구 관세 기준,옷 직구 관세 면세 기준 알기,info,tip,직구 관세 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-forwarding-service,04-shopping-guide,04,forwarding-service,배송대행지 이용법,배대지 이용하는 방법 정리,howto,tip,배송대행 이용 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-fake-review-filter,04-shopping-guide,04,fake-review-filter,쇼핑몰 후기 거르기,쇼핑몰 가짜 후기 거르는 법,info,issue,가짜 후기 판별법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-platform-comparison,04-shopping-guide,04,platform-comparison,온라인 쇼핑몰 비교,패션 쇼핑 플랫폼별 특징 비교,compare,compare,쇼핑 플랫폼 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-fitting-room-check,04-shopping-guide,04,fitting-room-check,오프라인 피팅 요령,매장에서 입어볼 때 확인 포인트,checklist,tip,피팅 시 확인 포인트입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-clothing-budget,04-shopping-guide,04,clothing-budget,옷 쇼핑 예산 정하기,한 시즌 옷 예산 정하는 법,cost,tip,시즌 의류 예산 설정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-blackfriday-strategy,04-shopping-guide,04,blackfriday-strategy,블랙프라이데이 공략,블프 시즌 패션 쇼핑 공략,info,issue,블프 쇼핑 공략입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-wishlist-method,04-shopping-guide,04,wishlist-method,위시리스트 운영법,충동구매 막는 위시리스트 운영,info,tip,위시리스트 운영법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-restock-alerts,04-shopping-guide,04,restock-alerts,품절 재입고 알림,품절템 재입고 알림 받는 법,howto,tip,재입고 알림 설정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-size-chart-by-country,04-shopping-guide,04,size-chart-by-country,사이즈 표기 나라별 차이,국가별 옷 사이즈 표기 차이,info,tip,국가별 사이즈 표기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-membership-benefits,04-shopping-guide,04,membership-benefits,멤버십 적립 활용,패션 플랫폼 멤버십 활용법,info,tip,쇼핑 멤버십 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-easy-return-shops,04-shopping-guide,04,easy-return-shops,교환 쉬운 쇼핑처 찾기,교환 반품 편한 쇼핑몰 고르기,info,tip,반품 편한 쇼핑처입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-shopping-fail-lessons,04-shopping-guide,04,shopping-fail-lessons,쇼핑 실패 반품 후기,충동 쇼핑 실패담과 교훈,review,review,쇼핑 실패담의 교훈입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-shopping-guide-live-commerce-tips,04-shopping-guide,04,live-commerce-tips,라이브 커머스 쇼핑,패션 라이브 방송 쇼핑 요령,info,tip,라방 쇼핑 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-slacks-fit-guide,04-mens-fashion,04,slacks-fit-guide,남자 슬랙스 핏 고르기,남자 슬랙스 핏 종류와 선택,info,tip,슬랙스 핏 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-shirt-collar-types,04-mens-fashion,04,shirt-collar-types,셔츠 카라 종류 구분,셔츠 카라 종류별 인상 차이,info,tip,카라 종류별 차이입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-mens-coat-types,04-mens-fashion,04,mens-coat-types,남성 코트 종류 정리,남자 겨울 코트 종류 정리,info,tip,남성 코트 종류입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-business-casual-set,04-mens-fashion,04,business-casual-set,남자 출근복 조합,남자 비즈니스 캐주얼 조합 점검,checklist,tip,출근복 조합 점검입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-shorts-length,04-mens-fashion,04,shorts-length,남자 반바지 기장,남자 반바지 적정 기장 찾는 법,howto,tip,반바지 기장 찾기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-mens-shopping-channels,04-mens-fashion,04,mens-shopping-channels,남자 쇼핑 채널 추천,남자 옷 쇼핑하기 좋은 곳,review,review,남성 쇼핑처 추천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-tshirt-necklines,04-mens-fashion,04,tshirt-necklines,티셔츠 넥라인 차이,크루넥 브이넥 티셔츠 차이,compare,tip,넥라인 차이 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-mens-knit-styling,04-mens-fashion,04,mens-knit-styling,남성 니트 입는 법,남자 니트 코디 입는 법,info,tip,남성 니트 코디입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-body-type-choices,04-mens-fashion,04,body-type-choices,남자 체형별 옷 고르기,남자 체형별 옷 선택 요령,info,tip,체형별 옷 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-dad-clothes-gift,04-mens-fashion,04,dad-clothes-gift,아빠 옷 선물 고르기,아버지 옷 선물 고르는 요령,info,tip,아버지 옷 선물 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-plain-white-tee,04-mens-fashion,04,plain-white-tee,무지 흰티 고르기,남자 무지 흰티 고르는 기준,info,tip,무지 흰티 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-post-army-wardrobe,04-mens-fashion,04,post-army-wardrobe,군대 전역 후 옷장,전역 후 옷장 새로 채우기,info,start,전역 후 옷장 구성입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-suit-fit-types,04-mens-fashion,04,suit-fit-types,수트 핏 종류 이해,클래식핏 슬림핏 수트 차이,compare,compare,수트 핏 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-denim-outfit-formula,04-mens-fashion,04,denim-outfit-formula,데님 코디 공식,남자 청바지 코디 공식 따라하기,howto,tip,데님 코디 공식입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-mens-fashion-mens-size-labels,04-mens-fashion,04,mens-size-labels,남성복 사이즈 호칭,남성복 95 100 105 사이즈 이해,info,start,남성복 사이즈 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-dress-length-guide,04-womens-fashion,04,dress-length-guide,원피스 기장 고르기,체형별 원피스 기장 선택,info,tip,원피스 기장 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-blouse-materials,04-womens-fashion,04,blouse-materials,블라우스 소재 비교,블라우스 소재별 특징 비교,compare,compare,블라우스 소재 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-skirt-types-styling,04-womens-fashion,04,skirt-types-styling,스커트 종류와 코디,스커트 종류별 코디 포인트,info,tip,스커트 종류별 코디입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-womens-slacks-fit,04-womens-fashion,04,womens-slacks-fit,여자 슬랙스 핏,여자 슬랙스 핏 종류 정리,info,tip,여성 슬랙스 핏입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-office-look-basics,04-womens-fashion,04,office-look-basics,여자 출근룩 기본,여자 오피스룩 기본 구성,info,tip,여성 출근룩 기본입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-knit-dress-care,04-womens-fashion,04,knit-dress-care,니트 원피스 활용,니트 원피스 늘어남 없이 입는 법,howto,tip,니트 원피스 관리 착용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-womens-coat-types,04-womens-fashion,04,womens-coat-types,여자 코트 종류,여자 겨울 코트 종류 정리,info,tip,여성 코트 종류입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-under-shorts-use,04-womens-fashion,04,under-shorts-use,속바지 페티코트 활용,치마 입을 때 속바지 활용법,howto,tip,치마 속바지 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-inner-wear-choice,04-womens-fashion,04,inner-wear-choice,이너 비침 방지 선택,이너웨어 비침 없이 고르기,info,tip,이너웨어 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-jeans-rise-compare,04-womens-fashion,04,jeans-rise-compare,여자 청바지 밑위 길이,하이웨스트 미드라이즈 차이,compare,tip,청바지 밑위 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-summer-fabrics,04-womens-fashion,04,summer-fabrics,여자 여름 원단 선택,여름에 시원한 원단 고르기,info,tip,여름 원단 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-one-dress-many-looks,04-womens-fashion,04,one-dress-many-looks,원피스 한 벌 여러 룩,원피스 하나로 다르게 입기,howto,tip,원피스 다양한 연출입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-womens-size-labels,04-womens-fashion,04,womens-size-labels,여성복 사이즈 표기,여성복 44 55 66 사이즈 이해,info,start,여성복 사이즈 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-sheer-fabric-styling,04-womens-fashion,04,sheer-fabric-styling,레이스 시스루 연출,비치는 소재 부담 없이 입는 법,howto,tip,시스루 소재 연출입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-womens-fashion-holiday-gathering-outfit,04-womens-fashion,04,holiday-gathering-outfit,명절 모임 옷차림,명절 모임 단정한 옷차림,info,tip,명절 옷차림 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-capsule-wardrobe-start,04-minimal-fashion,04,capsule-wardrobe-start,캡슐 옷장 만들기,캡슐 옷장 구성 시작하기,howto,start,캡슐 옷장 시작법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-wardrobe-count,04-minimal-fashion,04,wardrobe-count,미니멀 옷장 개수,옷 몇 벌이면 충분할까,info,tip,적정 옷 개수 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-uniform-dressing,04-minimal-fashion,04,uniform-dressing,유니폼 드레싱,매일 비슷하게 입는 유니폼 전략,info,tip,유니폼 드레싱 전략입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-three-color-palette,04-minimal-fashion,04,three-color-palette,미니멀 컬러 팔레트,3색으로 끝내는 옷장 팔레트,info,tip,옷장 컬러 팔레트입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-declutter-criteria,04-minimal-fashion,04,declutter-criteria,옷 비우기 기준,옷 버릴지 남길지 판단 기준,info,tip,옷 비우기 판단 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-project-333,04-minimal-fashion,04,project-333,333 프로젝트 도전,옷 33벌로 3개월 입기 도전,review,review,333 프로젝트 도전기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-one-in-one-out,04-minimal-fashion,04,one-in-one-out,미니멀 쇼핑 원칙,하나 사면 하나 비우는 원칙,info,tip,미니멀 쇼핑 원칙입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-multi-use-items,04-minimal-fashion,04,multi-use-items,다용도 아이템 고르기,여러 용도로 입는 옷 고르기 체크,checklist,tip,다용도 옷 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-minimal-shoe-set,04-minimal-fashion,04,minimal-shoe-set,미니멀리스트 신발 구성,신발 몇 켤레로 살아보기,info,tip,미니멀 신발 구성입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-minimal-fashion-channels,04-minimal-fashion,04,minimal-fashion-channels,미니멀 패션 유튜버,미니멀 옷장 참고 채널 추천,review,review,미니멀 채널 추천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-minimal-but-stylish,04-minimal-fashion,04,minimal-but-stylish,미니멀과 멋 둘 다,단조롭지 않은 미니멀 연출,info,tip,단조롭지 않은 미니멀입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-minimal-travel-packing,04-minimal-fashion,04,minimal-travel-packing,여행 미니멀 짐싸기,옷 적게 챙기는 여행 짐싸기,howto,tip,미니멀 여행 짐싸기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-why-minimal-fails,04-minimal-fashion,04,why-minimal-fails,옷장 다이어트 실패 이유,미니멀 옷장 실패하는 이유,info,issue,미니멀 실패 원인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-seasonless-clothes,04-minimal-fashion,04,seasonless-clothes,시즌 없는 옷 고르기,사계절 입는 옷 고르는 기준,info,tip,사계절 옷 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-minimal-fashion-minimal-fashion-books,04-minimal-fashion,04,minimal-fashion-books,심플 라이프 옷장 책,미니멀 라이프 옷장 책 추천,review,review,미니멀 옷장 도서입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-long-wear-care,04-sustainable-fashion,04,long-wear-care,옷 오래 입는 관리,한 옷 오래 입는 관리 습관 만들기,howto,tip,옷 수명 늘리는 관리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-repair-reform-use,04-sustainable-fashion,04,repair-reform-use,의류 수선 리폼 활용,수선집 활용해 옷 살리기,info,tip,수선집 활용 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-clothes-donation,04-sustainable-fashion,04,clothes-donation,헌옷 기부하는 곳,안 입는 옷 기부하는 방법,howto,tip,헌옷 기부 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-textile-recycling-bins,04-sustainable-fashion,04,textile-recycling-bins,의류 수거함 분리배출,헌옷 수거함 올바른 배출법,info,tip,의류 수거함 배출법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-secondhand-shopping-start,04-sustainable-fashion,04,secondhand-shopping-start,세컨핸드 쇼핑 입문,중고 옷 쇼핑 시작하는 법,info,start,중고 의류 쇼핑 입문입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-vintage-shop-tour,04-sustainable-fashion,04,vintage-shop-tour,빈티지샵 둘러보기,동네 빈티지샵 구경하는 재미,info,local,빈티지샵 구경 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-fastfashion-shadow,04-sustainable-fashion,04,fastfashion-shadow,패스트패션의 그늘,패스트패션이 남기는 문제들,info,issue,패스트패션의 문제입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-eco-materials,04-sustainable-fashion,04,eco-materials,친환경 소재 알아보기,오가닉 리사이클 소재 이해,info,tip,친환경 소재 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-clothing-swap-party,04-sustainable-fashion,04,clothing-swap-party,옷 교환 파티 참여,옷 교환 모임 참여해 보기,info,tip,옷 교환 모임 참여입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-tshirt-reform-ideas,04-sustainable-fashion,04,tshirt-reform-ideas,안 입는 옷 리폼,티셔츠 리폼 아이디어 모음,info,tip,티셔츠 리폼 아이디어입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-carbon-footprint,04-sustainable-fashion,04,carbon-footprint,옷 탄소발자국 이해,옷 한 벌의 탄소발자국,info,issue,의류 탄소발자국입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-easy-eco-practice,04-sustainable-fashion,04,easy-eco-practice,옷 입기 환경 실천,옷 입기에서 시작하는 환경 실천,checklist,tip,옷으로 하는 환경 실천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-sell-used-clothes,04-sustainable-fashion,04,sell-used-clothes,중고 거래로 옷 팔기,입던 옷 중고로 잘 파는 법,howto,tip,중고 의류 판매 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-clothing-rental,04-sustainable-fashion,04,clothing-rental,대여 서비스 이용,옷 빌려 입는 대여 서비스,review,review,의류 대여 서비스입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-sustainable-fashion-fashion-eco-docs,04-sustainable-fashion,04,fashion-eco-docs,지속가능 패션 다큐,패션과 환경을 다룬 다큐 추천,review,review,패션 환경 다큐입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-kids-size-selection,04-kids-fashion,04,kids-size-selection,아이 옷 사이즈 고르기,크는 아이 옷 사이즈 선택 체크,checklist,tip,아이 옷 사이즈 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-daycare-outfit,04-kids-fashion,04,daycare-outfit,어린이집 등원룩,활동 편한 등원복 고르기,info,tip,등원복 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-handmedown-care,04-kids-fashion,04,handmedown-care,물려받은 옷 관리,물려받은 아이 옷 관리법,howto,tip,물려받은 옷 관리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-value-kids-brands,04-kids-fashion,04,value-kids-brands,키즈 브랜드 가성비,가성비 좋은 아동복 브랜드,review,review,가성비 아동복 브랜드입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-seasonal-outerwear,04-kids-fashion,04,seasonal-outerwear,계절별 아이 겉옷,환절기 아이 겉옷 입히기,info,tip,환절기 아이 겉옷입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-kids-shoe-fitting,04-kids-fashion,04,kids-shoe-fitting,아이 신발 사이즈 재기,아이 발에 맞는 신발 고르기,howto,tip,아이 신발 맞추기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-event-outfits,04-kids-fashion,04,event-outfits,유치원 행사 옷차림,발표회 행사 아이 옷차림,info,tip,행사 옷차림 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-stain-laundry,04-kids-fashion,04,stain-laundry,유아동 옷 얼룩 세탁,아이 옷 얼룩 세탁 요령,howto,tip,아이 옷 얼룩 세탁입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-gender-neutral-kids,04-kids-fashion,04,gender-neutral-kids,남매 옷 돌려입히기,성별 무관 입히는 아이 옷,info,tip,남매 공용 아이 옷입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-kids-hanbok,04-kids-fashion,04,kids-hanbok,아이 한복 고르기,명절 아이 한복 고르기,info,tip,아이 한복 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-junior-clothes-shops,04-kids-fashion,04,junior-clothes-shops,주니어 옷 어디서,훌쩍 큰 주니어 옷 쇼핑처,info,tip,주니어 옷 쇼핑처입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-outgrown-organizing,04-kids-fashion,04,outgrown-organizing,작아진 옷 정리 수납,작아진 아이 옷 정리하는 법,howto,tip,작아진 옷 정리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-character-clothes-balance,04-kids-fashion,04,character-clothes-balance,캐릭터 옷 적당히,캐릭터 옷만 찾는 아이와 타협,info,issue,캐릭터 옷 협상법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-kids-overseas-order,04-kids-fashion,04,kids-overseas-order,아동복 직구 주의,아동복 직구 시 확인할 점,info,issue,아동복 직구 주의점입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-kids-fashion-first-birthday-outfit,04-kids-fashion,04,first-birthday-outfit,돌잔치 아기 옷,돌잔치 아기 옷 준비하기,info,tip,돌잔치 아기 옷 준비입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-first-golf-outfit,04-golf-wear,04,first-golf-outfit,골프웨어 처음 장만,첫 골프웨어 장만 가이드,info,start,첫 골프웨어 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-course-dress-code,04-golf-wear,04,course-dress-code,골프장 드레스코드,골프장 복장 규정 이해하기,info,tip,골프장 복장 규정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-summer-golf-outfit,04-golf-wear,04,summer-golf-outfit,여름 골프 기능성 옷,여름 라운딩 시원한 복장,info,tip,여름 라운딩 복장입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-winter-golf-layering,04-golf-wear,04,winter-golf-layering,겨울 골프 방한 복장,겨울 라운딩 방한 레이어링,info,tip,겨울 라운딩 복장입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-golfwear-brand-compare,04-golf-wear,04,golfwear-brand-compare,골프웨어 브랜드 비교,골프웨어 브랜드 가격대 비교,compare,compare,골프웨어 브랜드 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-golf-shoes-check,04-golf-wear,04,golf-shoes-check,골프화 고르기 확인,스파이크 스파이크리스 골프화 확인,checklist,tip,골프화 선택 확인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-golf-hats,04-golf-wear,04,golf-hats,골프 모자 종류,골프 모자 종류와 선택,info,tip,골프 모자 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-golf-glove-lifespan,04-golf-wear,04,golf-glove-lifespan,골프 장갑 교체 시기,골프 장갑 수명과 교체 시기,info,tip,장갑 교체 시기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-golfwear-laundry,04-golf-wear,04,golfwear-laundry,골프웨어 세탁 관리,골프웨어 기능 유지 세탁법,howto,tip,골프웨어 세탁법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-golfwear-daily-use,04-golf-wear,04,golfwear-daily-use,골프웨어 일상 활용,골프웨어 평소에도 입기,info,tip,골프웨어 일상 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-budget-golfwear,04-golf-wear,04,budget-golfwear,가성비 골프웨어 쇼핑,골프웨어 합리적으로 사는 법,cost,tip,골프웨어 알뜰 구매입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-golf-socks-choice,04-golf-wear,04,golf-socks-choice,골프 양말 스타킹,골프 양말 니삭스 선택,info,tip,골프 양말 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-rainy-round-outfit,04-golf-wear,04,rainy-round-outfit,비 오는 날 골프 복장,우중 라운딩 복장 준비,checklist,tip,우중 라운딩 준비입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-golfwear-trend-shift,04-golf-wear,04,golfwear-trend-shift,골프웨어 유행 변화,골프웨어 유행 어떻게 바뀌나,review,issue,골프웨어 유행 변화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-golf-wear-round-outfit-manners,04-golf-wear,04,round-outfit-manners,라운딩 복장 실수,동반자 민폐 복장 피하기,info,issue,라운딩 복장 매너입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-guest-look-basics,04-guest-look,04,guest-look-basics,결혼식 하객룩 기본,민폐 안 되는 하객룩 기본 원칙,info,tip,하객룩 기본 원칙입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-spring-guest-look,04-guest-look,04,spring-guest-look,봄 하객룩 추천,봄 결혼식 하객룩 추천,review,review,봄 하객룩 추천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-winter-guest-coat,04-guest-look,04,winter-guest-coat,겨울 하객룩 코트,겨울 하객 겉옷 어떻게 할까,info,tip,겨울 하객 겉옷입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-mens-guest-look,04-guest-look,04,mens-guest-look,남자 하객룩 구성,남자 하객룩 수트 없이 입는 법,howto,tip,남자 하객룩 구성입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-guest-color-taboo,04-guest-look,04,guest-color-taboo,하객룩 흰색 금기,하객이 피해야 할 색과 이유,info,issue,하객룩 색 금기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-guest-bag-shoes,04-guest-look,04,guest-bag-shoes,하객룩 가방 구두 매치,하객룩 마무리 가방 구두,info,tip,하객룩 가방 구두입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-guest-look-rental,04-guest-look,04,guest-look-rental,하객룩 대여 서비스,하객룩 빌려 입는 대여 후기,review,review,하객룩 대여 후기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-office-to-wedding,04-guest-look,04,office-to-wedding,직장에서 바로 갈 때,퇴근 후 결혼식 하객 변신 요령,howto,tip,퇴근 후 하객룩 변신입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-outdoor-wedding-outfit,04-guest-look,04,outdoor-wedding-outfit,야외 결혼식 복장,야외 웨딩 하객 복장 준비,info,tip,야외 결혼식 복장입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-first-birthday-guest,04-guest-look,04,first-birthday-guest,돌잔치 하객 옷차림,돌잔치 손님 옷차림 기준,info,tip,돌잔치 손님 복장입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-funeral-dress-etiquette,04-guest-look,04,funeral-dress-etiquette,장례식 복장 예절,장례식장 복장 기본 예절,info,tip,장례식 복장 예절입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-reusable-guest-look,04-guest-look,04,reusable-guest-look,하객룩 한 벌 활용,하객룩 자주 입게 고르기,info,tip,활용도 높은 하객룩입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-venue-dress-manners,04-guest-look,04,venue-dress-manners,결혼식 복장 매너 점검,식장에서의 복장 매너 점검,checklist,tip,식장 복장 매너입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-summer-wedding-outfit,04-guest-look,04,summer-wedding-outfit,여름 하객룩 소재,여름 결혼식 안 덥게 입는 법,howto,tip,여름 하객룩 소재입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-guest-look-sanggyeonrye-outfit,04-guest-look,04,sanggyeonrye-outfit,상견례 옷차림,상견례 단정한 옷차림 준비,info,tip,상견례 복장 준비입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-daily-jewelry-set,04-jewelry-watch,04,daily-jewelry-set,데일리 주얼리 기본,매일 하는 데일리 주얼리 구성,info,tip,데일리 주얼리 구성입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-metal-types,04-jewelry-watch,04,metal-types,금 은 도금 차이,금 은 도금 소재 차이 이해,info,start,귀금속 소재 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-ring-size-measure,04-jewelry-watch,04,ring-size-measure,반지 사이즈 재는 법,손가락 반지 호수 재는 법,howto,tip,반지 호수 재기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-watch-movement-types,04-jewelry-watch,04,watch-movement-types,시계 종류 구분,쿼츠 오토매틱 시계 차이,compare,compare,시계 무브먼트 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-silver-tarnish-care,04-jewelry-watch,04,silver-tarnish-care,주얼리 변색 관리,은 액세서리 변색 닦는 법,howto,tip,은 변색 관리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-starter-watch,04-jewelry-watch,04,starter-watch,입문용 시계 고르기,첫 손목시계 고르는 기준,info,tip,첫 시계 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-hypoallergenic-earrings,04-jewelry-watch,04,hypoallergenic-earrings,귀걸이 알레르기 소재,민감 피부 귀걸이 소재 선택,info,tip,알레르기 소재 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-couple-ring-check,04-jewelry-watch,04,couple-ring-check,커플링 고르기,커플링 고를 때 따질 것,checklist,tip,커플링 선택 확인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-pearl-care,04-jewelry-watch,04,pearl-care,진주 관리와 활용,진주 주얼리 관리하는 법,howto,tip,진주 관리 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-watch-strap-change,04-jewelry-watch,04,watch-strap-change,시계 줄 교체 활용,시계 줄 바꿔 분위기 내기,info,tip,시계 줄 교체 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-jewelry-storage,04-jewelry-watch,04,jewelry-storage,주얼리 보관함 정리,주얼리 변색 없이 보관하기,info,tip,주얼리 보관 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-birthstone-meaning,04-jewelry-watch,04,birthstone-meaning,탄생석 의미 알기,월별 탄생석 의미와 선물,info,tip,탄생석 의미입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-wedding-jewelry-basics,04-jewelry-watch,04,wedding-jewelry-basics,예물 준비 기초,결혼 예물 준비 기초 정보,info,start,예물 준비 기초입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-jewelry-gift-guide,04-jewelry-watch,04,jewelry-gift-guide,주얼리 선물 고르기,주얼리 선물 실패 없이 고르기,checklist,tip,주얼리 선물 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-jewelry-watch-watch-overhaul,04-jewelry-watch,04,watch-overhaul,시계 오버홀 관리,시계 점검 오버홀 알아보기,info,tip,시계 오버홀 정보입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-first-luxury-guide,04-luxury-resell,04,first-luxury-guide,첫 명품 입문 가이드,첫 명품 무엇부터 살까,info,start,첫 명품 입문 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-authenticity-basics,04-luxury-resell,04,authenticity-basics,명품 정가품 구별 기초,명품 가품 구별 기본 포인트,info,issue,가품 구별 기초입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-resell-price-platforms,04-luxury-resell,04,resell-price-platforms,리셀 시세 확인하는 법,리셀 시세 확인 플랫폼 활용,howto,tip,리셀 시세 확인법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-luxury-outlet-use,04-luxury-resell,04,luxury-outlet-use,명품 아울렛 쇼핑,명품 아울렛 제대로 이용하는 법,howto,local,명품 아울렛 이용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-safe-used-trade,04-luxury-resell,04,safe-used-trade,중고 명품 거래 안전,중고 명품 안전 거래 체크,checklist,issue,중고 명품 거래 안전입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-authentication-services,04-luxury-resell,04,authentication-services,명품 감정 서비스,명품 정품 감정 받는 곳,info,tip,정품 감정 서비스입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-resell-price-logic,04-luxury-resell,04,resell-price-logic,리셀가 형성 원리,리셀가는 왜 정가보다 비쌀까,info,tip,리셀가 형성 원리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-luxury-bag-care,04-luxury-resell,04,luxury-bag-care,고가 가방 보관 관리,명품 가방 보관 관리 요령,info,tip,명품 가방 관리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-drop-raffle-entry,04-luxury-resell,04,drop-raffle-entry,드롭 발매 응모하기,한정판 드롭 응모 방법,howto,howto,드롭 응모 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-overseas-luxury-buying,04-luxury-resell,04,overseas-luxury-buying,명품 환테크 직구,명품 해외 직구와 환율 따지기,info,tip,명품 직구 따져보기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-official-repair,04-luxury-resell,04,official-repair,명품 수선 서비스,명품 공식 수선 서비스 이용,info,tip,명품 수선 서비스입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-vintage-luxury-appeal,04-luxury-resell,04,vintage-luxury-appeal,빈티지 명품 매력,빈티지 명품이 주목받는 이유,info,issue,빈티지 명품의 매력입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-resell-profit-tax,04-luxury-resell,04,resell-profit-tax,리셀 차익과 세금,리셀로 번 돈 세금 낼까,info,issue,리셀 수익과 세금입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-installment-traps,04-luxury-resell,04,installment-traps,할부 무이자 함정,명품 할부 구매 따져볼 점,cost,issue,명품 할부의 함정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-luxury-resell-flex-consumption,04-luxury-resell,04,flex-consumption,플렉스 소비 심리,명품 소비 심리 들여다보기,review,issue,명품 소비 심리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-when-to-switch,04-maternity-wear,04,when-to-switch,임부복 언제부터,임부복 갈아탈 시기 정하기,info,start,임부복 전환 시기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-maternity-essentials,04-maternity-wear,04,maternity-essentials,임부복 필수템 정리,임신 기간 옷 필수템 정리,checklist,tip,임부복 필수템입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-band-types-compare,04-maternity-wear,04,band-types-compare,임부 바지 밴드 종류,임부 바지 밴드 타입 비교,compare,tip,임부 바지 밴드 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-maternity-rental,04-maternity-wear,04,maternity-rental,임부복 대여 서비스,임부복 빌려 입기 어떨까,review,review,임부복 대여 검토입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-postpartum-wearable,04-maternity-wear,04,postpartum-wearable,출산 후에도 입는 옷,출산 후까지 입는 임부복 고르기,info,tip,출산 후 활용 임부복입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-maternity-underwear,04-maternity-wear,04,maternity-underwear,임부 속옷 선택,임산부 속옷 고르는 기준,info,tip,임부 속옷 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-maternity-workwear,04-maternity-wear,04,maternity-workwear,직장인 임부 출근복,임산부 단정한 출근복 구성,info,tip,임부 출근복 구성입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-summer-maternity,04-maternity-wear,04,summer-maternity,여름 임신 시원한 옷,여름 임산부 시원하게 입기,info,tip,여름 임부복 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-winter-maternity,04-maternity-wear,04,winter-maternity,겨울 임신 따뜻한 옷,겨울 임산부 따뜻한 레이어링,info,tip,겨울 임부복 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-maternity-sizing,04-maternity-wear,04,maternity-sizing,임부복 사이즈 고르기,임부복 사이즈 어떻게 고를까,info,tip,임부복 사이즈 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-regular-clothes-hack,04-maternity-wear,04,regular-clothes-hack,일반 옷 임신 중 활용,평소 옷 임신 중에도 입는 법,howto,tip,평소 옷 활용법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-maternity-shoes,04-maternity-wear,04,maternity-shoes,임부 신발 편한 선택,임산부 발 편한 신발 고르기,info,tip,임부 신발 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-maternity-photo-outfit,04-maternity-wear,04,maternity-photo-outfit,만삭 사진 옷 준비,만삭 촬영 의상 준비하기,info,tip,만삭 촬영 의상입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-secondhand-maternity,04-maternity-wear,04,secondhand-maternity,중고 임부복 마련,임부복 중고로 알뜰 장만,cost,tip,임부복 알뜰 마련입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+04-maternity-wear-maternity-brands-tour,04-maternity-wear,04,maternity-brands-tour,임부복 브랜드 둘러보기,임부복 브랜드 종류 둘러보기,review,review,임부복 브랜드 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-baseball-rules-basics,05-baseball-info,05,baseball-rules-basics,야구 규칙 기초,야구 처음 보는 사람 규칙 기초,info,start,야구 규칙 입문입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-ballpark-essentials,05-baseball-info,05,ballpark-essentials,직관 준비물 챙기기,야구장 직관 준비물 챙기기,checklist,tip,직관 준비물 목록입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-seat-selection,05-baseball-info,05,seat-selection,야구장 좌석 고르는 법,야구장 좌석 어디가 좋을까,howto,tip,구장 좌석 선택 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-positions-explained,05-baseball-info,05,positions-explained,야구 포지션 이해,야구 수비 포지션 역할 이해,info,tip,수비 포지션 설명입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-baseball-terms,05-baseball-info,05,baseball-terms,야구 용어 사전,중계에서 듣는 야구 용어,info,tip,야구 중계 용어 풀이입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-postseason-format,05-baseball-info,05,postseason-format,가을야구 진출 방식,가을야구 진출 방식 이해하기,info,tip,포스트시즌 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-ballpark-food,05-baseball-info,05,ballpark-food,야구장 먹거리 문화,구장별 먹거리 제대로 즐기기,info,local,구장 먹거리 문화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-cheering-culture,05-baseball-info,05,cheering-culture,응원가와 응원 문화,야구장 응원 문화 즐기기,info,tip,야구 응원 문화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-kids-first-ballgame,05-baseball-info,05,kids-first-ballgame,아이와 야구장 가기,아이와 첫 야구장 나들이,info,tip,아이 동반 직관 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-ticket-booking-tips,05-baseball-info,05,ticket-booking-tips,야구 티켓 예매 요령,야구 티켓 예매 성공 요령,howto,tip,티켓 예매 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-rainout-refund,05-baseball-info,05,rainout-refund,우천 취소 환불 기준,우천 취소 시 티켓 환불,info,issue,우천 취소 환불 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-classic-moments,05-baseball-info,05,classic-moments,야구 명장면 다시보기,역대 명승부 다시 보는 재미,review,review,명승부 다시보기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-futures-league,05-baseball-info,05,futures-league,퓨처스리그 직관 정보,퓨처스리그 2군 직관 정보,info,local,2군 경기 직관 정보입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-first-pitch-how,05-baseball-info,05,first-pitch-how,시구 신청 방법,시구는 어떻게 하게 될까,howto,tip,시구 참여 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-info-uniform-buying,05-baseball-info,05,uniform-buying,유니폼 구매 가이드,유니폼 마킹 구매 비용 가이드,cost,tip,유니폼 구매 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-boxscore-reading,05-baseball-analysis,05,boxscore-reading,야구 기록지 보는 법,야구 기록 박스스코어 읽기,howto,tip,기록지 읽는 법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-avg-vs-ops,05-baseball-analysis,05,avg-vs-ops,타율 OPS 지표 이해,타율과 OPS 무엇이 다른가,info,tip,타격 지표 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-era-whip-reading,05-baseball-analysis,05,era-whip-reading,투수 평균자책점 읽기,평균자책점과 WHIP 이해,info,tip,투수 지표 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-sabermetrics-intro,05-baseball-analysis,05,sabermetrics-intro,세이버메트릭스 입문,세이버메트릭스 쉽게 입문,info,start,세이버메트릭스 입문입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-war-explained,05-baseball-analysis,05,war-explained,WAR 지표 의미,WAR 수치가 말해주는 것,info,tip,WAR 지표 설명입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-bullpen-management,05-baseball-analysis,05,bullpen-management,불펜 운영 전략 보기,불펜 운영으로 경기 읽기,info,tip,불펜 운영 읽기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-defensive-shift,05-baseball-analysis,05,defensive-shift,수비 시프트 이해,수비 시프트 왜 쓰는 걸까,info,tip,수비 시프트 설명입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-trade-evaluation,05-baseball-analysis,05,trade-evaluation,트레이드 분석 재미,트레이드 손익 따져보는 재미,review,issue,트레이드 평가 재미입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-draft-watching,05-baseball-analysis,05,draft-watching,신인 드래프트 분석,드래프트 지명 보는 포인트,info,tip,드래프트 보는 포인트입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-stats-sites,05-baseball-analysis,05,stats-sites,데이터 사이트 활용,야구 기록 사이트 활용법,howto,tip,기록 사이트 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-ingame-tactics,05-baseball-analysis,05,ingame-tactics,승부처 작전 읽기,번트와 도루 작전 읽는 법,howto,tip,경기 중 작전 읽기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-foreign-player-scouting,05-baseball-analysis,05,foreign-player-scouting,외국인 선수 영입 기준,외인 영입 성공 조건 분석,info,issue,외인 영입 분석입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-pitch-types-compare,05-baseball-analysis,05,pitch-types-compare,구속과 구종 비교,구종별 특징과 구속 비교,compare,tip,구종별 특징 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-park-factor,05-baseball-analysis,05,park-factor,홈런 파크팩터 영향,구장 크기가 기록에 주는 영향,info,issue,파크팩터 영향입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-baseball-analysis-standings-prediction,05-baseball-analysis,05,standings-prediction,시즌 순위 예측 보기,순위 예측 모델 살펴보기,review,review,순위 예측 살펴보기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-formation-numbers,05-soccer-analysis,05,formation-numbers,축구 포메이션 이해,포메이션 숫자 읽는 법,info,start,포메이션 기초입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-buildup-watching,05-soccer-analysis,05,buildup-watching,빌드업 전술 보기,빌드업 보는 눈 기르는 법,howto,tip,빌드업 보는 법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-soccer-stats-sites,05-soccer-analysis,05,soccer-stats-sites,축구 스탯 사이트,축구 데이터 사이트 활용법,howto,tip,축구 데이터 사이트입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-xg-explained,05-soccer-analysis,05,xg-explained,기대득점 xG 이해,기대득점 xG 지표 이해하기,info,tip,xG 지표 설명입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-pressing-tactics,05-soccer-analysis,05,pressing-tactics,압박 전술 종류,하이프레스 압박 전술 이해,info,tip,압박 전술 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-setpiece-design,05-soccer-analysis,05,setpiece-design,세트피스 디자인,세트피스 약속된 플레이 보기,info,tip,세트피스 설계 보기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-fullback-evolution,05-soccer-analysis,05,fullback-evolution,풀백의 역할 변화,현대 축구 풀백 역할 변화,info,issue,풀백 역할의 변화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-game-flow-reading,05-soccer-analysis,05,game-flow-reading,전반 후반 흐름 읽기,경기 흐름 바뀌는 순간 읽기,info,tip,경기 흐름 읽기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-var-criteria,05-soccer-analysis,05,var-criteria,VAR 판정 기준,VAR 개입 기준 이해하기,info,issue,VAR 기준 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-passmap-heatmap,05-soccer-analysis,05,passmap-heatmap,패스맵 히트맵 보기,패스맵과 히트맵 읽는 법,howto,tip,패스맵 히트맵 읽기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-derby-tactics-history,05-soccer-analysis,05,derby-tactics-history,더비 라이벌 전술사,유명 더비의 전술 대결 역사,review,review,더비 전술 역사입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-manager-styles,05-soccer-analysis,05,manager-styles,감독 전술 스타일 비교,명장들의 전술 스타일 비교,compare,compare,감독 스타일 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-tactics-channels,05-soccer-analysis,05,tactics-channels,축구 분석 채널 추천,축구 전술 분석 채널 추천,review,review,전술 채널 추천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-offside-rule-history,05-soccer-analysis,05,offside-rule-history,오프사이드 규칙 변화,오프사이드 규정 변천사,info,issue,오프사이드 변천사입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-analysis-underdog-tactics,05-soccer-analysis,05,underdog-tactics,약팀이 이기는 방법,언더독이 강팀 잡는 전술,info,tip,언더독 전술입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-positions-roles,05-soccer-player,05,positions-roles,축구 포지션별 역할,축구 포지션별 선수 역할,info,start,포지션별 역할입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-prospect-growth,05-soccer-player,05,prospect-growth,유망주 성장 경로,축구 유망주는 어떻게 크나,info,tip,유망주 성장 경로입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-overseas-transfer-path,05-soccer-player,05,overseas-transfer-path,해외파 진출 과정,해외 리그 진출은 어떻게 이뤄질까,info,tip,해외 진출 과정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-transfer-fee-structure,05-soccer-player,05,transfer-fee-structure,이적료 연봉 구조,이적료와 연봉은 어떻게 정해질까,cost,tip,이적료 연봉 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-jersey-numbers,05-soccer-player,05,jersey-numbers,등번호의 의미,축구 등번호에 담긴 의미 이야기,review,review,등번호 이야기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-condition-routines,05-soccer-player,05,condition-routines,선수 컨디션 관리 루틴,프로 선수들의 관리 루틴,info,tip,선수 컨디션 루틴입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-captain-role,05-soccer-player,05,captain-role,주장 완장의 역할,팀 주장은 무슨 일을 할까,info,tip,주장의 역할입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-after-retirement,05-soccer-player,05,after-retirement,축구 선수 은퇴 후,축구 선수 은퇴 후 진로,review,issue,은퇴 후 진로입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-injury-rehab-journey,05-soccer-player,05,injury-rehab-journey,부상과 재활 과정,선수 부상 복귀까지의 과정,info,issue,부상 재활 과정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-versatile-players,05-soccer-player,05,versatile-players,멀티 포지션 선수 가치,멀티와 전문 포지션 비교,compare,tip,멀티 포지션 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-market-value-sites,05-soccer-player,05,market-value-sites,선수 시장 가치 사이트,선수 몸값 확인 사이트 보기,howto,tip,몸값 확인 사이트입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-kleague-rookies,05-soccer-player,05,kleague-rookies,K리그 신인 선발 과정,K리그 신인은 어떻게 뽑힐까,info,tip,K리그 신인 선발입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-player-nutrition,05-soccer-player,05,player-nutrition,축구 선수 식단 체력,선수들의 체력 관리 식단,info,tip,선수 식단 관리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-goal-celebrations,05-soccer-player,05,goal-celebrations,골 세리머니 문화,기억에 남는 세리머니 문화,review,review,세리머니 문화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-soccer-player-womens-soccer-scene,05-soccer-player,05,womens-soccer-scene,여자 축구 선수 환경,여자 축구 선수들의 무대,info,issue,여자 축구 환경입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-profile-databases,05-player-profile,05,profile-databases,선수 프로필 보는 곳,선수 기록 프로필 찾는 사이트,howto,tip,프로필 사이트 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-peak-age-by-sport,05-player-profile,05,peak-age-by-sport,종목별 선수 전성기,종목마다 다른 선수 전성기,info,tip,종목별 전성기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-national-team-selection,05-player-profile,05,national-team-selection,국가대표 선발 방식,국가대표는 어떻게 뽑힐까,info,tip,국가대표 선발 방식입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-salary-disclosure,05-player-profile,05,salary-disclosure,연봉 공개 제도 이해,프로 스포츠 연봉 공개 구조,cost,tip,연봉 공개 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-registration-transfer,05-player-profile,05,registration-transfer,선수 등록과 이적 절차,선수 등록 이적 절차 이해,info,tip,선수 등록 절차입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-physique-by-sport,05-player-profile,05,physique-by-sport,종목별 신체 조건 비교,종목별 유리한 신체 조건 비교,compare,tip,종목별 신체 조건입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-student-athlete-path,05-player-profile,05,student-athlete-path,학생 선수 진로 경로,학생 선수의 프로 진출 경로,info,tip,학생 선수 진로입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-coach-career-path,05-player-profile,05,coach-career-path,은퇴 선수 지도자 길,은퇴 후 지도자가 되는 길,info,tip,지도자 전향 경로입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-memorable-interviews,05-player-profile,05,memorable-interviews,선수 인터뷰 명답변,선수 인터뷰 명답변 모음,review,review,인터뷰 명답변 모음입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-retired-numbers,05-player-profile,05,retired-numbers,영구결번의 의미,영구결번은 어떤 선수에게,info,tip,영구결번의 의미입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-rivalry-history,05-player-profile,05,rivalry-history,라이벌 구도 역사,명승부 라이벌 구도 돌아보기,review,review,라이벌 구도 역사입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-athlete-sns,05-player-profile,05,athlete-sns,선수 SNS 팬 소통,선수들의 SNS 소통 문화,review,review,선수 SNS 문화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-mental-coaching,05-player-profile,05,mental-coaching,멘탈 코칭과 선수,선수 멘탈 관리는 누가 돕나,info,tip,선수 멘탈 코칭입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-doping-tests,05-player-profile,05,doping-tests,도핑 검사 제도,도핑 검사는 어떻게 이뤄지나,info,issue,도핑 검사 제도입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-player-profile-sports-fandom,05-player-profile,05,sports-fandom,선수 팬클럽 문화,스포츠 선수 팬덤 문화 보기,info,tip,스포츠 팬덤 문화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-kbo-schedule-check,05-game-schedule,05,kbo-schedule-check,프로야구 일정 확인법,프로야구 경기 일정 확인하는 곳,info,tip,프로야구 일정 확인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-national-team-fixtures,05-game-schedule,05,national-team-fixtures,축구 국대 경기 일정,축구 대표팀 일정 챙겨보기,info,tip,대표팀 일정 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-calendar-sync,05-game-schedule,05,calendar-sync,경기 일정 캘린더 연동,스포츠 일정 폰 캘린더에 넣기,howto,tip,일정 캘린더 연동입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-season-openers,05-game-schedule,05,season-openers,시즌 개막일 정리,종목별 시즌 개막 시기 정리,info,tip,종목별 개막 시기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-doubleheader-why,05-game-schedule,05,doubleheader-why,더블헤더 편성 이유,더블헤더 편성은 왜 생길까,info,tip,더블헤더 편성 이유입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-allstar-break,05-game-schedule,05,allstar-break,올스타 휴식기 구조,올스타 휴식기 일정 구조,info,tip,올스타 브레이크 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-timezone-calculation,05-game-schedule,05,timezone-calculation,해외 경기 시차 계산,해외 경기 한국 시간 계산법,howto,tip,시차 계산 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-alert-apps-compare,05-game-schedule,05,alert-apps-compare,일정 알림 앱 비교,스포츠 일정 알림 앱 비교,compare,compare,일정 알림 앱 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-cancelled-games,05-game-schedule,05,cancelled-games,연기 취소 경기 확인,취소된 경기 일정 확인하기,info,issue,취소 경기 확인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-weekend-stadium-plan,05-game-schedule,05,weekend-stadium-plan,주말 직관 일정 짜기,주말 직관 일정 동선 짜기,howto,tip,주말 직관 동선입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-bigmatch-calendar,05-game-schedule,05,bigmatch-calendar,라이벌전 빅매치 달력,놓치면 안 될 빅매치 달력,info,issue,빅매치 달력입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-winter-indoor-sports,05-game-schedule,05,winter-indoor-sports,겨울 실내 스포츠 일정,겨울 실내 스포츠 일정 보기,info,tip,겨울 실내 일정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-holiday-programming,05-game-schedule,05,holiday-programming,명절 스포츠 편성,명절 연휴 스포츠 편성 보기,info,tip,명절 편성 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-ticket-open-dates,05-game-schedule,05,ticket-open-dates,티켓 오픈 일정 체크,티켓 오픈 날짜 챙기는 법,howto,tip,티켓 오픈 챙기기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-game-schedule-international-calendar,05-game-schedule,05,international-calendar,국제대회 연간 캘린더,올해 국제대회 일정 한눈에,news,issue,국제대회 연간 일정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-nba-beginners,05-international-sports,05,nba-beginners,NBA 처음 보는 가이드,NBA 입문자 관전 가이드,info,start,NBA 입문 가이드입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-mlb-wildcard,05-international-sports,05,mlb-wildcard,MLB 와일드카드 제도,MLB 포스트시즌 제도 이해,info,tip,MLB 제도 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-nfl-rules,05-international-sports,05,nfl-rules,NFL 미식축구 규칙,미식축구 규칙 쉽게 이해,info,tip,미식축구 규칙입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-koreans-in-bigleague,05-international-sports,05,koreans-in-bigleague,메이저리그 한국인 소식,빅리그 한국 선수 소식 보기,news,issue,빅리그 한국 선수 소식입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-nhl-hockey-intro,05-international-sports,05,nhl-hockey-intro,NHL 아이스하키 입문,아이스하키 경기 보는 법,info,start,아이스하키 입문입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-f1-grandprix-intro,05-international-sports,05,f1-grandprix-intro,F1 그랑프리 입문,F1 경기 처음 보는 법,info,tip,F1 입문 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-european-basketball,05-international-sports,05,european-basketball,유럽 농구 리그 세계,NBA 밖 유럽 농구 세계,info,tip,유럽 농구 세계입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-cricket-popularity,05-international-sports,05,cricket-popularity,크리켓 인기 이유,크리켓은 왜 세계적 인기일까,info,issue,크리켓 인기 배경입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-superbowl-culture,05-international-sports,05,superbowl-culture,슈퍼볼 문화 즐기기,슈퍼볼 하프타임 문화 보기,review,review,슈퍼볼 문화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-draft-culture,05-international-sports,05,draft-culture,북미 드래프트 문화,북미 드래프트 제도 문화,info,tip,북미 드래프트 문화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-salary-cap,05-international-sports,05,salary-cap,샐러리캡 제도 이해,샐러리캡 사치세 제도 이해,info,tip,샐러리캡 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-overseas-stadium-trip,05-international-sports,05,overseas-stadium-trip,해외 직관 여행 준비,해외 직관 티켓과 준비물,checklist,tip,해외 직관 준비입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-storied-clubs,05-international-sports,05,storied-clubs,명문 구단 역사 이야기,해외 명문 구단 역사 보기,review,review,명문 구단 역사입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-sports-documentaries,05-international-sports,05,sports-documentaries,스포츠 다큐 추천,해외 스포츠 다큐 추천,review,review,스포츠 다큐 추천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-international-sports-broadcast-english,05-international-sports,05,broadcast-english,중계 영어 알아듣기,중계 영어 용어 알아듣는 법,howto,tip,중계 영어 익히기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-olympic-sports-changes,05-sports-event,05,olympic-sports-changes,올림픽 종목 변화,올림픽 종목은 어떻게 바뀌나,info,issue,올림픽 종목 변화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-worldcup-host-selection,05-sports-event,05,worldcup-host-selection,월드컵 개최지 선정,월드컵 개최지는 어떻게 정할까,info,tip,개최지 선정 과정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-asian-games-watch,05-sports-event,05,asian-games-watch,아시안게임 보는 재미,아시안게임 주목 포인트,info,tip,아시안게임 포인트입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-world-championships,05-sports-event,05,world-championships,세계선수권 대회 위상,종목별 세계선수권 위상 이해,info,tip,세계선수권 위상입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-event-ticket-guide,05-sports-event,05,event-ticket-guide,국제대회 티켓 구하기,국제대회 티켓 구하는 방법,howto,tip,국제대회 티켓 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-opening-ceremonies,05-sports-event,05,opening-ceremonies,개막식 문화 비교,역대 개막식 연출 비교,review,review,개막식 연출 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-mascot-stories,05-sports-event,05,mascot-stories,대회 마스코트 이야기,대회 마스코트 뒷이야기,review,review,마스코트 이야기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-volunteer-apply,05-sports-event,05,volunteer-apply,자원봉사 참여 방법,국제대회 자원봉사 지원하기,howto,howto,자원봉사 참여 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-universiade-meaning,05-sports-event,05,universiade-meaning,유니버시아드 의미,유니버시아드는 어떤 대회일까,info,start,유니버시아드 소개입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-paralympics-sports,05-sports-event,05,paralympics-sports,패럴림픽 종목 이해,패럴림픽 종목 알아보기,info,tip,패럴림픽 종목입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-hosting-economics,05-sports-event,05,hosting-economics,대회 유치 경제 효과,대회 유치가 남기는 것들,info,issue,대회 유치 효과입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-record-moments,05-sports-event,05,record-moments,신기록 명장면 모음,국제대회 신기록 명장면,review,review,신기록 명장면입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-medal-strategies,05-sports-event,05,medal-strategies,국가별 메달 전략,메달 효자 종목과 국가 전략,info,tip,국가별 메달 전략입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-torch-relay,05-sports-event,05,torch-relay,성화 봉송 문화,성화 봉송에 담긴 의미,info,tip,성화 봉송 의미입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-event-local-sports-festivals,05-sports-event,05,local-sports-festivals,시민 스포츠 축제,지역 스포츠 축제 즐기기,howto,local,지역 스포츠 축제입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-ankle-sprain-firstaid,05-sports-health,05,ankle-sprain-firstaid,발목 접질렀을 때,발목 삔 직후 대처 순서 따라하기,howto,issue,발목 염좌 초기 대처입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-taping-basics,05-sports-health,05,taping-basics,스포츠 테이핑 기초,스포츠 테이핑 기본 감는 법,howto,tip,테이핑 기초 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-warmup-importance,05-sports-health,05,warmup-importance,운동 전 워밍업 순서,부상 막는 워밍업 순서,info,tip,부상 예방 워밍업입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-finger-injuries,05-sports-health,05,finger-injuries,구기 종목 손가락 부상,공에 손가락 찧었을 때 대처,info,issue,손가락 부상 대처입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-futsal-injuries,05-sports-health,05,futsal-injuries,풋살 흔한 부상 예방,풋살 축구 흔한 부상 예방,info,tip,풋살 부상 예방입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-protective-gear-check,05-sports-health,05,protective-gear-check,보호장비 고르기 확인,종목별 보호장비 고르기 확인,checklist,tip,보호장비 선택 확인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-heat-illness,05-sports-health,05,heat-illness,여름 운동 온열질환,폭염 속 운동 온열질환 예방,info,issue,온열질환 예방입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-winter-injury-prep,05-sports-health,05,winter-injury-prep,겨울 운동 부상 준비,겨울 운동 부상 막는 준비하기,howto,tip,겨울 부상 예방 준비입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-which-clinic,05-sports-health,05,which-clinic,스포츠 부상 진료 과,스포츠 부상 어느 병원 갈까,info,tip,부상 진료과 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-muscle-cramp-coping,05-sports-health,05,muscle-cramp-coping,운동 중 쥐 났을 때,운동하다 쥐 났을 때 대처법,howto,tip,쥐 났을 때 대처입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-amateur-sports-checkup,05-sports-health,05,amateur-sports-checkup,동호인 스포츠 검진,동호인 스포츠 검진 알아보기,info,tip,동호인 검진 정보입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-youth-training-load,05-sports-health,05,youth-training-load,성장기 운동 강도,성장기 아이 운동 적정선,info,tip,성장기 운동 강도입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-helmet-certification,05-sports-health,05,helmet-certification,헬멧 안전 인증 보기,스포츠 헬멧 인증 확인하기,checklist,tip,헬멧 인증 확인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-return-to-play,05-sports-health,05,return-to-play,부상 후 복귀 시점,다친 후 운동 복귀 시점 판단,info,issue,운동 복귀 시점입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-health-amateur-sports-insurance,05-sports-health,05,amateur-sports-insurance,동호인 스포츠 보험,동호인 스포츠 보험 정보,info,tip,동호인 보험 정보입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-matchfixing-lessons,05-sports-issue,05,matchfixing-lessons,승부조작 사건과 교훈,승부조작은 왜 반복될까 돌아보기,review,issue,승부조작의 교훈입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-referee-controversies,05-sports-issue,05,referee-controversies,심판 판정 논란 구조,판정 논란이 생기는 구조,info,issue,판정 논란의 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-salary-disputes,05-sports-issue,05,salary-disputes,연봉 협상 갈등 사례,연봉 갈등은 왜 생길까,info,issue,연봉 갈등의 배경입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-military-exemption-debate,05-sports-issue,05,military-exemption-debate,병역 혜택 논쟁 정리,운동선수 병역 혜택 논쟁 정리,info,issue,병역 혜택 논쟁입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-student-athlete-rights,05-sports-issue,05,student-athlete-rights,학생 선수 인권 이슈,학원 스포츠 인권 이슈 보기,info,issue,학생 선수 인권입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-political-neutrality,05-sports-issue,05,political-neutrality,스포츠와 정치 중립,스포츠의 정치적 중립 논쟁,info,issue,정치 중립 논쟁입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-franchise-relocation,05-sports-issue,05,franchise-relocation,프로팀 연고지 이전,연고지 이전 논란의 쟁점,info,issue,연고지 이전 쟁점입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-antidiscrimination-moves,05-sports-issue,05,antidiscrimination-moves,차별 근절 움직임,스포츠계 차별 근절 움직임 소식,news,issue,차별 근절 소식입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-gender-pay-gap,05-sports-issue,05,gender-pay-gap,여성 스포츠 임금 격차,여성 스포츠 처우 논의,info,issue,여성 스포츠 처우입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-youth-overuse,05-sports-issue,05,youth-overuse,유소년 혹사 문제,유소년 선수 혹사 논란,info,issue,유소년 혹사 논란입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-fan-excess-cases,05-sports-issue,05,fan-excess-cases,팬 과열 사례 돌아보기,팬덤 과열이 남긴 사건들,review,issue,팬 과열 사례입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-gambling-risks,05-sports-issue,05,gambling-risks,스포츠 도박 위험성,스포츠 도박 문제 짚어보기,info,issue,스포츠 도박 위험입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-robot-umpire-debate,05-sports-issue,05,robot-umpire-debate,로봇 심판 찬반 비교,로봇 심판 도입 찬반 쟁점,compare,issue,로봇 심판 찬반입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-retired-athlete-welfare,05-sports-issue,05,retired-athlete-welfare,은퇴 선수 복지 논의,은퇴 선수 지원 제도 소식,news,issue,은퇴 선수 복지입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-issue-rumor-factcheck,05-sports-issue,05,rumor-factcheck,스포츠 루머 팩트체크,스포츠 루머 팩트체크 요령,howto,issue,루머 팩트체크 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-jersey-sponsorship,05-sports-marketing,05,jersey-sponsorship,유니폼 스폰서 가치,유니폼 광고는 얼마나 할까,cost,tip,유니폼 스폰서 가치입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-merch-industry,05-sports-marketing,05,merch-industry,구단 굿즈 산업 성장,구단 굿즈 산업이 크는 이유,info,issue,굿즈 산업 성장입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-naming-rights,05-sports-marketing,05,naming-rights,네이밍 라이츠 알아보기,경기장 이름에 붙는 기업명,info,tip,네이밍 라이츠입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-athlete-endorsements,05-sports-marketing,05,athlete-endorsements,선수 광고 모델 효과,선수 모델 기용 효과 보기,info,tip,선수 광고 효과입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-season-ticket-design,05-sports-marketing,05,season-ticket-design,시즌권 혜택 설계,시즌권 혜택 설계 들여다보기,review,tip,시즌권 설계 보기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-sports-collabs,05-sports-marketing,05,sports-collabs,스포츠 콜라보 상품,스포츠 브랜드 콜라보 사례,review,review,스포츠 콜라보 사례입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-stadium-advertising,05-sports-marketing,05,stadium-advertising,경기장 광고 종류,경기장 광고는 어떻게 팔릴까,info,tip,경기장 광고 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-fan-membership-model,05-sports-marketing,05,fan-membership-model,팬 멤버십 비즈니스,구단 멤버십 모델 이해,info,tip,구단 멤버십 모델입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-image-rights,05-sports-marketing,05,image-rights,스포츠 스타 초상권,선수 초상권은 누구 것일까,info,issue,선수 초상권 이슈입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-broadcast-rights-fees,05-sports-marketing,05,broadcast-rights-fees,중계권료 구조 이해,중계권료는 왜 그렇게 비쌀까,cost,issue,중계권료 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-local-marketing,05-sports-marketing,05,local-marketing,지역 연고 마케팅,지역 밀착 마케팅 사례,info,local,지역 연고 마케팅입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-club-sns-cases,05-sports-marketing,05,club-sns-cases,구단 SNS 운영 사례,구단 SNS 운영 잘하는 사례,review,review,구단 SNS 사례입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-youth-academy-investment,05-sports-marketing,05,youth-academy-investment,유스 아카데미 투자,유소년 투자에 진심인 이유,info,tip,유스 투자 배경입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-soldout-jersey-marketing,05-sports-marketing,05,soldout-jersey-marketing,유니폼 완판 마케팅,유니폼이 완판되는 마케팅 보기,info,issue,유니폼 완판 마케팅입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-marketing-dynamic-pricing,05-sports-marketing,05,dynamic-pricing,입장권 다이내믹 프라이싱,경기 티켓 가격이 변하는 이유,cost,issue,티켓 가격 변동입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-transfer-window-follow,05-sports-news,05,transfer-window-follow,이적시장 소식 보는 법,이적시장 뉴스 따라잡는 법,howto,tip,이적시장 따라잡기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-media-outlets-compare,05-sports-news,05,media-outlets-compare,스포츠 매체별 비교,스포츠 매체별 특징 비교,compare,compare,스포츠 매체 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-official-vs-rumor,05-sports-news,05,official-vs-rumor,오피셜 뜻과 신뢰도,오피셜과 찌라시 구별하기,info,issue,오피셜 구별법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-breaking-alerts-setup,05-sports-news,05,breaking-alerts-setup,스포츠 속보 알림 설정,스포츠 속보 알림 받는 법,howto,tip,속보 알림 설정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-press-voting,05-sports-news,05,press-voting,기자단 투표 어워드,기자단 투표는 어떻게 진행되나,info,tip,기자단 투표 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-sports-podcasts,05-sports-news,05,sports-podcasts,출퇴근 스포츠 팟캐스트,스포츠 팟캐스트 추천 목록,review,review,스포츠 팟캐스트 추천입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-translated-articles,05-sports-news,05,translated-articles,해외 기사 번역 보기,해외 스포츠 기사 번역으로 보기,howto,tip,해외 기사 번역 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-weekly-recap,05-sports-news,05,weekly-recap,주간 스포츠 이슈 정리,한 주 스포츠 이슈 핵심 정리,news,review,주간 이슈 정리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-deadline-day,05-sports-news,05,deadline-day,데드라인데이 문화,이적 마감일 풍경 즐기기,info,tip,데드라인데이 문화입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-channel-criteria,05-sports-news,05,channel-criteria,스포츠 유튜브 채널 기준,스포츠 채널 고르는 기준,info,tip,채널 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-stove-league,05-sports-news,05,stove-league,스토브리그 소식 즐기기,스토브리그 소식 즐기는 법,info,tip,스토브리그 즐기기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-record-breaking-news,05-sports-news,05,record-breaking-news,기록 경신 소식 모음,올해 깨진 기록들 모아보기,news,issue,기록 경신 모음입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-sports-newsletters,05-sports-news,05,sports-newsletters,스포츠 뉴스레터 추천,스포츠 뉴스레터 구독 추천,review,review,스포츠 뉴스레터입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-media-day,05-sports-news,05,media-day,미디어데이 행사 의미,미디어데이에서 나오는 것들,info,tip,미디어데이 의미입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-sports-news-sports-photographers,05-sports-news,05,sports-photographers,스포츠 사진기자 세계,명장면 찍는 사진기자 이야기,info,tip,사진기자 이야기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-starter-equipment,05-badminton,05,starter-equipment,배드민턴 입문 장비,배드민턴 시작 장비 마련하기,info,start,입문 장비 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-racket-selection-check,05-badminton,05,racket-selection-check,라켓 고르기 전 확인,배드민턴 라켓 무게 밸런스 확인,checklist,tip,라켓 선택 확인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-shuttlecock-types,05-badminton,05,shuttlecock-types,셔틀콕 종류 차이,거위털 나일론 셔틀콕 차이,compare,tip,셔틀콕 종류 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-basic-strokes,05-badminton,05,basic-strokes,기본 스트로크 연습,클리어 드롭 기본 스트로크 연습,howto,howto,기본 스트로크 연습입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-rules-scoring,05-badminton,05,rules-scoring,배드민턴 규칙 점수,배드민턴 점수 규칙 이해,info,tip,규칙과 점수 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-club-joining,05-badminton,05,club-joining,동호회 가입하는 법,배드민턴 동호회 가입 방법,howto,tip,동호회 가입 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-court-reservation,05-badminton,05,court-reservation,배드민턴 코트 대관,배드민턴 코트 대관 예약 안내,info,local,코트 대관 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-dedicated-shoes,05-badminton,05,dedicated-shoes,배드민턴 전용화 이유,배드민턴 전용화가 필요한 이유,info,tip,전용화 필요성입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-doubles-positioning,05-badminton,05,doubles-positioning,복식 포지션 요령,복식 경기 위치 선정 요령,info,tip,복식 위치 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-elbow-prevention,05-badminton,05,elbow-prevention,엘보 예방 폼 점검,엘보 예방하는 폼 점검,info,issue,엘보 예방 점검입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-string-tension,05-badminton,05,string-tension,스트링 텐션 교체,스트링 텐션과 교체 주기,info,tip,스트링 관리입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-amateur-tournaments,05-badminton,05,amateur-tournaments,동호인 대회 나가기,배드민턴 동호인 대회 나가보기,info,tip,동호인 대회 참가입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-solo-wall-practice,05-badminton,05,solo-wall-practice,벽치기 혼자 연습,벽치기 혼자 연습 루틴,howto,tip,혼자 연습 방법입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-fitness-benefits,05-badminton,05,fitness-benefits,배드민턴 운동 효과,배드민턴 운동 효과 알아보기,info,tip,배드민턴 운동 효과입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-badminton-shuttlecock-storage,05-badminton,05,shuttlecock-storage,셔틀콕 보관하는 법,셔틀콕 오래 쓰는 보관법,howto,tip,셔틀콕 보관 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-adult-swimming-start,05-swimming,05,adult-swimming-start,수영 처음 배우기,성인 수영 처음 배우는 순서,info,start,성인 수영 입문입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-pool-essentials,05-swimming,05,pool-essentials,수영장 준비물 챙기기,수영장 첫 등록 준비물,checklist,tip,수영장 준비물입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-freestyle-breathing,05-swimming,05,freestyle-breathing,자유형 호흡 요령,자유형 숨쉬기 요령 익히기,howto,howto,자유형 호흡 연습입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-lesson-levels,05-swimming,05,lesson-levels,수영 강습 레벨 구조,수영 강습반 레벨 어떻게 나뉠까,info,tip,강습 레벨 구조입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-goggle-antifog,05-swimming,05,goggle-antifog,수경 김서림 방지,수경 김서림 막는 방법,howto,tip,수경 김서림 방지입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-swimsuit-selection,05-swimming,05,swimsuit-selection,수영복 고르는 기준,실내 수영복 고르는 기준,info,tip,수영복 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-butterfly-progression,05-swimming,05,butterfly-progression,접영까지 가는 과정,접영은 언제쯤 배우게 될까,info,tip,영법 진도 과정입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-morning-swim-review,05-swimming,05,morning-swim-review,아침 수영 한 달 후기,아침 수영 다닌 변화 후기,review,review,아침 수영 후기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-lane-etiquette,05-swimming,05,lane-etiquette,수영장 레인 에티켓,레인 매너 수영장 에티켓,info,tip,수영장 에티켓입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-water-in-ears,05-swimming,05,water-in-ears,귀에 물 들어갔을 때,수영 후 귀에 물 빼는 법,info,tip,귀에 물 대처입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-fins-paddles-gear,05-swimming,05,fins-paddles-gear,오리발 패들 용품,훈련용 오리발 패들 알아보기,info,tip,훈련 용품 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-free-swim-sessions,05-swimming,05,free-swim-sessions,자유 수영 시간 활용,자유 수영 시간표 활용하기,info,local,자유 수영 활용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-swim-tracking-apps,05-swimming,05,swim-tracking-apps,수영 기록 앱 활용,수영 기록 앱 활용해 보기,review,tip,수영 기록 앱입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-water-fear-overcome,05-swimming,05,water-fear-overcome,물 공포 극복 단계,물 무서움 극복하는 단계,info,issue,물 공포 극복입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-swimming-indoor-vs-outdoor,05-swimming,05,indoor-vs-outdoor,실내 실외 수영장 차이,실내 수영장과 야외 차이,compare,compare,실내외 수영장 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-running-first-steps,05-running-start,05,running-first-steps,러닝 처음 시작하기,뛰기 전 알아둘 러닝 시작법,info,start,러닝 시작 안내입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-first-running-shoes,05-running-start,05,first-running-shoes,첫 러닝화 고르기,첫 러닝화 고르는 기준,info,tip,첫 러닝화 선택입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-walk-run-intervals,05-running-start,05,walk-run-intervals,걷뛰 인터벌 입문,걷고 뛰기 반복 4주 플랜,howto,howto,걷뛰 4주 플랜입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-running-form-basics,05-running-start,05,running-form-basics,부상 줄이는 러닝 자세,부상 줄이는 러닝 자세 기본,info,tip,러닝 자세 기본입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-running-apps-compare,05-running-start,05,running-apps-compare,러닝 앱 기록 비교,러닝 기록 앱 기능 비교,compare,compare,러닝 앱 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-dawn-vs-evening,05-running-start,05,dawn-vs-evening,새벽 저녁 러닝 선택,새벽 러닝과 저녁 러닝 비교,compare,tip,러닝 시간대 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-breathing-technique,05-running-start,05,breathing-technique,달리기 호흡법 익히기,숨 안 차게 뛰는 호흡 요령,info,tip,달리기 호흡 요령입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-local-running-routes,05-running-start,05,local-running-routes,동네 러닝 코스 찾기,집 근처 러닝 코스 찾는 법,info,local,러닝 코스 찾기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-running-crews,05-running-start,05,running-crews,러닝 크루 참여하기,러닝 크루 함께 뛰는 법,howto,tip,러닝 크루 참여입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-pain-signals,05-running-start,05,pain-signals,러닝 통증 신호 구분,뛰다 아플 때 멈출 신호,info,issue,통증 신호 구분입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-seasonal-running-outfit,05-running-start,05,seasonal-running-outfit,계절별 러닝 복장,계절별 러닝 복장 입기,info,tip,계절별 복장입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-thirty-minute-goal,05-running-start,05,thirty-minute-goal,30분 달리기 목표,쉬지 않고 30분 달리기 도전,info,tip,30분 달리기 도전입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-running-slump,05-running-start,05,running-slump,달리기 권태기 극복,러닝 재미 떨어질 때 처방,info,issue,러닝 권태기 극복입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-treadmill-vs-outdoor,05-running-start,05,treadmill-vs-outdoor,트레드밀과 야외 차이,러닝머신과 야외 달리기 차이,compare,issue,러닝머신과 야외 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-running-start-one-month-changes,05-running-start,05,one-month-changes,러닝 한 달 변화 후기,러닝 한 달 몸의 변화 후기,review,review,러닝 한 달 후기입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-golf-learning-order,05-golf-lesson-gear,05,golf-learning-order,골프 입문 순서,골프 시작 무엇부터 배울까,info,start,골프 입문 순서입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-lesson-pro-choice,05-golf-lesson-gear,05,lesson-pro-choice,골프 레슨 고르기,레슨 프로 고르는 기준,info,tip,레슨 선택 기준입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-screen-vs-range,05-golf-lesson-gear,05,screen-vs-range,스크린 연습장 비교,스크린골프와 연습장 비교,compare,compare,연습 방식 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-starter-club-set,05-golf-lesson-gear,05,starter-club-set,첫 골프채 구성,입문자 골프채 구성 이해,info,tip,입문 골프채 구성입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-used-clubs-check,05-golf-lesson-gear,05,used-clubs-check,중고 골프채 구매 확인,중고 골프채 살 때 확인할 것,checklist,tip,중고 골프채 확인입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-driver-distance-basics,05-golf-lesson-gear,05,driver-distance-basics,드라이버 비거리 기초,드라이버 거리 늘리는 기초 연습,howto,tip,비거리 기초 연습입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-home-putting-practice,05-golf-lesson-gear,05,home-putting-practice,퍼팅 연습 집에서,집에서 하는 퍼팅 연습,howto,tip,집 퍼팅 연습입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-golfball-differences,05-golf-lesson-gear,05,golfball-differences,골프공 차이 알기,골프공 피스 차이 이해,info,tip,골프공 차이 이해입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-grip-basics,05-golf-lesson-gear,05,grip-basics,그립 잡는 법 기초,골프 그립 기본 잡는 법,howto,howto,그립 기본입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-first-round-prep,05-golf-lesson-gear,05,first-round-prep,라운딩 데뷔 준비,머리 올리기 전 준비할 것,info,tip,라운딩 데뷔 준비입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-practice-routine,05-golf-lesson-gear,05,practice-routine,골프 연습 루틴 짜기,주 2회 골프 연습 루틴,info,tip,골프 연습 루틴입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-golf-bag-types,05-golf-lesson-gear,05,golf-bag-types,캐디백 보스턴백 구성,골프 가방 종류와 구성,info,tip,골프 가방 구성입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-rangefinder-compare,05-golf-lesson-gear,05,rangefinder-compare,거리측정기 종류 비교,거리측정기 종류 비교해 보기,compare,tip,거리측정기 비교입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-golf-startup-costs,05-golf-lesson-gear,05,golf-startup-costs,골프 입문 비용 계산,골프 입문 비용 현실 계산,cost,review,골프 입문 비용입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
+05-golf-lesson-gear-field-manners,05-golf-lesson-gear,05,field-manners,첫 라운딩 필드 매너,첫 라운딩 필드 매너 알기,info,tip,필드 매너 기본입니다.,claude_direct,2026-06-11T14:44:00.190480+00:00
