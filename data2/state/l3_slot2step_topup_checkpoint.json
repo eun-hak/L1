@@ -1,0 +1,6110 @@
+{
+  "generated_at": "2026-06-10T06:32:33.981144+00:00",
+  "scout_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "gemini_model": "gemini-3.1-flash-lite",
+  "results": [
+    {
+      "l2_id": "05-sports-nutrition",
+      "l2_name": "스포츠 영양",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 6,
+      "accepted_count": 6,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 6,
+        "stem_unique": 6,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 33.3,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "필요량",
+            1
+          ],
+          [
+            "법",
+            1
+          ],
+          [
+            "전략",
+            1
+          ],
+          [
+            "영양관리",
+            1
+          ],
+          [
+            "섭취",
+            1
+          ]
+        ],
+        "keywords": [
+          "운동선수 영양소 필요량",
+          "스포츠 영양제 고르는 법",
+          "경기 전후 식사 전략",
+          "유소년 운동 영양관리",
+          "운동 중 전해질 섭취",
+          "프로 운동선수 식단 예시"
+        ],
+        "stems": [
+          "운동선수 영양소 필요량",
+          "스포츠 영양제 고르는",
+          "경기 전후 식사",
+          "유소년 운동 영양관리",
+          "운동 중 전해질 섭취",
+          "프로 운동선수 식단 예시"
+        ]
+      },
+      "rejected": [
+        "목표별 영양관리 전략 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "운동선수 영양소 필요량",
+          "title_ko": "운동선수 영양소 요구량 알아보기",
+          "slug": "athlete-nutrient-requirements",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "운동선수에게 필요한 영양소와 그 이유를 알려드립니다."
+        },
+        {
+          "focus_keyword": "스포츠 영양제 고르는 법",
+          "title_ko": "효과적인 스포츠 영양제 선택 가이드",
+          "slug": "choosing-sports-nutrition-supplements",
+          "search_intent": "info",
+          "topic_angle": "review",
+          "description": "스포츠 영양제를 고를 때 고려해야 할 사항들을 소개합니다."
+        },
+        {
+          "focus_keyword": "경기 전후 식사 전략",
+          "title_ko": "최적의 운동 성과 위한 경기 전후 식사법",
+          "slug": "pre-post-game-meal-strategies",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "운동 전후 최적의 식사 전략을 제공합니다."
+        },
+        {
+          "focus_keyword": "유소년 운동 영양관리",
+          "title_ko": "성장기 아이를 위한 운동 영양 가이드",
+          "slug": "youth-athlete-nutrition-management",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "유소년 운동선수를 위한 영양관리 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "운동 중 전해질 섭취",
+          "title_ko": "운동 중 전해질 보충의 중요성",
+          "slug": "electrolyte-intake-during-exercise",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "운동 중 전해질 보충이 중요한 이유를 설명합니다."
+        },
+        {
+          "focus_keyword": "프로 운동선수 식단 예시",
+          "title_ko": "프로 운동선수들의 실제 식단 예시",
+          "slug": "pro-athlete-meal-examples",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "프로 운동선수들의 식단 예시를 통해 영양관리 노하우를 배워보세요."
+        }
+      ],
+      "stems": [
+        "운동선수 영양소 필요량",
+        "스포츠 영양제 고르는",
+        "경기 전후 식사",
+        "유소년 운동 영양관리",
+        "운동 중 전해질 섭취",
+        "프로 운동선수 식단 예시"
+      ]
+    },
+    {
+      "l2_id": "05-sports-viewing",
+      "l2_name": "스포츠 시청",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "정보",
+            1
+          ],
+          [
+            "목록",
+            1
+          ],
+          [
+            "평가",
+            1
+          ]
+        ],
+        "keywords": [
+          "스포츠 중계 채널 정보",
+          "무료 스포츠 시청 사이트 목록",
+          "스포츠 생중계 앱 평가"
+        ],
+        "stems": [
+          "스포츠 중계 채널 정보",
+          "무료 스포츠 시청 사이트 목록",
+          "스포츠 생중계 앱 평가"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "스포츠 중계 채널 정보",
+          "title_ko": "스포츠 중계 채널 찾는 법",
+          "slug": "sports",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "스포츠 경기를 시청할 수 있는 중계 채널을 찾는 방법에 대해 알아보세요."
+        },
+        {
+          "focus_keyword": "무료 스포츠 시청 사이트 목록",
+          "title_ko": "스포츠 무료 시청 가능한 사이트",
+          "slug": "topic",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "스포츠 경기를 무료로 시청할 수 있는 사이트 목록을 확인하세요."
+        },
+        {
+          "focus_keyword": "스포츠 생중계 앱 평가",
+          "title_ko": "스포츠 생중계 앱 추천 순위",
+          "slug": "topic",
+          "search_intent": "info",
+          "topic_angle": "review",
+          "description": "스포츠 경기를 생중계로 시청할 수 있는 앱의 평가와 순위를 확인하세요."
+        }
+      ],
+      "stems": [
+        "스포츠 중계 채널 정보",
+        "무료 스포츠 시청 사이트 목록",
+        "스포츠 생중계 앱 평가"
+      ]
+    },
+    {
+      "l2_id": "05-soccer-goods",
+      "l2_name": "축구 굿즈",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "커스텀",
+            1
+          ],
+          [
+            "훈련",
+            1
+          ]
+        ],
+        "keywords": [
+          "축구 굿즈 커스텀",
+          "어린이 축구 훈련"
+        ],
+        "stems": [
+          "축구 굿즈 커스텀",
+          "어린이 축구 훈련"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "축구 굿즈 커스텀",
+          "title_ko": "축구 굿즈 커스텀 제작 가이드",
+          "slug": "chulgu-gwids-kaseutem-jejag",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "축구 굿즈를 개인 맞춤형으로 제작하는 방법과 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "어린이 축구 훈련",
+          "title_ko": "어린이 축구 훈련 장비 추천",
+          "slug": "eolin-i-chulgu-hunlyeon",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "어린이를 위한 효과적인 축구 훈련 장비를 소개합니다."
+        }
+      ],
+      "stems": [
+        "축구 굿즈 커스텀",
+        "어린이 축구 훈련"
+      ]
+    },
+    {
+      "l2_id": "05-stadium-tour",
+      "l2_name": "경기장 투어",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "팁",
+            1
+          ]
+        ],
+        "keywords": [
+          "장애인 스포츠 경기장 이용 팁"
+        ],
+        "stems": [
+          "장애인 스포츠 경기장 이용"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "장애인 스포츠 경기장 이용 팁",
+          "title_ko": "장애인 스포츠 경기장 이용 가이드 및 팁",
+          "slug": "disabled-sports-venue-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "장애인 스포츠 경기장 이용에 필요한 정보와 팁을 제공합니다."
+        }
+      ],
+      "stems": [
+        "장애인 스포츠 경기장 이용"
+      ]
+    },
+    {
+      "l2_id": "06-fuel-efficiency",
+      "l2_name": "연비 향상",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 7,
+      "accepted_count": 7,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 7,
+        "stem_unique": 7,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 85.7,
+        "ends_with_추천": 2,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "방법",
+            2
+          ],
+          [
+            "추천",
+            2
+          ],
+          [
+            "관리",
+            1
+          ],
+          [
+            "팁",
+            1
+          ],
+          [
+            "감소",
+            1
+          ]
+        ],
+        "keywords": [
+          "차량 연비 최적화 방법",
+          "타이어 공기압 관리",
+          "경제적 운전 습관 앱 추천",
+          "차량 경량화 방법",
+          "연비 좋은 차량 옵션 추천",
+          "연비 향상을 위한 오일 교환 팁",
+          "차량 공기 저항 감소"
+        ],
+        "stems": [
+          "차량 연비 최적화",
+          "타이어 공기압",
+          "경제적 운전 습관 앱",
+          "차량 경량화",
+          "연비 좋은 차량 옵션",
+          "연비 향상을 위한 오일 교환",
+          "차량 공기 저항 감소"
+        ]
+      },
+      "rejected": [
+        "고속도로 연비 운전 방법 (suffix_cap:방법)",
+        "차량 공기 저항 줄이는 방법 (suffix_cap:방법)",
+        "운전 습관 분석 도구 추천 (suffix_cap:추천)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "차량 연비 최적화 방법",
+          "title_ko": "차량 연비 최적화 설정 방법",
+          "slug": "vehicle-fuel-efficiency-optimization",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "차량 연비를 최적화하는 설정 방법을 알아보세요."
+        },
+        {
+          "focus_keyword": "타이어 공기압 관리",
+          "title_ko": "연비 향상을 위한 타이어 관리 팁",
+          "slug": "tire-maintenance-for-fuel-efficiency",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "타이어 관리를 통해 연비를 향상시키는 방법을 알아보세요."
+        },
+        {
+          "focus_keyword": "경제적 운전 습관 앱 추천",
+          "title_ko": "경제적 운전 습관 앱 사용법",
+          "slug": "eco-driving-apps",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "경제적인 운전 습관을 기르기 위한 앱을 추천합니다."
+        },
+        {
+          "focus_keyword": "차량 경량화 방법",
+          "title_ko": "차량 무게 줄이는 방법",
+          "slug": "vehicle-weight-reduction",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "차량의 무게를 줄여 연비를 향상시키는 방법을 알아보세요."
+        },
+        {
+          "focus_keyword": "연비 좋은 차량 옵션 추천",
+          "title_ko": "연비 좋은 차량 옵션 선택 가이드",
+          "slug": "fuel-efficient-vehicle-options",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "연비가 좋은 차량 옵션을 선택하는 가이드를 제공합니다."
+        },
+        {
+          "focus_keyword": "연비 향상을 위한 오일 교환 팁",
+          "title_ko": "연비 향상을 위한 오일 교환 방법",
+          "slug": "oil-change-for-fuel-efficiency",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "오일 교환을 통해 연비를 향상시키는 방법을 알아보세요."
+        },
+        {
+          "focus_keyword": "차량 공기 저항 감소",
+          "title_ko": "차량 공기 저항 줄이는 방법",
+          "slug": "reduce-vehicle-air-resistance",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "차량의 공기 저항을 줄여 연비를 향상하는 팁을 공유합니다."
+        }
+      ],
+      "stems": [
+        "차량 연비 최적화",
+        "타이어 공기압",
+        "경제적 운전 습관 앱",
+        "차량 경량화",
+        "연비 좋은 차량 옵션",
+        "연비 향상을 위한 오일 교환",
+        "차량 공기 저항 감소"
+      ]
+    },
+    {
+      "l2_id": "06-car-odor-removal",
+      "l2_name": "차량 냄새 제거",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 5,
+      "accepted_count": 5,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 5,
+        "stem_unique": 5,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "제거",
+            5
+          ]
+        ],
+        "keywords": [
+          "차량 애완동물 냄새 제거",
+          "차량 곰팡이 냄새 제거",
+          "차량 신차 냄새 제거",
+          "차량 습기 냄새 제거",
+          "차량 발암물질 냄새 제거"
+        ],
+        "stems": [
+          "차량 애완동물 냄새 제거",
+          "차량 곰팡이 냄새 제거",
+          "차량 신차 냄새 제거",
+          "차량 습기 냄새 제거",
+          "차량 발암물질 냄새 제거"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "차량 애완동물 냄새 제거",
+          "title_ko": "차량 애완동물 냄새 제거 방법과 관리 팁",
+          "slug": "vehicle-pet-odor-removal",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "차량 내 애완동물 냄새를 효과적으로 제거하는 방법과 관리 팁을 소개합니다."
+        },
+        {
+          "focus_keyword": "차량 곰팡이 냄새 제거",
+          "title_ko": "차량 곰팡이 냄새 제거 및 예방법",
+          "slug": "vehicle-mold-odor-removal",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "차량 내 곰팡이 냄새를 제거하고 예방하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "차량 신차 냄새 제거",
+          "title_ko": "신차 냄새 제거 방법과 차량 관리 팁",
+          "slug": "new-car-odor-removal",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "신차의 불쾌한 냄새를 제거하고 차량을 관리하는 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "차량 습기 냄새 제거",
+          "title_ko": "차량 습기 냄새 제거 및 건조 유지법",
+          "slug": "vehicle-moisture-odor-removal",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "차량 내 습기로 인한 냄새를 제거하고 차량을 건조하게 유지하는 법을 소개합니다."
+        },
+        {
+          "focus_keyword": "차량 발암물질 냄새 제거",
+          "title_ko": "차량 발암물질 냄새 제거와 안전한 차량 환경",
+          "slug": "vehicle-carcinogen-odor-removal",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "차량 내 발암물질로 인한 냄새를 제거하고 안전한 차량 환경을 만드는 방법을 알려드립니다."
+        }
+      ],
+      "stems": [
+        "차량 애완동물 냄새 제거",
+        "차량 곰팡이 냄새 제거",
+        "차량 신차 냄새 제거",
+        "차량 습기 냄새 제거",
+        "차량 발암물질 냄새 제거"
+      ]
+    },
+    {
+      "l2_id": "06-import-car-guide",
+      "l2_name": "수입차 가이드",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "튜닝",
+            1
+          ],
+          [
+            "운전",
+            1
+          ],
+          [
+            "시기",
+            1
+          ]
+        ],
+        "keywords": [
+          "수입차 내부 인테리어 튜닝",
+          "고속도로 수입차 안전 운전",
+          "수입차 엔진 오일 교환 시기"
+        ],
+        "stems": [
+          "수입차 내부 인테리어 튜닝",
+          "고속도로 수입차 안전 운전",
+          "수입차 엔진 오일 교환 시기"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "수입차 내부 인테리어 튜닝",
+          "title_ko": "수입차 내부 인테리어 튜닝 완벽 가이드",
+          "slug": "import-car-interior-customizing",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "수입차 내부 인테리어를 커스터마이징하는 방법과 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "고속도로 수입차 안전 운전",
+          "title_ko": "고속도로에서 안전한 수입차 운전 팁",
+          "slug": "highway-driving-tips-for-import-cars",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "고속도로에서 수입차를 안전하게 운전하는 팁과 주의사항을 알려드립니다."
+        },
+        {
+          "focus_keyword": "수입차 엔진 오일 교환 시기",
+          "title_ko": "수입차 엔진 오일 교체 주기와 방법",
+          "slug": "import-car-engine-oil-change",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "수입차 엔진 오일 교체 주기와 방법을 상세히 설명합니다."
+        }
+      ],
+      "stems": [
+        "수입차 내부 인테리어 튜닝",
+        "고속도로 수입차 안전 운전",
+        "수입차 엔진 오일 교환 시기"
+      ]
+    },
+    {
+      "l2_id": "06-ev-charging",
+      "l2_name": "전기차 충전",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 50.0,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "추천",
+            1
+          ],
+          [
+            "설치비용",
+            1
+          ]
+        ],
+        "keywords": [
+          "전기차 충전 카드 추천",
+          "아파트 전기차 충전소 설치비용"
+        ],
+        "stems": [
+          "전기차 충전 카드",
+          "아파트 전기차 충전소 설치비용"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "전기차 충전 카드 추천",
+          "title_ko": "전기차 충전 카드 혜택 비교 및 추천 가이드",
+          "slug": "electric-vehicle-charging-card-benefits",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전기차 충전 카드의 다양한 혜택을 비교하고 최적의 카드를 선택하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "아파트 전기차 충전소 설치비용",
+          "title_ko": "아파트 전기차 충전소 설치 절차와 비용 가이드",
+          "slug": "apartment-electric-vehicle-charging-station-installation",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "아파트 전기차 충전소 설치를 위한 절차와 예상 비용을 상세히 안내합니다."
+        }
+      ],
+      "stems": [
+        "전기차 충전 카드",
+        "아파트 전기차 충전소 설치비용"
+      ]
+    },
+    {
+      "l2_id": "06-parking-tips",
+      "l2_name": "주차 팁",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 50.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "지원",
+            1
+          ],
+          [
+            "팁",
+            1
+          ]
+        ],
+        "keywords": [
+          "노인 운전자를 위한 주차 지원",
+          "전기차 충전 주차장 팁"
+        ],
+        "stems": [
+          "노인 운전자를 위한 주차 지원",
+          "전기차 충전 주차장"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "노인 운전자를 위한 주차 지원",
+          "title_ko": "노인 운전자를 위한 안전한 주차 지원",
+          "slug": "parking-support-for-senior-drivers",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노인 운전자들을 위한 맞춤형 주차 지원 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "전기차 충전 주차장 팁",
+          "title_ko": "전기차 충전 팁과 주차장 이용 가이드",
+          "slug": "ev-charging-parking-tips",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "전기차 충전 시 알아두면 좋은 주차장 이용 팁을 제공합니다."
+        }
+      ],
+      "stems": [
+        "노인 운전자를 위한 주차 지원",
+        "전기차 충전 주차장"
+      ]
+    },
+    {
+      "l2_id": "07-printer-review",
+      "l2_name": "프린터 추천",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 7,
+      "accepted_count": 7,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 7,
+        "stem_unique": 7,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 85.7,
+        "ends_with_추천": 2,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "추천",
+            2
+          ],
+          [
+            "방법",
+            2
+          ],
+          [
+            "구매",
+            1
+          ],
+          [
+            "비교",
+            1
+          ],
+          [
+            "팁",
+            1
+          ]
+        ],
+        "keywords": [
+          "가정용 프린터 추천",
+          "초소형 프린터 구매",
+          "프린터 렌탈 비용 비교",
+          "프린터 와이파이 연결 방법",
+          "스캐너 프린터 추천",
+          "프린터 유지 보수 팁",
+          "프린터 드라이버 설치 방법"
+        ],
+        "stems": [
+          "가정용 프린터",
+          "초소형 프린터 구매",
+          "프린터 렌탈 비용",
+          "프린터 와이파이 연결",
+          "스캐너 프린터",
+          "프린터 유지 보수",
+          "프린터 드라이버 설치"
+        ]
+      },
+      "rejected": [
+        "업무용 고속 프린터 추천 (suffix_cap:추천)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "가정용 프린터 추천",
+          "title_ko": "가정용 프린터 추천, 어떤 제품이 좋을까?",
+          "slug": "home-printer-recommendation",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "가정용으로 적합한 프린터 제품을 분석합니다."
+        },
+        {
+          "focus_keyword": "초소형 프린터 구매",
+          "title_ko": "초소형 프린터, 작지만 강한 성능!",
+          "slug": "ultra-compact-printer-buy",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "초소형 프린터의 특징과 장점을 소개합니다."
+        },
+        {
+          "focus_keyword": "프린터 렌탈 비용 비교",
+          "title_ko": "프린터 렌탈 비용, 어떻게 절약할까?",
+          "slug": "printer-rental-cost-comparison",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "프린터 렌탈 비용을 절약하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "프린터 와이파이 연결 방법",
+          "title_ko": "프린터 와이파이 연결, 간단하게 하는 법!",
+          "slug": "printer-wifi-connection-guide",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "프린터를 와이파이에 연결하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "스캐너 프린터 추천",
+          "title_ko": "스캐너 프린터, 하나로 해결!",
+          "slug": "scanner-printer-recommendation",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "스캐너와 프린터 기능을 갖춘 제품을 추천합니다."
+        },
+        {
+          "focus_keyword": "프린터 유지 보수 팁",
+          "title_ko": "프린터 유지 보수, 쉽게 하는 법!",
+          "slug": "printer-maintenance-tips",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "프린터를 오래 사용하기 위한 유지 보수 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "프린터 드라이버 설치 방법",
+          "title_ko": "프린터 드라이버 설치, 쉽게 하는 법!",
+          "slug": "printer-driver-installation-guide",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "프린터 드라이버를 설치하는 방법을 알려드립니다."
+        }
+      ],
+      "stems": [
+        "가정용 프린터",
+        "초소형 프린터 구매",
+        "프린터 렌탈 비용",
+        "프린터 와이파이 연결",
+        "스캐너 프린터",
+        "프린터 유지 보수",
+        "프린터 드라이버 설치"
+      ]
+    },
+    {
+      "l2_id": "07-monitor-recommend",
+      "l2_name": "모니터 추천",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 4,
+      "accepted_count": 4,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 4,
+        "stem_unique": 4,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 50.0,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "추천",
+            1
+          ],
+          [
+            "모니터",
+            1
+          ],
+          [
+            "설정",
+            1
+          ],
+          [
+            "사용법",
+            1
+          ]
+        ],
+        "keywords": [
+          "공간 절약형 모니터 추천",
+          "어린이 눈 보호 모니터",
+          "노트북 모니터 연결 설정",
+          "다중 디스플레이 사용법"
+        ],
+        "stems": [
+          "공간 절약형 모니터",
+          "어린이 눈 보호 모니터",
+          "노트북 모니터 연결 설정",
+          "다중 디스플레이"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "공간 절약형 모니터 추천",
+          "title_ko": "사무실 공간 절약하는 모니터 선택 가이드",
+          "slug": "office-space-saving-monitor-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "사무실 공간을 효율적으로 활용할 수 있는 모니터를 소개합니다."
+        },
+        {
+          "focus_keyword": "어린이 눈 보호 모니터",
+          "title_ko": "아이들을 위한 눈 보호 기능 탑재 모니터",
+          "slug": "eye-protection-monitor-for-kids",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "아이들의 눈 건강을 위한 눈 보호 모니터를 추천합니다."
+        },
+        {
+          "focus_keyword": "노트북 모니터 연결 설정",
+          "title_ko": "노트북과 모니터 연결하는 방법과 설정 가이드",
+          "slug": "laptop-monitor-connection-guide",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "노트북과 모니터를 연결하고 설정하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "다중 디스플레이 사용법",
+          "title_ko": "다중 디스플레이 활용법과 설정 방법",
+          "slug": "multiple-display-usage-guide",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "다중 디스플레이를 활용하는 방법과 설정법을 소개합니다."
+        }
+      ],
+      "stems": [
+        "공간 절약형 모니터",
+        "어린이 눈 보호 모니터",
+        "노트북 모니터 연결 설정",
+        "다중 디스플레이"
+      ]
+    },
+    {
+      "l2_id": "07-wireless-charger",
+      "l2_name": "무선충전기",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "무선충전기",
+            1
+          ],
+          [
+            "사용",
+            1
+          ],
+          [
+            "유선충전기",
+            1
+          ]
+        ],
+        "keywords": [
+          "캠핑용 무선충전기",
+          "무선충전기 안전 사용",
+          "무선충전기 vs 유선충전기"
+        ],
+        "stems": [
+          "캠핑용 무선충전기",
+          "무선충전기 안전 사용",
+          "무선충전기 vs 유선충전기"
+        ]
+      },
+      "rejected": [
+        "무선충전기 고장 원인 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "캠핑용 무선충전기",
+          "title_ko": "캠핑용 무선충전기 추천 및 사용 팁",
+          "slug": "camping-wireless-charger",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑용 무선충전기 추천 제품과 사용법을 소개합니다."
+        },
+        {
+          "focus_keyword": "무선충전기 안전 사용",
+          "title_ko": "무선충전기 안전 사용 가이드 및 주의사항",
+          "slug": "wireless-charger-safety-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "무선충전기 안전 사용을 위한 가이드와 주의사항을 알려드립니다."
+        },
+        {
+          "focus_keyword": "무선충전기 vs 유선충전기",
+          "title_ko": "무선충전기와 유선충전기 차이점 및 장단점",
+          "slug": "wireless-vs-wired-charger",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "무선충전기와 유선충전기의 차이점과 장단점을 비교합니다."
+        }
+      ],
+      "stems": [
+        "캠핑용 무선충전기",
+        "무선충전기 안전 사용",
+        "무선충전기 vs 유선충전기"
+      ]
+    },
+    {
+      "l2_id": "08-nail-care",
+      "l2_name": "네일 케어",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "관리",
+            1
+          ]
+        ],
+        "keywords": [
+          "임산부 손톱 관리"
+        ],
+        "stems": [
+          "임산부 손톱"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "임산부 손톱 관리",
+          "title_ko": "임산부 손톱 관리 방법과 주의사항",
+          "slug": "im-sanbu-son-tob-quan-ri",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "건강한 손톱을 유지하기 위한 임산부 손톱 관리 팁"
+        }
+      ],
+      "stems": [
+        "임산부 손톱"
+      ]
+    },
+    {
+      "l2_id": "08-pore-care",
+      "l2_name": "모공 케어",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "추천",
+            1
+          ]
+        ],
+        "keywords": [
+          "모공 케어 화장품 추천"
+        ],
+        "stems": [
+          "모공 케어 화장품"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "모공 케어 화장품 추천",
+          "title_ko": "모공 케어 화장품 추천 TOP10",
+          "slug": "best-pore-care-products",
+          "search_intent": "compare",
+          "topic_angle": "tip",
+          "description": "모공 케어에 효과적인 화장품을 비교하고 추천합니다."
+        }
+      ],
+      "stems": [
+        "모공 케어 화장품"
+      ]
+    },
+    {
+      "l2_id": "08-sensitive-skin-care",
+      "l2_name": "민감성 피부",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "관리",
+            1
+          ]
+        ],
+        "keywords": [
+          "민감성 피부 트러블 관리"
+        ],
+        "stems": [
+          "민감성 피부 트러블"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "민감성 피부 트러블 관리",
+          "title_ko": "민감성 피부 트러블 원인과 해결법",
+          "slug": "sensitive-skin-trouble-management",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "민감성 피부 트러블의 원인과 효과적인 관리법을 알려드립니다."
+        }
+      ],
+      "stems": [
+        "민감성 피부 트러블"
+      ]
+    },
+    {
+      "l2_id": "09-chungnam-food",
+      "l2_name": "충남 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 10,
+      "accepted_count": 10,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 10,
+        "stem_unique": 10,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 40.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            5
+          ],
+          [
+            "맛집",
+            4
+          ],
+          [
+            "장소",
+            1
+          ]
+        ],
+        "keywords": [
+          "충남 아기친화 맛집",
+          "충남 혼밥 맛집",
+          "충남 데이트 추천 식당",
+          "충남 캠핑장 주변 식당",
+          "충남 수영장 식당",
+          "충남 고양이 식당",
+          "충남 반려묘 동반 식당",
+          "충남 유아 놀이방 맛집",
+          "충남 외국인 인기 맛집",
+          "충남 직장인 회식 장소"
+        ],
+        "stems": [
+          "충남 아기친화",
+          "충남 혼밥",
+          "충남 데이트 추천 식당",
+          "충남 캠핑장 주변 식당",
+          "충남 수영장 식당",
+          "충남 고양이 식당",
+          "충남 반려묘 동반 식당",
+          "충남 유아 놀이방",
+          "충남 외국인",
+          "충남 직장인 회식 장소"
+        ]
+      },
+      "rejected": [
+        "충남 와이파이 맛집 (suffix_cap:맛집)",
+        "충남 놀이방 식당 (intent_angle_cap)",
+        "충남 외국인 인기 맛집 (suffix_cap:맛집, intent_angle_cap)",
+        "충남 학생 저렴 식당 (intent_angle_cap)",
+        "충남 회식 맛집 (suffix_cap:맛집, intent_angle_cap)",
+        "충남 임산부 추천 식당 (intent_angle_cap)",
+        "충남 학생 가성비 맛집 (suffix_cap:맛집)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "충남 아기친화 맛집",
+          "title_ko": "충남 아기 동반 가족 맛집 추천",
+          "slug": "chungnam-baby-friendly-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남 지역에서 아기와 함께 방문하기 좋은 맛집 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "충남 혼밥 맛집",
+          "title_ko": "충남 혼자 식사하기 좋은 맛집",
+          "slug": "chungnam-solo-dining-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남에서 혼자 방문하기 좋은 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "충남 데이트 추천 식당",
+          "title_ko": "충남 데이트 코스에 좋은 맛집",
+          "slug": "chungnam-date-night-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남 지역에서 데이트하기 좋은 맛집과 코스를 추천합니다."
+        },
+        {
+          "focus_keyword": "충남 캠핑장 주변 식당",
+          "title_ko": "충남 캠핑장 근처 맛집 추천",
+          "slug": "chungnam-camping-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남 캠핑장 주변의 맛있는 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "충남 수영장 식당",
+          "title_ko": "충남 수영장 있는 식당 추천",
+          "slug": "chungnam-pool-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남 지역에서 수영장을 운영하는 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "충남 고양이 식당",
+          "title_ko": "충남 반려묘 동반 식당 추천",
+          "slug": "chungnam-cat-friendly-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남 지역에서 고양이와 함께 방문할 수 있는 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "충남 반려묘 동반 식당",
+          "title_ko": "충남 반려묘와 함께 갈 수 있는 식당 추천",
+          "slug": "chungnam-pet-cat-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남에서 반려묘와 함께 식사할 수 있는 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "충남 유아 놀이방 맛집",
+          "title_ko": "충남 유아 놀이방 있는 맛집 추천",
+          "slug": "chungnam-toddler-playroom-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남에서 유아 놀이방이 있는 맛집을 소개합니다."
+        },
+        {
+          "focus_keyword": "충남 외국인 인기 맛집",
+          "title_ko": "충남 외국인 방문객이 추천하는 맛집",
+          "slug": "chungnam-foreigner-popular-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남에서 외국인 방문객이 많이 찾는 맛집을 소개합니다."
+        },
+        {
+          "focus_keyword": "충남 직장인 회식 장소",
+          "title_ko": "충남 직장인 회식 맛집 추천",
+          "slug": "chungnam-workplace-banquet-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충남에서 직장인 회식에 좋은 맛집을 소개합니다."
+        }
+      ],
+      "stems": [
+        "충남 아기친화",
+        "충남 혼밥",
+        "충남 데이트 추천 식당",
+        "충남 캠핑장 주변 식당",
+        "충남 수영장 식당",
+        "충남 고양이 식당",
+        "충남 반려묘 동반 식당",
+        "충남 유아 놀이방",
+        "충남 외국인",
+        "충남 직장인 회식 장소"
+      ]
+    },
+    {
+      "l2_id": "09-night-food",
+      "l2_name": "야식 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 8,
+      "accepted_count": 8,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 8,
+        "stem_unique": 8,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 62.5,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "맛집",
+            2
+          ],
+          [
+            "식당",
+            2
+          ],
+          [
+            "가이드",
+            2
+          ],
+          [
+            "추천",
+            1
+          ],
+          [
+            "정보",
+            1
+          ]
+        ],
+        "keywords": [
+          "야식 배달 맛집",
+          "야식 혼자 먹기 좋은 식당",
+          "싼 야식 맛집",
+          "야식 신선한 재료 식당",
+          "야식 창업 가이드",
+          "야식 먹고 운동 추천",
+          "야식 선택 가이드",
+          "야식 법적 규제 정보"
+        ],
+        "stems": [
+          "야식 배달",
+          "야식 혼자 먹기 좋은 식당",
+          "싼 야식",
+          "야식 신선한 재료 식당",
+          "야식 창업",
+          "야식 먹고",
+          "야식 선택",
+          "야식 법적 규제 정보"
+        ]
+      },
+      "rejected": [
+        "캠핑장 야식 추천 (suffix_cap:추천, intent_angle_cap)",
+        "야식 데이트 코스 추천 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "야식 배달 맛집",
+          "title_ko": "야식 배달 가능한 곳 추천",
+          "slug": "yashik-badal-possible-place",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "늦은 밤 배달 가능한 야식 메뉴 및 식당 정보"
+        },
+        {
+          "focus_keyword": "야식 혼자 먹기 좋은 식당",
+          "title_ko": "야식 혼밥하기 좋은 식당 추천",
+          "slug": "yashik-mix-hobag-good-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "혼자서 즐기기 좋은 야식 식당 추천"
+        },
+        {
+          "focus_keyword": "싼 야식 맛집",
+          "title_ko": "야식 저렴한 곳 추천",
+          "slug": "yashik-cheap-place-recommend",
+          "search_intent": "compare",
+          "topic_angle": "tip",
+          "description": "가격 부담 없는 야식 맛집 추천"
+        },
+        {
+          "focus_keyword": "야식 신선한 재료 식당",
+          "title_ko": "야식 신선한 재료 식당 추천",
+          "slug": "yashik-fresh-material-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "신선한 재료로 만든 야식 식당 추천"
+        },
+        {
+          "focus_keyword": "야식 창업 가이드",
+          "title_ko": "야식 성공적인 창업 방법",
+          "slug": "yashik-startup-guide",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "성공적인 야식 창업 전략"
+        },
+        {
+          "focus_keyword": "야식 먹고 운동 추천",
+          "title_ko": "야식 먹고 운동 추천",
+          "slug": "yashik-eat-exercise-recommend",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "야식 후 건강을 위한 운동 추천"
+        },
+        {
+          "focus_keyword": "야식 선택 가이드",
+          "title_ko": "야식 고르는 팁",
+          "slug": "yashik-choose-tip",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "맛있는 야식 고르는 방법"
+        },
+        {
+          "focus_keyword": "야식 법적 규제 정보",
+          "title_ko": "야식 법적 규제 정보",
+          "slug": "yashik-legal-regulation-info",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "야식 관련 법적 규제 정보"
+        }
+      ],
+      "stems": [
+        "야식 배달",
+        "야식 혼자 먹기 좋은 식당",
+        "싼 야식",
+        "야식 신선한 재료 식당",
+        "야식 창업",
+        "야식 먹고",
+        "야식 선택",
+        "야식 법적 규제 정보"
+      ]
+    },
+    {
+      "l2_id": "09-ulsan-food",
+      "l2_name": "울산 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 8,
+      "accepted_count": 8,
+      "scout_calls": 5,
+      "gemini_calls": 2,
+      "metrics": {
+        "count": 8,
+        "stem_unique": 8,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 87.5,
+        "ends_with_추천": 3,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "맛집",
+            3
+          ],
+          [
+            "추천",
+            3
+          ],
+          [
+            "리스트",
+            1
+          ],
+          [
+            "식당",
+            1
+          ]
+        ],
+        "keywords": [
+          "울산 현지인 추천 숨은 맛집",
+          "울산 데이트 코스 추천 맛집",
+          "울산 가족 모임 식당 추천",
+          "울산 회사원 점심 맛집 추천",
+          "울산 맛집 메뉴 추천 리스트",
+          "울산 드라이브 코스 맛집",
+          "울산 식당 메뉴 추천",
+          "울산 아기 친화적 식당"
+        ],
+        "stems": [
+          "울산 현지인 추천 숨은",
+          "울산 데이트 코스",
+          "울산 가족 모임 식당",
+          "울산 회사원 점심",
+          "울산 맛집 메뉴",
+          "울산 드라이브 코스",
+          "울산 식당 메뉴",
+          "울산 아기 친화적 식당"
+        ]
+      },
+      "rejected": [
+        "울산 1인 식사 맛집 추천 (suffix_cap:추천)",
+        "울산 드라이브 코스 맛집 추천 (suffix_cap:추천)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "울산 현지인 추천 숨은 맛집",
+          "title_ko": "울산 현지인이 뽑은 숨은 맛집 BEST",
+          "slug": "ulsan-local-hidden-restaurants",
+          "search_intent": "info",
+          "topic_angle": "local",
+          "description": "울산 현지인들이 자주 찾는 숨은 맛집을 소개합니다."
+        },
+        {
+          "focus_keyword": "울산 데이트 코스 추천 맛집",
+          "title_ko": "울산 데이트 코스 맛집 TOP 5",
+          "slug": "ulsan-date-course-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "울산에서 데이트하기 좋은 맛집을 추천합니다."
+        },
+        {
+          "focus_keyword": "울산 가족 모임 식당 추천",
+          "title_ko": "울산 가족 모임 맛집 추천 리스트",
+          "slug": "ulsan-family-meeting-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "울산에서 가족 모임하기 좋은 식당을 소개합니다."
+        },
+        {
+          "focus_keyword": "울산 회사원 점심 맛집 추천",
+          "title_ko": "울산 회사원 점심 맛집 BEST",
+          "slug": "ulsan-lunch-restaurants-for-employees",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "울산 회사원들이 자주 찾는 점심 맛집을 추천합니다."
+        },
+        {
+          "focus_keyword": "울산 맛집 메뉴 추천 리스트",
+          "title_ko": "울산 맛집 인기 메뉴 추천",
+          "slug": "ulsan-restaurant-menu-recommendations",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "울산 맛집에서 인기 있는 메뉴를 추천합니다."
+        },
+        {
+          "focus_keyword": "울산 드라이브 코스 맛집",
+          "title_ko": "울산 드라이브 코스 추천 맛집",
+          "slug": "ulasan-drive-course-mateum",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "울산 드라이브 코스 중 맛있는 음식과 함께 즐길 수 있는 추천 맛집을 소개합니다."
+        },
+        {
+          "focus_keyword": "울산 식당 메뉴 추천",
+          "title_ko": "울산 현지인 추천 식당 메뉴",
+          "slug": "ulasan-sikdang-meunu-chomun",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "울산 현지인들이 즐겨 찾는 식당의 인기 메뉴를 추천해드립니다."
+        },
+        {
+          "focus_keyword": "울산 아기 친화적 식당",
+          "title_ko": "울산 아기랑 갈 수 있는 맛집 추천",
+          "slug": "ulasan-baby-friendly-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "울산에서 아기와 함께 방문할 수 있는 맛집을 소개합니다."
+        }
+      ],
+      "stems": [
+        "울산 현지인 추천 숨은",
+        "울산 데이트 코스",
+        "울산 가족 모임 식당",
+        "울산 회사원 점심",
+        "울산 맛집 메뉴",
+        "울산 드라이브 코스",
+        "울산 식당 메뉴",
+        "울산 아기 친화적 식당"
+      ]
+    },
+    {
+      "l2_id": "09-sinchon-food",
+      "l2_name": "신촌 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 6,
+      "accepted_count": 6,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 6,
+        "stem_unique": 6,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 16.7,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            4
+          ],
+          [
+            "장소",
+            1
+          ],
+          [
+            "추천",
+            1
+          ]
+        ],
+        "keywords": [
+          "신촌 아기 동반 식당",
+          "신촌 외국인 인기 식당",
+          "신촌 1인 식사 장소",
+          "신촌 학생 저렴한 식당",
+          "신촌 직장인 퇴근길 식당",
+          "신촌 브런치 카페 추천"
+        ],
+        "stems": [
+          "신촌 아기 동반 식당",
+          "신촌 외국인 인기 식당",
+          "신촌 1인 식사 장소",
+          "신촌 학생 저렴한 식당",
+          "신촌 직장인 퇴근길 식당",
+          "신촌 브런치"
+        ]
+      },
+      "rejected": [
+        "신촌 모임 장소 식당 (intent_angle_cap)",
+        "신촌 야간 술집 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "신촌 아기 동반 식당",
+          "title_ko": "신촌 아기 동반 맛집 추천",
+          "slug": "shincheon-baby-friendly-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "신촌에서 아기와 함께 방문하기 좋은 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "신촌 외국인 인기 식당",
+          "title_ko": "신촌 외국인 방문 맛집",
+          "slug": "shincheon-foreigner-popular-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "신촌에서 외국인들이 자주 찾는 인기 식당 정보를 공유합니다."
+        },
+        {
+          "focus_keyword": "신촌 1인 식사 장소",
+          "title_ko": "신촌 1인 식당 추천",
+          "slug": "shincheon-solo-dining-spots",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "신촌에서 혼자 식사하기 좋은 1인 식당을 소개합니다."
+        },
+        {
+          "focus_keyword": "신촌 학생 저렴한 식당",
+          "title_ko": "신촌 학생 저렴한 맛집",
+          "slug": "shincheon-student-budget-friendly-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "신촌에서 학생들이 저렴하게 식사할 수 있는 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "신촌 직장인 퇴근길 식당",
+          "title_ko": "신촌 직장인 퇴근길 맛집",
+          "slug": "shincheon-after-work-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "신촌에서 직장인들이 퇴근길에 방문하기 좋은 식당 정보를 공유합니다."
+        },
+        {
+          "focus_keyword": "신촌 브런치 카페 추천",
+          "title_ko": "신촌 브런치 카페",
+          "slug": "shincheon-brunch-cafes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "신촌에서 인기 있는 브런치 카페를 추천합니다."
+        }
+      ],
+      "stems": [
+        "신촌 아기 동반 식당",
+        "신촌 외국인 인기 식당",
+        "신촌 1인 식사 장소",
+        "신촌 학생 저렴한 식당",
+        "신촌 직장인 퇴근길 식당",
+        "신촌 브런치"
+      ]
+    },
+    {
+      "l2_id": "09-nowon-food",
+      "l2_name": "노원 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 5,
+      "accepted_count": 5,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 5,
+        "stem_unique": 5,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 20.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            2
+          ],
+          [
+            "목록",
+            1
+          ],
+          [
+            "맛집",
+            1
+          ],
+          [
+            "장소",
+            1
+          ]
+        ],
+        "keywords": [
+          "노원 반려견 동반 가능 식당",
+          "노원 임산부 할인 식당 목록",
+          "노원 외국인 관광객 인기 맛집",
+          "노원 대학가 가성비 식당",
+          "노원 직장인 퇴근 후 식사 장소"
+        ],
+        "stems": [
+          "노원 반려견 동반 가능 식당",
+          "노원 임산부 할인 식당 목록",
+          "노원 외국인 관광객",
+          "노원 대학가 가성비 식당",
+          "노원 직장인 퇴근 후 식사 장소"
+        ]
+      },
+      "rejected": [
+        "노원 가족 모임 식당 추천 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "노원 반려견 동반 가능 식당",
+          "title_ko": "노원 반려견과 함께 식사하기 좋은 곳",
+          "slug": "no-won-pet-friendly-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노원에서 반려견과 함께 식사할 수 있는 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "노원 임산부 할인 식당 목록",
+          "title_ko": "노원 임산부를 위한 할인 식당 추천",
+          "slug": "no-won-pregnancy-discount-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노원에서 임산부를 위한 할인 혜택을 제공하는 식당 목록입니다."
+        },
+        {
+          "focus_keyword": "노원 외국인 관광객 인기 맛집",
+          "title_ko": "외국인이 좋아하는 노원 맛집 추천",
+          "slug": "no-won-foreigner-popular-food",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노원을 방문하는 외국인 관광객들이 좋아하는 인기 맛집을 소개합니다."
+        },
+        {
+          "focus_keyword": "노원 대학가 가성비 식당",
+          "title_ko": "노원 대학가 저렴한 식당 추천",
+          "slug": "no-won-university-area-affordable-food",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노원 대학가에서 저렴한 가격에 식사할 수 있는 식당 추천입니다."
+        },
+        {
+          "focus_keyword": "노원 직장인 퇴근 후 식사 장소",
+          "title_ko": "노원 직장인을 위한 퇴근 후 식사",
+          "slug": "no-won-work-life-balance-food",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노원에서 퇴근 후 식사하기 좋은 식당 정보를 제공합니다."
+        }
+      ],
+      "stems": [
+        "노원 반려견 동반 가능 식당",
+        "노원 임산부 할인 식당 목록",
+        "노원 외국인 관광객",
+        "노원 대학가 가성비 식당",
+        "노원 직장인 퇴근 후 식사 장소"
+      ]
+    },
+    {
+      "l2_id": "09-sangam-food",
+      "l2_name": "상암 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 4,
+      "accepted_count": 4,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 4,
+        "stem_unique": 4,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 25.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            2
+          ],
+          [
+            "식사",
+            1
+          ],
+          [
+            "카페",
+            1
+          ]
+        ],
+        "keywords": [
+          "상암 놀이방 식당",
+          "상암 외국인 식당",
+          "상암 혼자 식사",
+          "상암 수유 카페"
+        ],
+        "stems": [
+          "상암 놀이방 식당",
+          "상암 외국인 식당",
+          "상암 혼자 식사",
+          "상암 수유"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "상암 놀이방 식당",
+          "title_ko": "상암 아기 놀이방 있는 식당 추천",
+          "slug": "sang-am-agi-no-li-bang-sik-dang",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "상암에서 아기 놀이방이 있는 식당을 찾고 계신가요? 최고의 놀이방 시설을 갖춘 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "상암 외국인 식당",
+          "title_ko": "상암 외국인 방문 인기 식당",
+          "slug": "sang-am-oeg-in-sik-dang",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "상암에서 외국인들이 자주 방문하는 식당들을 소개합니다."
+        },
+        {
+          "focus_keyword": "상암 혼자 식사",
+          "title_ko": "상암 혼자 식사 가능한 식당 리스트",
+          "slug": "sang-am-hon-ja-sik-sa",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "상암에서 혼자 식사가 가능한 식당들을 추천합니다."
+        },
+        {
+          "focus_keyword": "상암 수유 카페",
+          "title_ko": "상암 수유 시설 있는 카페 찾기",
+          "slug": "sang-am-suyu-ka-pe",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "상암에서 수유 시설이 있는 카페를 찾고 계신가요? 최고의 수유 친화적 카페를 소개합니다."
+        }
+      ],
+      "stems": [
+        "상암 놀이방 식당",
+        "상암 외국인 식당",
+        "상암 혼자 식사",
+        "상암 수유"
+      ]
+    },
+    {
+      "l2_id": "09-sejong-food",
+      "l2_name": "세종 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            2
+          ],
+          [
+            "장소",
+            1
+          ]
+        ],
+        "keywords": [
+          "세종 아기 동반 식당",
+          "세종 외국인 방문 식당",
+          "세종 1인 식사 장소"
+        ],
+        "stems": [
+          "세종 아기 동반 식당",
+          "세종 외국인 방문 식당",
+          "세종 1인 식사 장소"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "세종 아기 동반 식당",
+          "title_ko": "세종 아기 동반 맛집 추천",
+          "slug": "sejong-baby-friendly-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "세종에서 아기와 함께 방문하기 좋은 맛집을 소개합니다."
+        },
+        {
+          "focus_keyword": "세종 외국인 방문 식당",
+          "title_ko": "세종 외국인 방문 맛집 가이드",
+          "slug": "sejong-restaurants-for-foreigners",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "세종에서 외국인 방문객을 위한 맛집을 추천합니다."
+        },
+        {
+          "focus_keyword": "세종 1인 식사 장소",
+          "title_ko": "세종 1인 맛집 추천",
+          "slug": "sejong-solo-dining-spots",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "세종에서 혼자 식사하기 좋은 맛집을 소개합니다."
+        }
+      ],
+      "stems": [
+        "세종 아기 동반 식당",
+        "세종 외국인 방문 식당",
+        "세종 1인 식사 장소"
+      ]
+    },
+    {
+      "l2_id": "09-songpa-food",
+      "l2_name": "송파 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            2
+          ],
+          [
+            "식사",
+            1
+          ]
+        ],
+        "keywords": [
+          "송파 아기 동반 가능한 식당",
+          "송파 외국인 관광객 식당",
+          "송파 헬스장 후 식사"
+        ],
+        "stems": [
+          "송파 아기 동반 가능한 식당",
+          "송파 외국인 관광객 식당",
+          "송파 헬스장 후 식사"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "송파 아기 동반 가능한 식당",
+          "title_ko": "송파 아기 동반 식당 추천 리스트",
+          "slug": "songpa-restaurant-with-baby",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "아기와 함께 외식하기 좋은 송파 지역의 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "송파 외국인 관광객 식당",
+          "title_ko": "외국인이 좋아하는 송파 맛집",
+          "slug": "songpa-restaurant-for-foreigner",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "송파에서 외국인 관광객이 많이 찾는 인기 식당들을 소개합니다."
+        },
+        {
+          "focus_keyword": "송파 헬스장 후 식사",
+          "title_ko": "운동 후 건강한 식사 가능한 송파 식당",
+          "slug": "songpa-post-workout-meal",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "운동 후 방문하기 좋은 송파 지역의 건강한 식당 정보를 제공합니다."
+        }
+      ],
+      "stems": [
+        "송파 아기 동반 가능한 식당",
+        "송파 외국인 관광객 식당",
+        "송파 헬스장 후 식사"
+      ]
+    },
+    {
+      "l2_id": "09-view-cafe",
+      "l2_name": "뷰 카페",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 33.3,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "카페",
+            1
+          ],
+          [
+            "찾기",
+            1
+          ],
+          [
+            "정보",
+            1
+          ]
+        ],
+        "keywords": [
+          "가성비 좋은 뷰 카페",
+          "조용한 뷰 카페 찾기",
+          "뷰 카페 주차장 정보"
+        ],
+        "stems": [
+          "가성비 좋은 뷰",
+          "조용한 뷰 카페 찾기",
+          "뷰 카페 주차장 정보"
+        ]
+      },
+      "rejected": [
+        "뷰 카페 순위 추천 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "가성비 좋은 뷰 카페",
+          "title_ko": "가성비 좋은 뷰 카페 추천",
+          "slug": "affordable-view-cafe",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "예산에 맞는 가성비 좋은 뷰 카페를 찾아보세요."
+        },
+        {
+          "focus_keyword": "조용한 뷰 카페 찾기",
+          "title_ko": "조용하고 분위좋은 뷰 카페",
+          "slug": "quiet-view-cafe",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "분위기 좋고 조용한 뷰 카페를 발견하세요."
+        },
+        {
+          "focus_keyword": "뷰 카페 주차장 정보",
+          "title_ko": "뷰 카페 주차장 있는 곳",
+          "slug": "view-cafe-parking-info",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "주차장이 있는 뷰 카페를 쉽게 찾아보세요."
+        }
+      ],
+      "stems": [
+        "가성비 좋은 뷰",
+        "조용한 뷰 카페 찾기",
+        "뷰 카페 주차장 정보"
+      ]
+    },
+    {
+      "l2_id": "09-waiting-food",
+      "l2_name": "웨이팅 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 66.7,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "전략",
+            1
+          ],
+          [
+            "리스트",
+            1
+          ],
+          [
+            "정보",
+            1
+          ]
+        ],
+        "keywords": [
+          "웨이팅 맛집 성공적인 방문 전략",
+          "웨이팅 맛집 추천 메뉴 리스트",
+          "야간 운영 웨이팅 식당 정보"
+        ],
+        "stems": [
+          "웨이팅 맛집 성공적인 방문",
+          "웨이팅 맛집 추천 메뉴",
+          "야간 운영 웨이팅 식당 정보"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "웨이팅 맛집 성공적인 방문 전략",
+          "title_ko": "웨이팅 맛집 방문 팁과 노하우",
+          "slug": "waiting-restaurant-visit-tips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "웨이팅 맛집 방문 시 유용한 팁과 전략을 제공합니다."
+        },
+        {
+          "focus_keyword": "웨이팅 맛집 추천 메뉴 리스트",
+          "title_ko": "웨이팅 맛집 인기 메뉴 추천",
+          "slug": "recommended-menus-for-waiting-restaurants",
+          "search_intent": "review",
+          "topic_angle": "tip",
+          "description": "웨이팅 맛집에서 인기 있는 메뉴를 추천합니다."
+        },
+        {
+          "focus_keyword": "야간 운영 웨이팅 식당 정보",
+          "title_ko": "야간 웨이팅 식당 리스트",
+          "slug": "nighttime-waiting-restaurants",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "야간에 운영하는 웨이팅 식당 정보를 제공합니다."
+        }
+      ],
+      "stems": [
+        "웨이팅 맛집 성공적인 방문",
+        "웨이팅 맛집 추천 메뉴",
+        "야간 운영 웨이팅 식당 정보"
+      ]
+    },
+    {
+      "l2_id": "09-hamburger-food",
+      "l2_name": "햄버거 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 50.0,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "추천",
+            1
+          ],
+          [
+            "아이디어",
+            1
+          ]
+        ],
+        "keywords": [
+          "대학생 햄버거 추천",
+          "홈파티 햄버거 아이디어"
+        ],
+        "stems": [
+          "대학생 햄버거",
+          "홈파티 햄버거 아이디어"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "대학생 햄버거 추천",
+          "title_ko": "대학생에게 딱! 저렴한 햄버거 맛집",
+          "slug": "dae-hag-saeng-ham-beo-geo-chom",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "대학생들을 위한 저렴한 햄버거 추천"
+        },
+        {
+          "focus_keyword": "홈파티 햄버거 아이디어",
+          "title_ko": "홈파티에 딱! 햄버거 메뉴 추천",
+          "slug": "hom-pa-ti-ham-beo-geo-me-nyu",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "홈파티를 위한 햄버거 아이디어 제공"
+        }
+      ],
+      "stems": [
+        "대학생 햄버거",
+        "홈파티 햄버거 아이디어"
+      ]
+    },
+    {
+      "l2_id": "09-jamsil-food",
+      "l2_name": "잠실 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            1
+          ],
+          [
+            "장소",
+            1
+          ]
+        ],
+        "keywords": [
+          "잠실 반려견 식당",
+          "잠실 모임 장소"
+        ],
+        "stems": [
+          "잠실 반려견 식당",
+          "잠실 모임 장소"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "잠실 반려견 식당",
+          "title_ko": "잠실 반려견 동반 식당 추천",
+          "slug": "jam-sil-pet-friendly-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "잠실 및 송파구 일대에서 반려견과 함께 식사가 가능한 식당 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "잠실 모임 장소",
+          "title_ko": "잠실 모임 장소 추천",
+          "slug": "jam-sil-meeting-place",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "잠실 및 송파구 일대의 모임이나 약속에 적합한 식당과 장소를 추천합니다."
+        }
+      ],
+      "stems": [
+        "잠실 반려견 식당",
+        "잠실 모임 장소"
+      ]
+    },
+    {
+      "l2_id": "09-pasta-food",
+      "l2_name": "파스타 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 50.0,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "추천",
+            1
+          ],
+          [
+            "서비스",
+            1
+          ]
+        ],
+        "keywords": [
+          "임신부 파스타 추천",
+          "파스타 배달 서비스"
+        ],
+        "stems": [
+          "임신부 파스타",
+          "파스타 배달 서비스"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "임신부 파스타 추천",
+          "title_ko": "임신부 파스타 식단 관리 팁",
+          "slug": "healthy-pasta-for-pregnant-women",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "건강한 임신부 파스타 식단 아이디어를 소개합니다."
+        },
+        {
+          "focus_keyword": "파스타 배달 서비스",
+          "title_ko": "파스타 포장 배달 가능한 곳",
+          "slug": "pasta-takeout-delivery",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "파스타 포장 배달 서비스를 제공하는 맛집을 알려드립니다."
+        }
+      ],
+      "stems": [
+        "임신부 파스타",
+        "파스타 배달 서비스"
+      ]
+    },
+    {
+      "l2_id": "09-pet-cafe",
+      "l2_name": "반려견 카페",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 50.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "종류",
+            1
+          ],
+          [
+            "위치",
+            1
+          ]
+        ],
+        "keywords": [
+          "강아지 케어 서비스 종류",
+          "반려견과 갈 수 있는 카페 위치"
+        ],
+        "stems": [
+          "강아지 케어 서비스 종류",
+          "반려견과 갈 수 있는"
+        ]
+      },
+      "rejected": [
+        "반려견 동반 카페 가격 (dup_existing)",
+        "반려견 놀이방 카페 안전 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "강아지 케어 서비스 종류",
+          "title_ko": "강아지 케어 서비스 종류 알아보기",
+          "slug": "dog-care-service-types",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "반려견을 위한 다양한 케어 서비스 종류를 소개합니다."
+        },
+        {
+          "focus_keyword": "반려견과 갈 수 있는 카페 위치",
+          "title_ko": "반려견과 갈 수 있는 카페 위치 찾기",
+          "slug": "pet-friendly-cafe-location",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "반려견과 함께 방문할 수 있는 카페의 위치 정보를 제공합니다."
+        }
+      ],
+      "stems": [
+        "강아지 케어 서비스 종류",
+        "반려견과 갈 수 있는"
+      ]
+    },
+    {
+      "l2_id": "09-bundang-food",
+      "l2_name": "분당 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            1
+          ]
+        ],
+        "keywords": [
+          "분당 반려견 동반 가능한 식당"
+        ],
+        "stems": [
+          "분당 반려견 동반 가능한 식당"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "분당 반려견 동반 가능한 식당",
+          "title_ko": "분당 반려견 동반 식당 추천",
+          "slug": "bun-dang-pet-friendly-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "분당 지역에서 반려견과 함께 식사가 가능한 식당 정보를 제공합니다."
+        }
+      ],
+      "stems": [
+        "분당 반려견 동반 가능한 식당"
+      ]
+    },
+    {
+      "l2_id": "09-chungbuk-food",
+      "l2_name": "충북 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "맛집",
+            1
+          ]
+        ],
+        "keywords": [
+          "충북 아기 놀이방 맛집"
+        ],
+        "stems": [
+          "충북 아기 놀이방"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "충북 아기 놀이방 맛집",
+          "title_ko": "충북 아기랑 놀기 좋은 맛집 추천",
+          "slug": "chungbuk-baby-playroom-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "충북에서 아기와 함께 놀기 좋은 놀이방이 있는 맛집 정보를 공유합니다."
+        }
+      ],
+      "stems": [
+        "충북 아기 놀이방"
+      ]
+    },
+    {
+      "l2_id": "09-hongdae-food",
+      "l2_name": "홍대 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "카페",
+            1
+          ]
+        ],
+        "keywords": [
+          "홍대 임산부 카페"
+        ],
+        "stems": [
+          "홍대 임산부"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "홍대 임산부 카페",
+          "title_ko": "홍대 임산부 갈만한 카페 추천",
+          "slug": "hongdae-cafe-for-pregnant-women",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "홍대 지역 임산부를 위한 편안한 카페 정보"
+        }
+      ],
+      "stems": [
+        "홍대 임산부"
+      ]
+    },
+    {
+      "l2_id": "09-yeonnam-food",
+      "l2_name": "연남 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "맛집",
+            1
+          ]
+        ],
+        "keywords": [
+          "연남 아기친화적 맛집"
+        ],
+        "stems": [
+          "연남 아기친화적"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "연남 아기친화적 맛집",
+          "title_ko": "연남 아기 동반 가족 외식 장소 추천",
+          "slug": "yeonnam-agi-dongban-majit",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "연남 지역에서 아이와 함께 외식하기 좋은 맛집과 카페를 소개합니다."
+        }
+      ],
+      "stems": [
+        "연남 아기친화적"
+      ]
+    },
+    {
+      "l2_id": "09-yeouido-food",
+      "l2_name": "여의도 맛집",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식당",
+            1
+          ]
+        ],
+        "keywords": [
+          "여의도 반려동물 식당"
+        ],
+        "stems": [
+          "여의도 반려동물 식당"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "여의도 반려동물 식당",
+          "title_ko": "여의도 반려동물 동반 가능한 식당 추천",
+          "slug": "yeongdeungdo-pet-friendly-restaurant",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여의도 지역에서 반려동물을 동반할 수 있는 식당 정보를 제공합니다."
+        }
+      ],
+      "stems": [
+        "여의도 반려동물 식당"
+      ]
+    },
+    {
+      "l2_id": "10-microwave-cooking",
+      "l2_name": "전자레인지 요리",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 14,
+      "accepted_count": 14,
+      "scout_calls": 4,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 14,
+        "stem_unique": 14,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 14.3,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "식사",
+            5
+          ],
+          [
+            "단축",
+            1
+          ],
+          [
+            "예방법",
+            1
+          ],
+          [
+            "사용법",
+            1
+          ],
+          [
+            "식사법",
+            1
+          ]
+        ],
+        "keywords": [
+          "전자레인지 요리 시간 단축",
+          "아기 전자레인지 식사",
+          "캠핑 전자레인지 식사",
+          "노인 영양 전자레인지 식사",
+          "건강 전자레인지 식사",
+          "기내 전자레인지 식사",
+          "전자레인지 요리 실수 예방법",
+          "전자레인지 안전 사용법",
+          "빠른 전자레인지 식사법",
+          "전자레인지 요리 재료 절약 팁",
+          "초보자를 위한 전자레인지 요리",
+          "전자레인지 요리 초대 손님",
+          "어린이 전자레인지 식사 아이디어",
+          "전자레인지 요리 음식물 낭비 줄이기"
+        ],
+        "stems": [
+          "전자레인지 요리 시간 단축",
+          "아기 전자레인지 식사",
+          "캠핑 전자레인지 식사",
+          "노인 영양 전자레인지 식사",
+          "건강 전자레인지 식사",
+          "기내 전자레인지 식사",
+          "전자레인지 요리 실수 예방법",
+          "전자레인지 안전",
+          "빠른 전자레인지 식사법",
+          "전자레인지 요리 재료 절약",
+          "초보자를 위한 전자레인지 요리",
+          "전자레인지 요리 초대 손님",
+          "어린이 전자레인지 식사 아이디어",
+          "전자레인지 요리 음식물 낭비 줄이기"
+        ]
+      },
+      "rejected": [
+        "전자레인지 요리 실수 피하기 (intent_angle_cap)",
+        "전자레인지 안전 수칙 (intent_angle_cap)",
+        "빠른 전자레인지 요리법 (intent_angle_cap)",
+        "전자레인지 요리 재료 절약법 (intent_angle_cap)",
+        "초보자 전자레인지 요리법 (intent_angle_cap)",
+        "전자레인지 요리 비교 분석 (intent_angle_cap)",
+        "손님 초대 전자레인지 요리 (intent_angle_cap)",
+        "전자레인지 맞춤 식단 요리 (intent_angle_cap)",
+        "어린이 전자레인지 식사 (intent_angle_cap)",
+        "전자레인지 요리 낭비 줄이기 (intent_angle_cap)",
+        "전자레인지 요리 초대 손님용 (intent_angle_cap)",
+        "전자레인지 요리 맞춤 식단 관리 (intent_angle_cap)",
+        "어린이를 위한 전자레인지 식사 (intent_angle_cap)",
+        "전자레인지 요리 낭비 줄이는 팁 (intent_angle_cap)",
+        "전자레인지 요리 비교 분석 (dup_existing)",
+        "전자레인지 요리 식단 관리 (stem_dup)",
+        "전자레인지 요리 비교 분석 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "전자레인지 요리 시간 단축",
+          "title_ko": "전자레인지 요리 시간 줄이는 방법",
+          "slug": "reduce-microwave-cooking-time",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전자레인지 요리 시간을 줄이는 팁과 노하우를 공유합니다."
+        },
+        {
+          "focus_keyword": "아기 전자레인지 식사",
+          "title_ko": "아기 전자레인지 요리 만들기",
+          "slug": "microwave-baby-food",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "아기들을 위한 전자레인지 요리를 소개합니다."
+        },
+        {
+          "focus_keyword": "캠핑 전자레인지 식사",
+          "title_ko": "캠핑용 전자레인지 요리 추천",
+          "slug": "microwave-camping-food",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑에서 활용할 수 있는 전자레인지 요리를 제안합니다."
+        },
+        {
+          "focus_keyword": "노인 영양 전자레인지 식사",
+          "title_ko": "노인 영양을 위한 전자레인지 요리",
+          "slug": "microwave-senior-nutrition",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노인의 영양을 위한 전자레인지 요리법을 공유합니다."
+        },
+        {
+          "focus_keyword": "건강 전자레인지 식사",
+          "title_ko": "전자레인지로 만드는 건강식",
+          "slug": "healthy-microwave-meals",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "건강을 위한 전자레인지 요리법을 소개합니다."
+        },
+        {
+          "focus_keyword": "기내 전자레인지 식사",
+          "title_ko": "기내에서 먹을 전자레인지 요리",
+          "slug": "microwave-in-flight-food",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "비행기 안에서 먹을 수 있는 전자레인지 요리를 제안합니다."
+        },
+        {
+          "focus_keyword": "전자레인지 요리 실수 예방법",
+          "title_ko": "전자레인지 요리 실수 방지 팁 모음",
+          "slug": "electronic-oven-mistake-prevention",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전자레인지 요리 중 발생할 수 있는 실수를 예방하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "전자레인지 안전 사용법",
+          "title_ko": "전자레인지 요리 안전 수칙 알아보기",
+          "slug": "electronic-oven-safety-guidelines",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전자레인지를 안전하게 사용하는 방법에 대해 알아보세요."
+        },
+        {
+          "focus_keyword": "빠른 전자레인지 식사법",
+          "title_ko": "빠른 전자레인지 요리 레시피 모음",
+          "slug": "quick-electronic-oven-recipes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "빠르게 전자레인지 요리를 만드는 방법을 소개합니다."
+        },
+        {
+          "focus_keyword": "전자레인지 요리 재료 절약 팁",
+          "title_ko": "전자레인지 요리 재료 절약하는 법",
+          "slug": "electronic-oven-ingredient-saving-tips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전자레인지 요리 재료비를 절약하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "초보자를 위한 전자레인지 요리",
+          "title_ko": "초보자도 쉽게 하는 전자레인지 요리",
+          "slug": "electronic-oven-cooking-for-beginners",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전자레인지 요리를 처음 시작하는 분들을 위한 가이드입니다."
+        },
+        {
+          "focus_keyword": "전자레인지 요리 초대 손님",
+          "title_ko": "손님 초대 전자레인지 요리 - 간편하고 맛있는",
+          "slug": "electronic-oven-recipe-for-guests",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "간편한 전자레인지 요리법으로 초대 손님 맞이"
+        },
+        {
+          "focus_keyword": "어린이 전자레인지 식사 아이디어",
+          "title_ko": "어린이를 위한 전자레인지 요리 - 간편하고 건강한",
+          "slug": "electronic-oven-recipe-for-kids",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "어린이를 위한 간편한 전자레인지 요리법"
+        },
+        {
+          "focus_keyword": "전자레인지 요리 음식물 낭비 줄이기",
+          "title_ko": "전자레인지 요리 낭비 줄이기 - 효율적인 요리법",
+          "slug": "reduce-food-waste-with-microwave",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전자레인지 요리로 음식물 낭비 줄이기"
+        }
+      ],
+      "stems": [
+        "전자레인지 요리 시간 단축",
+        "아기 전자레인지 식사",
+        "캠핑 전자레인지 식사",
+        "노인 영양 전자레인지 식사",
+        "건강 전자레인지 식사",
+        "기내 전자레인지 식사",
+        "전자레인지 요리 실수 예방법",
+        "전자레인지 안전",
+        "빠른 전자레인지 식사법",
+        "전자레인지 요리 재료 절약",
+        "초보자를 위한 전자레인지 요리",
+        "전자레인지 요리 초대 손님",
+        "어린이 전자레인지 식사 아이디어",
+        "전자레인지 요리 음식물 낭비 줄이기"
+      ]
+    },
+    {
+      "l2_id": "10-high-protein-diet",
+      "l2_name": "고단백 식단",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 10,
+      "accepted_count": 10,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 10,
+        "stem_unique": 10,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 40.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "음식",
+            2
+          ],
+          [
+            "짜기",
+            1
+          ],
+          [
+            "식사",
+            1
+          ],
+          [
+            "실패",
+            1
+          ],
+          [
+            "밸런스",
+            1
+          ]
+        ],
+        "keywords": [
+          "고단백 식단 계획 짜기",
+          "노인 고단백 식사",
+          "임산부 고단백 음식",
+          "고단백 식단 실패",
+          "캠핑 고단백 음식",
+          "고단백 식단 영양 밸런스",
+          "고단백 식단 영양 관리",
+          "어린이 고단백 간식",
+          "고단백 식재료 쇼핑 리스트",
+          "고단백 식단 종류"
+        ],
+        "stems": [
+          "고단백 식단 계획 짜기",
+          "노인 고단백 식사",
+          "임산부 고단백",
+          "고단백 식단 실패",
+          "캠핑 고단백",
+          "고단백 식단 영양 밸런스",
+          "고단백 식단 영양",
+          "어린이 고단백 간식",
+          "고단백 식재료 쇼핑",
+          "고단백 식단 종류"
+        ]
+      },
+      "rejected": [
+        "어린이 고단백 간식 (intent_angle_cap)",
+        "고단백 식재료 쇼핑 (intent_angle_cap)",
+        "고단백 식단 종류 (intent_angle_cap)",
+        "수험생 고단백 식사 (intent_angle_cap)",
+        "고단백 식단 부작용 (intent_angle_cap)",
+        "고단백 식단 운동 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "고단백 식단 계획 짜기",
+          "title_ko": "고단백 식단 계획 세우는 방법",
+          "slug": "go-danbaeg-sikdan-gyehoeb",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "효과적인 고단백 식단 계획을 세우는 팁을 공유합니다."
+        },
+        {
+          "focus_keyword": "노인 고단백 식사",
+          "title_ko": "노인 고단백 식사 준비하기",
+          "slug": "noin-go-danbaeg-siksa",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노인을 위한 고단백 식사 준비 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "임산부 고단백 음식",
+          "title_ko": "임산부를 위한 고단백 식품 추천",
+          "slug": "imsanbu-go-danbaeg-eumsik",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "임산부를 위한 고단백 식품을 추천합니다."
+        },
+        {
+          "focus_keyword": "고단백 식단 실패",
+          "title_ko": "고단백 식단 실패 사례와 원인",
+          "slug": "go-danbaeg-sikdan-silpae",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "고단백 식단 실패 사례와 그 원인을 분석합니다."
+        },
+        {
+          "focus_keyword": "캠핑 고단백 음식",
+          "title_ko": "캠핑을 위한 고단백 간편식 추천",
+          "slug": "kaemping-go-danbaeg-eumsik",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑을 위한 고단백 간편식을 추천합니다."
+        },
+        {
+          "focus_keyword": "고단백 식단 영양 밸런스",
+          "title_ko": "고단백 식단의 영양소 밸런스 맞추기",
+          "slug": "go-danbaeg-sikdan-yang-yang-bellenseu",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "고단백 식단의 영양소 밸런스를 맞추는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "고단백 식단 영양 관리",
+          "title_ko": "고단백 식단 영양소 밸런스 지키는 법",
+          "slug": "high-protein-diet-nutrient-balance",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "건강한 고단백 식단을 위한 영양소 밸런스 팁"
+        },
+        {
+          "focus_keyword": "어린이 고단백 간식",
+          "title_ko": "아이를 위한 고단백 간식 만들기",
+          "slug": "high-protein-snacks-for-kids",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "어린이를 위한 영양가 있는 고단백 간식 레시피"
+        },
+        {
+          "focus_keyword": "고단백 식재료 쇼핑 리스트",
+          "title_ko": "고단백 식단 식재료 쇼핑 가이드",
+          "slug": "high-protein-ingredients-shopping-list",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "고단백 식단을 위한 필수 식재료 쇼핑 리스트"
+        },
+        {
+          "focus_keyword": "고단백 식단 종류",
+          "title_ko": "다양한 고단백 식단 종류 비교하기",
+          "slug": "types-of-high-protein-diets",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "나에게 맞는 고단백 식단 종류 찾기"
+        }
+      ],
+      "stems": [
+        "고단백 식단 계획 짜기",
+        "노인 고단백 식사",
+        "임산부 고단백",
+        "고단백 식단 실패",
+        "캠핑 고단백",
+        "고단백 식단 영양 밸런스",
+        "고단백 식단 영양",
+        "어린이 고단백 간식",
+        "고단백 식재료 쇼핑",
+        "고단백 식단 종류"
+      ]
+    },
+    {
+      "l2_id": "10-rice-recipe",
+      "l2_name": "밥 요리 레시피",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 6,
+      "accepted_count": 6,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 6,
+        "stem_unique": 6,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 16.7,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "요리",
+            5
+          ],
+          [
+            "방법",
+            1
+          ]
+        ],
+        "keywords": [
+          "어린이를 위한 밥 요리",
+          "혼자 먹는 밥 요리",
+          "야외 활동 밥 요리",
+          "건강한 밥 요리 방법",
+          "냉동밥을 활용한 요리",
+          "백종원 스타일 밥 요리"
+        ],
+        "stems": [
+          "어린이를 위한 밥 요리",
+          "혼자 먹는 밥 요리",
+          "야외 활동 밥 요리",
+          "건강한 밥 요리",
+          "냉동밥을 활용한 요리",
+          "백종원 스타일 밥 요리"
+        ]
+      },
+      "rejected": [
+        "세계 각국의 밥 요리 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "어린이를 위한 밥 요리",
+          "title_ko": "어린이 밥 요리 레시피 모음",
+          "slug": "children-meal-recipes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "어린이를 위한 건강하고 맛있는 밥 요리 레시피를 소개합니다."
+        },
+        {
+          "focus_keyword": "혼자 먹는 밥 요리",
+          "title_ko": "일인분 밥 요리 레시피 베스트",
+          "slug": "single-serving-meal-recipes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "혼자 사는 사람들을 위한 간편한 일인분 밥 요리 레시피를 제공합니다."
+        },
+        {
+          "focus_keyword": "야외 활동 밥 요리",
+          "title_ko": "야외에서 즐기는 밥 요리 아이디어",
+          "slug": "outdoor-meal-recipes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "야외 활동 시 간편하게 즐길 수 있는 밥 요리 레시피를 소개합니다."
+        },
+        {
+          "focus_keyword": "건강한 밥 요리 방법",
+          "title_ko": "건강 밥 요리 레시피 및 팁",
+          "slug": "healthy-meal-recipes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "건강한 식생활을 위한 밥 요리 레시피와 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "냉동밥을 활용한 요리",
+          "title_ko": "냉동밥 요리 레시피 모음",
+          "slug": "frozen-rice-recipes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "냉동밥을 활용한 다양한 밥 요리 레시피를 소개합니다."
+        },
+        {
+          "focus_keyword": "백종원 스타일 밥 요리",
+          "title_ko": "백종원 밥 요리 레시피 따라하기",
+          "slug": "baek-jong-won-meal-recipes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "유명한 요리사 백종원의 밥 요리 레시피를 소개합니다."
+        }
+      ],
+      "stems": [
+        "어린이를 위한 밥 요리",
+        "혼자 먹는 밥 요리",
+        "야외 활동 밥 요리",
+        "건강한 밥 요리",
+        "냉동밥을 활용한 요리",
+        "백종원 스타일 밥 요리"
+      ]
+    },
+    {
+      "l2_id": "10-air-fryer-recipes",
+      "l2_name": "에어프라이어 레시피",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "요리법",
+            2
+          ],
+          [
+            "구이",
+            1
+          ]
+        ],
+        "keywords": [
+          "에어프라이어 채소 구이",
+          "에어프라이어 해산물 요리법",
+          "에어프라이어 튀김 요리법"
+        ],
+        "stems": [
+          "에어프라이어 채소 구이",
+          "에어프라이어 해산물 요리법",
+          "에어프라이어 튀김 요리법"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "에어프라이어 채소 구이",
+          "title_ko": "에어프라이어로 만드는 건강한 채소 구이 레시피",
+          "slug": "air-fryer-vegetable-grill",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "에어프라이어를 활용해 간편하게 채소를 구워 먹는 법을 소개합니다."
+        },
+        {
+          "focus_keyword": "에어프라이어 해산물 요리법",
+          "title_ko": "에어프라이어로 만드는 쉬운 해산물 요리 레시피",
+          "slug": "air-fryer-seafood-recipe",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "에어프라이어를 활용해 해산물을 맛있게 요리하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "에어프라이어 튀김 요리법",
+          "title_ko": "에어프라이어로 만드는 건강한 튀김 요리 레시피",
+          "slug": "air-fryer-fried-food-recipe",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "에어프라이어를 활용해 기름 없이 튀김 요리를 만드는 법을 소개합니다."
+        }
+      ],
+      "stems": [
+        "에어프라이어 채소 구이",
+        "에어프라이어 해산물 요리법",
+        "에어프라이어 튀김 요리법"
+      ]
+    },
+    {
+      "l2_id": "10-japanese-recipes",
+      "l2_name": "일식 레시피",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "종류",
+            1
+          ]
+        ],
+        "keywords": [
+          "일식 요리 도구 종류"
+        ],
+        "stems": [
+          "일식 요리 도구 종류"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "일식 요리 도구 종류",
+          "title_ko": "일본 요리 필수 도구 종류와 선택 가이드",
+          "slug": "japanese-cooking-tools",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "일본 요리를 위한 필수 도구와 선택 팁을 제공합니다."
+        }
+      ],
+      "stems": [
+        "일식 요리 도구 종류"
+      ]
+    },
+    {
+      "l2_id": "10-steak-recipe",
+      "l2_name": "스테이크 레시피",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "추천",
+            1
+          ]
+        ],
+        "keywords": [
+          "스테이크 요리 도구 추천"
+        ],
+        "stems": [
+          "스테이크 요리 도구"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "스테이크 요리 도구 추천",
+          "title_ko": "스테이크 요리 도구 고르는 법",
+          "slug": "steak-cooking-tool-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "스테이크를 요리할 때 필요한 도구와 선택 팁"
+        }
+      ],
+      "stems": [
+        "스테이크 요리 도구"
+      ]
+    },
+    {
+      "l2_id": "11-golf-trip",
+      "l2_name": "골프 여행",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 12,
+      "accepted_count": 12,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 12,
+        "stem_unique": 12,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 33.3,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "후기",
+            1
+          ],
+          [
+            "부대시설",
+            1
+          ],
+          [
+            "계산",
+            1
+          ],
+          [
+            "팁",
+            1
+          ],
+          [
+            "정보",
+            1
+          ]
+        ],
+        "keywords": [
+          "골프 여행 코스 후기",
+          "골프장 부대시설",
+          "골프 여행 비용 계산",
+          "초보자 골프 여행 팁",
+          "골프 여행 날씨 정보",
+          "골프장 예약하는 법",
+          "골프 여행 언어 가이드",
+          "골프장 식당 평가",
+          "골프 거리 측정",
+          "골프 여행 짐싸기",
+          "골프 여행 주의사항",
+          "골프장 편의시설"
+        ],
+        "stems": [
+          "골프 여행 코스",
+          "골프장 부대시설",
+          "골프 여행 비용 계산",
+          "초보자 골프",
+          "골프 여행 날씨 정보",
+          "골프장 예약하는",
+          "골프 여행 언어",
+          "골프장 식당 평가",
+          "골프 거리 측정",
+          "골프 여행 짐싸기",
+          "골프 여행 주의사항",
+          "골프장 편의시설"
+        ]
+      },
+      "rejected": [
+        "골프장 근처 관광 (intent_angle_cap)",
+        "골프 여행 실패 사례 (intent_angle_cap)",
+        "골프장 그늘막 정보 (intent_angle_cap)",
+        "골프 티타임 정보 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "골프 여행 코스 후기",
+          "title_ko": "골프 여행 코스 리뷰 및 후기",
+          "slug": "golf-travel-course-review",
+          "search_intent": "review",
+          "topic_angle": "tip",
+          "description": "국내외 골프 여행 코스 리뷰와 후기를 제공합니다."
+        },
+        {
+          "focus_keyword": "골프장 부대시설",
+          "title_ko": "골프장 부대시설 안내",
+          "slug": "golf-course-amenities",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "골프장 내외 부대시설 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "골프 여행 비용 계산",
+          "title_ko": "골프 여행 예산 계획 세우기",
+          "slug": "golf-travel-budget-planning",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "골프 여행 예산 계획을 도와드립니다."
+        },
+        {
+          "focus_keyword": "초보자 골프 여행 팁",
+          "title_ko": "골프 초보자를 위한 여행 가이드",
+          "slug": "golf-travel-guide-for-beginners",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "골프 초보자를 위한 여행 가이드를 제공합니다."
+        },
+        {
+          "focus_keyword": "골프 여행 날씨 정보",
+          "title_ko": "골프 여행 날씨 확인하기",
+          "slug": "golf-travel-weather",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "골프 여행 날씨 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "골프장 예약하는 법",
+          "title_ko": "골프장 예약 방법 안내",
+          "slug": "how-to-book-golf-course",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "골프장 예약 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "골프 여행 언어 가이드",
+          "title_ko": "골프 여행 언어 가이드북",
+          "slug": "golf-travel-language-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "골프 여행 언어 가이드를 제공합니다."
+        },
+        {
+          "focus_keyword": "골프장 식당 평가",
+          "title_ko": "골프장 식당 리뷰 및 평가",
+          "slug": "golf-course-restaurant-review",
+          "search_intent": "review",
+          "topic_angle": "tip",
+          "description": "골프장 식당 리뷰와 평가를 제공합니다."
+        },
+        {
+          "focus_keyword": "골프 거리 측정",
+          "title_ko": "골프 여행 거리 계산하기",
+          "slug": "golf-travel-distance-calculation",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "골프 여행 거리 계산을 도와드립니다."
+        },
+        {
+          "focus_keyword": "골프 여행 짐싸기",
+          "title_ko": "골프 여행 짐 꾸리기 가이드",
+          "slug": "golf-travel-packing-guide",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "골프 여행 짐 꾸리기 가이드를 제공합니다."
+        },
+        {
+          "focus_keyword": "골프 여행 주의사항",
+          "title_ko": "골프 여행 실수 사례와 주의사항",
+          "slug": "golf-travel-mistake-case",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "골프 여행에서 흔히 발생하는 실수 사례와 주의사항을 알아보세요."
+        },
+        {
+          "focus_keyword": "골프장 편의시설",
+          "title_ko": "골프장 그늘막과 편의시설 정보",
+          "slug": "golf-course-amenities",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "골프장 그늘막과 다양한 편의시설 정보를 확인하세요."
+        }
+      ],
+      "stems": [
+        "골프 여행 코스",
+        "골프장 부대시설",
+        "골프 여행 비용 계산",
+        "초보자 골프",
+        "골프 여행 날씨 정보",
+        "골프장 예약하는",
+        "골프 여행 언어",
+        "골프장 식당 평가",
+        "골프 거리 측정",
+        "골프 여행 짐싸기",
+        "골프 여행 주의사항",
+        "골프장 편의시설"
+      ]
+    },
+    {
+      "l2_id": "11-esim-guide",
+      "l2_name": "eSIM 가이드",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 11,
+      "accepted_count": 11,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 11,
+        "stem_unique": 11,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 18.2,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "절차",
+            1
+          ],
+          [
+            "비교분석",
+            1
+          ],
+          [
+            "체크",
+            1
+          ],
+          [
+            "해결법",
+            1
+          ],
+          [
+            "추천",
+            1
+          ]
+        ],
+        "keywords": [
+          "eSIM 카드 개통 절차",
+          "여행 esim 요금제 비교분석",
+          "해외여행 esim 준비물 체크",
+          "eSIM 설정 오류 해결법",
+          "노인 여행자 esim 추천",
+          "캠핑 여행 esim 추천 옵션",
+          "기내 esim 사용 방법",
+          "아기 해외여행 esim 설정",
+          "esim vs 심카드 차이점",
+          "여행 보험과 esim 관계",
+          "esim 데이터 초과 대처"
+        ],
+        "stems": [
+          "eSIM 카드 개통 절차",
+          "여행 esim 요금제 비교분석",
+          "해외여행 esim 준비물 체크",
+          "eSIM 설정 오류 해결법",
+          "노인 여행자 esim",
+          "캠핑 여행 esim 추천 옵션",
+          "기내 esim 사용",
+          "아기 해외여행 esim 설정",
+          "esim vs 심카드 차이점",
+          "여행 보험과 esim 관계",
+          "esim 데이터 초과 대처"
+        ]
+      },
+      "rejected": [
+        "eSIM 구매 시 주의 사항 (intent_angle_cap)",
+        "eSIM vs 심카드 차이점 (intent_angle_cap)",
+        "여행 보험과 esim 관계 (intent_angle_cap)",
+        "eSIM 데이터 초과 대처법 (intent_angle_cap)",
+        "eSIM 카드 유효 기간 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "eSIM 카드 개통 절차",
+          "title_ko": "해외여행 eSIM 카드 개통 방법",
+          "slug": "esim-card-opening-method",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "해외여행을 위한 eSIM 카드 개통 절차를 상세히 설명합니다."
+        },
+        {
+          "focus_keyword": "여행 esim 요금제 비교분석",
+          "title_ko": "여행 esim 요금제 비교 가이드",
+          "slug": "travel-esim-rate-plan-comparison",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "다양한 여행 esim 요금제를 비교 분석하여 제공합니다."
+        },
+        {
+          "focus_keyword": "해외여행 esim 준비물 체크",
+          "title_ko": "해외여행 esim 준비물 가이드",
+          "slug": "overseas-travel-esim-preparation",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "해외여행을 위한 esim 준비물을 상세히 안내합니다."
+        },
+        {
+          "focus_keyword": "eSIM 설정 오류 해결법",
+          "title_ko": "eSIM 설정 오류 해결 가이드",
+          "slug": "esim-setting-error-solution",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "eSIM 설정 오류를 해결하는 방법을 제공합니다."
+        },
+        {
+          "focus_keyword": "노인 여행자 esim 추천",
+          "title_ko": "노인 여행자를 위한 esim 가이드",
+          "slug": "esim-for-senior-travelers",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노인 여행자를 위한 esim 추천 및 가이드를 제공합니다."
+        },
+        {
+          "focus_keyword": "캠핑 여행 esim 추천 옵션",
+          "title_ko": "캠핑 여행 esim 추천 가이드",
+          "slug": "camping-travel-esim-recommendation",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑 여행을 위한 esim 추천 옵션을 제공합니다."
+        },
+        {
+          "focus_keyword": "기내 esim 사용 방법",
+          "title_ko": "기내 esim 사용법 가이드",
+          "slug": "in-flight-esim-usage",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "기내에서 esim을 사용하는 방법을 설명합니다."
+        },
+        {
+          "focus_keyword": "아기 해외여행 esim 설정",
+          "title_ko": "아기 해외여행 esim 설정 가이드",
+          "slug": "baby-overseas-travel-esim-setup",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "아기 해외여행을 위한 esim 설정 방법을 설명합니다."
+        },
+        {
+          "focus_keyword": "esim vs 심카드 차이점",
+          "title_ko": "eSIM vs 심카드 차이점 완벽 정리",
+          "slug": "esim-vs-sim-card-difference",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "eSIM과 심카드의 차이점을 알아보고 해외여행에 적합한 선택을 하세요."
+        },
+        {
+          "focus_keyword": "여행 보험과 esim 관계",
+          "title_ko": "여행 보험과 eSIM 관계 알아보기",
+          "slug": "travel-insurance-esim-relationship",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여행 보험과 eSIM의 관계를 이해하고 안전하게 해외여행을 즐기세요."
+        },
+        {
+          "focus_keyword": "esim 데이터 초과 대처",
+          "title_ko": "eSIM 데이터 초과 대처 방법",
+          "slug": "esim-data-exceed-solution",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "eSIM 데이터 초과 시 대처 방법을 알아보고 추가 비용을 절약하세요."
+        }
+      ],
+      "stems": [
+        "eSIM 카드 개통 절차",
+        "여행 esim 요금제 비교분석",
+        "해외여행 esim 준비물 체크",
+        "eSIM 설정 오류 해결법",
+        "노인 여행자 esim",
+        "캠핑 여행 esim 추천 옵션",
+        "기내 esim 사용",
+        "아기 해외여행 esim 설정",
+        "esim vs 심카드 차이점",
+        "여행 보험과 esim 관계",
+        "esim 데이터 초과 대처"
+      ]
+    },
+    {
+      "l2_id": "11-passport-issuance",
+      "l2_name": "여권 발급",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 8,
+      "accepted_count": 8,
+      "scout_calls": 4,
+      "gemini_calls": 2,
+      "metrics": {
+        "count": 8,
+        "stem_unique": 8,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 12.5,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "주의사항",
+            1
+          ],
+          [
+            "준비",
+            1
+          ],
+          [
+            "조회",
+            1
+          ],
+          [
+            "단축",
+            1
+          ],
+          [
+            "규격",
+            1
+          ]
+        ],
+        "keywords": [
+          "여권 발급 주의사항",
+          "여권 발급 서류 준비",
+          "여권 발급 비용 조회",
+          "여권 발급 기간 단축",
+          "여권 발급 사진 규격",
+          "여권 발급 신청 방법",
+          "여권 발급 주의 사항",
+          "여권 발급 취소 절차"
+        ],
+        "stems": [
+          "여권 발급 주의사항",
+          "여권 발급 서류 준비",
+          "여권 발급 비용 조회",
+          "여권 발급 기간 단축",
+          "여권 발급 사진 규격",
+          "여권 발급",
+          "여권 발급 주의 사항",
+          "여권 발급 취소 절차"
+        ]
+      },
+      "rejected": [
+        "여권 발급 재발급 신청 (intent_angle_cap)",
+        "여권 발급 대리인 신청 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "여권 발급 주의사항",
+          "title_ko": "여권 발급 시 알아야 할 주의사항",
+          "slug": "passport-issuance-precautions",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여권 발급 신청 시 주의해야 할 사항들을 안내합니다."
+        },
+        {
+          "focus_keyword": "여권 발급 서류 준비",
+          "title_ko": "여권 발급 서류 준비물 완벽 가이드",
+          "slug": "passport-issuance-documents",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여권 발급에 필요한 서류와 준비물을 소개합니다."
+        },
+        {
+          "focus_keyword": "여권 발급 비용 조회",
+          "title_ko": "여권 발급 비용 및 수수료 안내",
+          "slug": "passport-issuance-fee",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여권 발급 비용과 수수료에 대해 알려드립니다."
+        },
+        {
+          "focus_keyword": "여권 발급 기간 단축",
+          "title_ko": "여권 발급 기간 단축 방법과 소요 시간",
+          "slug": "passport-issuance-period",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여권 발급 기간을 단축하는 방법과 소요 시간을 안내합니다."
+        },
+        {
+          "focus_keyword": "여권 발급 사진 규격",
+          "title_ko": "여권 발급 사진 규격과 사이즈 안내",
+          "slug": "passport-issuance-photo",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여권 발급을 위한 사진 규격과 사이즈를 알려드립니다."
+        },
+        {
+          "focus_keyword": "여권 발급 신청 방법",
+          "title_ko": "여권 발급 신청 방법과 절차 안내",
+          "slug": "passport-issuance-application",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "여권 발급 신청 방법과 절차를 소개합니다."
+        },
+        {
+          "focus_keyword": "여권 발급 주의 사항",
+          "title_ko": "여권 발급 주의 사항과 유의점 안내",
+          "slug": "passport-issuance-warning",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여권 발급 시 주의 사항과 유의점을 알려드립니다."
+        },
+        {
+          "focus_keyword": "여권 발급 취소 절차",
+          "title_ko": "여권 발급 취소 절차와 방법 안내",
+          "slug": "passport-issuance-cancel",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여권 발급 취소 절차와 방법을 소개합니다."
+        }
+      ],
+      "stems": [
+        "여권 발급 주의사항",
+        "여권 발급 서류 준비",
+        "여권 발급 비용 조회",
+        "여권 발급 기간 단축",
+        "여권 발급 사진 규격",
+        "여권 발급",
+        "여권 발급 주의 사항",
+        "여권 발급 취소 절차"
+      ]
+    },
+    {
+      "l2_id": "11-yeosu-trip",
+      "l2_name": "여수 여행",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 7,
+      "accepted_count": 7,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 7,
+        "stem_unique": 7,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 42.9,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "지도",
+            1
+          ],
+          [
+            "예산",
+            1
+          ],
+          [
+            "정보",
+            1
+          ],
+          [
+            "예약",
+            1
+          ],
+          [
+            "음식",
+            1
+          ]
+        ],
+        "keywords": [
+          "여수 관광지 지도",
+          "여수 여행 예산",
+          "여수 축제 정보",
+          "여수 숙소 예약",
+          "여수 현지 음식",
+          "여수 바다 수영",
+          "여수 교통 가이드"
+        ],
+        "stems": [
+          "여수 관광지 지도",
+          "여수 여행 예산",
+          "여수 축제 정보",
+          "여수 숙소",
+          "여수 현지",
+          "여수 바다 수영",
+          "여수 교통"
+        ]
+      },
+      "rejected": [
+        "여수 여행 안전 (dup_existing)",
+        "여수 교통 정보 (dup_existing)",
+        "여수 여행 사진 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "여수 관광지 지도",
+          "title_ko": "여수 관광지 지도 보기 - 여수 여행 가이드",
+          "slug": "yeosu-tourism-map",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여수 관광지 지도를 통해 주요 관광지를 한눈에 확인하세요."
+        },
+        {
+          "focus_keyword": "여수 여행 예산",
+          "title_ko": "여수 여행 예산 계획하기 - 비용 절약 팁",
+          "slug": "yeosu-travel-budget",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "여수 여행 예산을 효율적으로 계획하는 방법을 알아보세요."
+        },
+        {
+          "focus_keyword": "여수 축제 정보",
+          "title_ko": "여수 가볼만한 축제 - 축제 일정 및 정보",
+          "slug": "yeosu-festival-info",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여수에서 열리는 다양한 축제 정보를 확인하세요."
+        },
+        {
+          "focus_keyword": "여수 숙소 예약",
+          "title_ko": "여수 숙소 예약 방법 - 저렴한 숙소 찾기",
+          "slug": "yeosu-accommodation-booking",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "여수 숙소를 쉽게 예약하는 방법을 알아보세요."
+        },
+        {
+          "focus_keyword": "여수 현지 음식",
+          "title_ko": "여수 현지 음식 추천 - 맛집 및 메뉴 정보",
+          "slug": "yeosu-local-food",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여수 현지인 추천 음식과 맛집을 확인하세요."
+        },
+        {
+          "focus_keyword": "여수 바다 수영",
+          "title_ko": "여수 바다 수영 팁 - 안전하고 즐거운 수영",
+          "slug": "yeosu-beach-swimming-tips",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "여수 바다에서 안전하고 즐거운 수영을 위한 팁을 확인하세요."
+        },
+        {
+          "focus_keyword": "여수 교통 가이드",
+          "title_ko": "여수 교통 정보 총정리: 버스, 택시, 자전거 이용 팁",
+          "slug": "yeosu-traffic-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여수 여행을 위한 교통 정보와 이동 팁을 제공합니다."
+        }
+      ],
+      "stems": [
+        "여수 관광지 지도",
+        "여수 여행 예산",
+        "여수 축제 정보",
+        "여수 숙소",
+        "여수 현지",
+        "여수 바다 수영",
+        "여수 교통"
+      ]
+    },
+    {
+      "l2_id": "11-airport-guide",
+      "l2_name": "공항 이용법",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 6,
+      "accepted_count": 6,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 6,
+        "stem_unique": 6,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 33.3,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "안내",
+            1
+          ],
+          [
+            "팁",
+            1
+          ],
+          [
+            "서비스",
+            1
+          ],
+          [
+            "청구",
+            1
+          ],
+          [
+            "신고",
+            1
+          ]
+        ],
+        "keywords": [
+          "해외여행 출국 절차 안내",
+          "공항 보안 검색 팁",
+          "장애인 공항 서비스",
+          "여행자 보험 청구",
+          "긴급 상황 공항 신고",
+          "공항 쇼핑 할인"
+        ],
+        "stems": [
+          "해외여행 출국 절차",
+          "공항 보안 검색",
+          "장애인 공항 서비스",
+          "여행자 보험 청구",
+          "긴급 상황 공항 신고",
+          "공항 쇼핑 할인"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "해외여행 출국 절차 안내",
+          "title_ko": "해외여행 공항 출국 절차 완벽 가이드",
+          "slug": "outbound-travel-procedure",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "해외여행 시 공항 출국 절차를 쉽고 빠르게 진행하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "공항 보안 검색 팁",
+          "title_ko": "공항 보안 검색대 통과하는 법",
+          "slug": "airport-security-check",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "공항 보안 검색대를 빠르고 안전하게 통과하는 노하우를 공유합니다."
+        },
+        {
+          "focus_keyword": "장애인 공항 서비스",
+          "title_ko": "장애인 공항 이용 서비스 안내",
+          "slug": "airport-service-for-disabled",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "장애인을 위한 공항 이용 서비스와 편의시설을 소개합니다."
+        },
+        {
+          "focus_keyword": "여행자 보험 청구",
+          "title_ko": "여행자 보험 청구하는 방법",
+          "slug": "travel-insurance-claim",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "여행 중 발생한 사고에 대해 보험 청구를 하는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "긴급 상황 공항 신고",
+          "title_ko": "긴급 상황 공항 신고 절차",
+          "slug": "emergency-airport-report",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여행 중 긴급 상황이 발생했을 때 공항에서 신고하는 절차를 안내합니다."
+        },
+        {
+          "focus_keyword": "공항 쇼핑 할인",
+          "title_ko": "공항 내 쇼핑 할인 정보",
+          "slug": "airport-shopping-discount",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "공항 내 쇼핑 시 적용되는 할인 정보와 혜택을 소개합니다."
+        }
+      ],
+      "stems": [
+        "해외여행 출국 절차",
+        "공항 보안 검색",
+        "장애인 공항 서비스",
+        "여행자 보험 청구",
+        "긴급 상황 공항 신고",
+        "공항 쇼핑 할인"
+      ]
+    },
+    {
+      "l2_id": "11-day-trip",
+      "l2_name": "당일치기 여행",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 6,
+      "accepted_count": 6,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 6,
+        "stem_unique": 6,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 16.7,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "추천",
+            1
+          ],
+          [
+            "필수템",
+            1
+          ],
+          [
+            "코스",
+            1
+          ],
+          [
+            "교통수단",
+            1
+          ],
+          [
+            "계산",
+            1
+          ]
+        ],
+        "keywords": [
+          "당일치기 여행지 추천",
+          "당일 여행 가방 필수템",
+          "가족 당일 여행 코스",
+          "당일치기 여행 교통수단",
+          "당일 여행 예산 계산",
+          "당일 여행 예산 계획"
+        ],
+        "stems": [
+          "당일치기 여행지",
+          "당일 여행 가방 필수템",
+          "가족 당일 여행 코스",
+          "당일치기 여행 교통수단",
+          "당일 여행 예산 계산",
+          "당일 여행 예산 계획"
+        ]
+      },
+      "rejected": [
+        "당일치기 여행자 보험 비교 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "당일치기 여행지 추천",
+          "title_ko": "당일치기 여행지 추천 리스트",
+          "slug": "one-day-trip-destinations",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여행 전문가들이 엄선한 당일치기 여행지 추천 리스트"
+        },
+        {
+          "focus_keyword": "당일 여행 가방 필수템",
+          "title_ko": "당일 여행 가방 꾸리기 필수템",
+          "slug": "one-day-trip-essential-items",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "여행 가방 꾸리기 위한 필수템과 노하우"
+        },
+        {
+          "focus_keyword": "가족 당일 여행 코스",
+          "title_ko": "가족과 함께하는 당일 여행 코스",
+          "slug": "family-one-day-trip-course",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "가족과 함께 즐기는 당일 여행 코스 추천"
+        },
+        {
+          "focus_keyword": "당일치기 여행 교통수단",
+          "title_ko": "당일치기 여행 교통수단 선택 가이드",
+          "slug": "one-day-trip-transportation-options",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "다양한 교통수단 선택을 위한 가이드"
+        },
+        {
+          "focus_keyword": "당일 여행 예산 계산",
+          "title_ko": "당일 여행 예산 계획 세우기",
+          "slug": "one-day-trip-budget-planning",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "효율적인 당일 여행 예산 계획 세우기"
+        },
+        {
+          "focus_keyword": "당일 여행 예산 계획",
+          "title_ko": "당일 여행 예산 계획하는 법",
+          "slug": "how-to-plan-a-day-trip-budget",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "알뜰하게 당일 여행을 즐기기 위한 예산 계획 팁을 제공합니다."
+        }
+      ],
+      "stems": [
+        "당일치기 여행지",
+        "당일 여행 가방 필수템",
+        "가족 당일 여행 코스",
+        "당일치기 여행 교통수단",
+        "당일 여행 예산 계산",
+        "당일 여행 예산 계획"
+      ]
+    },
+    {
+      "l2_id": "11-couple-trip",
+      "l2_name": "커플 여행",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 4,
+      "accepted_count": 4,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 4,
+        "stem_unique": 4,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 75.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "법",
+            2
+          ],
+          [
+            "가이드",
+            1
+          ],
+          [
+            "예절",
+            1
+          ]
+        ],
+        "keywords": [
+          "커플 여행지 고르는 법",
+          "여행 중 대화하는 법",
+          "커플 여행 안전 가이드",
+          "해외 식사 예절"
+        ],
+        "stems": [
+          "커플 여행지 고르는",
+          "여행 중 대화하는",
+          "커플 여행 안전",
+          "해외 식사 예절"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "커플 여행지 고르는 법",
+          "title_ko": "커플 여행지 선택하는 방법",
+          "slug": "choosing-a-couples-travel-destination",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "로맨틱한 커플 여행지를 고르는 방법과 팁"
+        },
+        {
+          "focus_keyword": "여행 중 대화하는 법",
+          "title_ko": "여행 중 커플 대화법",
+          "slug": "conversation-tips-for-couples-while-traveling",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "여행 중 커플 대화법을 통한 관계 강화"
+        },
+        {
+          "focus_keyword": "커플 여행 안전 가이드",
+          "title_ko": "안전한 커플 여행을 위한 수칙",
+          "slug": "safety-tips-for-couples-traveling",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "안전한 커플 여행을 위한 주의사항과 팁"
+        },
+        {
+          "focus_keyword": "해외 식사 예절",
+          "title_ko": "커플 여행 식사 예절 가이드",
+          "slug": "dining-etiquette-for-couples-traveling-abroad",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "해외에서 지켜야 할 커플 여행 식사 예절"
+        }
+      ],
+      "stems": [
+        "커플 여행지 고르는",
+        "여행 중 대화하는",
+        "커플 여행 안전",
+        "해외 식사 예절"
+      ]
+    },
+    {
+      "l2_id": "11-hot-spring-trip",
+      "l2_name": "온천 여행",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 4,
+      "accepted_count": 4,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 4,
+        "stem_unique": 4,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 75.0,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "필수품",
+            1
+          ],
+          [
+            "정보",
+            1
+          ],
+          [
+            "후기",
+            1
+          ],
+          [
+            "추천",
+            1
+          ]
+        ],
+        "keywords": [
+          "온천 여행 가방 필수품",
+          "온천 여행 할인 정보",
+          "온천 여행 숙소 후기",
+          "온천 여행 식사 추천"
+        ],
+        "stems": [
+          "온천 여행 가방",
+          "온천 여행 할인 정보",
+          "온천 여행 숙소",
+          "온천 여행 식사"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "온천 여행 가방 필수품",
+          "title_ko": "온천 여행 가방 꾸리기 팁",
+          "slug": "packing-tips-for-hot-spring-trips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "온천 여행 가방 꾸리기 위한 필수 아이템과 팁"
+        },
+        {
+          "focus_keyword": "온천 여행 할인 정보",
+          "title_ko": "온천 여행 할인 받는 법",
+          "slug": "how-to-get-discounts-on-hot-spring-trips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "온천 여행 할인 받는 법과 혜택"
+        },
+        {
+          "focus_keyword": "온천 여행 숙소 후기",
+          "title_ko": "온천 여행 숙소 리뷰 확인",
+          "slug": "hot-spring-resort-reviews",
+          "search_intent": "info",
+          "topic_angle": "review",
+          "description": "온천 여행 숙소 리뷰와 평가"
+        },
+        {
+          "focus_keyword": "온천 여행 식사 추천",
+          "title_ko": "온천 여행 식사 메뉴 추천",
+          "slug": "recommended-meals-for-hot-spring-trips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "온천 여행 식사 메뉴 추천과 맛집 정보"
+        }
+      ],
+      "stems": [
+        "온천 여행 가방",
+        "온천 여행 할인 정보",
+        "온천 여행 숙소",
+        "온천 여행 식사"
+      ]
+    },
+    {
+      "l2_id": "11-summer-overseas-trip",
+      "l2_name": "여름 해외여행",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 66.7,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "정보",
+            1
+          ],
+          [
+            "가이드",
+            1
+          ],
+          [
+            "팁",
+            1
+          ]
+        ],
+        "keywords": [
+          "여름 해외여행 비자 정보",
+          "노인 여름 해외여행 안전 가이드",
+          "여름 해외여행 숙소 예약 팁"
+        ],
+        "stems": [
+          "여름 해외여행 비자 정보",
+          "노인 여름 해외여행 안전",
+          "여름 해외여행 숙소"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "여름 해외여행 비자 정보",
+          "title_ko": "여름 해외여행 비자 준비 완벽 가이드",
+          "slug": "summer-foreign-travel-visa-information",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여름 해외여행을 위한 비자 준비 방법과 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "노인 여름 해외여행 안전 가이드",
+          "title_ko": "노인 여름 해외여행 안전 수칙과 준비물",
+          "slug": "senior-summer-foreign-travel-safety",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노인의 여름 해외여행을 위한 안전 가이드와 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "여름 해외여행 숙소 예약 팁",
+          "title_ko": "여름 해외여행 숙소 선택과 예약 방법",
+          "slug": "summer-foreign-travel-accommodation-tips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여름 해외여행을 위한 숙소 선택과 예약 팁을 제공합니다."
+        }
+      ],
+      "stems": [
+        "여름 해외여행 비자 정보",
+        "노인 여름 해외여행 안전",
+        "여름 해외여행 숙소"
+      ]
+    },
+    {
+      "l2_id": "11-gyeongju-trip",
+      "l2_name": "경주 여행",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "정보",
+            1
+          ],
+          [
+            "사례",
+            1
+          ]
+        ],
+        "keywords": [
+          "경주 축제 정보",
+          "경주 여행 실패 사례"
+        ],
+        "stems": [
+          "경주 축제 정보",
+          "경주 여행 실패 사례"
+        ]
+      },
+      "rejected": [
+        "경주 여행 코스 추천 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "경주 축제 정보",
+          "title_ko": "경주에서 열리는 축제",
+          "slug": "gyeongju-festival-info",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "경주에서 열리는 다양한 축제 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "경주 여행 실패 사례",
+          "title_ko": "경주 여행 실수하지 않기",
+          "slug": "gyeongju-travel-mistakes",
+          "search_intent": "review",
+          "topic_angle": "tip",
+          "description": "경주 여행에서 흔히 발생하는 실수 사례를 공유합니다."
+        }
+      ],
+      "stems": [
+        "경주 축제 정보",
+        "경주 여행 실패 사례"
+      ]
+    },
+    {
+      "l2_id": "11-jeonju-trip",
+      "l2_name": "전주 여행",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 50.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "관리",
+            1
+          ],
+          [
+            "여행지",
+            1
+          ]
+        ],
+        "keywords": [
+          "전주 여행 비용 관리",
+          "전주 숨겨진 여행지"
+        ],
+        "stems": [
+          "전주 여행 비용",
+          "전주 숨겨진 여행지"
+        ]
+      },
+      "rejected": [
+        "전주 여행 코스 추천 (dup_existing)",
+        "전주 한옥마을 맛집 순위 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "전주 여행 비용 관리",
+          "title_ko": "전주 여행 비용 절약 팁",
+          "slug": "jeonju-travel-budget-management",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전주 여행 시 비용을 효율적으로 관리할 수 있는 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "전주 숨겨진 여행지",
+          "title_ko": "전주 가볼만한 숨겨진 여행지",
+          "slug": "jeonju-hidden-travel-destinations",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "전주에서 가볼 만한 숨겨진 여행지를 소개합니다."
+        }
+      ],
+      "stems": [
+        "전주 여행 비용",
+        "전주 숨겨진 여행지"
+      ]
+    },
+    {
+      "l2_id": "12-art-appreciation",
+      "l2_name": "미술 감상",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 7,
+      "accepted_count": 7,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 7,
+        "stem_unique": 7,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 57.1,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "분석",
+            2
+          ],
+          [
+            "팁",
+            1
+          ],
+          [
+            "비교",
+            1
+          ],
+          [
+            "촬영법",
+            1
+          ],
+          [
+            "특징",
+            1
+          ]
+        ],
+        "keywords": [
+          "미술 작품 감상 팁",
+          "미술관 전시 분석",
+          "유명 미술가 비교",
+          "미술 작품 촬영법",
+          "미술사 시대별 특징",
+          "현대 미술 시장 분석",
+          "미술 작품 복원 과정"
+        ],
+        "stems": [
+          "미술 작품 감상",
+          "미술관 전시",
+          "유명 미술가",
+          "미술 작품 촬영법",
+          "미술사 시대별 특징",
+          "현대 미술 시장",
+          "미술 작품 복원 과정"
+        ]
+      },
+      "rejected": [
+        "미술 작품 구매 가이드 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "미술 작품 감상 팁",
+          "title_ko": "미술 작품 감상 노하우와 꿀팁",
+          "slug": "artwork-appreciation-tips",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "미술 작품을 깊이 있게 감상하는 방법과 노하우를 제공합니다."
+        },
+        {
+          "focus_keyword": "미술관 전시 분석",
+          "title_ko": "미술관 전시 작품 분석과 이해",
+          "slug": "museum-exhibition-analysis",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "미술관 전시 작품의 의미와 작가의 의도를 분석합니다."
+        },
+        {
+          "focus_keyword": "유명 미술가 비교",
+          "title_ko": "유명 미술가 비교 분석과 감상",
+          "slug": "famous-artist-comparison",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "유명 미술가들의 작품 세계와 스타일을 비교 분석합니다."
+        },
+        {
+          "focus_keyword": "미술 작품 촬영법",
+          "title_ko": "미술 작품 촬영 기법과 노하우",
+          "slug": "artwork-photography-techniques",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "미술 작품을 아름답게 촬영하는 기법과 노하우를 제공합니다."
+        },
+        {
+          "focus_keyword": "미술사 시대별 특징",
+          "title_ko": "미술사 시대별 특징과 흐름",
+          "slug": "art-history-by-era",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "미술사의 시대별 특징과 흐름을 소개합니다."
+        },
+        {
+          "focus_keyword": "현대 미술 시장 분석",
+          "title_ko": "현대 미술 시장 동향과 전망",
+          "slug": "contemporary-art-market-trends",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "현대 미술 시장의 동향과 전망을 분석합니다."
+        },
+        {
+          "focus_keyword": "미술 작품 복원 과정",
+          "title_ko": "미술 작품 복원 과정과 기술",
+          "slug": "artwork-restoration-process",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "미술 작품의 복원 과정과 기술을 소개합니다."
+        }
+      ],
+      "stems": [
+        "미술 작품 감상",
+        "미술관 전시",
+        "유명 미술가",
+        "미술 작품 촬영법",
+        "미술사 시대별 특징",
+        "현대 미술 시장",
+        "미술 작품 복원 과정"
+      ]
+    },
+    {
+      "l2_id": "12-law-facts",
+      "l2_name": "법률 상식",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 5,
+      "accepted_count": 5,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 5,
+        "stem_unique": 5,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 20.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "정보",
+            2
+          ],
+          [
+            "내용",
+            1
+          ],
+          [
+            "요령",
+            1
+          ],
+          [
+            "안내",
+            1
+          ]
+        ],
+        "keywords": [
+          "개인정보 보호법 주요 내용",
+          "주택 임대차 계약서 작성 요령",
+          "교통사고 처리 절차 안내",
+          "소비자 집단 소송 절차 정보",
+          "청년 창업 지원 정책 정보"
+        ],
+        "stems": [
+          "개인정보 보호법 주요 내용",
+          "주택 임대차 계약서 작성 요령",
+          "교통사고 처리 절차",
+          "소비자 집단 소송 절차 정보",
+          "청년 창업 지원 정책 정보"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "개인정보 보호법 주요 내용",
+          "title_ko": "개인정보 보호법 쉽게 이해하기",
+          "slug": "understanding-personal-information-protection-act",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "생활 속에서 알아야 할 개인정보 보호법 핵심 내용"
+        },
+        {
+          "focus_keyword": "주택 임대차 계약서 작성 요령",
+          "title_ko": "주택 임대차 계약서 작성법 알아보기",
+          "slug": "writing-rental-agreement",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "주택 임대차 계약서 올바르게 작성하는 방법"
+        },
+        {
+          "focus_keyword": "교통사고 처리 절차 안내",
+          "title_ko": "교통사고 발생 시 처리 절차",
+          "slug": "traffic-accident-handling-procedure",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "교통사고 발생 시 따라야 할 처리 절차 안내"
+        },
+        {
+          "focus_keyword": "소비자 집단 소송 절차 정보",
+          "title_ko": "소비자 집단 소송 절차 알아보기",
+          "slug": "consumer-class-action-procedure",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "소비자 집단 소송 절차에 대한 정보 제공"
+        },
+        {
+          "focus_keyword": "청년 창업 지원 정책 정보",
+          "title_ko": "청년 창업 지원 정책 안내",
+          "slug": "youth-entrepreneurship-support-policy",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "청년 창업자를 위한 지원 정책 정보 제공"
+        }
+      ],
+      "stems": [
+        "개인정보 보호법 주요 내용",
+        "주택 임대차 계약서 작성 요령",
+        "교통사고 처리 절차",
+        "소비자 집단 소송 절차 정보",
+        "청년 창업 지원 정책 정보"
+      ]
+    },
+    {
+      "l2_id": "12-history-stories",
+      "l2_name": "역사 이야기",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "심리",
+            1
+          ],
+          [
+            "사건",
+            1
+          ]
+        ],
+        "keywords": [
+          "역사 속 인물 심리",
+          "한국사 미해결 사건"
+        ],
+        "stems": [
+          "역사 속 인물 심리",
+          "한국사 미해결 사건"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "역사 속 인물 심리",
+          "title_ko": "역사 속 인물들의 심리를 분석하다",
+          "slug": "analyzing-historical-figures-psychology",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "역사 속 인물들의 심리를 탐구하는 콘텐츠"
+        },
+        {
+          "focus_keyword": "한국사 미해결 사건",
+          "title_ko": "한국사 미해결 사건의 진실을 조사하다",
+          "slug": "investigating-unsolved-korean-history-cases",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "한국사 미해결 사건을 조사하는 콘텐츠"
+        }
+      ],
+      "stems": [
+        "역사 속 인물 심리",
+        "한국사 미해결 사건"
+      ]
+    },
+    {
+      "l2_id": "13-dog-treats",
+      "l2_name": "강아지 간식",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 9,
+      "accepted_count": 9,
+      "scout_calls": 4,
+      "gemini_calls": 2,
+      "metrics": {
+        "count": 9,
+        "stem_unique": 9,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 11.1,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "간식",
+            7
+          ],
+          [
+            "가이드",
+            1
+          ],
+          [
+            "차이",
+            1
+          ]
+        ],
+        "keywords": [
+          "강아지 저염분 간식",
+          "강아지 친환경 간식",
+          "강아지 간식 선택 가이드",
+          "강아지 습관 교정 간식",
+          "강아지 관절 건강 보조 간식",
+          "강아지 피부병 치료 간식",
+          "강아지 인지 기능 강화 간식",
+          "강아지 소화 건강 간식",
+          "강아지 영양제와 간식 차이"
+        ],
+        "stems": [
+          "강아지 저염분 간식",
+          "강아지 친환경 간식",
+          "강아지 간식 선택",
+          "강아지 습관 교정 간식",
+          "강아지 관절 건강 보조 간식",
+          "강아지 피부병 치료 간식",
+          "강아지 인지 기능 강화 간식",
+          "강아지 소화 건강 간식",
+          "강아지 영양제와 간식 차이"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "강아지 저염분 간식",
+          "title_ko": "강아지 저염분 간식 추천 및 급여 가이드",
+          "slug": "low-sodium-dog-treats",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 저염분 간식의 중요성과 추천 제품 소개"
+        },
+        {
+          "focus_keyword": "강아지 친환경 간식",
+          "title_ko": "친환경 강아지 간식 선택 가이드",
+          "slug": "eco-friendly-dog-treats",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "친환경 강아지 간식의 종류와 선택 방법"
+        },
+        {
+          "focus_keyword": "강아지 간식 선택 가이드",
+          "title_ko": "강아지 간식 선택 가이드 및 추천",
+          "slug": "choosing-dog-treats",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "강아지 간식 선택 방법과 추천 제품 소개"
+        },
+        {
+          "focus_keyword": "강아지 습관 교정 간식",
+          "title_ko": "강아지 습관 개선을 위한 간식 선택 가이드",
+          "slug": "dog-habit-improvement-snack",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 습관 개선을 위한 효과적인 간식 정보"
+        },
+        {
+          "focus_keyword": "강아지 관절 건강 보조 간식",
+          "title_ko": "강아지 관절 건강을 위한 최고의 간식 추천",
+          "slug": "dog-joint-health-snack",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 관절 건강을 위한 간식 선택 팁"
+        },
+        {
+          "focus_keyword": "강아지 피부병 치료 간식",
+          "title_ko": "강아지 피부병 관리를 위한 간식 가이드",
+          "slug": "dog-skin-disease-snack",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 피부병 치료를 위한 간식 정보"
+        },
+        {
+          "focus_keyword": "강아지 인지 기능 강화 간식",
+          "title_ko": "강아지 인지 기능 향상을 위한 간식 추천",
+          "slug": "dog-cognitive-function-snack",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 인지 기능 강화를 위한 간식 선택 가이드"
+        },
+        {
+          "focus_keyword": "강아지 소화 건강 간식",
+          "title_ko": "강아지 소화 건강을 위한 간식 선택 가이드",
+          "slug": "dog-digestive-health-snack",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 소화 건강을 위한 효과적인 간식 정보"
+        },
+        {
+          "focus_keyword": "강아지 영양제와 간식 차이",
+          "title_ko": "강아지 영양제와 간식의 차이점 이해하기",
+          "slug": "dog-nutrition-supplement-snack-difference",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 영양제와 간식의 차이점 설명"
+        }
+      ],
+      "stems": [
+        "강아지 저염분 간식",
+        "강아지 친환경 간식",
+        "강아지 간식 선택",
+        "강아지 습관 교정 간식",
+        "강아지 관절 건강 보조 간식",
+        "강아지 피부병 치료 간식",
+        "강아지 인지 기능 강화 간식",
+        "강아지 소화 건강 간식",
+        "강아지 영양제와 간식 차이"
+      ]
+    },
+    {
+      "l2_id": "13-shih-tzu-care",
+      "l2_name": "시츄 케어",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 3,
+      "accepted_count": 3,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 3,
+        "stem_unique": 3,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "안전관리",
+            1
+          ],
+          [
+            "간호",
+            1
+          ],
+          [
+            "비용",
+            1
+          ]
+        ],
+        "keywords": [
+          "시츄 집안 안전관리",
+          "시츄 질병 간호",
+          "시츄 호텔 비용"
+        ],
+        "stems": [
+          "시츄 집안 안전관리",
+          "시츄 질병 간호",
+          "시츄 호텔 비용"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "시츄 집안 안전관리",
+          "title_ko": "시츄 집안 안전관리 노하우",
+          "slug": "sichu-jiban-anjeon-gwanri",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "시츄를 위한 집안 안전관리 방법을 알아보세요."
+        },
+        {
+          "focus_keyword": "시츄 질병 간호",
+          "title_ko": "아픈 시츄를 위한 질병 간호 가이드",
+          "slug": "sichu-jilbyeong-ganho",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "아픈 시츄를 위한 질병 간호 정보를 제공합니다."
+        },
+        {
+          "focus_keyword": "시츄 호텔 비용",
+          "title_ko": "시츄 호텔 비용 비교 분석",
+          "slug": "sichu-hotel-biyong",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "시츄 호텔 비용을 비교 분석해드립니다."
+        }
+      ],
+      "stems": [
+        "시츄 집안 안전관리",
+        "시츄 질병 간호",
+        "시츄 호텔 비용"
+      ]
+    },
+    {
+      "l2_id": "13-dog-food",
+      "l2_name": "강아지 사료",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "분석",
+            1
+          ]
+        ],
+        "keywords": [
+          "강아지 사료 성분 분석"
+        ],
+        "stems": [
+          "강아지 사료 성분"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "강아지 사료 성분 분석",
+          "title_ko": "강아지 사료 성분 분석 가이드",
+          "slug": "dog-food-ingredient-analysis",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 사료의 영양 성분과 분석 방법을 소개합니다."
+        }
+      ],
+      "stems": [
+        "강아지 사료 성분"
+      ]
+    },
+    {
+      "l2_id": "13-dog-walking",
+      "l2_name": "강아지 산책",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 1,
+        "top_last_token": [
+          [
+            "준비물",
+            1
+          ]
+        ],
+        "keywords": [
+          "강아지 산책 약품 준비물"
+        ],
+        "stems": [
+          "강아지 산책 약품"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "강아지 산책 약품 준비물",
+          "title_ko": "강아지 산책 시 약품 준비 가이드",
+          "slug": "dog-walking-medicine-preparation",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "강아지 산책 시 필요한 약품과 준비물을 소개합니다."
+        }
+      ],
+      "stems": [
+        "강아지 산책 약품"
+      ]
+    },
+    {
+      "l2_id": "14-autumn-camping",
+      "l2_name": "가을 캠핑",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 14,
+      "accepted_count": 14,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 14,
+        "stem_unique": 14,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 42.9,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "정보",
+            2
+          ],
+          [
+            "가이드",
+            1
+          ],
+          [
+            "리스트",
+            1
+          ],
+          [
+            "레시피",
+            1
+          ],
+          [
+            "검색",
+            1
+          ]
+        ],
+        "keywords": [
+          "캠핑장 선택 가이드",
+          "캠핑 필수 용품 리스트",
+          "캠핑 요리 레시피",
+          "안전한 캠핑장 검색",
+          "캠핑장 예약하는 법",
+          "가을 날씨 정보",
+          "캠핑장 주의사항",
+          "캠핑 여행 계획 세우기",
+          "캠핑장 이용 후기",
+          "캠핑장 애완동물 동반 규정",
+          "캠핑장 주변 관광 정보",
+          "캠핑장 안전 수칙",
+          "캠핑장 음식물 처리 방법",
+          "친환경 캠핑장 실천"
+        ],
+        "stems": [
+          "캠핑장 선택",
+          "캠핑 필수 용품",
+          "캠핑 요리",
+          "안전한 캠핑장 검색",
+          "캠핑장 예약하는",
+          "가을 날씨 정보",
+          "캠핑장 주의사항",
+          "캠핑 여행 계획 세우기",
+          "캠핑장 이용",
+          "캠핑장 애완동물 동반 규정",
+          "캠핑장 주변 관광 정보",
+          "캠핑장 안전 수칙",
+          "캠핑장 음식물 처리",
+          "친환경 캠핑장 실천"
+        ]
+      },
+      "rejected": [
+        "캠핑장비 대여 서비스 (intent_angle_cap)",
+        "캠핑 초보자 가이드 (intent_angle_cap)",
+        "캠핑장 애완동물 정책 (intent_angle_cap)",
+        "캠핑장 주변 관광지 (intent_angle_cap)",
+        "캠핑장 안전 수칙 (intent_angle_cap)",
+        "캠핑장 음식물 처리 (intent_angle_cap)",
+        "친환경 캠핑 실천 (intent_angle_cap)",
+        "캠핑 여행 계획 세우기 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "캠핑장 선택 가이드",
+          "title_ko": "가을 캠핑장 선택하는 방법",
+          "slug": "autumn-camping-site-selection-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "가을 캠핑장 선택 기준과 팁"
+        },
+        {
+          "focus_keyword": "캠핑 필수 용품 리스트",
+          "title_ko": "가을 캠핑 필수 용품 체크리스트",
+          "slug": "essential-camping-gear-for-autumn",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "가을 캠핑을 위한 필수 용품 리스트"
+        },
+        {
+          "focus_keyword": "캠핑 요리 레시피",
+          "title_ko": "가을 캠핑 요리 아이디어와 레시피",
+          "slug": "camping-cooking-ideas-and-recipes",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑에서 만들기 좋은 요리 아이디어와 레시피"
+        },
+        {
+          "focus_keyword": "안전한 캠핑장 검색",
+          "title_ko": "안전한 가을 캠핑장 찾는 방법",
+          "slug": "safe-camping-site-search",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "안전한 캠핑장을 찾는 방법과 팁"
+        },
+        {
+          "focus_keyword": "캠핑장 예약하는 법",
+          "title_ko": "가을 캠핑장 예약 방법과 팁",
+          "slug": "how-to-book-a-camping-site",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "캠핑장 예약하는 방법과 주의사항"
+        },
+        {
+          "focus_keyword": "가을 날씨 정보",
+          "title_ko": "가을 캠핑 날씨 정보와 준비물",
+          "slug": "autumn-weather-forecast",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "가을 캠핑을 위한 날씨 정보와 준비물"
+        },
+        {
+          "focus_keyword": "캠핑장 주의사항",
+          "title_ko": "가을 캠핑장 주의사항과 안전 수칙",
+          "slug": "camping-site-rules-and-regulations",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장 이용시 주의사항과 안전 수칙"
+        },
+        {
+          "focus_keyword": "캠핑 여행 계획 세우기",
+          "title_ko": "가을 캠핑 여행 계획 세우는 방법",
+          "slug": "planning-a-camping-trip",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "캠핑 여행 계획을 세우는 방법과 팁"
+        },
+        {
+          "focus_keyword": "캠핑장 이용 후기",
+          "title_ko": "가을 캠핑장 이용 후기 및 리뷰",
+          "slug": "camping-site-reviews",
+          "search_intent": "info",
+          "topic_angle": "review",
+          "description": "캠핑장 이용 후기와 리뷰"
+        },
+        {
+          "focus_keyword": "캠핑장 애완동물 동반 규정",
+          "title_ko": "캠핑장 애완동물 동반 가능 여부 확인하기",
+          "slug": "camping-pet-policy",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장에서 애완동물을 동반할 수 있는지 확인하는 방법"
+        },
+        {
+          "focus_keyword": "캠핑장 주변 관광 정보",
+          "title_ko": "캠핑장 주변 관광지 찾기",
+          "slug": "camping-nearby-tourism",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장 주변의 관광 정보를 확인하는 방법"
+        },
+        {
+          "focus_keyword": "캠핑장 안전 수칙",
+          "title_ko": "안전한 캠핑을 위한 필수 수칙",
+          "slug": "camping-safety-rules",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장에서 지켜야 할 안전 수칙"
+        },
+        {
+          "focus_keyword": "캠핑장 음식물 처리 방법",
+          "title_ko": "캠핑장 음식물 처리 방법 알아보기",
+          "slug": "camping-food-waste-disposal",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장에서 음식물을 처리하는 방법"
+        },
+        {
+          "focus_keyword": "친환경 캠핑장 실천",
+          "title_ko": "캠핑장에서 친환경을 실천하는 방법",
+          "slug": "eco-friendly-camping",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장에서 친환경을 실천하는 방법"
+        }
+      ],
+      "stems": [
+        "캠핑장 선택",
+        "캠핑 필수 용품",
+        "캠핑 요리",
+        "안전한 캠핑장 검색",
+        "캠핑장 예약하는",
+        "가을 날씨 정보",
+        "캠핑장 주의사항",
+        "캠핑 여행 계획 세우기",
+        "캠핑장 이용",
+        "캠핑장 애완동물 동반 규정",
+        "캠핑장 주변 관광 정보",
+        "캠핑장 안전 수칙",
+        "캠핑장 음식물 처리",
+        "친환경 캠핑장 실천"
+      ]
+    },
+    {
+      "l2_id": "14-kid-camping",
+      "l2_name": "아이 캠핑",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 9,
+      "accepted_count": 9,
+      "scout_calls": 3,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 9,
+        "stem_unique": 9,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 66.7,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "방법",
+            2
+          ],
+          [
+            "추천",
+            1
+          ],
+          [
+            "리스트",
+            1
+          ],
+          [
+            "수칙",
+            1
+          ],
+          [
+            "법",
+            1
+          ]
+        ],
+        "keywords": [
+          "아이 캠핑 장소 추천",
+          "어린이 캠핑 필수 용품 리스트",
+          "캠핑장 안전 수칙",
+          "아이와 캠핑장 선택하는 법",
+          "어린이 캠핑 교육 프로그램",
+          "캠핑장 내 응급 처치 방법",
+          "캠핑장 예약하는 방법",
+          "아이 캠핑 예산 계획 세우기",
+          "캠핑장 예약 팁"
+        ],
+        "stems": [
+          "아이 캠핑 장소",
+          "어린이 캠핑 필수 용품",
+          "캠핑장 안전 수칙",
+          "아이와 캠핑장 선택하는",
+          "어린이 캠핑 교육 프로그램",
+          "캠핑장 내 응급 처치",
+          "캠핑장 예약하는",
+          "아이 캠핑 예산 계획 세우기",
+          "캠핑장"
+        ]
+      },
+      "rejected": [
+        "캠핑장 위생 관리 방법 (suffix_cap:방법, intent_angle_cap)",
+        "아이 캠핑을 위한 보험 가입 (intent_angle_cap)",
+        "아이 캠핑을 위한 음식 준비 (intent_angle_cap)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "아이 캠핑 장소 추천",
+          "title_ko": "아이와 함께 떠나는 캠핑, 장소 추천",
+          "slug": "kid-camping-location-recommendation",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "아이와 함께 안전하고 즐겁게 캠핑할 수 있는 장소 추천 정보"
+        },
+        {
+          "focus_keyword": "어린이 캠핑 필수 용품 리스트",
+          "title_ko": "어린이 캠핑 필수 용품, 이것만 준비하세요",
+          "slug": "kid-camping-essential-gear",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "어린이 캠핑에 필요한 필수 용품 리스트"
+        },
+        {
+          "focus_keyword": "캠핑장 안전 수칙",
+          "title_ko": "캠핑장 안전 수칙, 미리 알고 가세요",
+          "slug": "camping-site-safety-rules",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장에서 지켜야 할 안전 수칙 정보"
+        },
+        {
+          "focus_keyword": "아이와 캠핑장 선택하는 법",
+          "title_ko": "아이와 함께 캠핑장 선택하는 법",
+          "slug": "choosing-camping-site-with-kids",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "아이와 함께 캠핑장 선택하는 방법"
+        },
+        {
+          "focus_keyword": "어린이 캠핑 교육 프로그램",
+          "title_ko": "어린이 캠핑 교육 프로그램 소개",
+          "slug": "kid-camping-education-program",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "어린이 캠핑 교육 프로그램 정보"
+        },
+        {
+          "focus_keyword": "캠핑장 내 응급 처치 방법",
+          "title_ko": "캠핑장 내 응급 처치 방법 알아보기",
+          "slug": "first-aid-at-camping-site",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "캠핑장에서 응급 상황이 발생했을 때 대처하는 방법"
+        },
+        {
+          "focus_keyword": "캠핑장 예약하는 방법",
+          "title_ko": "캠핑장 예약하는 방법, 온라인과 오프라인",
+          "slug": "how-to-book-camping-site",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "캠핑장 예약하는 방법 정보"
+        },
+        {
+          "focus_keyword": "아이 캠핑 예산 계획 세우기",
+          "title_ko": "아이 캠핑 예산 계획 세우기",
+          "slug": "kid-camping-budget-planning",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "아이 캠핑을 위한 예산 계획 세우기"
+        },
+        {
+          "focus_keyword": "캠핑장 예약 팁",
+          "title_ko": "아이 캠핑 성공의 첫걸음, 캠핑장 예약 방법",
+          "slug": "how-to-reserve-campsite-for-kids",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "아이와 함께 즐거운 캠핑을 위한 캠핑장 예약 방법과 팁을 공유합니다."
+        }
+      ],
+      "stems": [
+        "아이 캠핑 장소",
+        "어린이 캠핑 필수 용품",
+        "캠핑장 안전 수칙",
+        "아이와 캠핑장 선택하는",
+        "어린이 캠핑 교육 프로그램",
+        "캠핑장 내 응급 처치",
+        "캠핑장 예약하는",
+        "아이 캠핑 예산 계획 세우기",
+        "캠핑장"
+      ]
+    },
+    {
+      "l2_id": "14-winter-camping",
+      "l2_name": "겨울 캠핑",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 9,
+      "accepted_count": 9,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 9,
+        "stem_unique": 9,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 55.6,
+        "ends_with_추천": 1,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "팁",
+            2
+          ],
+          [
+            "가이드",
+            1
+          ],
+          [
+            "용품",
+            1
+          ],
+          [
+            "리뷰",
+            1
+          ],
+          [
+            "추천",
+            1
+          ]
+        ],
+        "keywords": [
+          "겨울 캠핑 안전 가이드",
+          "겨울 캠핑 보온 팁",
+          "겨울 캠핑 필수 용품",
+          "캠핑 조리 도구 리뷰",
+          "겨울 캠핑 신발 추천",
+          "캠핑장 화장실 위생 팁",
+          "겨울 캠핑 건강 관리법",
+          "겨울 캠핑 비용 절약법",
+          "캠핑장 날씨 확인법"
+        ],
+        "stems": [
+          "겨울 캠핑 안전",
+          "겨울 캠핑 보온",
+          "겨울 캠핑 필수 용품",
+          "캠핑 조리 도구",
+          "겨울 캠핑 신발",
+          "캠핑장 화장실 위생",
+          "겨울 캠핑 건강 관리법",
+          "겨울 캠핑 비용 절약법",
+          "캠핑장 날씨 확인법"
+        ]
+      },
+      "rejected": [
+        "캠핑장 예약 성공 팁 (suffix_cap:팁)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "겨울 캠핑 안전 가이드",
+          "title_ko": "겨울 캠핑 안전 수칙과 응급 상황 대처법",
+          "slug": "winter-camping-safety-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "겨울 캠핑 안전 수칙과 응급 상황 대처법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "겨울 캠핑 보온 팁",
+          "title_ko": "겨울 캠핑 보온 방법과 따뜻한 캠핑 즐기기",
+          "slug": "winter-camping-insulation-tips",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "겨울 캠핑 보온 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "겨울 캠핑 필수 용품",
+          "title_ko": "겨울 캠핑 필수 장비와 준비물 체크리스트",
+          "slug": "winter-camping-essential-gear",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "겨울 캠핑 필수 장비와 준비물을 알려드립니다."
+        },
+        {
+          "focus_keyword": "캠핑 조리 도구 리뷰",
+          "title_ko": "캠핑 조리 도구 추천과 사용 후기",
+          "slug": "camping-cooking-gear-review",
+          "search_intent": "review",
+          "topic_angle": "tip",
+          "description": "캠핑 조리 도구 추천과 사용 후기를 알려드립니다."
+        },
+        {
+          "focus_keyword": "겨울 캠핑 신발 추천",
+          "title_ko": "겨울 캠핑 신발 선택 가이드와 추천 제품",
+          "slug": "winter-camping-shoes-review",
+          "search_intent": "review",
+          "topic_angle": "tip",
+          "description": "겨울 캠핑 신발 추천과 선택 가이드를 알려드립니다."
+        },
+        {
+          "focus_keyword": "캠핑장 화장실 위생 팁",
+          "title_ko": "캠핑장 화장실 위생과 청결 유지 방법",
+          "slug": "camping-toilet-hygiene-tips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장 화장실 위생과 청결 유지 방법을 알려드립니다."
+        },
+        {
+          "focus_keyword": "겨울 캠핑 건강 관리법",
+          "title_ko": "겨울 캠핑 건강 관리와 안전 수칙",
+          "slug": "winter-camping-health-tips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "겨울 캠핑 건강 관리와 안전 수칙을 알려드립니다."
+        },
+        {
+          "focus_keyword": "겨울 캠핑 비용 절약법",
+          "title_ko": "겨울 캠핑 비용 절약 방법과 팁",
+          "slug": "winter-camping-cost-saving-tips",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "겨울 캠핑 비용 절약 방법과 팁을 알려드립니다."
+        },
+        {
+          "focus_keyword": "캠핑장 날씨 확인법",
+          "title_ko": "캠핑장 날씨 확인 방법과 날씨 정보",
+          "slug": "camping-weather-forecast-tips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장 날씨 확인 방법과 날씨 정보를 알려드립니다."
+        }
+      ],
+      "stems": [
+        "겨울 캠핑 안전",
+        "겨울 캠핑 보온",
+        "겨울 캠핑 필수 용품",
+        "캠핑 조리 도구",
+        "겨울 캠핑 신발",
+        "캠핑장 화장실 위생",
+        "겨울 캠핑 건강 관리법",
+        "겨울 캠핑 비용 절약법",
+        "캠핑장 날씨 확인법"
+      ]
+    },
+    {
+      "l2_id": "14-summer-camping",
+      "l2_name": "여름 캠핑",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 6,
+      "accepted_count": 6,
+      "scout_calls": 5,
+      "gemini_calls": 2,
+      "metrics": {
+        "count": 6,
+        "stem_unique": 6,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 33.3,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "후기",
+            1
+          ],
+          [
+            "캠핑장",
+            1
+          ],
+          [
+            "보관법",
+            1
+          ],
+          [
+            "수칙",
+            1
+          ],
+          [
+            "정책",
+            1
+          ]
+        ],
+        "keywords": [
+          "캠핑장 이용 후기",
+          "시원한 여름 캠핑장",
+          "여름 캠핑 음식 보관법",
+          "여름 캠핑 안전 수칙",
+          "캠핑장 예약 취소 정책",
+          "여름 캠핑 안전 가이드"
+        ],
+        "stems": [
+          "캠핑장 이용",
+          "시원한 여름 캠핑장",
+          "여름 캠핑 음식 보관법",
+          "여름 캠핑 안전 수칙",
+          "캠핑장 예약 취소 정책",
+          "여름 캠핑 안전"
+        ]
+      },
+      "rejected": [
+        "여름 캠핑 준비물 체크리스트 (dup_existing)",
+        "캠핑 냉방 장비 추천 (dup_existing)",
+        "여름 캠핑 예산 계획 (dup_existing)"
+      ],
+      "items": [
+        {
+          "focus_keyword": "캠핑장 이용 후기",
+          "title_ko": "여름 캠핑장 이용 후기 베스트",
+          "slug": "summer-camping-site-review",
+          "search_intent": "review",
+          "topic_angle": "review",
+          "description": "실제 방문한 여름 캠핑장의 이용 후기를 공유합니다."
+        },
+        {
+          "focus_keyword": "시원한 여름 캠핑장",
+          "title_ko": "시원한 여름 캠핑장 추천 리스트",
+          "slug": "cool-summer-camping-sites",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여름 캠핑을 위한 시원한 캠핑장을 찾아보세요."
+        },
+        {
+          "focus_keyword": "여름 캠핑 음식 보관법",
+          "title_ko": "여름 캠핑 음식 보관 방법 및 팁",
+          "slug": "summer-camping-food-storage-tips",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "여름 캠핑을 위한 음식 보관법을 알아보세요."
+        },
+        {
+          "focus_keyword": "여름 캠핑 안전 수칙",
+          "title_ko": "여름 캠핑 안전 수칙 및 주의사항",
+          "slug": "summer-camping-safety-tips",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "여름 캠핑을 위한 안전 수칙을 확인하세요."
+        },
+        {
+          "focus_keyword": "캠핑장 예약 취소 정책",
+          "title_ko": "캠핑장 예약 취소 정책 및 유의사항",
+          "slug": "camping-site-reservation-cancellation-policy",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑장 예약 취소 정책을 알아보세요."
+        },
+        {
+          "focus_keyword": "여름 캠핑 안전 가이드",
+          "title_ko": "여름 캠핑 안전 수칙과 예방법",
+          "slug": "summer-camping-safety-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "안전한 여름 캠핑을 위한 필수 수칙과 예방법을 소개합니다."
+        }
+      ],
+      "stems": [
+        "캠핑장 이용",
+        "시원한 여름 캠핑장",
+        "여름 캠핑 음식 보관법",
+        "여름 캠핑 안전 수칙",
+        "캠핑장 예약 취소 정책",
+        "여름 캠핑 안전"
+      ]
+    },
+    {
+      "l2_id": "14-camping-lantern",
+      "l2_name": "캠핑 랜턴",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 4,
+      "accepted_count": 4,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 4,
+        "stem_unique": 4,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 50.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "팁",
+            1
+          ],
+          [
+            "교체법",
+            1
+          ],
+          [
+            "가이드",
+            1
+          ],
+          [
+            "정보",
+            1
+          ]
+        ],
+        "keywords": [
+          "캠핑 랜턴 조립 팁",
+          "캠핑 랜턴 배터리 교체법",
+          "캠핑 랜턴 해외 구매 가이드",
+          "무선 충전 캠핑 랜턴 정보"
+        ],
+        "stems": [
+          "캠핑 랜턴 조립",
+          "캠핑 랜턴 배터리 교체법",
+          "캠핑 랜턴 해외 구매",
+          "무선 충전 캠핑 랜턴 정보"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "캠핑 랜턴 조립 팁",
+          "title_ko": "캠핑 랜턴 조립 방법과 팁",
+          "slug": "camping-lantern-assembly-tips",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "캠핑 랜턴 조립 방법을 알아보고 쉽게 설치하는 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "캠핑 랜턴 배터리 교체법",
+          "title_ko": "캠핑 랜턴 배터리 교체 방법",
+          "slug": "replacing-camping-lantern-batteries",
+          "search_intent": "howto",
+          "topic_angle": "tip",
+          "description": "캠핑 랜턴 배터리 교체 방법을 알아보고 쉽게 교체하는 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "캠핑 랜턴 해외 구매 가이드",
+          "title_ko": "캠핑 랜턴 해외 직구 가이드",
+          "slug": "buying-camping-lanterns-overseas",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑 랜턴 해외 직구 방법을 알아보고 안전하게 구매하는 팁을 제공합니다."
+        },
+        {
+          "focus_keyword": "무선 충전 캠핑 랜턴 정보",
+          "title_ko": "캠핑 랜턴 무선 충전 기능",
+          "slug": "wireless-charging-camping-lanterns",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "캠핑 랜턴 무선 충전 기능에 대해 알아보고 편리한 사용법을 제공합니다."
+        }
+      ],
+      "stems": [
+        "캠핑 랜턴 조립",
+        "캠핑 랜턴 배터리 교체법",
+        "캠핑 랜턴 해외 구매",
+        "무선 충전 캠핑 랜턴 정보"
+      ]
+    },
+    {
+      "l2_id": "14-spring-camping",
+      "l2_name": "봄 캠핑",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 2,
+      "accepted_count": 2,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 2,
+        "stem_unique": 2,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "법",
+            1
+          ],
+          [
+            "레시피",
+            1
+          ]
+        ],
+        "keywords": [
+          "캠핑장 고르는 법",
+          "캠핑 요리 레시피"
+        ],
+        "stems": [
+          "캠핑장 고르는",
+          "캠핑 요리"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "캠핑장 고르는 법",
+          "title_ko": "봄 캠핑 성공의 첫걸음, 캠핑장 선택 기준",
+          "slug": "choosing-a-campsite-for-spring-camping",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "봄 캠핑을 위한 최적의 캠핑장 선택 방법을 알아보세요."
+        },
+        {
+          "focus_keyword": "캠핑 요리 레시피",
+          "title_ko": "봄 캠핑의 맛있는 동행, 캠핑 요리 아이디어",
+          "slug": "camping-cooking-ideas-for-spring",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "봄 캠핑을 더욱 특별하게 만들어 줄 캠핑 요리 아이디어를 소개합니다."
+        }
+      ],
+      "stems": [
+        "캠핑장 고르는",
+        "캠핑 요리"
+      ]
+    },
+    {
+      "l2_id": "14-backpack-recommendation",
+      "l2_name": "배낭 추천",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 100.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "방법",
+            1
+          ]
+        ],
+        "keywords": [
+          "등산 배낭 고르는 방법"
+        ],
+        "stems": [
+          "등산 배낭 고르는"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "등산 배낭 고르는 방법",
+          "title_ko": "등산 배낭 선택 가이드|산행용 배낭 고르는 팁",
+          "slug": "hiking-backpack-selection-guide",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "등산 배낭을 고를 때 고려해야 할 요소와 선택 팁을 제공합니다."
+        }
+      ],
+      "stems": [
+        "등산 배낭 고르는"
+      ]
+    },
+    {
+      "l2_id": "14-wild-camping",
+      "l2_name": "노지 캠핑",
+      "l2_type": "",
+      "l3_slot_axes": "",
+      "l4_engine": "",
+      "target_count": 1,
+      "accepted_count": 1,
+      "scout_calls": 2,
+      "gemini_calls": 1,
+      "metrics": {
+        "count": 1,
+        "stem_unique": 1,
+        "stem_unique_pct": 100.0,
+        "stem_duplicates": {},
+        "suffix_variant_pct": 0.0,
+        "ends_with_추천": 0,
+        "prep_checklist_like": 0,
+        "top_last_token": [
+          [
+            "수칙",
+            1
+          ]
+        ],
+        "keywords": [
+          "노지 캠핑 화재 안전 수칙"
+        ],
+        "stems": [
+          "노지 캠핑 화재 안전 수칙"
+        ]
+      },
+      "rejected": [],
+      "items": [
+        {
+          "focus_keyword": "노지 캠핑 화재 안전 수칙",
+          "title_ko": "노지 캠핑 화재 예방을 위한 안전 수칙",
+          "slug": "noji-camping-hwaje-yeongu",
+          "search_intent": "info",
+          "topic_angle": "tip",
+          "description": "노지 캠핑에서 화재를 예방하고 안전하게 캠핑하는 방법에 대해 알아보세요."
+        }
+      ],
+      "stems": [
+        "노지 캠핑 화재 안전 수칙"
+      ]
+    }
+  ],
+  "groq_session_report": {
+    "active_keys": [
+      "GROK_API_KEY_4"
+    ],
+    "use_keys_env": "4",
+    "per_key": [
+      {
+        "key": "GROK_API_KEY_4",
+        "configured": true,
+        "success_calls": 153,
+        "rate_limit_hits": {},
+        "exhausted": false,
+        "exhausted_reason": ""
+      }
+    ]
+  },
+  "session_scout": 153,
+  "session_gemini": 70
+}
