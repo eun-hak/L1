@@ -588,6 +588,12 @@
 13-dog-walking,13,dog-walking,강아지 산책,강아지 산책 시 주의사항과 건강 관리법을 다룹니다.,35,scout+gemini,2026-06-05T07:20:10.657415+00:00
 13-aquarium-fish,13,aquarium-fish,관상어·어항,어항 입문·물잡이·어종·수초 등 물생활 전반.,149,claude_direct,2026-06-12T07:52:55.935560+00:00
 13-hamster-small-pets,13,hamster-small-pets,햄스터·소동물,"햄스터·기니피그·고슴도치. 토끼는 13-토끼, 파충류는 13-파충류 담당.",150,claude_direct,2026-06-12T07:52:55.935562+00:00
+13-parrot-birds,13,parrot-birds,앵무새·조류,앵무 중심 반려조류 — 새장·먹이·교감·소음. 야생 조류 관찰 제외.,151,claude_direct,2026-06-14T11:26:41.349652+00:00
+13-pet-loss,13,pet-loss,펫로스,"반려동물과의 이별·장례·추모·마음 회복. 위로 톤 유지, 깊은 우울감은 전문 상담 권유.",152,claude_direct,2026-06-14T11:26:41.349671+00:00
+13-pet-tech,13,pet-tech,펫테크,펫캠·자동급식기·웨어러블 등 스마트 기기. 자동 장난감은 13-고양이 놀이터 담당.,153,claude_direct,2026-06-14T11:26:41.349677+00:00
+13-rabbit-care,13,rabbit-care,토끼,토끼 사육 전반 — 건초·케이지·행동·중성화.,154,claude_direct,2026-06-14T11:26:41.349687+00:00
+13-reptiles,13,reptiles,파충류,게코·거북 등 사육장 환경 중심. 합법 사육 종 확인 강조.,155,claude_direct,2026-06-14T11:26:41.349692+00:00
+13-rescue-adoption,13,rescue-adoption,유기동물 입양,유기·보호소·임시보호 특화. 일반 입양 절차는 13-반려견/반려묘 입양 담당.,156,claude_direct,2026-06-14T11:26:41.349697+00:00
 14-camping-gear,14,camping-gear,캠핑 장비,캠핑용품 리뷰 및 추천,1,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
 14-hiking-guide,14,hiking-guide,등산 가이드,등산로 정보 및 등산 팁,2,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
 14-outdoor-fashion,14,outdoor-fashion,아웃도어 패션,아웃도어 활동 위한 패션 아이템,3,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
@@ -630,7 +636,70 @@
 14-camping-table,14,camping-table,캠핑 테이블,캠핑 스타일별 적합한 테이블 추천 및 비교 정보를 제공합니다.,40,scout+gemini,2026-06-05T07:20:10.657415+00:00
 14-kid-camping,14,kid-camping,아이 캠핑,아이와 함께 안전하고 즐겁게 캠핑하는 노하우를 공유합니다.,41,scout+gemini,2026-06-05T07:20:10.657415+00:00
 14-freshwater-fishing,14,freshwater-fishing,민물낚시,민물낚시 입문자를 위한 장비 추천 및 포인트 공략법을 다룹니다.,42,scout+gemini,2026-06-05T07:20:10.657415+00:00
+14-climbing,14,climbing,클라이밍·볼더링,실내 암장·볼더링 중심 — 장비·자세·예절.,157,claude_direct,2026-06-14T11:26:41.349704+00:00
+14-cycling,14,cycling,자전거·라이딩,자전거 입문·정비·라이딩 전반.,158,claude_direct,2026-06-14T11:26:41.349708+00:00
+14-kayak-sup,14,kayak-sup,카약·패들보드,수상 패들 스포츠 — 장비·안전·코스. 서핑은 기존 L2 담당.,159,claude_direct,2026-06-14T11:26:41.349714+00:00
+14-picnic,14,picnic,피크닉·차크닉,돗자리·바구니·핑거푸드·명소 등 피크닉/차크닉 전반.,160,claude_direct,2026-06-14T11:26:41.349719+00:00
+14-ski-snowboard,14,ski-snowboard,스키·스노보드,겨울 스포츠 입문·장비·강습·안전·스키장.,161,claude_direct,2026-06-14T11:26:41.349724+00:00
+14-surfing-watersports,14,surfing-watersports,서핑·수상레저,서핑·제트스키 등 수상레저. 카약/SUP는 14-카약·SUP 담당.,162,claude_direct,2026-06-14T11:26:41.349729+00:00
+15-appliance-usage,15,appliance-usage,가전 활용,가전 활용·관리·전기료 절약. 제품 구매 리뷰는 15-생활용품 담당.,163,claude_direct,2026-06-14T11:26:41.349734+00:00
+15-cleaning-tips,15,cleaning-tips,청소 꿀팁,공간별 청소·천연세제·청소 루틴.,164,claude_direct,2026-06-14T11:26:41.349739+00:00
+15-home-fragrance,15,home-fragrance,홈프래그런스,디퓨저·향초·공간별 향. 반려동물 향 주의 명시.,165,claude_direct,2026-06-14T11:26:41.349744+00:00
+15-home-office,15,home-office,홈오피스,재택 책상·의자·조명·집중 환경 셋업.,166,claude_direct,2026-06-14T11:26:41.349748+00:00
+15-household-items,15,household-items,생활용품 리뷰,주방·욕실·소모품 등 살림템 리뷰.,167,claude_direct,2026-06-14T11:26:41.349753+00:00
+15-interior,15,interior,인테리어,무드·컬러·조명·전월세 셀프 꾸미기.,168,claude_direct,2026-06-14T11:26:41.349757+00:00
+15-laundry-care,15,laundry-care,세탁·의류관리,빨래 분류·얼룩·건조·다림질·의류 보관.,169,claude_direct,2026-06-14T11:26:41.349761+00:00
+15-minimal-life,15,minimal-life,미니멀라이프,비움·정리 기준·캡슐 옷장·소비 줄이기.,170,claude_direct,2026-06-14T11:26:41.349765+00:00
+15-moving-prep,15,moving-prep,이사 준비,이사 체크리스트·업체·짐싸기·주소 이전.,171,claude_direct,2026-06-14T11:26:41.349769+00:00
+15-organizing,15,organizing,정리수납,공간별 정리·분류·라벨링·정리 용품.,172,claude_direct,2026-06-14T11:26:41.349773+00:00
+15-plants-gardening,15,plants-gardening,식물·가드닝,반려식물·물주기·분갈이·베란다 텃밭.,173,claude_direct,2026-06-14T11:26:41.349778+00:00
+15-recycling,15,recycling,분리수거·재활용,품목별 분리배출·음식물·대형폐기물·제로웨이스트.,174,claude_direct,2026-06-14T11:26:41.349784+00:00
+15-season-housekeeping,15,season-housekeeping,계절 살림,계절별 청소·습기·난방·결로·계절 교체.,175,claude_direct,2026-06-14T11:26:41.349788+00:00
+15-self-repair,15,self-repair,셀프 수리·인테리어,공구·실리콘·벽지·수전 등 집 셀프 수리.,176,claude_direct,2026-06-14T11:26:41.349793+00:00
+15-single-living,15,single-living,자취 살림,자취 필수템·좁은 집 살림·안전·공과금.,177,claude_direct,2026-06-14T11:26:41.349798+00:00
+15-storage-furniture,15,storage-furniture,수납·가구,수납 가구·선반·옷장·공간 활용 가구.,178,claude_direct,2026-06-14T11:26:41.349802+00:00
 10-baby-meal,16,baby-meal,유아 식단,성장기 아이들을 위한 영양 균형 잡힌 식단과 레시피를 제공합니다.,30,scout+gemini,2026-06-05T07:19:20.049758+00:00
 10-baby-snack,16,baby-snack,유아 간식,성장기 아이들을 위한 건강하고 영양가 높은 간식 레시피를 제안합니다.,45,scout+gemini,2026-06-05T07:20:10.657415+00:00
+16-baby-food,16,baby-food,이유식·유아식,이유식 단계·재료·알레르기·보관. 식단표/간식은 10 요리 L1 담당. 시기는 소아과 상담 권유.,179,claude_direct,2026-06-14T11:26:41.349806+00:00
+16-child-health,16,child-health,아이 건강,발열·접종·성장·치아 등 아이 건강. 증상은 소아과 상담 권유.,180,claude_direct,2026-06-14T11:26:41.349810+00:00
+16-childcare-logistics,16,childcare-logistics,등하원·돌봄,등하원 루틴·돌봄 서비스·긴급 돌봄 분담.,181,claude_direct,2026-06-14T11:26:41.349815+00:00
+16-daycare-kindergarten,16,daycare-kindergarten,어린이집·유치원,기관 선택·입소·적응·선생님 소통.,182,claude_direct,2026-06-14T11:26:41.349819+00:00
+16-discipline-habits,16,discipline-habits,훈육·생활습관,한계 설정·떼쓰기·감정 코칭·생활 루틴.,183,claude_direct,2026-06-14T11:26:41.349827+00:00
+16-elementary-learning,16,elementary-learning,초등 학습,독서·공부 습관·국어 수학 기초·자기주도.,184,claude_direct,2026-06-14T11:26:41.349831+00:00
+16-kids-content,16,kids-content,키즈 콘텐츠,연령별 콘텐츠·시청 시간·유해 필터링.,185,claude_direct,2026-06-14T11:26:41.349836+00:00
+16-kids-english,16,kids-english,유아 영어,영어 노출·동요·파닉스·부담 없는 익힘.,186,claude_direct,2026-06-14T11:26:41.349840+00:00
+16-newborn-care,16,newborn-care,신생아 케어,수유·트림·기저귀·목욕·산후 회복. 이상 시 진료 권유.,187,claude_direct,2026-06-14T11:26:41.349844+00:00
+16-parenting-items,16,parenting-items,육아템 리뷰,유모차·카시트·아기띠 등 육아용품 리뷰. 카시트는 안전 인증 확인 권유.,188,claude_direct,2026-06-14T11:26:41.349848+00:00
+16-parenting-subsidy,16,parenting-subsidy,육아 지원금,부모급여·양육수당·첫만남이용권 등 지원금 신청. 시기/서류는 공식 안내 확인 권유.,189,claude_direct,2026-06-14T11:26:41.349854+00:00
+16-pregnancy-birth,16,pregnancy-birth,임신·출산,산전 검사·개월별 변화·출산 준비·산후조리. 정기 검진은 산부인과 권유.,190,claude_direct,2026-06-14T11:26:41.349858+00:00
+16-private-education,16,private-education,학원·사교육,학원 선택·과목 우선순위·사교육비 관리. 아이 번아웃 주의.,191,claude_direct,2026-06-14T11:26:41.349862+00:00
+16-toddler-play,16,toddler-play,유아 놀이·발달,오감·대근육·역할 놀이 등 발달 놀이. 월령별 발달 이해.,192,claude_direct,2026-06-14T11:26:41.349866+00:00
+16-working-parents,16,working-parents,워킹맘·워킹대디,육아휴직·단축근무·복직 등 일·육아 병행. 부모 자기 돌봄 포함.,193,claude_direct,2026-06-14T11:26:41.349872+00:00
+17-career-pivot,17,career-pivot,커리어 전환,적성 점검·재교육·업종 전환 등 커리어 피벗.,194,claude_direct,2026-06-14T11:26:41.349877+00:00
+17-civil-service,17,civil-service,공무원·공기업 준비,직렬 선택·수험 계획·NCS 등 공무원/공기업 준비.,195,claude_direct,2026-06-14T11:26:41.349881+00:00
+17-freelancer-life,17,freelancer-life,프리랜서 라이프,클라이언트·단가·계약·세금 등 프리랜서 생활.,196,claude_direct,2026-06-14T11:26:41.349886+00:00
+17-interview-prep,17,interview-prep,면접 준비,단골 질문·자기소개·직무 면접 등. 12 교양 시사 면접과 분리.,197,claude_direct,2026-06-14T11:26:41.349890+00:00
+17-job-change,17,job-change,이직,이직 타이밍·전략·오퍼 비교·퇴사 매너.,198,claude_direct,2026-06-14T11:26:41.349894+00:00
+17-job-seeking,17,job-seeking,취업 준비,자기 분석·산업 탐색·채용 절차·신입 전략.,199,claude_direct,2026-06-14T11:26:41.349907+00:00
+17-office-relationships,17,office-relationships,직장 인간관계,상사·동료 관계·갈등·사내 정치 거리두기.,200,claude_direct,2026-06-14T11:26:41.349912+00:00
+17-part-time-job,17,part-time-job,아르바이트,알바 구하기·근로 권리·근로계약서·소득 신고.,201,claude_direct,2026-06-14T11:26:41.349916+00:00
+17-remote-work,17,remote-work,재택근무,재택 환경·루틴·협업 도구·고립감 관리.,202,claude_direct,2026-06-14T11:26:41.349920+00:00
+17-resume-writing,17,resume-writing,자소서 작성,자소서 구조·지원 동기·경력기술서 등. 12 논술과 분리.,203,claude_direct,2026-06-14T11:26:41.349924+00:00
+17-salary-negotiation,17,salary-negotiation,연봉·협상,시장 연봉·협상 타이밍·총보상·인상 요청.,204,claude_direct,2026-06-14T11:26:41.349928+00:00
+17-self-development,17,self-development,직장인 자기계발,배움 계획·퇴근 후 공부·역량 강화. 12 공부법과 직장인 맥락 차별화.,205,claude_direct,2026-06-14T11:26:41.349932+00:00
+17-side-job,17,side-job,부업·사이드잡,부업 찾기·겸업 규정·세금·현실 기대치.,206,claude_direct,2026-06-14T11:26:41.349938+00:00
+17-worklife-tips,17,worklife-tips,직장생활 팁,업무 메일·회의·우선순위·스트레스 관리.,207,claude_direct,2026-06-14T11:26:41.349942+00:00
 07-game-review,18,game-review,게임 리뷰,PC·콘솔·모바일 게임 리뷰,10,meta-llama/llama-4-scout-17b-16e-instruct,2026-06-01T08:38:31.955175+00:00
 05-esports,18,esports,e스포츠,전자 스포츠 경기의 분석 및 선수 관련 소식을 다룹니다.,25,scout+gemini,2026-06-05T07:20:10.657415+00:00
+18-board-games,18,board-games,보드게임,입문·파티·전략·협력 보드게임 및 모임.,208,claude_direct,2026-06-14T11:26:41.349946+00:00
+18-console-games,18,console-games,콘솔 게임,콘솔 선택·명작·독점작·구독 서비스.,209,claude_direct,2026-06-14T11:26:41.349951+00:00
+18-game-events,18,game-events,게임 행사·페스티벌,게임쇼·시연 부스·코스프레·개발자 강연.,210,claude_direct,2026-06-14T11:26:41.349955+00:00
+18-game-guides,18,game-guides,게임 공략,공략집·보스·빌드·파밍·도전과제.,211,claude_direct,2026-06-14T11:26:41.349959+00:00
+18-game-news,18,game-news,게임 뉴스,출시 일정·패치·업계 흐름·할인 소식. 12 시사와 무관한 게임 업계.,212,claude_direct,2026-06-14T11:26:41.349963+00:00
+18-gaming-gear,18,gaming-gear,게이밍 기어,헤드셋·마우스·키보드·모니터 등 게이밍 장비.,213,claude_direct,2026-06-14T11:26:41.349968+00:00
+18-gaming-terms,18,gaming-terms,게임 입문 용어,장르·슬랭·능력치·메타 등 게임 용어 풀이.,214,claude_direct,2026-06-14T11:26:41.349972+00:00
+18-indie-games,18,indie-games,인디 게임,인디 명작·픽셀아트·스토리·번들.,215,claude_direct,2026-06-14T11:26:41.349977+00:00
+18-mobile-games,18,mobile-games,모바일 게임,무과금·가챠·과금 조절·캐주얼/RPG.,216,claude_direct,2026-06-14T11:26:41.349982+00:00
+18-pc-games,18,pc-games,PC 게임,PC 게임 사양·최적화·모드·멀티. 18 콘솔/스팀과 분리.,217,claude_direct,2026-06-14T11:26:41.349985+00:00
+18-retro-games,18,retro-games,고전 게임,고전 명작·에뮬레이터·복각 콘솔. 합법 플레이 강조.,218,claude_direct,2026-06-14T11:26:41.349989+00:00
+18-steam-platform,18,steam-platform,스팀·플랫폼 활용,스팀 세일·환불·라이브러리·창작마당·스팀덱.,219,claude_direct,2026-06-14T11:26:41.349993+00:00

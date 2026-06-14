@@ -1,0 +1,394 @@
+seq,batch,l2_id,l1_code,name_ko
+1,8,01-actor-filmography,01,배우 필모그래피
+2,8,01-awards,01,시상식
+3,8,01-celeb-diet,01,연예인 다이어트
+4,8,01-celeb-insta,01,연예인 인스타
+5,8,01-celeb-wedding,01,연예인 결혼
+6,8,01-celeb-youtube,01,연예인 유튜브
+7,8,01-celebrity-gossip,01,연예 가십
+8,8,01-concert-info,01,콘서트 정보
+9,8,01-drama-actor,01,드라마 배우
+10,8,01-foreign-drama,01,해외 드라마
+11,8,01-idol-news,01,아이돌 소식
+12,8,01-k-movie,01,한국 영화
+13,8,01-k-pop,01,K-POP
+14,8,01-kpop-concert,01,아이돌 콘서트
+15,8,01-kpop-fansign,01,아이돌 팬사인회
+16,8,01-kpop-merchandise,01,아이돌 굿즈
+17,8,01-mc,01,예능 MC
+18,8,01-music-chart,01,가요 차트
+19,8,01-music-show,01,음악방송
+20,8,01-netflix-drama,01,넷플릭스 드라마
+21,8,01-ost,01,드라마 OST
+22,8,01-ott-recommend,01,OTT 추천
+23,8,01-reality-show,01,리얼리티 예능
+24,8,01-variety-highlight,01,예능 명장면
+25,8,01-webtoon-recommend,01,웹툰 추천
+26,8,02-budget-friendly-phone,02,알뜰폰
+27,8,02-communication-cost-saving,02,통신비 절약
+28,8,02-consumption-habits,02,소비습관
+29,8,02-credit-card-benefits,02,카드 혜택
+30,8,02-credit-score,02,신용점수
+31,9,02-cryptocurrency-intro,02,코인 입문
+32,9,02-deposit-interest-rate,02,예금 금리
+33,9,02-dividend-stocks,02,배당주
+34,9,02-etf-investment,02,ETF 투자
+35,9,02-exchange-rate-info,02,환율 정보
+36,9,02-financial-planning-beginner,02,재테크 입문
+37,9,02-freelancer-tax,02,프리랜서 세금
+38,9,02-gov-support-money,02,정부지원금
+39,9,02-household-book-keeping,02,가계부 작성
+40,9,02-inheritance-donation,02,상속 증여
+41,9,02-irp-account,02,IRP 계좌
+42,9,02-kr-stocks,02,국내 주식
+43,9,02-lease-vs-rent,02,전세 vs 월세
+44,9,02-living-cost-saving,02,생활비 절약
+45,9,02-loan-interest-rate,02,대출 금리
+46,9,02-real-estate-subscription,02,부동산 청약
+47,9,02-retirement-savings,02,연금저축
+48,9,02-small-business-support,02,소상공인 지원
+49,9,02-startup-funding,02,창업 자금
+50,9,02-stock-beginner,02,주식 입문
+51,9,02-tax-saving-methods,02,절세 방법
+52,9,02-time-deposit-recommendation,02,적금 추천
+53,9,02-unemployment-benefits,02,실업급여
+54,9,02-us-stocks,02,미국 주식
+55,9,02-year-end-tax-adjustment,02,연말정산
+56,9,02-youth-jump-account,02,청년 도약계좌
+57,9,03-blood-sugar-management,03,혈당 관리
+58,9,03-cholesterol-management,03,콜레스테롤 관리
+59,9,03-gym-beginner,03,헬스 입문
+60,9,03-home-training,03,홈트레이닝
+61,10,03-intermittent-fasting,03,간헐적 단식
+62,10,03-low-sodium-diet,03,저염 식단
+63,10,03-pilates,03,필라테스
+64,10,03-protein-diet,03,단백질 식단
+65,10,03-stretching,03,스트레칭
+66,10,03-yoga-beginner,03,요가 입문
+67,10,04-autumn-outfit,04,가을 코디
+68,10,04-casual-outfit,04,캐주얼 코디
+69,10,04-daily-outfit,04,데일리룩
+70,10,04-date-night-outfit,04,데이트룩
+71,10,04-denim-coordination,04,데님 코디
+72,10,04-interview-outfit,04,면접 복장
+73,10,04-office-wear,04,오피스룩
+74,10,04-plus-size-fashion,04,플러스사이즈
+75,10,04-spring-outfit,04,봄 코디
+76,10,04-street-fashion,04,스트릿 패션
+77,10,04-summer-outfit,04,여름 코디
+78,10,04-transitional-season-outfit,04,환절기 코디
+79,10,04-vintage-fashion,04,빈티지 패션
+80,10,04-winter-outfit,04,겨울 코디
+81,10,05-baseball-goods,05,야구 굿즈
+82,10,05-baseball-tactics,05,야구 전술
+83,10,05-basketball-analysis,05,농구 분석
+84,10,05-champions-league-info,05,챔스 정보
+85,10,05-epl-analysis,05,EPL 분석
+86,10,05-esports,05,e스포츠
+87,10,05-football-tactics,05,축구 전술
+88,10,05-football-youtube,05,축구 유튜브
+89,10,05-golf-tournament,05,골프 대회
+90,10,05-k-league,05,K리그
+91,11,05-kbo-league,05,KBO 리그
+92,11,05-korea-baseball,05,야구 국가대표
+93,11,05-korea-soccer,05,축구 국가대표
+94,11,05-marathon,05,마라톤
+95,11,05-martial-arts,05,격투기
+96,11,05-mlb-info,05,MLB 정보
+97,11,05-nba-info,05,NBA 정보
+98,11,05-olympics,05,올림픽
+99,11,05-overseas-soccer,05,해외축구
+100,11,05-player-transfer,05,선수 이적
+101,11,05-sneaker-review,05,운동화 리뷰
+102,11,05-soccer-goods,05,축구 굿즈
+103,11,05-sports-injury,05,스포츠 부상
+104,11,05-sports-nutrition,05,스포츠 영양
+105,11,05-sports-travel,05,스포츠 여행
+106,11,05-sports-viewing,05,스포츠 시청
+107,11,05-stadium-tour,05,경기장 투어
+108,11,05-ufc,05,UFC
+109,11,05-volleyball-league,05,배구 리그
+110,11,05-world-cup,05,월드컵
+111,11,06-beginner-driving,06,초보 운전
+112,11,06-car-dashcam,06,블랙박스
+113,11,06-car-navigation,06,내비게이션
+114,11,06-car-odor-removal,06,차량 냄새 제거
+115,11,06-car-wash,06,자동차 세차
+116,11,06-ev-charging,06,전기차 충전
+117,11,06-fuel-efficiency,06,연비 향상
+118,11,06-hybrid-car,06,하이브리드 차
+119,11,06-import-car-guide,06,수입차 가이드
+120,11,06-lightweight-car-guide,06,경차 가이드
+121,12,06-long-distance-driving,06,장거리 운전
+122,12,06-oil-change,06,오일 교환
+123,12,06-parking-tips,06,주차 팁
+124,12,06-suv-guide,06,SUV 가이드
+125,12,06-tire-maintenance,06,타이어 관리
+126,12,06-winter-driving,06,겨울 운전
+127,12,07-ai-utilization,07,AI 활용
+128,12,07-bluetooth-speaker,07,블루투스 스피커
+129,12,07-chatgpt-tips,07,ChatGPT 팁
+130,12,07-cloud-storage,07,클라우드 저장
+131,12,07-data-backup,07,데이터 백업
+132,12,07-earphone-review,07,이어폰 리뷰
+133,12,07-keyboard-recommend,07,키보드 추천
+134,12,07-laptop-review,07,노트북 리뷰
+135,12,07-monitor-recommend,07,모니터 추천
+136,12,07-mouse-recommend,07,마우스 추천
+137,12,07-nas-review,07,NAS 추천
+138,12,07-pc-optimization,07,PC 최적화
+139,12,07-photo-editing-apps,07,사진 보정 앱
+140,12,07-portable-battery,07,보조배터리
+141,12,07-printer-review,07,프린터 추천
+142,12,07-router-recommend,07,공유기 추천
+143,12,07-smartphone-settings,07,스마트폰 설정
+144,12,07-smartwatch,07,스마트워치
+145,12,07-ssd-recommend,07,SSD 추천
+146,12,07-tablet-review,07,태블릿 리뷰
+147,12,07-video-conference-tips,07,화상회의 팁
+148,12,07-webcam-recommend,07,웹캠 추천
+149,12,07-wireless-charger,07,무선충전기
+150,12,08-30s-skin-care,08,30대 피부
+151,13,08-40s-skin-care,08,40대 피부
+152,13,08-acne-care,08,여드름 케어
+153,13,08-body-care,08,바디 케어
+154,13,08-cleansing,08,클렌징
+155,13,08-combination-skin-care,08,복합성 피부
+156,13,08-dark-circle-care,08,다크서클 케어
+157,13,08-dry-skin-care,08,건성 피부
+158,13,08-exfoliation,08,각질 제거
+159,13,08-face-mask-recommendation,08,팩 추천
+160,13,08-lip-care,08,립 케어
+161,13,08-mens-beauty,08,남성 뷰티
+162,13,08-nail-care,08,네일 케어
+163,13,08-oily-skin-care,08,지성 피부
+164,13,08-pore-care,08,모공 케어
+165,13,08-pre-makeup-routine,08,화장 전 루틴
+166,13,08-pregnancy-beauty,08,임산부 뷰티
+167,13,08-sensitive-skin-care,08,민감성 피부
+168,13,08-skin-dryness-care,08,속건조 케어
+169,13,08-skin-elasticity-care,08,탄력 케어
+170,13,08-skin-redness-care,08,홍조 케어
+171,13,08-skin-whitening-care,08,미백 케어
+172,13,08-summer-skincare-tips,08,여름 스킨케어
+173,13,08-sunscreen,08,선크림
+174,13,08-teenage-skin-care,08,10대 피부
+175,13,08-twenties-skin-care,08,20대 피부
+176,13,08-weekend-face-mask-routine,08,주말 팩 루틴
+177,13,08-winter-skincare-tips,08,겨울 스킨케어
+178,13,08-wrinkle-care,08,주름 케어
+179,13,09-bakery-cafe,09,베이커리 카페
+180,13,09-bundang-food,09,분당 맛집
+181,14,09-chicken-food,09,치킨 맛집
+182,14,09-chinese-food,09,중식 맛집
+183,14,09-chungbuk-food,09,충북 맛집
+184,14,09-chungnam-food,09,충남 맛집
+185,14,09-delivery-food,09,배달 맛집
+186,14,09-dessert-cafe,09,디저트 카페
+187,14,09-dining-food,09,회식 맛집
+188,14,09-euljiro-food,09,을지로 맛집
+189,14,09-evening-food,09,저녁 맛집
+190,14,09-family-food,09,가족 모임 맛집
+191,14,09-gangnam-food,09,강남 맛집
+192,14,09-gopchang-food,09,곱창 맛집
+193,14,09-gwangjangdae-food,09,건대 맛집
+194,14,09-gyeongbuk-food,09,경북 맛집
+195,14,09-gyeongnam-food,09,경남 맛집
+196,14,09-hamburger-food,09,햄버거 맛집
+197,14,09-hidden-food,09,숨은 맛집
+198,14,09-hongdae-food,09,홍대 맛집
+199,14,09-ilsan-food,09,일산 맛집
+200,14,09-itaewon-food,09,이태원 맛집
+201,14,09-jamsil-food,09,잠실 맛집
+202,14,09-japanese-food,09,일식 맛집
+203,14,09-jeju-food,09,제주 맛집
+204,14,09-jeonbuk-food,09,전북 맛집
+205,14,09-jeonnam-food,09,전남 맛집
+206,14,09-jongno-food,09,종로 맛집
+207,14,09-kalguksu-food,09,칼국수 맛집
+208,14,09-korean-food,09,한식 맛집
+209,14,09-local-food,09,현지인 맛집
+210,14,09-lunch-food,09,점심 맛집
+211,15,09-mangwon-food,09,망원 맛집
+212,15,09-meat-food,09,고기 맛집
+213,15,09-mokdong-food,09,목동 맛집
+214,15,09-myeongdong-food,09,명동 맛집
+215,15,09-naengmyeon-food,09,냉면 맛집
+216,15,09-night-food,09,야식 맛집
+217,15,09-nowon-food,09,노원 맛집
+218,15,09-pangyo-food,09,판교 맛집
+219,15,09-pasta-food,09,파스타 맛집
+220,15,09-pet-cafe,09,반려견 카페
+221,15,09-pizza-food,09,피자 맛집
+222,15,09-reservation-food,09,예약 맛집
+223,15,09-rooftop-cafe,09,루프탑 카페
+224,15,09-sangam-food,09,상암 맛집
+225,15,09-seafood-food,09,해산물 맛집
+226,15,09-sejong-food,09,세종 맛집
+227,15,09-seongsu-food,09,성수 맛집
+228,15,09-sinchon-food,09,신촌 맛집
+229,15,09-snack-food,09,분식 맛집
+230,15,09-songpa-food,09,송파 맛집
+231,15,09-station-food,09,역세권 맛집
+232,15,09-takeout-food,09,포장 맛집
+233,15,09-tteokbokki-food,09,떡볶이 맛집
+234,15,09-ulsan-food,09,울산 맛집
+235,15,09-university-food,09,대학가 맛집
+236,15,09-value-for-money-food,09,가성비 맛집
+237,15,09-view-cafe,09,뷰 카페
+238,15,09-waiting-food,09,웨이팅 맛집
+239,15,09-western-food,09,양식 맛집
+240,15,09-yeonnam-food,09,연남 맛집
+241,16,09-yeouido-food,09,여의도 맛집
+242,16,10-air-fryer-recipes,10,에어프라이어 레시피
+243,16,10-baby-meal,10,유아 식단
+244,16,10-baby-snack,10,유아 간식
+245,16,10-beef-recipe,10,소고기 요리
+246,16,10-bento-recipes,10,도시락 레시피
+247,16,10-breakfast-recipes,10,아침 레시피
+248,16,10-chicken-recipes,10,닭고기 레시피
+249,16,10-chinese-recipes,10,중식 레시피
+250,16,10-diet-bento,10,다이어트 도시락
+251,16,10-diet-recipe,10,다이어트 레시피
+252,16,10-drinks-recipes,10,술안주 레시피
+253,16,10-egg-recipe,10,계란 요리
+254,16,10-french-recipe,10,프렌치 레시피
+255,16,10-fried-food-recipe,10,튀김 레시피
+256,16,10-fried-rice-recipe,10,볶음밥 레시피
+257,16,10-high-protein-diet,10,고단백 식단
+258,16,10-italian-recipes,10,이탈리안 레시피
+259,16,10-japanese-recipes,10,일식 레시피
+260,16,10-jjigae-recipe,10,찌개 레시피
+261,16,10-kimbap-making,10,김밥 만들기
+262,16,10-late-night-snack-recipe,10,야식 레시피
+263,16,10-low-carb-high-fat-diet,10,저탄고지 식단
+264,16,10-mexican-recipe,10,멕시칸 레시피
+265,16,10-microwave-cooking,10,전자레인지 요리
+266,16,10-mushroom-recipe,10,버섯 요리
+267,16,10-noodle-recipes,10,면 요리 레시피
+268,16,10-pasta-recipe,10,파스타 레시피
+269,16,10-pork-recipe,10,돼지고기 레시피
+270,16,10-pot-cooking,10,냄비 요리
+271,17,10-potato-recipe,10,감자 요리
+272,17,10-rice-recipe,10,밥 요리 레시피
+273,17,10-salad-recipe,10,샐러드 레시피
+274,17,10-sandwich-recipe,10,샌드위치 레시피
+275,17,10-side-dish-recipe,10,반찬 레시피
+276,17,10-snack-recipe,10,간식 레시피
+277,17,10-soup-recipe,10,수프 레시피
+278,17,10-steak-recipe,10,스테이크 레시피
+279,17,10-tang-yori,10,탕 요리
+280,17,10-tofu-recipes,10,두부 레시피
+281,17,10-topic,10,캠핑 요리
+282,17,10-vegetable-recipe,10,채소 요리
+283,17,11-accommodation-reservation,11,숙소 예약
+284,17,11-airport-guide,11,공항 이용법
+285,17,11-attraction-reservation,11,관광지 예약
+286,17,11-australia-trip,11,호주 여행
+287,17,11-backpacking-trip,11,배낭 여행
+288,17,11-busan-trip,11,부산 여행
+289,17,11-canada-trip,11,캐나다 여행
+290,17,11-couple-trip,11,커플 여행
+291,17,11-cruise-trip,11,크루즈 여행
+292,17,11-currency-exchange,11,환전 가이드
+293,17,11-day-trip,11,당일치기 여행
+294,17,11-duty-free-shopping,11,면세점 쇼핑
+295,17,11-esim-guide,11,eSIM 가이드
+296,17,11-europe-trip,11,유럽 여행
+297,17,11-family-trip,11,가족 여행
+298,17,11-flight-reservation,11,항공권 예약
+299,17,11-france-trip,11,프랑스 여행
+300,17,11-gangwon-trip,11,강원 여행
+301,18,11-golf-trip,11,골프 여행
+302,18,11-gyeongju-trip,11,경주 여행
+303,18,11-honeymoon-trip,11,신혼 여행
+304,18,11-hongkong-trip,11,홍콩 여행
+305,18,11-hot-spring-trip,11,온천 여행
+306,18,11-hotel-vacation,11,호캉스
+307,18,11-italy-trip,11,이탈리아 여행
+308,18,11-japan-trip,11,일본 여행
+309,18,11-jeju-trip,11,제주 여행
+310,18,11-jeonju-trip,11,전주 여행
+311,18,11-layover-airport,11,환승 공항
+312,18,11-local-transportation,11,현지 교통
+313,18,11-macao-trip,11,마카오 여행
+314,18,11-packing-tips,11,짐 싸기
+315,18,11-passport-issuance,11,여권 발급
+316,18,11-philippines-trip,11,필리핀 여행
+317,18,11-rental-car-travel,11,렌터카 여행
+318,18,11-singapore-trip,11,싱가포르 여행
+319,18,11-solo-travel,11,혼자 여행
+320,18,11-spain-trip,11,스페인 여행
+321,18,11-summer-overseas-trip,11,여름 해외여행
+322,18,11-taiwan-trip,11,대만 여행
+323,18,11-thailand-trip,11,태국 여행
+324,18,11-train-trip,11,기차 여행
+325,18,11-travel-apps,11,여행 앱
+326,18,11-travel-expenses,11,여행 경비
+327,18,11-travel-insurance,11,여행 보험
+328,18,11-travel-itinerary-2,11,여행 일정표
+329,18,11-travel-phrases,11,여행 회화
+330,18,11-travel-visa,11,여행 비자
+331,19,11-uk-trip,11,영국 여행
+332,19,11-usa-trip,11,미국 여행
+333,19,11-vietnam-trip,11,베트남 여행
+334,19,11-winter-overseas-trip,11,겨울 해외여행
+335,19,11-yeosu-trip,11,여수 여행
+336,19,12-art-appreciation,12,미술 감상
+337,19,12-book-recommendations,12,독서 추천
+338,19,12-classical-music,12,클래식 음악
+339,19,12-economy-facts,12,경제 상식
+340,19,12-history-in-movies,12,영화로 보는 역사
+341,19,12-history-stories,12,역사 이야기
+342,19,12-law-facts,12,법률 상식
+343,19,12-philosophy-intro,12,철학 입문
+344,19,12-psychology-facts,12,심리학 상식
+345,19,12-science-facts,12,과학 상식
+346,19,13-adopting-a-cat,13,반려묘 입양
+347,19,13-adopting-a-pet,13,반려견 입양
+348,19,13-bichon-care,13,비숑 케어
+349,19,13-cat-food-comparison,13,고양이 사료 비교
+350,19,13-cat-grooming,13,고양이 그루밍
+351,19,13-cat-health,13,고양이 건강
+352,19,13-cat-litter-box,13,고양이 화장실
+353,19,13-cat-treats,13,고양이 간식
+354,19,13-dog-food,13,강아지 사료
+355,19,13-dog-treats,13,강아지 간식
+356,19,13-dog-walking,13,강아지 산책
+357,19,13-golden-retriever-care,13,골든리트리버 케어
+358,19,13-maltese-care,13,말티즈 케어
+359,19,13-multi-cat-household,13,다묘 가정
+360,19,13-pet-hotel,13,펫 호텔
+361,20,13-pet-travel,13,반려동물 여행
+362,20,13-pomeranian-care,13,포메라니안 케어
+363,20,13-poodle-care,13,푸들 케어
+364,20,13-senior-dog-care,13,노견 케어
+365,20,13-shih-tzu-care,13,시츄 케어
+366,20,13-welsh-corgi-care,13,웰시코기 케어
+367,20,14-autumn-camping,14,가을 캠핑
+368,20,14-backpack-recommendation,14,배낭 추천
+369,20,14-backpacking,14,백패킹
+370,20,14-camping-burner,14,캠핑 버너
+371,20,14-camping-chair,14,캠핑 의자
+372,20,14-camping-lantern,14,캠핑 랜턴
+373,20,14-camping-table,14,캠핑 테이블
+374,20,14-fishing-spot-info,14,낚시터 정보
+375,20,14-freshwater-fishing,14,민물낚시
+376,20,14-glamping,14,글램핑
+377,20,14-gyeonggi-hiking,14,경기 등산
+378,20,14-hiking-shoes,14,등산화
+379,20,14-hiking-stick,14,등산 스틱
+380,20,14-jeju-camping,14,제주 캠핑
+381,20,14-jeju-hiking,14,제주 등산
+382,20,14-kangwon-camping,14,강원 캠핑
+383,20,14-kid-camping,14,아이 캠핑
+384,20,14-sea-fishing,14,바다낚시
+385,20,14-sleeping-bag-recommend,14,침낭 추천
+386,20,14-solo-camping,14,솔로 캠핑
+387,20,14-spring-camping,14,봄 캠핑
+388,20,14-summer-camping,14,여름 캠핑
+389,20,14-tent-recommend,14,텐트 추천
+390,20,14-trekking,14,트레킹
+391,21,14-water-play-camping,14,물놀이 캠핑
+392,21,14-wild-camping,14,노지 캠핑
+393,21,14-winter-camping,14,겨울 캠핑

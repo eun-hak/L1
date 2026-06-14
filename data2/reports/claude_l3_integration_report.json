@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-06-12T07:52:55.933252+00:00",
+  "generated_at": "2026-06-14T11:26:41.345517+00:00",
   "scenario": "ab",
   "batches": [
-    "claude_l3_batch08.csv"
+    "claude_l3_all.csv"
   ],
-  "batch_rows": 450,
-  "batch_l2s": 30,
+  "batch_rows": 10560,
+  "batch_l2s": 704,
   "l2": {
     "rename": 8,
     "move": 4,
     "merge_removed": 0,
-    "new_added": 12,
-    "l2_total_after": 635
+    "new_added": 69,
+    "l2_total_after": 704
   },
   "l1_total_after": 18,
   "l3": {
-    "before": 8634,
+    "before": 9084,
     "merged_scout_archived": 0,
-    "replaced_archived": 0,
-    "claude_appended": 450,
-    "after": 9084
+    "replaced_archived": 9084,
+    "claude_appended": 10560,
+    "after": 10560
   },
   "validation": {
     "errors": 0,
@@ -28,7 +28,6 @@
     "warn_sample": []
   },
   "model_counts_after": {
-    "slot_2step": 5484,
-    "claude_direct": 3600
+    "claude_direct": 10560
   }
 }
