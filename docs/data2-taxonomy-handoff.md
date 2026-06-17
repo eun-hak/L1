@@ -3,6 +3,9 @@
 > 작성일: 2026-06-01 (최종 갱신: 2026-06-08)  
 > 목적: 대화 세션 초기화 전, 지금까지 기획·구현·결정 사항을 다른 환경에서 이어갈 수 있도록 기록
 
+> **⚠ 2026-06-17 이후 L3 bulk(5만 키워드 → 서버 cron)는 이 문서가 아님.**  
+> **→ [`l3-bulk-server-handoff-2026-06-17.md`](./l3-bulk-server-handoff-2026-06-17.md)** (서버 테스트·운영 최신)
+
 > **설계·확장·L3/L4·100만 KW 통합 문서**: [`data2-taxonomy-master-plan.md`](./data2-taxonomy-master-plan.md) (2026-06-08)  
 > **L3 slot_2step 실행 런북 (다른 Cursor 재개용)**: [`data2-l3-slot2step-runbook.md`](./data2-l3-slot2step-runbook.md) (2026-06-08)
 

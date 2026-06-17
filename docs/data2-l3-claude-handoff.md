@@ -9,6 +9,7 @@
 | 문서 | 용도 |
 |------|------|
 | **본 문서** | 진행 현황·통합 절차·다음 작업 (최신) |
+| [`l3-bulk-server-handoff-2026-06-17.md`](./l3-bulk-server-handoff-2026-06-17.md) | **5만 L3 bulk — 서버 cron (2026-06-17~)** |
 | [`cursor-master-guide.md`](./cursor-master-guide.md) | Claude 측 단일 기준 (확장안 704 L2) |
 | [`data2-l3-claude-regen-plan.md`](./data2-l3-claude-regen-plan.md) | 전체 로드맵·L4 준비 |
 | [`data2-system.md`](./data2-system.md) | 시스템 전체 개요 |

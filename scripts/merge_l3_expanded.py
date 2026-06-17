@@ -5,7 +5,7 @@
   python scripts/merge_l3_expanded.py
 
 출력:
-  outputs/l3_expanded_all.csv   (신규 5만 + 기존 1만 = 약 6만행)
+  outputs/l3_expanded_all.csv   (신규 5만 + 기존 slot2step 1만 = 약 6만행)
   outputs/l3_merge_report.json  (통합 리포트)
 """
 
@@ -19,11 +19,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "outputs"
-DATA_DIR = ROOT / "data"
+DATA2_DIR = ROOT / "data2"
 
 HITIER_CSV = OUT_DIR / "l3_expanded_hitier.csv"
 LONGTAIL_CSV = OUT_DIR / "l3_expanded_longtail.csv"
-EXISTING_L3_CSV = DATA_DIR / "topics_l3.csv"
+EXISTING_L3_CSV = DATA2_DIR / "topics_l3_slot2step.csv"
 ALL_CSV = OUT_DIR / "l3_expanded_all.csv"
 REPORT_JSON = OUT_DIR / "l3_merge_report.json"
 

@@ -1,8 +1,9 @@
-# data2 — 택소노미 데이터
+# data2 — 택소노미 canonical
 
-> L3 claude_direct 재생성 **완료** (704 L2 × 15 = 10,560행)
+> L3 claude_direct **완료** (704 L2 × 15 = 10,560행)  
+> **L3 bulk(5만) 운영 문서:** [`docs/l3-bulk-server-handoff-2026-06-17.md`](../docs/l3-bulk-server-handoff-2026-06-17.md)
 
-## 지금 쓰는 파일 (canonical)
+## 프로덕션 파일 (이 폴더만)
 
 ```
 data2/
@@ -10,39 +11,34 @@ data2/
 ├── topics_l2.csv                   # 704 L2
 ├── topics_l3_slot2step.csv         # 10,560 L3 (claude_direct)
 ├── topics_l3_slot2step.json        # CSV 미러
-├── manifest_l3_slot2step.json      # 메타 (행수·진행률)
-├── brief.txt                       # 생성 브리프
-└── state/taxonomy_slot2step.db     # SQLite 원본
+└── manifest_l3_slot2step.json      # 행수·메타
 ```
 
-**L4·본문 착수 시** → `pilot/phase1_l3_l4_plan.csv`  
-**L2 재설계 참조** → `incoming/claude_l3/generation_batch_plan.csv`, `l2_redesign_map.csv`
+## L3 bulk에서 쓰는 것
 
-## 폴더 역할
+| 파일 | bulk 생성 | merge |
+|------|-----------|-------|
+| `topics_l2.csv` | ✅ l2_id 매핑 | — |
+| `topics_l3_slot2step.csv` | — | ✅ 기존 1만 합산 |
+| `seed/topics_l1.csv` | — | 참조 |
 
-| 폴더 | 용도 |
-|------|------|
-| `pilot/` | Phase1 L4·본문 계획·샘플 큐 |
-| `answers/` | 본문 파일럿 샘플 (10건) |
-| `reports/` | 최신 통합 리포트 |
-| `incoming/claude_l3/` | 운영 참조 CSV 2종만 유지 |
-| `archive/` | 레거시·로그·테스트·통합 완료 배치 (삭제 금지) |
+입력 키워드: `outputs/l2_candidates_gte100_depth1.csv` (50,017행)
 
-## archive/ 하위
+## 레거시
 
-| 경로 | 내용 |
-|------|------|
-| `legacy_nemotron/` | 구 Nemotron L3 (11,099행), taxonomy.db |
-| `legacy_scout/` | Scout slot2step 시대 checkpoint·리포트 |
-| `scout_replaced/` | claude 통합 시 교체된 Scout 행 |
-| `incoming_processed/` | claude_l3_batch01~08, all, descriptions |
-| `l2_expansion/` | L2 603→704 확장 중간본 |
-| `logs/`, `test/`, `reports/` | 실행 로그·실험·구 리포트 |
-| `backups/` | 오래된 통합 백업 |
-| `REORG_MANIFEST.json` | 정리 이동 기록 |
+참고·아카이브·실험·파일럿은 **`legacy/`** 로 이동 (gitignore).
+
+```
+legacy/data2/archive/     # Nemotron·Scout·백업
+legacy/data2/pilot/       # Phase1 계획
+legacy/data2/answers/     # 본문 파일럿
+legacy/data2/incoming/    # L2 재설계 참조
+legacy/data2/state/       # slot2step SQLite
+...
+```
 
 ## 주의
 
-- **canonical 6종만** 프로덕션. `archive/` 파일과 merge 금지.
-- 키워드 텍스트 수정 금지 → 문제 시 Claude 배치 재요청.
-- 상세 운영: `docs/data2-l3-claude-handoff.md`
+- canonical과 `legacy/` 파일 **merge 금지**
+- 키워드 텍스트 수동 수정 금지
+- slot2step 구 파이프: `docs/data2-l3-claude-handoff.md`
