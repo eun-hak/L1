@@ -1,9 +1,0 @@
-{
-  "generated_at": "2026-06-01T08:39:13.250217+00:00",
-  "model": "meta-llama/llama-4-scout-17b-16e-instruct",
-  "l1_count": 14,
-  "l2_per_l1_target": 15,
-  "l2_total": 210,
-  "brief_file": "/Users/simsimi/개인프로젝트/L1/data2/brief.txt",
-  "l1_file": "/Users/simsimi/개인프로젝트/L1/data2/seed/topics_l1.csv"
-}
