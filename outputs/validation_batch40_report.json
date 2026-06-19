@@ -1,0 +1,187 @@
+[
+  {
+    "name": "L1-02-finance-YMYL",
+    "target": 80,
+    "batch_size": 40,
+    "max_batches": 2,
+    "exit_code": 0,
+    "stdout_tail": "\n============================================================\n  L3 bulk run 완료\n  성공: 80  실패: 0  포기: 0\n  checkpoint: 50,017 / 50,017\n  budget: 8b:0/0 gemini:2/500 scout:0/800\n  출력: /home/ubuntu/L1/outputs/l3_expanded_hitier.csv\n        /home/ubuntu/L1/outputs/l3_expanded_longtail.csv\n============================================================\n",
+    "stderr_tail": "ogleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:25:46 INFO AFC is enabled with max remote calls: 10.\n08:25:56 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:25:58 INFO 완료 success=80 failed=0 abandoned=0 batches=2 budget=[8b:0/0 gemini:2/500 scout:0/800] limit_hit=False\n",
+    "retry_queue": 0,
+    "count": 80,
+    "kw_in_title_pct": 100.0,
+    "short_titles": 0,
+    "long_titles": 0,
+    "avg_title_len": 25.5,
+    "models": [
+      "gemini:gemini-3.1-flash-lite"
+    ],
+    "tiers": {
+      "hi": 80,
+      "lt": 0
+    },
+    "samples": [
+      {
+        "kw": "삼성전자주가",
+        "title": "삼성전자주가 흐름 분석, 최근 변동성 원인과 향후 전망"
+      },
+      {
+        "kw": "환율",
+        "title": "환율 변동이 경제에 미치는 영향과 개인 투자 대응 전략"
+      },
+      {
+        "kw": "금시세",
+        "title": "최근 금시세 추이와 안전 자산으로서의 투자 가치 분석"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "L1-03-health-YMYL",
+    "target": 80,
+    "batch_size": 40,
+    "max_batches": 2,
+    "exit_code": 0,
+    "stdout_tail": "\n============================================================\n  L3 bulk run 완료\n  성공: 80  실패: 0  포기: 0\n  checkpoint: 50,017 / 50,017\n  budget: 8b:0/0 gemini:2/500 scout:0/800\n  출력: /home/ubuntu/L1/outputs/l3_expanded_hitier.csv\n        /home/ubuntu/L1/outputs/l3_expanded_longtail.csv\n============================================================\n",
+    "stderr_tail": "ogleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:26:12 INFO AFC is enabled with max remote calls: 10.\n08:26:22 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:26:23 INFO 완료 success=80 failed=0 abandoned=0 batches=2 budget=[8b:0/0 gemini:2/500 scout:0/800] limit_hit=False\n",
+    "retry_queue": 0,
+    "count": 80,
+    "kw_in_title_pct": 100.0,
+    "short_titles": 0,
+    "long_titles": 0,
+    "avg_title_len": 26.1,
+    "models": [
+      "gemini:gemini-3.1-flash-lite"
+    ],
+    "tiers": {
+      "hi": 80,
+      "lt": 0
+    },
+    "samples": [
+      {
+        "kw": "젝시믹스",
+        "title": "운동 효율 높이는 젝시믹스 레깅스 고르는 꿀팁"
+      },
+      {
+        "kw": "스포츠",
+        "title": "건강한 일상을 위한 나에게 맞는 스포츠 종목 찾기"
+      },
+      {
+        "kw": "안과",
+        "title": "정기적인 안과 검진이 눈 건강에 중요한 이유"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "L1-04-fashion",
+    "target": 80,
+    "batch_size": 40,
+    "max_batches": 2,
+    "exit_code": 0,
+    "stdout_tail": "\n============================================================\n  L3 bulk run 완료\n  성공: 80  실패: 0  포기: 0\n  checkpoint: 50,017 / 50,017\n  budget: 8b:0/0 gemini:2/500 scout:0/800\n  출력: /home/ubuntu/L1/outputs/l3_expanded_hitier.csv\n        /home/ubuntu/L1/outputs/l3_expanded_longtail.csv\n============================================================\n",
+    "stderr_tail": "ogleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:26:37 INFO AFC is enabled with max remote calls: 10.\n08:26:48 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:26:49 INFO 완료 success=80 failed=0 abandoned=0 batches=2 budget=[8b:0/0 gemini:2/500 scout:0/800] limit_hit=False\n",
+    "retry_queue": 0,
+    "count": 80,
+    "kw_in_title_pct": 100.0,
+    "short_titles": 0,
+    "long_titles": 0,
+    "avg_title_len": 27.0,
+    "models": [
+      "gemini:gemini-3.1-flash-lite"
+    ],
+    "tiers": {
+      "hi": 80,
+      "lt": 0
+    },
+    "samples": [
+      {
+        "kw": "금값시세",
+        "title": "최근 변동하는 금값시세 흐름과 투자 전 체크리스트"
+      },
+      {
+        "kw": "금값",
+        "title": "금값 상승세 지속될까? 전문가들이 말하는 시장 전망"
+      },
+      {
+        "kw": "오늘금시세",
+        "title": "오늘금시세 확인하는 방법과 금 투자 시작하기"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "L1-01-entertainment",
+    "target": 80,
+    "batch_size": 40,
+    "max_batches": 2,
+    "exit_code": 0,
+    "stdout_tail": "\n============================================================\n  L3 bulk run 완료\n  성공: 80  실패: 0  포기: 0\n  checkpoint: 50,017 / 50,017\n  budget: 8b:0/0 gemini:2/500 scout:0/800\n  출력: /home/ubuntu/L1/outputs/l3_expanded_hitier.csv\n        /home/ubuntu/L1/outputs/l3_expanded_longtail.csv\n============================================================\n",
+    "stderr_tail": "ogleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:27:11 INFO AFC is enabled with max remote calls: 10.\n08:27:22 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:27:24 INFO 완료 success=80 failed=0 abandoned=0 batches=2 budget=[8b:0/0 gemini:2/500 scout:0/800] limit_hit=False\n",
+    "retry_queue": 0,
+    "count": 80,
+    "kw_in_title_pct": 100.0,
+    "short_titles": 0,
+    "long_titles": 0,
+    "avg_title_len": 28.4,
+    "models": [
+      "gemini:gemini-3.1-flash-lite"
+    ],
+    "tiers": {
+      "hi": 80,
+      "lt": 0
+    },
+    "samples": [
+      {
+        "kw": "개봉예정영화",
+        "title": "이번 달 놓치지 말아야 할 개봉예정영화 기대작 TOP 5"
+      },
+      {
+        "kw": "영화순위",
+        "title": "주말 극장가 승자는? 현재 박스오피스 영화순위 분석"
+      },
+      {
+        "kw": "멜론",
+        "title": "멜론 이용권 가격 비교 및 나에게 맞는 요금제 선택 가이드"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "longtail-lt",
+    "target": 80,
+    "batch_size": 40,
+    "max_batches": 2,
+    "exit_code": 0,
+    "stdout_tail": "\n============================================================\n  L3 bulk run 완료\n  성공: 23  실패: 0  포기: 0\n  checkpoint: 49,960 / 50,017\n  budget: 8b:0/0 gemini:2/500 scout:0/800\n  출력: /home/ubuntu/L1/outputs/l3_expanded_hitier.csv\n        /home/ubuntu/L1/outputs/l3_expanded_longtail.csv\n============================================================\n",
+    "stderr_tail": "ite:generateContent \"HTTP/1.1 200 OK\"\n08:27:31 INFO L1=02 금융·재테크 model=gemini n=15\n08:27:31 INFO AFC is enabled with max remote calls: 10.\n08:27:36 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent \"HTTP/1.1 200 OK\"\n08:27:38 INFO 완료 success=23 failed=0 abandoned=0 batches=2 budget=[8b:0/0 gemini:2/500 scout:0/800] limit_hit=False\n",
+    "retry_queue": 0,
+    "count": 23,
+    "kw_in_title_pct": 100.0,
+    "short_titles": 0,
+    "long_titles": 0,
+    "avg_title_len": 33.1,
+    "models": [
+      "gemini:gemini-3.1-flash-lite"
+    ],
+    "tiers": {
+      "hi": 0,
+      "lt": 23
+    },
+    "samples": [
+      {
+        "kw": "50대다이어트",
+        "title": "50대다이어트, 건강하게 체중 감량하는 현실적인 식단과 운동법"
+      },
+      {
+        "kw": "8월콘서트",
+        "title": "8월콘서트 일정 총정리: 여름 휴가철 놓치지 말아야 할 공연 라인업"
+      },
+      {
+        "kw": "기획사",
+        "title": "아이돌 기획사 오디션 준비생이 반드시 알아야 할 현실적인 조언"
+      }
+    ],
+    "ok": false
+  }
+]

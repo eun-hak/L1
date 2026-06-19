@@ -57,10 +57,12 @@ RETRY_PLAN_YMYL = {
     3: ("scout", 5),
 }
 RETRY_PLAN_DEFAULT = {
-    1: ("8b", 5),
-    2: ("8b", 1),
+    1: ("gemini", 5),
+    2: ("gemini", 1),
     3: ("scout", 5),
 }
+
+DEFAULT_BATCH_SIZE = 80
 
 DEFAULT_DAILY_LIMITS = {
     "8b": 10_000,

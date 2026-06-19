@@ -22,7 +22,8 @@ export PYTHONUNBUFFERED=1
 echo "=== L3 daily run $(date -Iseconds) ==="
 
 "$PY" scripts/generate_l3_expanded.py --resume \
-  --max-calls-8b 10000 \
+  --batch-size 80 \
+  --max-calls-8b 0 \
   --max-calls-gemini 500 \
   --max-calls-scout 800
 

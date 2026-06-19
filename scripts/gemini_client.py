@@ -7,7 +7,7 @@ Gemini API 클라이언트.
 - MODEL_QUALITY   gemini-2.5-pro          도입부 폴리시 (소량)
 - *_FALLBACK      한도 초과 시 자동 전환
 
-환경변수: GEMINI_API_KEY
+환경변수: GEMINI_API_KEY2 (L1 bulk 기본) / GEMINI_API_KEY_2 / GEMINI_API_KEY
 """
 
 from __future__ import annotations
@@ -83,10 +83,11 @@ _client: genai.Client | None = None
 
 
 def get_api_key() -> str:
-    key = os.getenv("GEMINI_API_KEY")
-    if not key:
-        raise RuntimeError("GEMINI_API_KEY 환경변수가 필요합니다.")
-    return key
+    for name in ("GEMINI_API_KEY2", "GEMINI_API_KEY_2", "GEMINI_API_KEY"):
+        key = os.getenv(name, "").strip()
+        if key:
+            return key
+    raise RuntimeError("GEMINI_API_KEY2 (또는 GEMINI_API_KEY) 환경변수가 필요합니다.")
 
 
 def create_client() -> genai.Client:

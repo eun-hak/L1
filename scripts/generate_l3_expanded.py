@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""L3 대량 생성 — 5만 키워드 → L3 메타 (8b + YMYL Gemini).
+"""L3 대량 생성 — 5만 키워드 → L3 메타 (Gemini primary batch 40).
 
 모델 배정:
-  - L1 02·03 (YMYL 금융·건강): Gemini batch 10
-  - 나머지 ~4.3만: 8b batch 10 → 실패 시 5 → single → Scout
+  - 전 L1: Gemini batch 40 (실험상 50은 JSON 잘림)
+  - 실패 시 Gemini batch 5 → single → Scout
 
 일일 한도 (cron용):
   - 8b 10,000 / Gemini 500 / Scout 800 calls (기본)
@@ -62,6 +62,7 @@ from l3_bulk_config import (  # noqa: E402
     L3_FIELDNAMES,
     LONGTAIL_CSV,
     OUT_DIR,
+    DEFAULT_BATCH_SIZE,
     RETRY_PLAN_DEFAULT,
     RETRY_PLAN_YMYL,
     RETRY_QUEUE_FILE,
@@ -119,7 +120,7 @@ def is_ymyl(l1_code: str) -> bool:
 
 
 def primary_model(l1_code: str) -> str:
-    return "gemini" if is_ymyl(l1_code) else "8b"
+    return "gemini"
 
 
 def tier_for(total: int) -> str:
@@ -186,8 +187,8 @@ def build_prompt(items: list[dict], *, l1_name: str, l1_code: str) -> str:
 [키워드 목록]
 {kw_lines}
 
-JSON 배열만 출력:
-[{{"idx": 1, "focus_keyword": "원본키워드그대로", "title_ko": "...", "search_intent": "info", "topic_angle": "issue", "description": "..."}}]"""
+JSON 배열만 출력. 예시:
+[{{"idx": 1, "focus_keyword": "삼성전자주가", "title_ko": "삼성전자 주가 전망과 핵심 투자 포인트", "search_intent": "info", "topic_angle": "issue", "description": "삼성전자 주가 흐름과 투자자가 알아야 할 분석 포인트를 정리한다."}}]"""
 
 
 def call_model(model_key: str, prompt: str) -> tuple[list[dict], bool]:
@@ -195,7 +196,7 @@ def call_model(model_key: str, prompt: str) -> tuple[list[dict], bool]:
         if model_key == "gemini":
             raw = gemini_chat_full(
                 prompt, system=SYSTEM_PROMPT, model=GEMINI_FLASH_LITE,
-                temperature=0.55, max_tokens=4096,
+                temperature=0.55, max_tokens=8192,
             ).text
         elif model_key == "scout":
             raw = groq_chat_full(
@@ -215,6 +216,12 @@ def call_model(model_key: str, prompt: str) -> tuple[list[dict], bool]:
         return [], False
 
 
+def keyword_in_title(keyword: str, title: str) -> bool:
+    kw = norm_keyword(keyword).replace(" ", "")
+    t = norm_keyword(title).replace(" ", "")
+    return bool(kw) and kw in t
+
+
 def validate_item(item: dict, *, orig_keyword: str) -> tuple[bool, list[str]]:
     warns: list[str] = []
     title = item.get("title_ko", "")
@@ -222,9 +229,11 @@ def validate_item(item: dict, *, orig_keyword: str) -> tuple[bool, list[str]]:
         return False, ["제목 없음"]
     tl = len(title)
     if tl < 12:
-        warns.append(f"제목 짧음({tl})")
-    elif tl > 60:
+        return False, [f"제목 짧음({tl})"]
+    if tl > 60:
         warns.append(f"제목 김({tl})")
+    if not keyword_in_title(orig_keyword, title):
+        return False, ["키워드 미포함"]
     if CLICKBAIT_RE.search(title):
         warns.append("클릭베이트")
     if item.get("search_intent") not in VALID_INTENTS:
@@ -486,7 +495,6 @@ class Runner:
             logger.info("L1=%s %s model=%s n=%d", l1_code, L1_NAMES.get(l1_code, ""), model, len(chunk_rows))
             for i in range(0, len(chunk_rows), bs):
                 if self.limit_hit or (self.args.max_batches and self.batch_count >= self.args.max_batches):
-                    retry.extend(chunk_rows[i:])
                     break
                 batch = chunk_rows[i:i + bs]
                 failed = self.run_batch(batch, model, bs, f"primary_{model}")
@@ -565,10 +573,10 @@ class Runner:
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="L3 bulk: 8b + YMYL Gemini")
+    p = argparse.ArgumentParser(description="L3 bulk: Gemini primary batch 40")
     p.add_argument("--resume", action="store_true", help="checkpoint 이어서 (cron 필수)")
     p.add_argument("--retry-only", action="store_true", help="재시도 큐만 처리")
-    p.add_argument("--batch-size", type=int, default=10, help="1차 배치 크기 (기본 10, 25 금지)")
+    p.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE, help="1차 배치 크기 (기본 80, 8192 tokens)")
     p.add_argument("--sleep", type=float, default=1.5, help="배치 간 대기(초)")
     p.add_argument("--max-batches", type=int, default=0, help="이번 실행 배치 상한 (0=무제한, 테스트용)")
     p.add_argument("--max-calls-8b", type=int, default=DEFAULT_DAILY_LIMITS["8b"])
